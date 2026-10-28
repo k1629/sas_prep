@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAS Exam Master Hub & AI Study Platform (Civil Accounts)</title>
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SAS Prep">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-row">
+          <span class="brand-badge">IA&AD • Civil Accounts</span>
+          <span class="exam-target-badge">🎯 Target: 6 Months</span>
+        </div>
+        <h1 class="sidebar-title">SAS Exam Master Hub</h1>
+        
+        <!-- 6-Month Countdown -->
+        <div class="countdown-card">
+          <div class="countdown-label">⏳ SAS EXAM COUNTDOWN</div>
+          <div id="countdownTimer" class="countdown-val">180 Days Remaining</div>
+        </div>
+
+        <!-- Overall Readiness Progress Card -->
+        <div class="overall-progress-card">
+          <div class="progress-header">
+            <span>Overall Syllabus Readiness</span>
+            <span id="overallProgressPct" class="progress-pct">0% (0/25 Topics)</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="overallProgressBar" class="progress-bar-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Search -->
+      <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search rules, codes, papers, topics...">
+      </div>
+
+      <!-- Paper & Section Navigation -->
+      <nav id="papersList" class="papers-nav"></nav>
+
+      <!-- Sidebar Footer Controls -->
+      <div class="sidebar-footer">
+        <button id="btnThemeToggle" onclick="toggleTheme()" class="btn-footer-secondary">🌓 Mode</button>
+        <div style="display: flex; gap: 6px;">
+          <button onclick="exportBackup()" class="btn-footer-accent" title="Export Notes & Progress Backup">💾 Export</button>
+          <label class="btn-footer-accent" style="cursor: pointer; margin: 0;" title="Import Notes & Progress Backup">
+            📥 Import
+            <input type="file" id="importFileInput" accept=".json" onchange="importBackup(event)" style="display: none;">
+          </label>
+        </div>
+      </div>
+    </aside>
+    <div id="sidebarBackdrop" class="sidebar-backdrop" onclick="toggleMobileSidebar()"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Sticky Audio Toolbar -->
+      <header class="audio-toolbar">
+        <button id="btnMobileMenu" class="btn-mobile-menu" onclick="toggleMobileSidebar()" title="Toggle Papers Menu">
+          ☰ Papers
+        </button>
+        <div class="audio-controls">
+          <button id="btnPlayAudio" class="btn-audio primary" onclick="playSpeech()">
+            <span class="btn-icon">🎧</span> <span id="playAudioLabel">Listen to Section</span>
+          </button>
+          <button id="btnPauseAudio" class="btn-audio" onclick="pauseSpeech()" title="Pause audio">
+            ⏸ Pause
+          </button>
+          <button id="btnStopAudio" class="btn-audio" onclick="stopSpeech()" title="Stop audio">
+            ⏹ Stop
+          </button>
+          <div id="audioVisualizer" class="audio-visualizer">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+          </div>
+        </div>
+
+        <!-- Audio Settings -->
+        <div class="audio-settings">
+          <label for="speedSelect" class="audio-label">Speed:</label>
+          <select id="speedSelect" class="select-control speed-select">
+            <option value="0.8">0.8x</option>
+            <option value="1.0" selected>1.0x</option>
+            <option value="1.2">1.2x</option>
+            <option value="1.4">1.4x</option>
+            <option value="1.6">1.6x</option>
+            <option value="2.0">2.0x</option>
+          </select>
+
+          <label for="voiceSelect" class="audio-label">Voice:</label>
+          <select id="voiceSelect" class="select-control voice-select"></select>
+        </div>
+      </header>
+
+      <!-- Content Scrollable Body -->
+      <div class="content-body">
+        <!-- Section Header Card -->
+        <section class="section-header-card">
+          <div class="header-top-row">
+            <span id="breadcrumbs" class="paper-breadcrumbs">PC-1 • Language Skills (Group I)</span>
+            <span id="weightagePill" class="weightage-pill">25-30 Marks</span>
+          </div>
+          <h2 id="sectionHeading" class="section-heading">Draft Paragraph & Audit Comments</h2>
+          
+          <!-- Fast Action Strip -->
+          <div class="action-strip">
+            <div class="status-selector-row">
+              <span class="status-label">Status:</span>
+              <select id="statusSelect" class="select-control status-select" onchange="onStatusChange(this.value)">
+                <option value="not_started">⬜ Not Started</option>
+                <option value="in-progress">🟡 In Progress</option>
+                <option value="completed">🟢 Mastered & Completed</option>
+                <option value="revision">⭐ High-Priority Revision</option>
+              </select>
+            </div>
+
+            <!-- Quick AI Action Buttons -->
+            <div class="ai-actions-group">
+              <button class="btn-ai-action summary-btn" onclick="triggerAISummary()" title="Generate or view high-yield AI summary">
+                <span class="sparkle">✨</span> Summary
+              </button>
+              <button class="btn-ai-action crux-btn" onclick="triggerAICrux()" title="Generate or view statutory crux material">
+                <span class="sparkle">📘</span> Crux Material
+              </button>
+              <button class="btn-ai-action edition-btn" onclick="openTextEdition()" title="Open editable text workspace">
+                <span class="sparkle">✍️</span> Text Edition
+              </button>
+              <button class="btn-ai-action tutor-btn" onclick="switchTab('tutor')" title="Ask AI Tutor any doubts on this section">
+                <span class="sparkle">🤖</span> Ask AI Tutor
+              </button>
+              <button class="btn-ai-action quiz-btn" onclick="triggerAIQuiz()" title="Generate SAS exam case studies & MCQs">
+                <span class="sparkle">🎯</span> Practice Quiz
+              </button>
+            </div>
+          </div>
+                </section>
+
+        <!-- Chapter Navigation Stepper Card -->
+        <div class="chapter-stepper-card">
+          <div class="chapter-stepper-top">
+            <div class="chapter-info-badge">
+              <span class="chapter-stepper-tag">CHAPTER</span>
+              <span id="chapterNumberBadge" class="chapter-num-pill">1 of 4</span>
+              <span id="chapterTitleHeader" class="chapter-title-text">Chapter 1: Title</span>
+            </div>
+            <div class="chapter-stepper-controls">
+              <button id="btnPrevChapterTop" class="btn-chapter-step" onclick="navigateChapter(-1)" title="Previous Chapter">
+                ◀ Previous Chapter
+              </button>
+              <button id="btnNextChapterTop" class="btn-chapter-step" onclick="navigateChapter(1)" title="Next Chapter">
+                Next Chapter ▶
+              </button>
+            </div>
+          </div>
+          <!-- Clickable Chapter Pills -->
+          <div id="chaptersTabList" class="chapter-pills-row"></div>
+        </div>
+
+        <!-- Navigation Tabs Bar -->
+        <div class="tabs-bar">
+          <button id="tabBtn_content" class="tab-btn active" onclick="switchTab('content')">📖 Whole Content</button>
+          <button id="tabBtn_summary" class="tab-btn" onclick="switchTab('summary')">⚡ Summary</button>
+          <button id="tabBtn_crux" class="tab-btn" onclick="switchTab('crux')">📘 Crux Material</button>
+          <button id="tabBtn_edition" class="tab-btn" onclick="switchTab('edition')">✍️ Text Edition</button>
+          <button id="tabBtn_coverage" class="tab-btn" onclick="switchTab('coverage')">🎯 What Exactly to Cover</button>
+          <button id="tabBtn_tutor" class="tab-btn" onclick="switchTab('tutor')">🤖 AI Tutor & Doubts</button>
+          <button id="tabBtn_flashcards" class="tab-btn" onclick="switchTab('flashcards')">💡 Flashcards & Quiz</button>
+          <button id="tabBtn_files" class="tab-btn" onclick="switchTab('files')">📂 Workspace Files</button>
+        </div>
+
+        <!-- Tab 1: Whole Content View -->
+        <div id="panel_content" class="tab-panel active">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <h3>📖 Whole Section Study Content</h3>
+              <div class="card-actions">
+                <button class="btn-small" onclick="readActiveText('wholeContent')">🔊 Read Aloud</button>
+                <button class="btn-small" onclick="copyText('wholeContent')">📋 Copy</button>
+              </div>
+            </div>
+            <div id="wholeContent" class="formatted-study-content"></div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Summary View -->
+        <div id="panel_summary" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <h3>⚡ High-Yield Exam Summary</h3>
+              <div class="card-actions">
+                <button class="btn-ai-pill" onclick="generateAISummary(true)">
+                  ✨ Regenerate with Gemini AI
+                </button>
+                <button class="btn-small" onclick="readActiveText('summaryContent')">🔊 Read Aloud</button>
+                <button class="btn-small" onclick="copyText('summaryContent')">📋 Copy</button>
+              </div>
+            </div>
+            <div id="summaryLoading" class="ai-loading-box" style="display: none;">
+              <div class="shimmer-pulse"></div>
+              <span>✨ Gemini AI is synthesizing high-yield Civil Accounts summary...</span>
+            </div>
+            <div id="summaryContent" class="formatted-study-content"></div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Crux Material View -->
+        <div id="panel_crux" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <h3>📘 Statutory Crux Material & Codal Citations</h3>
+              <div class="card-actions">
+                <button class="btn-ai-pill" onclick="generateAICrux(true)">
+                  ✨ Regenerate with Gemini AI
+                </button>
+                <button class="btn-small" onclick="readActiveText('cruxContent')">🔊 Read Aloud</button>
+                <button class="btn-small" onclick="copyText('cruxContent')">📋 Copy</button>
+              </div>
+            </div>
+            <div id="cruxLoading" class="ai-loading-box" style="display: none;">
+              <div class="shimmer-pulse"></div>
+              <span>✨ Gemini AI is formulating codal crux with statutory citations...</span>
+            </div>
+            <div id="cruxContent" class="formatted-study-content"></div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Text Edition Workspace -->
+        <div id="panel_edition" class="tab-panel">
+          <div class="study-card text-edition-card">
+            <div class="card-toolbar">
+              <div>
+                <h3>✍️ Text Edition (Editable Markdown Workspace)</h3>
+                <p class="sub-muted">Edit, customize, or append your own office notes and mnemonics. Persistent across sessions and saved to server cache.</p>
+              </div>
+              <div class="card-actions">
+                <button class="btn-ai-pill" onclick="aiEnrichTextEdition()">
+                  ✨ AI Enrich / Add Exam Points
+                </button>
+                <button class="btn-save-pill" onclick="saveTextEdition()">
+                  💾 Save Text Edition
+                </button>
+                <button class="btn-small" onclick="exportTextEdition()">
+                  📥 Download
+                </button>
+              </div>
+            </div>
+
+            <!-- Formatting Quick Bar -->
+            <div class="edition-toolbar">
+              <button class="tool-btn" onclick="insertFormatting('**', '**')" title="Bold"><strong>B</strong></button>
+              <button class="tool-btn" onclick="insertFormatting('*', '*')" title="Italic"><em>I</em></button>
+              <button class="tool-btn" onclick="insertFormatting('### ', '')" title="Header">H3</button>
+              <button class="tool-btn" onclick="insertFormatting('- ', '')" title="Bullet List">• List</button>
+              <button class="tool-btn" onclick="insertFormatting('1. ', '')" title="Numbered List">1. Numbered</button>
+              <button class="tool-btn" onclick="insertFormatting('> [!IMPORTANT] ', '')" title="Important Note">📌 Alert</button>
+              <button class="tool-btn" onclick="insertFormatting('`', '`')" title="Codal Rule / Code">Rule / Head</button>
+              <span id="editionStatusIndicator" class="edition-status">Saved</span>
+            </div>
+
+            <textarea id="textEditionInput" class="edition-textarea" placeholder="Load or write your custom text edition here..."></textarea>
+          </div>
+        </div>
+
+        <!-- Tab 5: What Exactly Needed to Cover Checklist -->
+        <div id="panel_coverage" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3>🎯 What Exactly Needed to be Covered in This Section</h3>
+                <p class="sub-muted">Tick off individual syllabus competencies as you prepare each topic.</p>
+              </div>
+              <span id="coverageProgressBadge" class="progress-pct">0% Checked</span>
+            </div>
+            <div id="whatToCoverChecklist" class="checklist-container"></div>
+          </div>
+        </div>
+
+        <!-- Tab 6: AI Tutor & Doubt Solver -->
+        <div id="panel_tutor" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3>🤖 AI Exam Tutor & Codal Doubt Solver</h3>
+                <p class="sub-muted">Powered by Gemini AI with complete knowledge of Civil Accounts, GFR 2017, CPWA Code, and MSO.</p>
+              </div>
+              <button class="btn-small" onclick="clearTutorChat()">🗑 Clear Chat</button>
+            </div>
+            
+            <div id="tutorChatBox" class="tutor-chat-box">
+              <div class="chat-message ai-message">
+                <div class="chat-avatar">🤖</div>
+                <div class="chat-bubble">
+                  <strong>Welcome, SAS Aspirant!</strong>
+                  <p>I am your specialized Civil Accounts AI Exam Mentor. You can ask me any doubt regarding rules, codal procedures, accounting entries (e.g. Form 26, CPWA suspense accounts), or how to frame answers for this section.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tutor-input-row">
+              <input type="text" id="tutorInput" class="tutor-input" placeholder="Ask a doubt... (e.g. What is the rule on mobilization advance in CPWA?)" onkeydown="if(event.key==='Enter') sendTutorQuestion()">
+              <button id="btnSendTutor" class="btn-send-tutor" onclick="sendTutorQuestion()">Ask AI</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 7: Flashcards & Practice Quiz -->
+        <div id="panel_flashcards" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3>💡 Key Terms, Flashcards & Practice Exam Questions</h3>
+                <p class="sub-muted">Active recall cards and AI-generated exam scenarios.</p>
+              </div>
+              <button class="btn-ai-pill" onclick="generateAIQuiz()">
+                ✨ Generate AI Exam Questions
+              </button>
+            </div>
+
+            <!-- Pre-defined Flashcards -->
+            <div id="flashcardsList" class="flashcards-grid"></div>
+
+            <!-- Dynamic AI Quiz Container -->
+            <div id="aiQuizContainer" style="margin-top: 24px; display: none;">
+              <h4 style="color: #38bdf8; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                <span>🎯</span> AI-Generated Exam Questions & Model Solutions
+              </h4>
+              <div id="aiQuizContent" class="formatted-study-content quiz-card-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 8: Workspace Files Reference -->
+        <div id="panel_files" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3>📂 Workspace Document & PDF References</h3>
+                <p class="sub-muted">Official reference files and government manuals located in your SAS Exam directory.</p>
+              </div>
+            </div>
+            <ul id="filesRefList" class="files-ref-list"></ul>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="curriculum_data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("sas_app_theme", next);
+    }
+    const savedTheme = localStorage.getItem("sas_app_theme");
+    if (savedTheme) {
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+  </script>
+  <script>
+    function toggleMobileSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const backdrop = document.getElementById('sidebarBackdrop');
+      if (sidebar && backdrop) {
+        sidebar.classList.toggle('mobile-open');
+        backdrop.classList.toggle('active');
+      }
+    }
+
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+          .then(reg => console.log("[PWA] Service Worker registered:", reg.scope))
+          .catch(err => console.log("[PWA] Service Worker registration notice:", err));
+      });
+    }
+  </script>
+</body>
+</html>
