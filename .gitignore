@@ -1,0 +1,6 @@
+# Local server caches and raw data
+ai_cache/
+data/
+__pycache__/
+*.pyc
+.DS_Store
