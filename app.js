@@ -20,6 +20,11 @@ let summaryMode = "chapter"; // "chapter" or "section"
 // Standalone Direct Gemini AI Caller (Used on Mobile Phone when PC / start_app.py is offline)
 const GEMINI_DIRECT_KEY = localStorage.getItem("sas_gemini_api_key") || 
   atob("QVEuQWI4Uk42SkJFRHRfMzFRcDFENmdOR2R4cHloLWpMNkhGbkZnbTVuUHBhclctUDM2Q3c=");
+
+// Detect if running on GitHub Pages / any cloud host (no local Python backend available)
+const IS_CLOUD_HOSTED = !window.location.hostname.includes("localhost") && 
+                         !window.location.hostname.includes("127.0.0.1") &&
+                         !/^\d+\.\d+\.\d+\.\d+$/.test(window.location.hostname);
 async function callDirectGeminiAPI(prompt, systemInstruction = "") {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_DIRECT_KEY}`;
   const payload = {
@@ -607,7 +612,33 @@ async function generateAISummary(forceRefresh = false) {
   const effKey = `${section.id}_${chapter.id}`;
   const loadingEl = document.getElementById("summaryLoading");
 
+  // Return cached result if available
+  if (!forceRefresh && userStore.aiSummaries[effKey]) {
+    summaryContentEl.innerHTML = `<div class="alert-box success"><strong>✨ AI Summary for ${chapter.title} (Cached):</strong></div>` + formatMarkdown(userStore.aiSummaries[effKey]);
+    return;
+  }
+
   loadingEl.style.display = "flex";
+  summaryContentEl.innerHTML = "";
+
+  // On GitHub Pages / cloud: call Gemini directly without local Python backend
+  if (IS_CLOUD_HOSTED) {
+    try {
+      const sysPrompt = "You are an expert exam mentor and senior audit officer specializing in the Indian Audit & Accounts Department (IA&AD) SAS Examination for Civil Accounts. Provide an authoritative, high-yield, structured executive summary designed for rapid exam revision.";
+      const userPrompt = `Generate an exam-focused, high-yield summary for SAS Paper ${paper.paperCode} - ${section.title} (${chapter.title}):\n\n${chapter.content.slice(0, 8000)}`;
+      const result = await callDirectGeminiAPI(userPrompt, sysPrompt);
+      loadingEl.style.display = "none";
+      userStore.aiSummaries[effKey] = result;
+      saveUserProgress();
+      summaryContentEl.innerHTML = `<div class="alert-box success"><strong>✨ Gemini AI Summary for ${chapter.title}:</strong></div>` + formatMarkdown(result);
+    } catch(err) {
+      loadingEl.style.display = "none";
+      summaryContentEl.innerHTML = `<div class="alert-box warning"><strong>⚠️ Error:</strong> ${err.message || "Please check your internet connection."}</div>`;
+    }
+    return;
+  }
+
+  // On local PC: use Python backend
   try {
     const res = await fetch("/api/generate-summary", {
       method: "POST",
@@ -637,24 +668,8 @@ async function generateAISummary(forceRefresh = false) {
       alert("AI Summary generation notice: " + (data.error || "Unable to reach Gemini API."));
     }
   } catch(err) {
-    console.warn("Local backend unreachable, falling back to Direct Gemini API on phone...", err);
-    try {
-      const sysPrompt = "You are an expert exam mentor and senior audit officer specializing in the Indian Audit & Accounts Department (IA&AD) SAS Examination for Civil Accounts. Provide an authoritative, high-yield, structured executive summary designed for rapid exam revision.";
-      const userPrompt = `Generate an exam-focused, high-yield summary for SAS Paper ${paper.paperCode} - ${section.title} (${chapter.title}):\n\n${chapter.content.slice(0, 8000)}`;
-      const directResult = await callDirectGeminiAPI(userPrompt, sysPrompt);
-      loadingEl.style.display = "none";
-      userStore.aiSummaries[effKey] = directResult;
-      saveUserProgress();
-      summaryContentEl.innerHTML = `
-        <div class="alert-box success">
-          <strong>✨ Gemini AI Summary for ${chapter.title} (Direct Mobile Cloud):</strong>
-        </div>
-      ` + formatMarkdown(directResult);
-    } catch(directErr) {
-      loadingEl.style.display = "none";
-      console.error("Direct Gemini error:", directErr);
-      alert("Unable to reach Gemini API. Please check internet connection.");
-    }
+    loadingEl.style.display = "none";
+    summaryContentEl.innerHTML = `<div class="alert-box warning"><strong>⚠️ Backend unreachable:</strong> Please ensure start_app.py is running.</div>`;
   }
 }
 
@@ -664,6 +679,30 @@ async function generateAICrux(forceRefresh = false) {
   const chapter = section.chapters[currentChapterIndex];
   const effKey = `${section.id}_${chapter.id}`;
   const loadingEl = document.getElementById("cruxLoading");
+
+  if (!forceRefresh && userStore.aiCrux[effKey]) {
+    cruxContentEl.innerHTML = `<div class="alert-box info"><strong>🎯 AI Codal Crux for ${chapter.title} (Cached):</strong></div>` + formatMarkdown(userStore.aiCrux[effKey]);
+    return;
+  }
+
+  loadingEl.style.display = "flex";
+  cruxContentEl.innerHTML = "";
+
+  if (IS_CLOUD_HOSTED) {
+    try {
+      const sysPrompt = "You are a senior director of audit and chief examiner for the Subordinate Audit/Accounts Service (SAS) Civil Accounts examination. Extract the absolute codal crux, vital thresholds, time limits, and memory hooks.";
+      const userPrompt = `Extract the vital examination crux, time limits, and thresholds for SAS Paper ${paper.paperCode} - ${section.title} (${chapter.title}):\n\n${chapter.content.slice(0, 8000)}`;
+      const result = await callDirectGeminiAPI(userPrompt, sysPrompt);
+      loadingEl.style.display = "none";
+      userStore.aiCrux[effKey] = result;
+      saveUserProgress();
+      cruxContentEl.innerHTML = `<div class="alert-box info"><strong>🎯 Gemini AI Codal Crux for ${chapter.title}:</strong></div>` + formatMarkdown(result);
+    } catch(err) {
+      loadingEl.style.display = "none";
+      cruxContentEl.innerHTML = `<div class="alert-box warning"><strong>⚠️ Error:</strong> ${err.message || "Please check your internet connection."}</div>`;
+    }
+    return;
+  }
 
   loadingEl.style.display = "flex";
   try {
@@ -751,6 +790,20 @@ async function aiEnrichTextEdition() {
   const currentVal = textEditionInputEl.value;
   
   editionStatusIndicatorEl.textContent = "✨ Gemini AI is analyzing and adding exam points...";
+
+  const doDirectEnrich = async () => {
+    const prompt = `Review these chapter notes for SAS Paper ${SAS_CURRICULUM[currentPaperIndex].paperCode} (${section.title} - ${chapter.title}) and append: (1) 3 critical Rule/Codal numbers, (2) One practical audit trap or caveat, and (3) A 1-line memory mnemonic.\n\nNotes:\n` + currentVal;
+    const res = await callDirectGeminiAPI(prompt, "You are an expert exam mentor for the IA&AD SAS Civil Accounts examination.");
+    textEditionInputEl.value = currentVal + "\n\n### 🌟 AI Exam Enrichments & Statutory Citations\n" + res;
+    saveTextEdition();
+    editionStatusIndicatorEl.textContent = "Enriched & Saved!";
+  };
+
+  if (IS_CLOUD_HOSTED) {
+    try { await doDirectEnrich(); } catch(e) { editionStatusIndicatorEl.textContent = "AI enrichment failed: " + (e.message || ""); }
+    return;
+  }
+
   try {
     const res = await fetch("/api/ask-ai", {
       method: "POST",
@@ -769,15 +822,7 @@ async function aiEnrichTextEdition() {
       editionStatusIndicatorEl.textContent = "Enriched & Saved!";
     }
   } catch(e) {
-    try {
-      const prompt = `Review these chapter notes for SAS Paper ${SAS_CURRICULUM[currentPaperIndex].paperCode} (${section.title} - ${chapter.title}) and append: (1) 3 critical Rule/Codal numbers often tested, (2) One practical audit trap or caveat, and (3) A 1-line memory mnemonic.\n\nNotes:\n` + currentVal;
-      const res = await callDirectGeminiAPI(prompt, "You are an expert exam mentor for the IA&AD SAS Civil Accounts examination.");
-      textEditionInputEl.value = currentVal + "\n\n### 🌟 AI Exam Enrichments & Statutory Citations (Direct Cloud)\n" + res;
-      saveTextEdition();
-      editionStatusIndicatorEl.textContent = "Enriched & Saved (Direct Cloud)!";
-    } catch(err2) {
-      editionStatusIndicatorEl.textContent = "AI enrichment failed.";
-    }
+    try { await doDirectEnrich(); } catch(err2) { editionStatusIndicatorEl.textContent = "AI enrichment failed."; }
   }
 }
 
@@ -902,6 +947,17 @@ async function generateAIQuiz() {
   aiQuizContainer.style.display = "block";
   aiQuizContent.innerHTML = "<p>✨ Gemini AI is generating 3 high-yield SAS Civil Accounts exam questions (MCQ + Case Study + Short Note)...</p>";
 
+  const doDirectQuiz = async () => {
+    const prompt = `Generate 3 high-yield SAS Civil Accounts exam questions for SAS Paper ${paper.paperCode} - ${section.title} (${chapter.title}): (1) MCQ with 4 options and explanation, (2) Practical Audit Scenario/Case Study with model answer, (3) Short Note question with model answer.\n\nContext:\n${chapter.content.slice(0, 8000)}`;
+    const res = await callDirectGeminiAPI(prompt, "You are a senior director of audit and chief examiner for the IA&AD SAS Civil Accounts examination.");
+    aiQuizContent.innerHTML = `<div class="alert-box success"><strong>✨ Gemini AI Practice Quiz:</strong></div>` + formatMarkdown(res);
+  };
+
+  if (IS_CLOUD_HOSTED) {
+    try { await doDirectQuiz(); } catch(err) { aiQuizContent.innerHTML = `<p style="color: var(--danger);">Quiz failed: ${err.message || "Check internet connection."}</p>`; }
+    return;
+  }
+
   try {
     const res = await fetch("/api/generate-quiz", {
       method: "POST",
@@ -919,13 +975,7 @@ async function generateAIQuiz() {
       aiQuizContent.innerHTML = `<p style="color: var(--danger);">Error generating quiz: ${data.error}</p>`;
     }
   } catch(err) {
-    try {
-      const prompt = `Generate 3 high-yield SAS Civil Accounts examination questions (1 MCQ with detailed explanation, 1 practical Case Study / Audit Scenario, and 1 Short Note question with model answer key) for SAS Paper ${paper.paperCode} - ${section.title} (${chapter.title}):\n\n${chapter.content.slice(0, 8000)}`;
-      const res = await callDirectGeminiAPI(prompt, "You are a senior director of audit and chief examiner for the IA&AD Subordinate Audit/Accounts Service (SAS) Civil Accounts examination.");
-      aiQuizContent.innerHTML = `<div class="alert-box success"><strong>✨ Gemini AI Practice Quiz (Direct Cloud):</strong></div>` + formatMarkdown(res);
-    } catch(err2) {
-      aiQuizContent.innerHTML = `<p style="color: var(--danger);">Unable to generate quiz. Please check internet connection.</p>`;
-    }
+    try { await doDirectQuiz(); } catch(err2) { aiQuizContent.innerHTML = `<p style="color: var(--danger);">Unable to generate quiz. Please check internet connection.</p>`; }
   }
 }
 
@@ -967,6 +1017,18 @@ async function sendTutorQuestion() {
   tutorChatBoxEl.appendChild(aiMsg);
   tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
 
+  const doDirectChat = async () => {
+    const prompt = `User Question: ${q}\n\nContext (${paper.paperCode} - ${section.title}: ${chapter.title}):\n${chapter.content.slice(0, 7000)}`;
+    const res = await callDirectGeminiAPI(prompt, "You are an authoritative, helpful AI Mentor and Senior Audit Officer for the IA&AD SAS Examination (Civil Accounts). Answer clearly with relevant rules, codal procedures, accounting entries, and exam tips.");
+    aiMsg.querySelector(".chat-bubble").innerHTML = formatMarkdown(res);
+  };
+
+  if (IS_CLOUD_HOSTED) {
+    try { await doDirectChat(); } catch(err) { aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">AI Mentor error: ${err.message || "Check internet connection."}</span>`; }
+    tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
+    return;
+  }
+
   try {
     const res = await fetch("/api/ask-ai", {
       method: "POST",
@@ -985,13 +1047,7 @@ async function sendTutorQuestion() {
       aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">Error: ${d.error}</span>`;
     }
   } catch(err) {
-    try {
-      const prompt = `User Question: ${q}\n\nChapter Context (${paper.paperCode} - ${section.title}: ${chapter.title}):\n${chapter.content.slice(0, 7000)}`;
-      const res = await callDirectGeminiAPI(prompt, "You are an authoritative, helpful AI Mentor and Senior Audit Officer for the IA&AD SAS Examination (Civil Accounts). Answer clearly with relevant rules, codal procedures, accounting entries, and exam tips.");
-      aiMsg.querySelector(".chat-bubble").innerHTML = formatMarkdown(res);
-    } catch(err2) {
-      aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">Unable to connect to AI mentor. Please check internet connection.</span>`;
-    }
+    try { await doDirectChat(); } catch(err2) { aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">Unable to connect to AI mentor. Please check internet connection.</span>`; }
   }
   tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
 }
@@ -1010,19 +1066,31 @@ function initSpeechSynthesis() {
     const voiceSelect = document.getElementById("voiceSelect");
     if (!voiceSelect) return;
     const voices = window.speechSynthesis.getVoices();
+    if (!voices || voices.length === 0) return;
+    const prevVal = voiceSelect.value;
     voiceSelect.innerHTML = "";
-    voices.filter(v => v.lang.startsWith("en")).forEach((v, idx) => {
+    const enVoices = voices.filter(v => v.lang.startsWith("en"));
+    const displayVoices = enVoices.length > 0 ? enVoices : voices;
+    displayVoices.forEach((v) => {
       const opt = document.createElement("option");
-      opt.value = idx;
+      opt.value = voices.indexOf(v);
       opt.textContent = `${v.name} (${v.lang})`;
+      if (v.lang === "en-IN") opt.selected = true;
       voiceSelect.appendChild(opt);
     });
+    if (prevVal && voiceSelect.querySelector(`[value="${prevVal}"]`)) {
+      voiceSelect.value = prevVal;
+    }
   }
 
   populateVoices();
   if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = populateVoices;
   }
+  // Mobile browsers load voices async - retry
+  setTimeout(populateVoices, 300);
+  setTimeout(populateVoices, 1000);
+  setTimeout(populateVoices, 2500);
 }
 
 function readActiveText(containerId) {
@@ -1074,8 +1142,13 @@ function playSpeechText(rawText) {
   
   const voiceSelect = document.getElementById("voiceSelect");
   const voices = window.speechSynthesis.getVoices();
-  if (voices && voiceSelect && voices[voiceSelect.value]) {
-    speechUtterance.voice = voices[voiceSelect.value];
+  const selectedIdx = voiceSelect ? parseInt(voiceSelect.value) : -1;
+  if (voices && voices.length > 0 && selectedIdx >= 0 && voices[selectedIdx]) {
+    speechUtterance.voice = voices[selectedIdx];
+  } else if (voices && voices.length > 0) {
+    // fallback: find en-IN or first English voice
+    const fallbackVoice = voices.find(v => v.lang === "en-IN") || voices.find(v => v.lang.startsWith("en")) || voices[0];
+    speechUtterance.voice = fallbackVoice;
   }
 
   const speedSelect = document.getElementById("speedSelect");
