@@ -26,7 +26,7 @@ const IS_CLOUD_HOSTED = !window.location.hostname.includes("localhost") &&
                          !window.location.hostname.includes("127.0.0.1") &&
                          !/^\d+\.\d+\.\d+\.\d+$/.test(window.location.hostname);
 async function callDirectGeminiAPI(prompt, systemInstruction = "") {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_DIRECT_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${GEMINI_DIRECT_KEY}`;
   const payload = {
     contents: [{ parts: [{ text: prompt }] }]
   };
