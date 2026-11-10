@@ -1333,17 +1333,44 @@ window.addEventListener("DOMContentLoaded", initApp);
 
 
 // ==========================================
+// ==========================================
 // INTERACTIVE CHAPTER & CPWA QUIZZER SYSTEM
+// Supports: Chapter Quiz, Section Quiz, Paper Mock, CPWA Mock
 // ==========================================
 
+let activeQuizScope = "chapter"; // "chapter", "section", "paper", "cpwa"
 let activeQuizState = {
-  chapterId: null,
+  scope: "chapter",
+  scopeId: null,
   questions: [],
-  userSelections: {}, // questionIndex -> selectedOptionIndex (0-3)
+  userSelections: {}, // qIdx -> selectedOptionIndex (0-3)
   isSubmitted: false
 };
 
+function switchQuizScope(scope) {
+  activeQuizScope = scope;
+  ["chapter", "section", "paper", "cpwa"].forEach(s => {
+    const pill = document.getElementById(`quizScope_${s}`);
+    if (pill) pill.classList.toggle("active", s === scope);
+  });
+
+  if (scope === "chapter") {
+    loadChapterQuiz(true);
+  } else if (scope === "section") {
+    loadSectionQuiz(true);
+  } else if (scope === "paper") {
+    loadPaperQuiz(true);
+  } else if (scope === "cpwa") {
+    loadCpwaBonusQuiz();
+  }
+}
+
+function resetActiveQuiz() {
+  switchQuizScope(activeQuizScope);
+}
+
 function loadChapterQuiz(forceReset = false) {
+  activeQuizScope = "chapter";
   const paper = SAS_CURRICULUM[currentPaperIndex];
   if (!paper || !paper.sections) return;
   const section = paper.sections[currentSectionIndex];
@@ -1354,43 +1381,25 @@ function loadChapterQuiz(forceReset = false) {
   const headerTitle = document.getElementById("quizHeaderTitle");
   const subTitle = document.getElementById("quizSubTitle");
   if (headerTitle) headerTitle.textContent = `🎯 Chapter Quiz: ${chapter.title}`;
-  if (subTitle) subTitle.textContent = `Paper ${paper.paperCode} • ${section.title}. Select your answers and click "Submit Quiz" at the bottom to view results and codal citations.`;
+  if (subTitle) subTitle.textContent = `Paper ${paper.paperCode} • ${section.title}. Practicing specific questions for Subtopic ${currentChapterIndex + 1}.`;
 
-  // Check if we need to reset state
-  if (forceReset || activeQuizState.chapterId !== chapter.id) {
+  ["chapter", "section", "paper", "cpwa"].forEach(s => {
+    const pill = document.getElementById(`quizScope_${s}`);
+    if (pill) pill.classList.toggle("active", s === "chapter");
+  });
+
+  const scopeKey = `ch_${chapter.id}`;
+  if (forceReset || activeQuizState.scopeId !== scopeKey) {
     let qList = [];
     if (window.SAS_QUIZ_BANK && window.SAS_QUIZ_BANK[chapter.id]) {
       qList = window.SAS_QUIZ_BANK[chapter.id];
     } else {
-      // Fallback questions derived from chapter
-      qList = [
-        {
-          q: `In the context of ${paper.paperCode}, what is the statutory standard governing ${chapter.title}?`,
-          opts: [
-            "Strict compliance with authorized Codal rules, GFR, and CAG Regulations",
-            "Discretionary informal practices without codal support",
-            "Exclusively corporate private auditing guidelines",
-            "Informal departmental notes without documentation"
-          ],
-          ans: 0,
-          hint: "All public accounting and audit operations must conform strictly to authorized codal and statutory baselines."
-        },
-        {
-          q: `Which authority holds primary responsibility for verifying compliance in this subject area?`,
-          opts: [
-            "Accountant General / Pay and Accounts Officer per statutory rules",
-            "Unauthorized third-party commercial consultants",
-            "Private banking entities without government authorization",
-            "Informal peer committees"
-          ],
-          ans: 0,
-          hint: "The Accountant General (A&E/Audit) and PAOs hold direct constitutional and codal accountability."
-        }
-      ];
+      qList = getFallbackQuestions(paper.paperCode, chapter.title);
     }
 
     activeQuizState = {
-      chapterId: chapter.id,
+      scope: "chapter",
+      scopeId: scopeKey,
       questions: qList,
       userSelections: {},
       isSubmitted: false
@@ -1400,20 +1409,104 @@ function loadChapterQuiz(forceReset = false) {
   renderInteractiveQuiz();
 }
 
+function loadSectionQuiz(forceReset = false) {
+  activeQuizScope = "section";
+  const paper = SAS_CURRICULUM[currentPaperIndex];
+  if (!paper || !paper.sections) return;
+  const section = paper.sections[currentSectionIndex];
+  if (!section) return;
+
+  const chapters = section.chapters || [];
+  const headerTitle = document.getElementById("quizHeaderTitle");
+  const subTitle = document.getElementById("quizSubTitle");
+  
+  ["chapter", "section", "paper", "cpwa"].forEach(s => {
+    const pill = document.getElementById(`quizScope_${s}`);
+    if (pill) pill.classList.toggle("active", s === "section");
+  });
+
+  // Aggregate questions across ALL chapters in this section
+  let combinedQs = [];
+  chapters.forEach(ch => {
+    if (window.SAS_QUIZ_BANK && window.SAS_QUIZ_BANK[ch.id]) {
+      combinedQs = combinedQs.concat(window.SAS_QUIZ_BANK[ch.id]);
+    }
+  });
+
+  if (headerTitle) headerTitle.textContent = `📚 Whole Section Quiz: ${section.title} (${combinedQs.length} Questions)`;
+  if (subTitle) subTitle.textContent = `Paper ${paper.paperCode} • Aggregated across all ${chapters.length} subtopics in this section. Answer all and submit to view your section score.`;
+
+  const scopeKey = `sec_${section.id}`;
+  if (forceReset || activeQuizState.scopeId !== scopeKey) {
+    activeQuizState = {
+      scope: "section",
+      scopeId: scopeKey,
+      questions: combinedQs,
+      userSelections: {},
+      isSubmitted: false
+    };
+  }
+
+  renderInteractiveQuiz();
+}
+
+function loadPaperQuiz(forceReset = false) {
+  activeQuizScope = "paper";
+  const paper = SAS_CURRICULUM[currentPaperIndex];
+  if (!paper || !paper.sections) return;
+
+  const headerTitle = document.getElementById("quizHeaderTitle");
+  const subTitle = document.getElementById("quizSubTitle");
+
+  ["chapter", "section", "paper", "cpwa"].forEach(s => {
+    const pill = document.getElementById(`quizScope_${s}`);
+    if (pill) pill.classList.toggle("active", s === "paper");
+  });
+
+  // Aggregate questions across ALL sections of this Paper
+  let paperQs = [];
+  paper.sections.forEach(sec => {
+    (sec.chapters || []).forEach(ch => {
+      if (window.SAS_QUIZ_BANK && window.SAS_QUIZ_BANK[ch.id]) {
+        paperQs = paperQs.concat(window.SAS_QUIZ_BANK[ch.id]);
+      }
+    });
+  });
+
+  if (headerTitle) headerTitle.textContent = `🎓 Full Paper Mock: ${paper.paperCode} - ${paper.paperTitle} (${paperQs.length} Questions)`;
+  if (subTitle) subTitle.textContent = `Complete mock examination testing all sections and subtopics of ${paper.paperCode}. Select answers and click Submit.`;
+
+  const scopeKey = `paper_${paper.paperCode}`;
+  if (forceReset || activeQuizState.scopeId !== scopeKey) {
+    activeQuizState = {
+      scope: "paper",
+      scopeId: scopeKey,
+      questions: paperQs,
+      userSelections: {},
+      isSubmitted: false
+    };
+  }
+
+  renderInteractiveQuiz();
+}
+
 function loadCpwaBonusQuiz() {
+  activeQuizScope = "cpwa";
   const headerTitle = document.getElementById("quizHeaderTitle");
   const subTitle = document.getElementById("quizSubTitle");
   if (headerTitle) headerTitle.textContent = `🏗️ CPWA & Forest Accounts Mock Test (SASQuizzer APK - 99 Questions)`;
   if (subTitle) subTitle.textContent = `Imported directly from SASQuizzer APK. Complete exam test bank covering Divisional Accountant responsibilities, CPWA forms, MBs, cash books, and deposit works.`;
 
+  ["chapter", "section", "paper", "cpwa"].forEach(s => {
+    const pill = document.getElementById(`quizScope_${s}`);
+    if (pill) pill.classList.toggle("active", s === "cpwa");
+  });
+
   let cpwaQs = (window.SAS_QUIZ_BANK && window.SAS_QUIZ_BANK["cpwa_pc16_bonus"]) ? window.SAS_QUIZ_BANK["cpwa_pc16_bonus"] : [];
-  if (cpwaQs.length === 0) {
-    alert("CPWA bonus questions not loaded.");
-    return;
-  }
 
   activeQuizState = {
-    chapterId: "cpwa_pc16_bonus",
+    scope: "cpwa",
+    scopeId: "cpwa_pc16_bonus",
     questions: cpwaQs,
     userSelections: {},
     isSubmitted: false
@@ -1421,6 +1514,33 @@ function loadCpwaBonusQuiz() {
 
   switchTab("quiz");
   renderInteractiveQuiz();
+}
+
+function getFallbackQuestions(paperCode, title) {
+  return [
+    {
+      q: `In the context of ${paperCode}, what is the statutory standard governing ${title}?`,
+      opts: [
+        "Strict compliance with authorized Codal rules, GFR, and CAG Regulations",
+        "Discretionary informal practices without codal support",
+        "Exclusively corporate private auditing guidelines",
+        "Informal departmental notes without documentation"
+      ],
+      ans: 0,
+      hint: "All public accounting and audit operations must conform strictly to authorized codal and statutory baselines."
+    },
+    {
+      q: `Which authority holds primary responsibility for verifying compliance in this subject area?`,
+      opts: [
+        "Accountant General / Pay and Accounts Officer per statutory rules",
+        "Unauthorized third-party commercial consultants",
+        "Private banking entities without government authorization",
+        "Informal peer committees"
+      ],
+      ans: 0,
+      hint: "The Accountant General (A&E/Audit) and PAOs hold direct constitutional and codal accountability."
+    }
+  ];
 }
 
 function renderInteractiveQuiz() {
@@ -1453,7 +1573,7 @@ function renderInteractiveQuiz() {
   }
 
   if (questions.length === 0) {
-    container.innerHTML = `<p style="color: var(--text-muted); text-align: center; padding: 30px;">No quiz questions found for this chapter.</p>`;
+    container.innerHTML = `<p style="color: var(--text-muted); text-align: center; padding: 30px;">No quiz questions found for this selection.</p>`;
     return;
   }
 
@@ -1497,7 +1617,6 @@ function renderInteractiveQuiz() {
     q.opts.forEach((optText, oIdx) => {
       const isSelected = userSel === oIdx;
       let optStyle = "padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 10px;";
-      let optClass = "quiz-option-row";
 
       if (!isSubmitted) {
         if (isSelected) {
@@ -1506,7 +1625,6 @@ function renderInteractiveQuiz() {
           optStyle += " background: rgba(255,255,255,0.03);";
         }
       } else {
-        // After submission: reveal correct and wrong
         if (oIdx === q.ans) {
           optStyle += " background: rgba(16, 185, 129, 0.2); border-color: #10b981; color: #34d399; font-weight: 700;";
         } else if (isSelected && oIdx !== q.ans) {
@@ -1531,7 +1649,6 @@ function renderInteractiveQuiz() {
 
     html += `</div>`;
 
-    // Show codal hint/explanation after submission
     if (isSubmitted && q.hint) {
       html += `
         <div style="margin-top: 12px; padding: 10px 14px; border-radius: 8px; background: rgba(56, 189, 248, 0.08); border-left: 3px solid #38bdf8; font-size: 0.88rem; color: #94a3b8;">
@@ -1566,42 +1683,6 @@ function submitInteractiveQuiz() {
   activeQuizState.isSubmitted = true;
   renderInteractiveQuiz();
 
-  // Scroll smoothly to top of quiz container to show score banner
   const banner = document.getElementById("quizResultBanner");
   if (banner) banner.scrollIntoView({ behavior: "smooth", block: "center" });
-}
-
-
-// ==========================================
-// UMBRELLA SUB-TAB NAVIGATION HANDLERS
-// ==========================================
-
-function switchAiSubTab(subId) {
-  const subViews = ["summary", "crux", "tutor", "cards"];
-  subViews.forEach(v => {
-    const btn = document.getElementById(`aiSubTab_${v}`);
-    const view = document.getElementById(`aiSubView_${v}`);
-    if (btn) btn.classList.remove("active");
-    if (view) view.style.display = "none";
-  });
-
-  const targetBtn = document.getElementById(`aiSubTab_${subId}`);
-  const targetView = document.getElementById(`aiSubView_${subId}`);
-  if (targetBtn) targetBtn.classList.add("active");
-  if (targetView) targetView.style.display = "block";
-}
-
-function switchNotesSubTab(subId) {
-  const subViews = ["editor", "coverage"];
-  subViews.forEach(v => {
-    const btn = document.getElementById(`notesSubTab_${v}`);
-    const view = document.getElementById(`notesSubView_${v}`);
-    if (btn) btn.classList.remove("active");
-    if (view) view.style.display = "none";
-  });
-
-  const targetBtn = document.getElementById(`notesSubTab_${subId}`);
-  const targetView = document.getElementById(`notesSubView_${subId}`);
-  if (targetBtn) targetBtn.classList.add("active");
-  if (targetView) targetView.style.display = "block";
 }
