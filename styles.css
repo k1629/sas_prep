@@ -1326,278 +1326,139 @@ body {
   gap: 8px;
 }
 
-
-
-/* ==============================================================================
-   Mobile & Responsive Styles (Phone PWA & Small Screens)
-   ============================================================================== */
-.btn-mobile-menu {
-  display: none;
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  border-radius: var(--radius-sm);
-  padding: 6px 12px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  align-items: center;
-  gap: 6px;
-  margin-right: 8px;
-  flex-shrink: 0;
-}
-
-.sidebar-backdrop {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 99;
-  backdrop-filter: blur(2px);
-}
-
-.sidebar-backdrop.active {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .btn-mobile-menu {
-    display: inline-flex;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    z-index: 100;
-    transform: translateX(-100%);
-    transition: transform 0.25s ease-in-out;
-    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
-  }
-
-  .sidebar.mobile-open {
-    transform: translateX(0);
-  }
-
-  .main-content {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .audio-toolbar {
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 10px 12px;
-  }
-
-  .audio-controls {
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .audio-settings {
-    margin-left: 0;
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  .section-header-card {
-    padding: 14px;
-  }
-
-  .action-strip {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .ai-actions-group {
-    width: 100%;
-    overflow-x: auto;
-    padding-bottom: 4px;
-    flex-wrap: nowrap;
-  }
-
-  .chapter-stepper-card {
-    padding: 12px 14px;
-  }
-
-  .chapter-stepper-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .chapter-stepper-controls {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .chapter-pills-row {
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .chapter-pill-btn {
-    font-size: 0.78rem;
-    padding: 6px 10px;
-  }
-
-  .tabs-bar {
-    overflow-x: auto;
-    padding: 6px 12px;
-    flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .tab-btn {
-    padding: 6px 10px;
-    font-size: 0.78rem;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-}
-
-
-/* ==========================================================================
-   AI COACH & UMBRELLA SUB-TABS RESPONSIVE & SCROLLING ENHANCEMENTS
-   ========================================================================== */
-
-/* Sub-Tab Navigation Pills Strip */
-.subtabs-strip {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 18px;
-  background: rgba(15, 23, 42, 0.7);
-  padding: 8px 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-}
-
-.subtabs-strip::-webkit-scrollbar {
-  height: 4px;
-}
-
-.subtabs-strip::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-}
-
-.subtabs-strip .btn-small {
-  white-space: nowrap;
-  flex-shrink: 0;
-  font-weight: 600;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--text-muted);
-  border: 1px solid transparent;
-}
-
-.subtabs-strip .btn-small:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text-main);
-}
-
-.subtabs-strip .btn-small.active {
-  background: var(--primary);
-  color: #ffffff;
-  border-color: var(--primary-light);
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
-}
-
-/* AI Sub-Views Container with Smooth Scrolling */
-.ai-sub-view, .notes-sub-view {
-  animation: fadeInSubView 0.2s ease-in-out;
-  overflow-y: auto;
-  max-width: 100%;
-}
-
-@keyframes fadeInSubView {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* AI Tutor Chat Box Responsive Scrolling */
-.tutor-chat-box {
-  min-height: 280px;
-  max-height: 480px;
-  height: clamp(300px, 50vh, 500px);
-  overflow-y: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 16px;
-  background: var(--bg-card-subtle);
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 14px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.tutor-input-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.tutor-input {
-  flex: 1;
-  min-width: 0;
-  padding: 12px 14px;
-  font-size: 0.95rem;
-}
-
-.btn-send-tutor {
-  flex-shrink: 0;
-  padding: 12px 20px;
-}
-
-/* Mobile responsive refinements for AI Tabs */
-@media (max-width: 768px) {
-  .subtabs-strip {
-    padding: 6px 8px;
-    gap: 6px;
-  }
-
-  .subtabs-strip .btn-small {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-  }
-
-  .tutor-chat-box {
-    height: 340px;
-    padding: 12px;
-  }
-
-  .chat-bubble {
-    font-size: 0.88rem;
-    padding: 10px 12px;
-  }
-
-  .tutor-input-row {
-    flex-direction: row;
-    gap: 6px;
-  }
-
-  .tutor-input {
-    padding: 10px 12px;
-    font-size: 0.88rem;
-  }
-
-  .btn-send-tutor {
-    padding: 10px 14px;
-    font-size: 0.88rem;
-  }
-}
+
+
+/* ==============================================================================
+   Mobile & Responsive Styles (Phone PWA & Small Screens)
+   ============================================================================== */
+.btn-mobile-menu {
+  display: none;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  gap: 6px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  backdrop-filter: blur(2px);
+}
+
+.sidebar-backdrop.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .btn-mobile-menu {
+    display: inline-flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease-in-out;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .audio-toolbar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .audio-controls {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .audio-settings {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .section-header-card {
+    padding: 14px;
+  }
+
+  .action-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ai-actions-group {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    flex-wrap: nowrap;
+  }
+
+  .chapter-stepper-card {
+    padding: 12px 14px;
+  }
+
+  .chapter-stepper-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .chapter-stepper-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .chapter-pills-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .chapter-pill-btn {
+    font-size: 0.78rem;
+    padding: 6px 10px;
+  }
+
+  .tabs-bar {
+    overflow-x: auto;
+    padding: 6px 12px;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab-btn {
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
