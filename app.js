@@ -580,7 +580,8 @@ function toggleChapterCompleted(isCompleted) {
 }
 
 function triggerAISummary() {
-  switchTab('summary');
+  switchTab('ai_coach');
+  switchAiSubTab('summary');
   const section = SAS_CURRICULUM[currentPaperIndex].sections[currentSectionIndex];
   const chapter = section.chapters[currentChapterIndex];
   const effKey = `${section.id}_${chapter.id}`;
@@ -591,7 +592,8 @@ function triggerAISummary() {
 }
 
 function triggerAICrux() {
-  switchTab('crux');
+  switchTab('ai_coach');
+  switchAiSubTab('crux');
   const section = SAS_CURRICULUM[currentPaperIndex].sections[currentSectionIndex];
   const chapter = section.chapters[currentChapterIndex];
   const effKey = `${section.id}_${chapter.id}`;
@@ -602,7 +604,8 @@ function triggerAICrux() {
 }
 
 function openTextEdition() {
-  switchTab('edition');
+  switchTab('notes');
+  switchNotesSubTab('editor');
   textEditionInputEl.focus();
 }
 
@@ -934,7 +937,8 @@ function switchTab(tabId) {
 }
 
 async function triggerAIQuiz() {
-  switchTab('flashcards');
+  switchTab('ai_coach');
+  switchAiSubTab('cards');
   generateAIQuiz();
 }
 
@@ -1565,4 +1569,39 @@ function submitInteractiveQuiz() {
   // Scroll smoothly to top of quiz container to show score banner
   const banner = document.getElementById("quizResultBanner");
   if (banner) banner.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+
+// ==========================================
+// UMBRELLA SUB-TAB NAVIGATION HANDLERS
+// ==========================================
+
+function switchAiSubTab(subId) {
+  const subViews = ["summary", "crux", "tutor", "cards"];
+  subViews.forEach(v => {
+    const btn = document.getElementById(`aiSubTab_${v}`);
+    const view = document.getElementById(`aiSubView_${v}`);
+    if (btn) btn.classList.remove("active");
+    if (view) view.style.display = "none";
+  });
+
+  const targetBtn = document.getElementById(`aiSubTab_${subId}`);
+  const targetView = document.getElementById(`aiSubView_${subId}`);
+  if (targetBtn) targetBtn.classList.add("active");
+  if (targetView) targetView.style.display = "block";
+}
+
+function switchNotesSubTab(subId) {
+  const subViews = ["editor", "coverage"];
+  subViews.forEach(v => {
+    const btn = document.getElementById(`notesSubTab_${v}`);
+    const view = document.getElementById(`notesSubView_${v}`);
+    if (btn) btn.classList.remove("active");
+    if (view) view.style.display = "none";
+  });
+
+  const targetBtn = document.getElementById(`notesSubTab_${subId}`);
+  const targetView = document.getElementById(`notesSubView_${subId}`);
+  if (targetBtn) targetBtn.classList.add("active");
+  if (targetView) targetView.style.display = "block";
 }
