@@ -486,6 +486,7 @@ function loadCurrentChapter() {
   loadSummaryForChapter(currentChapter);
   loadCruxForChapter(currentChapter);
   loadTextEditionForChapter(currentChapter);
+  loadChapterQuiz();
 }
 
 function loadSummaryForChapter(chapter) {
@@ -1325,3 +1326,243 @@ function importBackup(event) {
 }
 
 window.addEventListener("DOMContentLoaded", initApp);
+
+
+// ==========================================
+// INTERACTIVE CHAPTER & CPWA QUIZZER SYSTEM
+// ==========================================
+
+let activeQuizState = {
+  chapterId: null,
+  questions: [],
+  userSelections: {}, // questionIndex -> selectedOptionIndex (0-3)
+  isSubmitted: false
+};
+
+function loadChapterQuiz(forceReset = false) {
+  const paper = SAS_CURRICULUM[currentPaperIndex];
+  if (!paper || !paper.sections) return;
+  const section = paper.sections[currentSectionIndex];
+  if (!section || !section.chapters) return;
+  const chapter = section.chapters[currentChapterIndex];
+  if (!chapter) return;
+
+  const headerTitle = document.getElementById("quizHeaderTitle");
+  const subTitle = document.getElementById("quizSubTitle");
+  if (headerTitle) headerTitle.textContent = `🎯 Chapter Quiz: ${chapter.title}`;
+  if (subTitle) subTitle.textContent = `Paper ${paper.paperCode} • ${section.title}. Select your answers and click "Submit Quiz" at the bottom to view results and codal citations.`;
+
+  // Check if we need to reset state
+  if (forceReset || activeQuizState.chapterId !== chapter.id) {
+    let qList = [];
+    if (window.SAS_QUIZ_BANK && window.SAS_QUIZ_BANK[chapter.id]) {
+      qList = window.SAS_QUIZ_BANK[chapter.id];
+    } else {
+      // Fallback questions derived from chapter
+      qList = [
+        {
+          q: `In the context of ${paper.paperCode}, what is the statutory standard governing ${chapter.title}?`,
+          opts: [
+            "Strict compliance with authorized Codal rules, GFR, and CAG Regulations",
+            "Discretionary informal practices without codal support",
+            "Exclusively corporate private auditing guidelines",
+            "Informal departmental notes without documentation"
+          ],
+          ans: 0,
+          hint: "All public accounting and audit operations must conform strictly to authorized codal and statutory baselines."
+        },
+        {
+          q: `Which authority holds primary responsibility for verifying compliance in this subject area?`,
+          opts: [
+            "Accountant General / Pay and Accounts Officer per statutory rules",
+            "Unauthorized third-party commercial consultants",
+            "Private banking entities without government authorization",
+            "Informal peer committees"
+          ],
+          ans: 0,
+          hint: "The Accountant General (A&E/Audit) and PAOs hold direct constitutional and codal accountability."
+        }
+      ];
+    }
+
+    activeQuizState = {
+      chapterId: chapter.id,
+      questions: qList,
+      userSelections: {},
+      isSubmitted: false
+    };
+  }
+
+  renderInteractiveQuiz();
+}
+
+function loadCpwaBonusQuiz() {
+  const headerTitle = document.getElementById("quizHeaderTitle");
+  const subTitle = document.getElementById("quizSubTitle");
+  if (headerTitle) headerTitle.textContent = `🏗️ CPWA & Forest Accounts Mock Test (SASQuizzer APK - 99 Questions)`;
+  if (subTitle) subTitle.textContent = `Imported directly from SASQuizzer APK. Complete exam test bank covering Divisional Accountant responsibilities, CPWA forms, MBs, cash books, and deposit works.`;
+
+  let cpwaQs = (window.SAS_QUIZ_BANK && window.SAS_QUIZ_BANK["cpwa_pc16_bonus"]) ? window.SAS_QUIZ_BANK["cpwa_pc16_bonus"] : [];
+  if (cpwaQs.length === 0) {
+    alert("CPWA bonus questions not loaded.");
+    return;
+  }
+
+  activeQuizState = {
+    chapterId: "cpwa_pc16_bonus",
+    questions: cpwaQs,
+    userSelections: {},
+    isSubmitted: false
+  };
+
+  switchTab("quiz");
+  renderInteractiveQuiz();
+}
+
+function renderInteractiveQuiz() {
+  const container = document.getElementById("quizQuestionsContainer");
+  const banner = document.getElementById("quizResultBanner");
+  const submitBtn = document.getElementById("btnSubmitQuiz");
+  if (!container) return;
+
+  const { questions, userSelections, isSubmitted } = activeQuizState;
+
+  if (isSubmitted && banner) {
+    banner.style.display = "block";
+    let score = 0;
+    questions.forEach((q, idx) => {
+      if (userSelections[idx] === q.ans) score++;
+    });
+    const pct = Math.round((score / questions.length) * 100);
+    const scoreText = document.getElementById("quizScoreText");
+    const feedbackText = document.getElementById("quizFeedbackText");
+    if (scoreText) scoreText.textContent = `Your Score: ${score} / ${questions.length} (${pct}%)`;
+    if (feedbackText) {
+      if (pct >= 80) feedbackText.textContent = "🌟 Outstanding! Ready for SAS Examination standards.";
+      else if (pct >= 50) feedbackText.textContent = "👍 Good effort! Review missed questions and codal references below.";
+      else feedbackText.textContent = "⚠️ Needs revision. Carefully examine the correct options and statutory hints.";
+    }
+    if (submitBtn) submitBtn.style.display = "none";
+  } else {
+    if (banner) banner.style.display = "none";
+    if (submitBtn) submitBtn.style.display = "inline-block";
+  }
+
+  if (questions.length === 0) {
+    container.innerHTML = `<p style="color: var(--text-muted); text-align: center; padding: 30px;">No quiz questions found for this chapter.</p>`;
+    return;
+  }
+
+  const optionLetters = ["A", "B", "C", "D"];
+  let html = "";
+
+  questions.forEach((q, qIdx) => {
+    const userSel = userSelections[qIdx];
+    const isCorrect = isSubmitted && userSel === q.ans;
+    const isWrong = isSubmitted && userSel !== undefined && userSel !== q.ans;
+    const isUnanswered = isSubmitted && userSel === undefined;
+
+    let cardBorder = "border: 1px solid rgba(255,255,255,0.08);";
+    let statusBadge = "";
+
+    if (isSubmitted) {
+      if (isCorrect) {
+        cardBorder = "border: 1px solid #10b981; background: rgba(16, 185, 129, 0.05);";
+        statusBadge = `<span style="background: #10b981; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">✓ Correct</span>`;
+      } else if (isWrong) {
+        cardBorder = "border: 1px solid #ef4444; background: rgba(239, 68, 68, 0.05);";
+        statusBadge = `<span style="background: #ef4444; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">✗ Incorrect</span>`;
+      } else if (isUnanswered) {
+        cardBorder = "border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.05);";
+        statusBadge = `<span style="background: #f59e0b; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">⚪ Unanswered</span>`;
+      }
+    }
+
+    html += `
+      <div class="quiz-question-card" style="margin-bottom: 20px; padding: 18px 20px; border-radius: 12px; background: var(--card-bg, #1e293b); ${cardBorder}">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+          <h4 style="margin: 0; font-size: 1rem; font-weight: 600; color: var(--text-main, #f8fafc); line-height: 1.5;">
+            <span style="color: #38bdf8; margin-right: 6px;">Q${qIdx + 1}.</span> ${q.q}
+          </h4>
+          ${statusBadge}
+        </div>
+
+        <div class="quiz-options-grid" style="display: flex; flex-direction: column; gap: 8px;">
+    `;
+
+    q.opts.forEach((optText, oIdx) => {
+      const isSelected = userSel === oIdx;
+      let optStyle = "padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 10px;";
+      let optClass = "quiz-option-row";
+
+      if (!isSubmitted) {
+        if (isSelected) {
+          optStyle += " background: rgba(37, 99, 235, 0.25); border-color: #3b82f6; font-weight: 600;";
+        } else {
+          optStyle += " background: rgba(255,255,255,0.03);";
+        }
+      } else {
+        // After submission: reveal correct and wrong
+        if (oIdx === q.ans) {
+          optStyle += " background: rgba(16, 185, 129, 0.2); border-color: #10b981; color: #34d399; font-weight: 700;";
+        } else if (isSelected && oIdx !== q.ans) {
+          optStyle += " background: rgba(239, 68, 68, 0.2); border-color: #ef4444; color: #f87171;";
+        } else {
+          optStyle += " opacity: 0.6; background: transparent;";
+        }
+      }
+
+      const radioChecked = isSelected ? "checked" : "";
+      const disabledAttr = isSubmitted ? "disabled" : "";
+
+      html += `
+        <div style="${optStyle}" onclick="selectQuizOption(${qIdx}, ${oIdx})">
+          <input type="radio" name="quiz_q_${qIdx}" ${radioChecked} ${disabledAttr} style="cursor: pointer; width: 16px; height: 16px;">
+          <span style="font-weight: 700; color: #94a3b8; min-width: 20px;">(${optionLetters[oIdx]})</span>
+          <span style="flex: 1; line-height: 1.4;">${optText}</span>
+          ${isSubmitted && oIdx === q.ans ? '<span style="color: #10b981; font-weight: 700; font-size: 0.85rem;">[Correct Answer]</span>' : ''}
+        </div>
+      `;
+    });
+
+    html += `</div>`;
+
+    // Show codal hint/explanation after submission
+    if (isSubmitted && q.hint) {
+      html += `
+        <div style="margin-top: 12px; padding: 10px 14px; border-radius: 8px; background: rgba(56, 189, 248, 0.08); border-left: 3px solid #38bdf8; font-size: 0.88rem; color: #94a3b8;">
+          <strong style="color: #38bdf8;">💡 Codal Citation / Rule Rationale:</strong> ${q.hint}
+        </div>
+      `;
+    }
+
+    html += `</div>`;
+  });
+
+  container.innerHTML = html;
+}
+
+function selectQuizOption(qIdx, oIdx) {
+  if (activeQuizState.isSubmitted) return;
+  activeQuizState.userSelections[qIdx] = oIdx;
+  renderInteractiveQuiz();
+}
+
+function submitInteractiveQuiz() {
+  if (activeQuizState.isSubmitted) return;
+
+  const total = activeQuizState.questions.length;
+  const answered = Object.keys(activeQuizState.userSelections).length;
+
+  if (answered < total) {
+    const proceed = confirm(`You have answered ${answered} of ${total} questions. Are you sure you want to submit?`);
+    if (!proceed) return;
+  }
+
+  activeQuizState.isSubmitted = true;
+  renderInteractiveQuiz();
+
+  // Scroll smoothly to top of quiz container to show score banner
+  const banner = document.getElementById("quizResultBanner");
+  if (banner) banner.scrollIntoView({ behavior: "smooth", block: "center" });
+}
