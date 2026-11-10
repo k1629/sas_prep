@@ -268,6 +268,12 @@ function renderPapersNav() {
         stopSpeech();
         renderPapersNav();
         loadCurrentSection();
+        // Shift view to Whole Content tab and scroll to content
+        switchTab('content');
+        const contentArea = document.getElementById('panel_content') || document.getElementById('wholeContent');
+        if (contentArea) {
+          contentArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
         // Auto-close mobile drawer on selection
         const sb = document.querySelector('.sidebar');
         const bd = document.getElementById('sidebarBackdrop');
@@ -312,6 +318,11 @@ function navigateChapter(delta) {
     stopSpeech();
     renderChapterNavigation();
     loadCurrentChapter();
+    switchTab('content');
+    const contentArea = document.getElementById('panel_content') || document.getElementById('wholeContent');
+    if (contentArea) {
+      contentArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   } else if (targetIdx >= chapters.length) {
     if (currentSectionIndex < paper.sections.length - 1) {
       currentSectionIndex++;
@@ -344,6 +355,12 @@ function selectChapter(idx) {
   stopSpeech();
   renderChapterNavigation();
   loadCurrentChapter();
+  // Ensure the page shifts to the Whole Content tab and scrolls smoothly into view
+  switchTab('content');
+  const contentArea = document.getElementById('panel_content') || document.getElementById('wholeContent');
+  if (contentArea) {
+    contentArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 function renderChapterNavigation() {
