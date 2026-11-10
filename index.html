@@ -181,7 +181,8 @@
           <button id="tabBtn_edition" class="tab-btn" onclick="switchTab('edition')">✍️ Text Edition</button>
           <button id="tabBtn_coverage" class="tab-btn" onclick="switchTab('coverage')">🎯 What Exactly to Cover</button>
           <button id="tabBtn_tutor" class="tab-btn" onclick="switchTab('tutor')">🤖 AI Tutor & Doubts</button>
-          <button id="tabBtn_flashcards" class="tab-btn" onclick="switchTab('flashcards')">💡 Flashcards & Quiz</button>
+          <button id="tabBtn_quiz" class="tab-btn" onclick="switchTab('quiz')">🎯 MCQ Quizzer</button>
+          <button id="tabBtn_flashcards" class="tab-btn" onclick="switchTab('flashcards')">💡 Flashcards & Summary</button>
           <button id="tabBtn_files" class="tab-btn" onclick="switchTab('files')">📂 Workspace Files</button>
         </div>
 
@@ -320,6 +321,43 @@
           </div>
         </div>
 
+        <!-- Tab: Interactive MCQ Quizzer -->
+        <div id="panel_quiz" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3 id="quizHeaderTitle">🎯 Chapter MCQ Quiz (SAS Standards)</h3>
+                <p id="quizSubTitle" class="sub-muted">Select your answers for all questions below and click "Submit Quiz" at the bottom to view your score and detailed codal rationales.</p>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" onclick="loadChapterQuiz(true)">🔄 Reset Quiz</button>
+                <button class="btn-ai-pill" onclick="loadCpwaBonusQuiz()">🏗️ CPWA Mock Test (99 Qs)</button>
+              </div>
+            </div>
+
+            <!-- Quiz Score Summary Banner (Shown after submit) -->
+            <div id="quizResultBanner" style="display: none; margin-bottom: 20px; padding: 16px 20px; border-radius: 10px; background: rgba(37, 99, 235, 0.15); border: 1px solid #3b82f6;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <div>
+                  <h4 id="quizScoreText" style="font-size: 1.25rem; font-weight: 700; color: #60a5fa; margin: 0;">Your Score: 0 / 0</h4>
+                  <p id="quizFeedbackText" style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.9rem;">Review correct answers and codal citations below.</p>
+                </div>
+                <button class="btn-save-pill" onclick="loadChapterQuiz(true)">🔁 Retake Quiz</button>
+              </div>
+            </div>
+
+            <!-- Interactive Quiz Questions Container -->
+            <div id="quizQuestionsContainer" class="quiz-questions-list"></div>
+
+            <!-- Bottom Submit Button Row -->
+            <div id="quizSubmitRow" style="margin-top: 24px; text-align: center; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.08);">
+              <button id="btnSubmitQuiz" class="btn-save-pill" style="font-size: 1rem; padding: 12px 32px;" onclick="submitInteractiveQuiz()">
+                ✅ Submit Quiz & See Results
+              </button>
+            </div>
+          </div>
+        </div>
+
         <!-- Tab 7: Flashcards & Practice Quiz -->
         <div id="panel_flashcards" class="tab-panel">
           <div class="study-card">
@@ -364,6 +402,7 @@
   </div>
 
   <script src="curriculum_data.js"></script>
+  <script src="quiz_bank.js"></script>
   <script src="app.js"></script>
   <script>
     function toggleTheme() {
