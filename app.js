@@ -26,26 +26,38 @@ const IS_CLOUD_HOSTED = !window.location.hostname.includes("localhost") &&
                          !window.location.hostname.includes("127.0.0.1") &&
                          !/^\d+\.\d+\.\d+\.\d+$/.test(window.location.hostname);
 async function callDirectGeminiAPI(prompt, systemInstruction = "") {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_DIRECT_KEY}`;
-  const payload = {
-    contents: [{ parts: [{ text: prompt }] }]
-  };
-  if (systemInstruction) {
-    payload.systemInstruction = { parts: [{ text: systemInstruction }] };
+  const candidateModels = ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-3.5-flash-lite"];
+  let lastError = null;
+
+  for (const model of candidateModels) {
+    try {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_DIRECT_KEY}`;
+      const payload = {
+        contents: [{ parts: [{ text: prompt }] }]
+      };
+      if (systemInstruction) {
+        payload.systemInstruction = { parts: [{ text: systemInstruction }] };
+      }
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      const data = await response.json();
+      if (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0]) {
+        return data.candidates[0].content.parts[0].text;
+      }
+      if (data.error) {
+        lastError = new Error(data.error.message || `Error from ${model}`);
+        continue;
+      }
+    } catch (err) {
+      lastError = err;
+      continue;
+    }
   }
-  const response = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-  });
-  const data = await response.json();
-  if (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0]) {
-    return data.candidates[0].content.parts[0].text;
-  }
-  if (data.error) {
-    throw new Error(data.error.message || "Gemini API error");
-  }
-  throw new Error("Invalid response format from Gemini API");
+
+  throw lastError || new Error("Failed to connect to Gemini AI service.");
 }
 
 let userStore = {
@@ -1002,12 +1014,16 @@ async function generateAIQuiz() {
 }
 
 function resetTutorChat(paper, section) {
+  const currentTopic = paper && section ? `${paper.paperCode} • ${section.title}` : 'Universal Civil Accounts';
   tutorChatBoxEl.innerHTML = `
     <div class="chat-message ai-message">
       <div class="chat-avatar">🤖</div>
       <div class="chat-bubble">
-        <strong>Hello! I am your AI Mentor for ${paper.paperCode} (${section.title}).</strong>
-        <p>Ask me anything regarding rules, codal procedures, accounting entries (e.g. Form 26, CPWA suspense accounts), or how to frame exam answers for this chapter.</p>
+        <strong>Hello! I am your Universal SAS Civil Accounts AI Mentor.</strong>
+        <p>You can ask me <strong>ANY query from any part of the 8 Civil Accounts papers</strong> (PC-1, PC-2, PC-3, PC-4, PC-9, PC-11, PC-13, PC-15) — GFR 2017, CPWA Code, CCS Pension, FR/SR, Constitution, DPC Act, or Treasury/PFMS operations.</p>
+        <span style="display: inline-block; margin-top: 6px; font-size: 0.8rem; color: #38bdf8; background: rgba(56, 189, 248, 0.1); padding: 3px 8px; border-radius: 4px;">
+          📍 Currently exploring: ${currentTopic}
+        </span>
       </div>
     </div>
   `;
@@ -1019,14 +1035,42 @@ function clearTutorChat() {
   resetTutorChat(paper, section);
 }
 
+async // Global Search across entire Civil Accounts syllabus
+function findGlobalSyllabusContext(query) {
+  const qTerms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+  let matchedMatches = [];
+
+  SAS_CURRICULUM.forEach(paper => {
+    (paper.sections || []).forEach(sec => {
+      (sec.chapters || []).forEach(ch => {
+        const text = `${paper.paperCode} ${sec.title} ${ch.title} ${ch.gist || ''} ${ch.crux || ''} ${ch.content || ''}`.toLowerCase();
+        let score = 0;
+        qTerms.forEach(term => {
+          if (text.includes(term)) score += 1;
+        });
+        if (score > 0) {
+          matchedMatches.push({
+            score,
+            label: `${paper.paperCode} - ${sec.title} > ${ch.title}`,
+            snippet: (ch.crux || ch.gist || ch.content || '').slice(0, 800)
+          });
+        }
+      });
+    });
+  });
+
+  matchedMatches.sort((a, b) => b.score - a.score);
+  return matchedMatches.slice(0, 4);
+}
+
 async function sendTutorQuestion() {
   const q = tutorInputEl.value.trim();
   if (!q) return;
   tutorInputEl.value = "";
 
   const paper = SAS_CURRICULUM[currentPaperIndex];
-  const section = paper.sections[currentSectionIndex];
-  const chapter = section.chapters[currentChapterIndex];
+  const section = paper ? paper.sections[currentSectionIndex] : null;
+  const chapter = section && section.chapters ? section.chapters[currentChapterIndex] : null;
 
   const userMsg = document.createElement("div");
   userMsg.className = "chat-message user-message";
@@ -1035,19 +1079,38 @@ async function sendTutorQuestion() {
 
   const aiMsg = document.createElement("div");
   aiMsg.className = "chat-message ai-message";
-  aiMsg.innerHTML = `<div class="chat-avatar">🤖</div><div class="chat-bubble"><em>Consulting Civil Accounts codal rules with Gemini AI...</em></div>`;
+  aiMsg.innerHTML = `<div class="chat-avatar">🤖</div><div class="chat-bubble"><em>Searching complete Civil Accounts syllabus & analyzing codal rules...</em></div>`;
   tutorChatBoxEl.appendChild(aiMsg);
   tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
 
   const doDirectChat = async () => {
-    const prompt = `User Question: ${q}\n\nContext (${paper.paperCode} - ${section.title}: ${chapter.title}):\n${chapter.content.slice(0, 7000)}`;
-    const res = await callDirectGeminiAPI(prompt, "You are an authoritative, helpful AI Mentor and Senior Audit Officer for the IA&AD SAS Examination (Civil Accounts). Answer clearly with relevant rules, codal procedures, accounting entries, and exam tips.");
+    const globalContexts = findGlobalSyllabusContext(q);
+    let contextText = "";
+    if (globalContexts.length > 0) {
+      contextText += "\n--- MATCHED SYLLABUS REFERENCES ---\n";
+      globalContexts.forEach(c => {
+        contextText += `[${c.label}]:\n${c.snippet}\n\n`;
+      });
+    }
+    if (chapter) {
+      contextText += `\n--- CURRENTLY ACTIVE TOPIC: ${paper.paperCode} - ${section.title} (${chapter.title}) ---\n${(chapter.content || '').slice(0, 3000)}`;
+    }
+
+    const prompt = `User Query: "${q}"\n\nRelevant Syllabus & Codal Information:${contextText}`;
+    const sysPrompt = "You are an authoritative, universal AI Exam Mentor for the Indian Audit & Accounts Department (IA&AD) Subordinate Accounts Service (SAS) Examination (Civil Accounts Branch). Answer the user's question clearly and accurately, regardless of which part of the syllabus it touches (PC-1, PC-2, PC-3, PC-4, PC-9, PC-11, PC-13, or PC-15). Quote exact rule numbers (e.g. GFR 2017 Rule 149, CPWA Code, FR 22, CCS Leave Rules 1972, DPC Act 1971), article numbers of the Constitution, and practical exam advice.";
+
+    const res = await callDirectGeminiAPI(prompt, sysPrompt);
     aiMsg.querySelector(".chat-bubble").innerHTML = formatMarkdown(res);
+    tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
   };
 
   if (IS_CLOUD_HOSTED) {
-    try { await doDirectChat(); } catch(err) { aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">AI Mentor error: ${err.message || "Check internet connection."}</span>`; }
-    tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
+    try {
+      await doDirectChat();
+    } catch(err) {
+      aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">AI Mentor error: ${err.message || "Check internet connection."}</span>`;
+      tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
+    }
     return;
   }
 
@@ -1057,19 +1120,23 @@ async function sendTutorQuestion() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         paperCode: paper.paperCode,
-        title: `${section.title} - ${chapter.title}`,
+        title: `${section.title} - ${chapter ? chapter.title : ''}`,
         question: q,
-        context: chapter.content
+        context: chapter ? chapter.content : ''
       })
     });
     const d = await res.json();
     if (d.success && d.result) {
       aiMsg.querySelector(".chat-bubble").innerHTML = formatMarkdown(d.result);
     } else {
-      aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">Error: ${d.error}</span>`;
+      await doDirectChat();
     }
   } catch(err) {
-    try { await doDirectChat(); } catch(err2) { aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">Unable to connect to AI mentor. Please check internet connection.</span>`; }
+    try {
+      await doDirectChat();
+    } catch(err2) {
+      aiMsg.querySelector(".chat-bubble").innerHTML = `<span style="color: var(--danger);">AI Mentor error: ${err2.message || "Please check internet connection."}</span>`;
+    }
   }
   tutorChatBoxEl.scrollTop = tutorChatBoxEl.scrollHeight;
 }
