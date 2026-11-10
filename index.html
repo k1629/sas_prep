@@ -203,13 +203,21 @@
           <div class="study-card">
             <div class="card-toolbar">
               <div>
-                <h3 id="quizHeaderTitle">🎯 Chapter MCQ Quiz (SAS Standards)</h3>
-                <p id="quizSubTitle" class="sub-muted">Select your answers for all questions below and click "Submit Quiz" at the bottom to view your score and detailed codal rationales.</p>
+                <h3 id="quizHeaderTitle">🎯 Practice MCQ Quizzer</h3>
+                <p id="quizSubTitle" class="sub-muted">Select your quiz mode below. Answer questions and click "Submit Quiz" to see your complete score and codal explanations.</p>
               </div>
               <div class="card-actions">
-                <button class="btn-small" onclick="loadChapterQuiz(true)">🔄 Reset Quiz</button>
-                <button class="btn-ai-pill" onclick="loadCpwaBonusQuiz()">🏗️ CPWA Mock Test (99 Qs)</button>
+                <button class="btn-small" onclick="resetActiveQuiz()">🔄 Reset Quiz</button>
               </div>
+            </div>
+
+            <!-- Quiz Scope / Mode Selector Pills -->
+            <div style="display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; background: rgba(15, 23, 42, 0.6); padding: 8px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.06); align-items: center;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; margin-right: 4px;">Quiz Scope:</span>
+              <button id="quizScope_chapter" class="btn-small active" onclick="switchQuizScope('chapter')" style="font-weight: 600;">📖 Current Chapter (5-6 Qs)</button>
+              <button id="quizScope_section" class="btn-small" onclick="switchQuizScope('section')" style="font-weight: 600;">📚 Whole Section (All Topic Qs)</button>
+              <button id="quizScope_paper" class="btn-small" onclick="switchQuizScope('paper')" style="font-weight: 600;">🎓 Full Paper Mock (All Topics)</button>
+              <button id="quizScope_cpwa" class="btn-small" onclick="switchQuizScope('cpwa')" style="font-weight: 600;">🏗️ CPWA Mock Test (99 Qs)</button>
             </div>
 
             <!-- Quiz Score Summary Banner (Shown after submit) -->
