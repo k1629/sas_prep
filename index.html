@@ -142,10 +142,8 @@
 
       <header class="audio-toolbar">
 
-        <button id="btnMobileMenu" class="btn-mobile-menu" onclick="toggleMobileSidebar()" title="Toggle Papers Menu">
-
-          ☰ Papers
-
+                <button id="btnToggleSidebar" class="btn-sidebar-toggle" onclick="toggleSidebar()" title="Toggle Syllabus Portal">
+          <span id="sidebarToggleIcon">◀</span> <span>Syllabus</span>
         </button>
 
         <div class="audio-controls">
@@ -836,20 +834,33 @@
 
   <script>
 
-    function toggleMobileSidebar() {
-
+        function toggleSidebar() {
       const sidebar = document.querySelector('.sidebar');
-
       const backdrop = document.getElementById('sidebarBackdrop');
+      const icon = document.getElementById('sidebarToggleIcon');
+      const isMobile = window.innerWidth <= 768;
 
-      if (sidebar && backdrop) {
-
-        sidebar.classList.toggle('mobile-open');
-
-        backdrop.classList.toggle('active');
-
+      if (isMobile) {
+        if (sidebar && backdrop) {
+          sidebar.classList.toggle('mobile-open');
+          backdrop.classList.toggle('active');
+        }
+      } else {
+        if (sidebar) {
+          sidebar.classList.toggle('desktop-collapsed');
+          const isCollapsed = sidebar.classList.contains('desktop-collapsed');
+          if (icon) icon.textContent = isCollapsed ? '▶' : '◀';
+          localStorage.setItem('sas_sidebar_collapsed', isCollapsed ? '1' : '0');
+        }
       }
+    }
 
+    // Auto-restore desktop collapsed preference
+    if (window.innerWidth > 768 && localStorage.getItem('sas_sidebar_collapsed') === '1') {
+      const sb = document.querySelector('.sidebar');
+      const ic = document.getElementById('sidebarToggleIcon');
+      if (sb) sb.classList.add('desktop-collapsed');
+      if (ic) ic.textContent = '▶';
     }
 
 
