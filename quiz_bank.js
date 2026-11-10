@@ -1,6415 +1,5842 @@
-// SAS Exam Master Hub - Universal Quiz Bank
-// Generated: 2026-11-10 10:31
-// Chapters Covered: 155
-// Total Generated Chapter Questions: 504
-// APK Questions Imported: 99
-// Total Questions in Database: 603
+// SAS Exam Master Hub - Universal Comprehensive Quiz Bank
+// Generated: 2026-11-10 11:12
+// Total Chapters Covered: 155
+// Total Chapter Questions: 1019
+// APK Questions Included: 99
+// Grand Total Questions in Bank: 1118
 
 window.SAS_QUIZ_BANK = {
   "pc1_s1_c1": [
     {
-      "q": "What are the standard 5 structural elements of an Audit Draft Paragraph in IA&AD?",
+      "q": "What are the five mandatory structural elements of an Audit Draft Paragraph in IA&AD?",
       "opts": [
-        "Summary, Argument, Proof, Penalty, Conclusion",
-        "Title, Context, Criteria, Condition/Finding, Cause/Effect and Recommendation",
-        "Introduction, Quotations, Counter-argument, Judgment, Verdict",
-        "Background, Theory, Analysis, Narrative, Closure"
+        "Title, Argument, Proof, Penalty, Conclusion",
+        "Title/Context, Criteria, Condition/Finding, Cause & Effect, Recommendation",
+        "Background, Theory, Analysis, Narrative, Closure",
+        "Preamble, Investigation, Deposition, Verdict, Summary"
       ],
       "ans": 1,
-      "hint": "The standard 5 elements are Title/Context, Criteria, Condition (Finding), Cause & Effect, and Recommendation."
+      "hint": "MSO (Audit) Section 7 prescribes Title/Context, Criteria, Condition, Cause & Effect, and Recommendation."
     },
     {
-      "q": "In an audit finding, the 'Criteria' represents:",
+      "q": "In the architecture of an audit draft paragraph, what does 'Criteria' represent?",
       "opts": [
-        "The personal opinion of the auditor",
-        "The statutory rule, codal provision, or sanction that was violated",
-        "The monetary value of the fraud",
-        "The disciplinary punishment to be awarded"
+        "Personal opinion of the Senior Audit Officer",
+        "The statutory rule, codal provision, or sanction that was breached",
+        "The total monetary value of infructuous outlay",
+        "The administrative rank of the defaulting officer"
       ],
       "ans": 1,
-      "hint": "Criteria is the benchmark, rule, law, or policy that the auditee was required to adhere to."
+      "hint": "Criteria is the codal/legal/financial baseline (e.g. GFR 2017, CPWA Code) against which performance is evaluated."
     },
     {
-      "q": "In the context of SAS PC-1, what is the primary operational scope of '5-Element Audit Para Architecture & Drafting Methodology'?",
+      "q": "What distinguishes a Draft Paragraph (DP) from a Statement of Facts (SOF)?",
       "opts": [
-        "Statutory and codal execution of 5-Element Audit Para Architecture & Draf per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "SOF is sent to PAC directly; DP is internal",
+        "SOF is issued to the auditee management for factual verification; DP is submitted to HQ for CAG's Audit Report",
+        "DP contains no monetary figures",
+        "SOF is approved by the President of India"
       ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-1 syllabus criteria for 5-Element Audit Para Architecture & Drafting ."
+      "ans": 1,
+      "hint": "Statement of Facts (SOF) confirms facts with field auditees; DP is formulated for CAG's Audit Report."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '5-Element Audit Para Architecture & Drafting Methodology'?",
+      "q": "Under IA&AD conventions, how should departmental justifications and replies be dealt with in a Draft Paragraph?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Accepted without verification",
+        "Ignored completely to keep the draft brief",
+        "Objectively stated and refuted point-by-point with documentary evidence",
+        "Referred to private arbitrators"
       ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "ans": 2,
+      "hint": "Audit draft paragraphs must explicitly incorporate the department's reply and refute it with evidence."
     },
     {
-      "q": "What key principle ensures accountability in '5-Element Audit Para Architecture & Drafting Methodology'?",
+      "q": "Which voice and tone are mandated by the IA&AD Style Guide for drafting audit findings?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Passive voice and defensive tone",
+        "Active voice, objective, non-provocative and third-person tone",
+        "Sensational language with exclamation marks",
+        "Subjective first-person narrative ('I noticed')"
       ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "ans": 1,
+      "hint": "The Style Guide mandates active voice ('The Department failed to...') with objective, neutral phrasing."
     }
   ],
   "pc1_s1_c2": [
     {
-      "q": "What are the standard 5 structural elements of an Audit Draft Paragraph in IA&AD?",
+      "q": "What are the five mandatory structural elements of an Audit Draft Paragraph in IA&AD?",
       "opts": [
-        "Summary, Argument, Proof, Penalty, Conclusion",
-        "Title, Context, Criteria, Condition/Finding, Cause/Effect and Recommendation",
-        "Introduction, Quotations, Counter-argument, Judgment, Verdict",
-        "Background, Theory, Analysis, Narrative, Closure"
+        "Title, Argument, Proof, Penalty, Conclusion",
+        "Title/Context, Criteria, Condition/Finding, Cause & Effect, Recommendation",
+        "Background, Theory, Analysis, Narrative, Closure",
+        "Preamble, Investigation, Deposition, Verdict, Summary"
       ],
       "ans": 1,
-      "hint": "The standard 5 elements are Title/Context, Criteria, Condition (Finding), Cause & Effect, and Recommendation."
+      "hint": "MSO (Audit) Section 7 prescribes Title/Context, Criteria, Condition, Cause & Effect, and Recommendation."
     },
     {
-      "q": "In an audit finding, the 'Criteria' represents:",
+      "q": "In the architecture of an audit draft paragraph, what does 'Criteria' represent?",
       "opts": [
-        "The personal opinion of the auditor",
-        "The statutory rule, codal provision, or sanction that was violated",
-        "The monetary value of the fraud",
-        "The disciplinary punishment to be awarded"
+        "Personal opinion of the Senior Audit Officer",
+        "The statutory rule, codal provision, or sanction that was breached",
+        "The total monetary value of infructuous outlay",
+        "The administrative rank of the defaulting officer"
       ],
       "ans": 1,
-      "hint": "Criteria is the benchmark, rule, law, or policy that the auditee was required to adhere to."
+      "hint": "Criteria is the codal/legal/financial baseline (e.g. GFR 2017, CPWA Code) against which performance is evaluated."
     },
     {
-      "q": "In the context of SAS PC-1, what is the primary operational scope of 'Draft Audit Comments on Autonomous Bodies / PSUs & State Accounts'?",
+      "q": "What distinguishes a Draft Paragraph (DP) from a Statement of Facts (SOF)?",
       "opts": [
-        "Statutory and codal execution of Draft Audit Comments on Autonomous Bodie per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "SOF is sent to PAC directly; DP is internal",
+        "SOF is issued to the auditee management for factual verification; DP is submitted to HQ for CAG's Audit Report",
+        "DP contains no monetary figures",
+        "SOF is approved by the President of India"
       ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-1 syllabus criteria for Draft Audit Comments on Autonomous Bodies / P."
+      "ans": 1,
+      "hint": "Statement of Facts (SOF) confirms facts with field auditees; DP is formulated for CAG's Audit Report."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Draft Audit Comments on Autonomous Bodies / PSUs & State Accounts'?",
+      "q": "Under IA&AD conventions, how should departmental justifications and replies be dealt with in a Draft Paragraph?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Accepted without verification",
+        "Ignored completely to keep the draft brief",
+        "Objectively stated and refuted point-by-point with documentary evidence",
+        "Referred to private arbitrators"
       ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "ans": 2,
+      "hint": "Audit draft paragraphs must explicitly incorporate the department's reply and refute it with evidence."
     },
     {
-      "q": "What key principle ensures accountability in 'Draft Audit Comments on Autonomous Bodies / PSUs & State Accounts'?",
+      "q": "Which voice and tone are mandated by the IA&AD Style Guide for drafting audit findings?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Passive voice and defensive tone",
+        "Active voice, objective, non-provocative and third-person tone",
+        "Sensational language with exclamation marks",
+        "Subjective first-person narrative ('I noticed')"
       ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "ans": 1,
+      "hint": "The Style Guide mandates active voice ('The Department failed to...') with objective, neutral phrasing."
     }
   ],
   "pc1_s2_c1": [
     {
-      "q": "In the context of SAS PC-1, what is the primary operational scope of 'Short Essay (500 words): Structure, Technique & High-Yield Civil Accounts Themes'?",
+      "q": "What is the recommended word count range for the Short Essay in SAS Paper PC-1?",
       "opts": [
-        "Statutory and codal execution of Short Essay (500 words): Structure, Tech per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "200-300 words",
+        "450-550 words (nominally 500 words)",
+        "750-1000 words",
+        "Unlimited words"
       ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-1 syllabus criteria for Short Essay (500 words): Structure, Technique."
+      "ans": 1,
+      "hint": "SAS PC-1 mandates a 500-word short essay with disciplined 5-paragraph structuring (450-550 words)."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Short Essay (500 words): Structure, Technique & High-Yield Civil Accounts Themes'?",
+      "q": "Which 5-part architecture ensures high scores in the SAS PC-1 Short Essay?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Introduction, Quotations, Counter-argument, Judgment, Verdict",
+        "Introduction, Policy/Statutory background, Operational mechanism, Control gaps/challenges, Way forward",
+        "Definition, Historical timeline, Global examples, Criticisms, Anecdote",
+        "Summary, Table, 10 recommendations, Glossary, Index"
       ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "ans": 1,
+      "hint": "The standard civil service essay structure: Intro (~75w), Policy (~100w), Mechanism (~150w), Challenges (~100w), Way forward (~75w)."
     },
     {
-      "q": "What key principle ensures accountability in 'Short Essay (500 words): Structure, Technique & High-Yield Civil Accounts Themes'?",
+      "q": "In writing an essay on Public Financial Management, which portal has transformed Central Government payments?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Bharat Kosh",
+        "Public Financial Management System (PFMS)",
+        "e-Courts",
+        "DigiLocker"
       ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "ans": 1,
+      "hint": "PFMS manages the payment, accounting, and Direct Benefit Transfer (DBT) ecosystem of the Union Government."
+    },
+    {
+      "q": "Which landmark legislation introduced legally binding fiscal deficit targets in India?",
+      "opts": [
+        "CAG DPC Act 1971",
+        "FRBM Act 2003",
+        "Finance Act 2017",
+        "Public Debt Act 1944"
+      ],
+      "ans": 1,
+      "hint": "The Fiscal Responsibility and Budget Management (FRBM) Act 2003 mandated institutional fiscal discipline."
+    },
+    {
+      "q": "What key credit is given in the evaluation of the SAS essay according to the official syllabus?",
+      "opts": [
+        "Use of complex foreign vocabulary",
+        "Length of the essay beyond 1000 words",
+        "Effective, orderly, and exact expression",
+        "Poetic rhyming and metaphors"
+      ],
+      "ans": 2,
+      "hint": "Syllabus explicitly notes: 'Credit will be given for effective and exact expression, orderly arrangement of ideas'."
     }
   ],
   "pc1_s3_c1": [
     {
-      "q": "What is the mandatory target length for a standard official Precis in the SAS PC-1 examination?",
+      "q": "What is the mandatory mathematical length for an official Precis in SAS PC-1?",
       "opts": [
-        "Half (1/2) the length of the source passage",
-        "Strictly one-third (1/3) of the total words in the original text (±10%)",
-        "One-fourth (1/4) of the original text",
-        "Exactly 100 words regardless of source text length"
+        "Half (1/2) the original passage length",
+        "Strictly one-third (1/3) of the original passage words (±10%)",
+        "One-fourth (1/4) of the original words",
+        "Exactly 100 words regardless of source text"
       ],
       "ans": 1,
-      "hint": "Precis writing requires reducing the text to one-third length in the candidate's own words."
+      "hint": "Precis writing rules mandate reducing the text to exactly one-third (1/3) length."
     },
     {
-      "q": "Which of the following is strictly prohibited when drafting an official Precis?",
+      "q": "Which of the following elements is mandatory at the beginning of an official Precis?",
       "opts": [
-        "Giving a suitable title",
-        "Writing in third person past tense",
-        "Introducing personal opinions or external facts not in the passage",
-        "Using concise sentences"
+        "Table of contents",
+        "An objective, concise title summarizing the core theme",
+        "Name of the author of the original passage",
+        "Date and file number"
       ],
-      "ans": 2,
-      "hint": "A precis must remain completely objective; never introduce personal opinions or outside facts."
+      "ans": 1,
+      "hint": "A suitable title carries 2-3 dedicated marks in the precis evaluation rubric."
     },
     {
-      "q": "In the context of SAS PC-1, what is the primary operational scope of 'Precis Writing: Codal Rules, Length Calculation & Objective Summary Mechanics'?",
+      "q": "In which grammatical person and tense should an official Precis be composed?",
       "opts": [
-        "Statutory and codal execution of Precis Writing: Codal Rules, Length Calc per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "First person present tense ('I believe that...')",
+        "Third person past tense ('The author observed that...')",
+        "Second person future tense ('You will see...')",
+        "Imperative mood"
       ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-1 syllabus criteria for Precis Writing: Codal Rules, Length Calculati."
+      "ans": 1,
+      "hint": "A precis must be written in the third person, past tense, reflecting the original author's views."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Precis Writing: Codal Rules, Length Calculation & Objective Summary Mechanics'?",
+      "q": "What should a candidate never include in an official Precis?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Key arguments of the author",
+        "Personal opinions, commentary, criticisms, or external facts not in the passage",
+        "Indirect speech",
+        "Technical terms defined in the passage"
       ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "ans": 1,
+      "hint": "A precis must remain strictly objective; personal agreement or external knowledge is strictly prohibited."
     },
     {
-      "q": "What key principle ensures accountability in 'Precis Writing: Codal Rules, Length Calculation & Objective Summary Mechanics'?",
+      "q": "What declaration must be placed at the foot of an official Precis?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Candidate signature and roll number",
+        "'Number of words in original text: X; Number of words in precis: Y.'",
+        "'Certified true copy'",
+        "Percentage of compression achieved"
       ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "ans": 1,
+      "hint": "Every precis concludes with the word count declaration comparing original vs. precis words."
     }
   ],
   "pc1_s4_c1": [
     {
-      "q": "In the context of SAS PC-1, what is the primary operational scope of 'Reading Comprehension: Two-Pass Strategy & Answering Factual and Inferential Questions'?",
+      "q": "In the two-pass reading strategy for SAS reading comprehension, what is done during the first pass?",
       "opts": [
-        "Statutory and codal execution of Reading Comprehension: Two-Pass Strategy per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Memorizing every statistical figure",
+        "Skimming swiftly to identify central theme, major arguments, and overall logical structure",
+        "Writing down final answers directly",
+        "Looking up every difficult word in a dictionary"
       ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-1 syllabus criteria for Reading Comprehension: Two-Pass Strategy & An."
+      "ans": 1,
+      "hint": "Pass 1 is a rapid skim for structure and core argument; questions are then scanned before the targeted second read."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Reading Comprehension: Two-Pass Strategy & Answering Factual and Inferential Questions'?",
+      "q": "How should answers to comprehension questions be framed according to the syllabus guidelines?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "By copying long verbatim sentences directly from the passage",
+        "In the candidate's own words, clear, concise, and grammatically complete sentences",
+        "Only in single word bullet points",
+        "By adding outside facts known to the candidate"
       ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "ans": 1,
+      "hint": "Answers must be formulated in concise, correct English in the candidate's own words."
     },
     {
-      "q": "What key principle ensures accountability in 'Reading Comprehension: Two-Pass Strategy & Answering Factual and Inferential Questions'?",
+      "q": "What is the key difference between a factual question and an inferential question in comprehension?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Factual questions have no correct answer",
+        "Factual answers are directly stated in the text; inferential answers require deducing implied reasoning",
+        "Inferential questions only test vocabulary",
+        "Factual questions are always negative"
       ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "ans": 1,
+      "hint": "Factual questions seek direct data/statements; inferential questions require synthesizing the author's logical premise."
+    },
+    {
+      "q": "If a comprehension passage discusses an audit finding, where is the primary conclusion usually found?",
+      "opts": [
+        "In the footnotes only",
+        "In the opening thesis statement and the final concluding paragraph",
+        "In the middle of a statistical table",
+        "In the appendix"
+      ],
+      "ans": 1,
+      "hint": "Standard structured reports state the core finding up-front and summarize recommendations at the conclusion."
+    },
+    {
+      "q": "What is the penalty for exceeding word limits or including irrelevant narrative in comprehension answers?",
+      "opts": [
+        "Zero marks for the entire paper",
+        "Loss of marks for precision and conciseness",
+        "Automatic disqualification",
+        "None"
+      ],
+      "ans": 1,
+      "hint": "Conciseness and relevance are core scoring parameters in civil service language examinations."
     }
   ],
   "pc1_s5_c1": [
     {
-      "q": "According to the IA&AD Style Guide, numbers from 1 to 9 should generally be written as:",
+      "q": "What is the standard salutation and subscription pair in an Official Government Letter?",
       "opts": [
-        "Arabic digits (1, 2, 3)",
-        "Spelled out in words (one, two, three)",
-        "Roman numerals (I, II, III)",
-        "Always preceded by No."
+        "'Dear Sir' and 'Yours sincerely'",
+        "'Sir / Madam' and 'Yours faithfully'",
+        "'Respected Sir' and 'Yours obediently'",
+        "'Hi' and 'Best regards'"
       ],
       "ans": 1,
-      "hint": "Style Guide rules state numbers 1 to 9 are spelled out in words, while 10 and above are written in figures."
+      "hint": "Official letters use formal 'Sir / Madam' and 'Yours faithfully,'."
     },
     {
-      "q": "Which voice is strongly advocated by the IA&AD Style Guide for writing audit observations?",
+      "q": "In an Official Letter, how are paragraphs numbered?",
       "opts": [
-        "Passive voice to avoid direct responsibility",
-        "Active voice to clearly identify who failed to do what",
-        "Poetic/rhetorical voice",
-        "First person singular ('I observed')"
+        "All paragraphs including the first are numbered 1, 2, 3",
+        "Paragraph 1 is unnumbered; subsequent paragraphs are numbered 2, 3, 4...",
+        "No paragraphs are ever numbered",
+        "Roman numerals (i, ii, iii) only"
       ],
       "ans": 1,
-      "hint": "Style Guide requires active voice ('The Department failed to...' rather than 'A failure was noticed')."
+      "hint": "Per Central Secretariat Manual of Office Procedure (CSMOP), para 1 is unnumbered; numbering begins with 2."
     },
     {
-      "q": "According to the Style Guide, which of the following terms must always be capitalized?",
+      "q": "Where does the addressee's designation and address appear in an Official Letter?",
       "opts": [
-        "comptroller and auditor general",
-        "Comptroller and Auditor General of India, Union Government, State Government",
-        "only section numbers",
-        "all nouns in a paragraph"
+        "At the very bottom left corner",
+        "Below the file number and date, preceded by 'To,' on the left margin",
+        "Inside the signature block",
+        "In a footnote"
       ],
       "ans": 1,
-      "hint": "Institutional titles such as Comptroller and Auditor General and Union/State Government must be capitalized."
+      "hint": "In an official letter, 'To, [Designation & Address]' appears at the top left below the reference number."
+    },
+    {
+      "q": "What must appear under the Subject heading in an official letter?",
+      "opts": [
+        "A 500-word explanation",
+        "A concise, underlined statement summarizing the core purpose in one sentence",
+        "Only the date of previous letters",
+        "The name of the typist"
+      ],
+      "ans": 1,
+      "hint": "The Subject heading must be brief, precise, underlined, and capture the subject of communication."
+    },
+    {
+      "q": "When previous correspondence exists, under which heading is it cited in an official letter?",
+      "opts": [
+        "P.S.",
+        "Reference (or Ref:)",
+        "Footnote",
+        "Annexure A"
+      ],
+      "ans": 1,
+      "hint": "Previous letters, OMs, or UO notes are formally cited under the 'Reference' heading below Subject."
     }
   ],
   "pc1_s5_c2": [
     {
-      "q": "According to the IA&AD Style Guide, numbers from 1 to 9 should generally be written as:",
+      "q": "When is a Demi-Official (DO) letter appropriately utilized in government communications?",
       "opts": [
-        "Arabic digits (1, 2, 3)",
-        "Spelled out in words (one, two, three)",
-        "Roman numerals (I, II, III)",
-        "Always preceded by No."
+        "For mass public advertisements",
+        "To draw the personal attention of another officer to an urgent or sensitive official matter",
+        "For issuing routine sanctions of casual leave",
+        "To convey court summons"
       ],
       "ans": 1,
-      "hint": "Style Guide rules state numbers 1 to 9 are spelled out in words, while 10 and above are written in figures."
+      "hint": "A DO letter brings matters to personal attention, ensuring swift administrative action between officers."
     },
     {
-      "q": "Which voice is strongly advocated by the IA&AD Style Guide for writing audit observations?",
+      "q": "What is the correct salutation in a Demi-Official letter written to Shri Rajesh Sharma?",
       "opts": [
-        "Passive voice to avoid direct responsibility",
-        "Active voice to clearly identify who failed to do what",
-        "Poetic/rhetorical voice",
-        "First person singular ('I observed')"
+        "'Sir,'",
+        "'Dear Shri Sharma,' (or 'Dear Rajesh,')",
+        "'To Whom It May Concern'",
+        "'Respected Officer Sharma'"
       ],
       "ans": 1,
-      "hint": "Style Guide requires active voice ('The Department failed to...' rather than 'A failure was noticed')."
+      "hint": "DO letters use personal salutations: 'Dear Shri [Surname],' or 'Dear [First Name],' if peers."
     },
     {
-      "q": "According to the Style Guide, which of the following terms must always be capitalized?",
+      "q": "What is the standard subscription for a Demi-Official letter?",
       "opts": [
-        "comptroller and auditor general",
-        "Comptroller and Auditor General of India, Union Government, State Government",
-        "only section numbers",
-        "all nouns in a paragraph"
+        "'Yours faithfully,'",
+        "'Yours sincerely,'",
+        "'Your obedient servant,'",
+        "'Cordially yours,'"
       ],
       "ans": 1,
-      "hint": "Institutional titles such as Comptroller and Auditor General and Union/State Government must be capitalized."
+      "hint": "A DO letter always ends with 'Yours sincerely,'."
+    },
+    {
+      "q": "Where is the addressee's name and official designation placed in a Demi-Official letter?",
+      "opts": [
+        "Top right corner",
+        "At the bottom left corner of the final/first page",
+        "Directly above the salutation",
+        "In an attachment only"
+      ],
+      "ans": 1,
+      "hint": "In a DO letter, the recipient's name, designation, and address are placed at the bottom left."
+    },
+    {
+      "q": "Which grammatical person is predominantly used in a Demi-Official letter?",
+      "opts": [
+        "First person singular ('I would appreciate if you could look into...')",
+        "Third person passive ('The undersigned is directed...')",
+        "Second person plural only",
+        "Impersonal passive voice"
+      ],
+      "ans": 0,
+      "hint": "DO letters use warm, direct first-person voice ('I am writing to bring to your personal notice...')."
     }
   ],
   "pc1_s5_c3": [
     {
-      "q": "According to the IA&AD Style Guide, numbers from 1 to 9 should generally be written as:",
+      "q": "Which of the following is a strict characteristic of an Office Memorandum (OM)?",
       "opts": [
-        "Arabic digits (1, 2, 3)",
-        "Spelled out in words (one, two, three)",
-        "Roman numerals (I, II, III)",
-        "Always preceded by No."
+        "It has 'Dear Sir' and ends with 'Yours faithfully'",
+        "It has NO salutation and NO subscription ('Yours faithfully')",
+        "It is addressed to private individuals only",
+        "It must be signed by the Governor"
       ],
       "ans": 1,
-      "hint": "Style Guide rules state numbers 1 to 9 are spelled out in words, while 10 and above are written in figures."
+      "hint": "An OM carries no salutation and no subscription, conveying decisions in an impersonal official format."
     },
     {
-      "q": "Which voice is strongly advocated by the IA&AD Style Guide for writing audit observations?",
+      "q": "What is the standard opening formula for an Office Memorandum in Central Government?",
       "opts": [
-        "Passive voice to avoid direct responsibility",
-        "Active voice to clearly identify who failed to do what",
-        "Poetic/rhetorical voice",
-        "First person singular ('I observed')"
+        "'I have the honour to state...'",
+        "'The undersigned is directed to refer to / convey...'",
+        "'Please find attached the order of...'",
+        "'This is to inform all citizens that...'"
       ],
       "ans": 1,
-      "hint": "Style Guide requires active voice ('The Department failed to...' rather than 'A failure was noticed')."
+      "hint": "An OM traditionally opens with 'The undersigned is directed to refer to / state that...'."
     },
     {
-      "q": "According to the Style Guide, which of the following terms must always be capitalized?",
+      "q": "In which grammatical voice is an Office Memorandum written throughout?",
       "opts": [
-        "comptroller and auditor general",
-        "Comptroller and Auditor General of India, Union Government, State Government",
-        "only section numbers",
-        "all nouns in a paragraph"
+        "First person singular ('I direct that...')",
+        "Third person impersonal voice",
+        "Second person conversational",
+        "Poetic narrative"
       ],
       "ans": 1,
-      "hint": "Institutional titles such as Comptroller and Auditor General and Union/State Government must be capitalized."
+      "hint": "An OM is written in the third person throughout, maintaining institutional neutrality."
+    },
+    {
+      "q": "Where is the recipient list ('To,') placed in an Office Memorandum?",
+      "opts": [
+        "At the top left above the Subject",
+        "At the bottom left of the communication",
+        "In the center of the letterhead",
+        "On a separate cover letter"
+      ],
+      "ans": 1,
+      "hint": "The recipient departments/sections are listed at the bottom left below the signatory's designation."
+    },
+    {
+      "q": "For which purpose is an Office Memorandum primarily used in government?",
+      "opts": [
+        "Inter-departmental communications, conveying cabinet decisions, calling for information, and internal guidelines",
+        "Filing affidavits in High Courts",
+        "Issuing gazette notifications of Acts",
+        "Private letters to contractors"
+      ],
+      "ans": 0,
+      "hint": "OMs are the primary vehicle for internal civil service instructions and inter-ministerial correspondence."
     }
   ],
   "pc1_s5_c4": [
     {
-      "q": "According to the IA&AD Style Guide, numbers from 1 to 9 should generally be written as:",
+      "q": "Which of the following is a strict characteristic of an Office Memorandum (OM)?",
       "opts": [
-        "Arabic digits (1, 2, 3)",
-        "Spelled out in words (one, two, three)",
-        "Roman numerals (I, II, III)",
-        "Always preceded by No."
+        "It has 'Dear Sir' and ends with 'Yours faithfully'",
+        "It has NO salutation and NO subscription ('Yours faithfully')",
+        "It is addressed to private individuals only",
+        "It must be signed by the Governor"
       ],
       "ans": 1,
-      "hint": "Style Guide rules state numbers 1 to 9 are spelled out in words, while 10 and above are written in figures."
+      "hint": "An OM carries no salutation and no subscription, conveying decisions in an impersonal official format."
     },
     {
-      "q": "Which voice is strongly advocated by the IA&AD Style Guide for writing audit observations?",
+      "q": "What is the standard opening formula for an Office Memorandum in Central Government?",
       "opts": [
-        "Passive voice to avoid direct responsibility",
-        "Active voice to clearly identify who failed to do what",
-        "Poetic/rhetorical voice",
-        "First person singular ('I observed')"
+        "'I have the honour to state...'",
+        "'The undersigned is directed to refer to / convey...'",
+        "'Please find attached the order of...'",
+        "'This is to inform all citizens that...'"
       ],
       "ans": 1,
-      "hint": "Style Guide requires active voice ('The Department failed to...' rather than 'A failure was noticed')."
+      "hint": "An OM traditionally opens with 'The undersigned is directed to refer to / state that...'."
     },
     {
-      "q": "According to the Style Guide, which of the following terms must always be capitalized?",
+      "q": "In which grammatical voice is an Office Memorandum written throughout?",
       "opts": [
-        "comptroller and auditor general",
-        "Comptroller and Auditor General of India, Union Government, State Government",
-        "only section numbers",
-        "all nouns in a paragraph"
+        "First person singular ('I direct that...')",
+        "Third person impersonal voice",
+        "Second person conversational",
+        "Poetic narrative"
       ],
       "ans": 1,
-      "hint": "Institutional titles such as Comptroller and Auditor General and Union/State Government must be capitalized."
+      "hint": "An OM is written in the third person throughout, maintaining institutional neutrality."
+    },
+    {
+      "q": "Where is the recipient list ('To,') placed in an Office Memorandum?",
+      "opts": [
+        "At the top left above the Subject",
+        "At the bottom left of the communication",
+        "In the center of the letterhead",
+        "On a separate cover letter"
+      ],
+      "ans": 1,
+      "hint": "The recipient departments/sections are listed at the bottom left below the signatory's designation."
+    },
+    {
+      "q": "For which purpose is an Office Memorandum primarily used in government?",
+      "opts": [
+        "Inter-departmental communications, conveying cabinet decisions, calling for information, and internal guidelines",
+        "Filing affidavits in High Courts",
+        "Issuing gazette notifications of Acts",
+        "Private letters to contractors"
+      ],
+      "ans": 0,
+      "hint": "OMs are the primary vehicle for internal civil service instructions and inter-ministerial correspondence."
     }
   ],
   "pc2_s1_c1": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Definition, type of audits'?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Definition, type of audits'?",
       "opts": [
-        "Statutory and codal execution of Definition, type of audits per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Definition, type of audits",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Definition, type of audits."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Definition, type of audits."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Definition, type of audits'?",
+      "q": "Under Government financial procedures relevant to 'Definition, type of audits', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Definition, type of audits'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Definition, type of audits'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Definition, type of audits'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Definition, type of audits",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Definition, type of audits."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Definition, type of audits', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Definition, type of audits'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c2": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Vision and Mission of C&AG of India'?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Vision and Mission of C&AG of India'?",
       "opts": [
-        "Statutory and codal execution of Vision and Mission of C&AG of India per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Vision and Mission of C&AG of India",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Vision and Mission of C&AG of India."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Vision and Mission of C&AG of India."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Vision and Mission of C&AG of India'?",
+      "q": "Under Government financial procedures relevant to 'Vision and Mission of C&AG of India', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Vision and Mission of C&AG of India'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Vision and Mission of C&AG of India'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Vision and Mission of C&AG of India'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Vision and Mission of C&AG of India",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Vision and Mission of C&AG of India."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Vision and Mission of C&AG of India', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Vision and Mission of C&AG of India'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c3": [
     {
-      "q": "Under Article 12 of the Constitution, which of the following is included in the definition of 'the State'?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part I, Article-12'?",
       "opts": [
-        "Only the Union Parliament and Executive",
-        "Union & State Govts, Legislatures, and local or other authorities within India",
-        "Only Departments funded 100% by Consolidated Fund of India",
-        "Exclusively judicial bodies and tribunals"
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part I, Arti",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Article 12 covers Union & State Govts, Legislatures, and local/other authorities under control of Govt of India."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part I, Article-1."
     },
     {
-      "q": "Which landmark Supreme Court judgment laid down the tests to determine whether a corporation is an instrumentality or agency of the State?",
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part I, Article-12', which authority exercises primary internal control?",
       "opts": [
-        "Golaknath v. State of Punjab",
-        "Ramana Dayaram Shetty v. International Airport Authority",
-        "Kesavananda Bharati v. State of Kerala",
-        "Minerva Mills v. Union of India"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Ramana Dayaram Shetty (1979) established the 5-point agency/instrumentality test for Article 12."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What is the primary audit implication of an entity falling under 'other authorities' under Article 12?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part I, Article-12'?",
       "opts": [
-        "It is completely exempt from CAG scrutiny",
-        "CAG can audit it under Sections 14, 15, 19 or 20 of the CAG (DPC) Act 1971",
-        "It must present its budget directly to Lok Sabha",
-        "It can only be audited by private Chartered Accountants"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "State instrumentalities fall under CAG audit jurisdiction under Sections 14, 15, 19, and 20 of the DPC Act 1971."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part I, Article-12'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part I, Arti",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part I, Article-1."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part I, Article-12', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part I, Article-12'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c4": [
     {
-      "q": "Under Article 148(1) of the Constitution, who appoints the Comptroller and Auditor General of India?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part V (Procedures in financial matters- Article 112-117, Chapter V- C&AG of India- Article 148-151)'?",
       "opts": [
-        "Prime Minister",
-        "President of India by warrant under his hand and seal",
-        "Public Accounts Committee",
-        "Chief Justice of India"
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part V (Proc",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Article 148(1) provides CAG is appointed by the President by warrant under his hand and seal."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part V (Procedure."
     },
     {
-      "q": "Under Article 148(6), how are the administrative expenses of the office of the CAG charged?",
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part V (Procedures in financial matters- Article 112-117, Chapter V- C&AG of India- Article 148-151)', which authority exercises primary internal control?",
       "opts": [
-        "Voted annually by Parliament",
-        "Charged upon the Consolidated Fund of India",
-        "Debited to Public Account of India",
-        "Paid out of Contingency Fund of India"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Article 148(6) mandates CAG expenses, salaries, and pensions are charged upon Consolidated Fund of India."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Under Article 151(1), to whom does the CAG submit the audit reports relating to the accounts of the Union?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part V (Procedures in financial matters- Article 112-117, Chapter V- C&AG of India- Article 148-151)'?",
       "opts": [
-        "Speaker of Lok Sabha",
-        "President of India, who causes them to be laid before each House of Parliament",
-        "Finance Minister",
-        "Chairman of Public Accounts Committee"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Article 151(1) requires CAG reports on Union accounts to be submitted to the President."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What is the tenure of the Comptroller and Auditor General of India under the CAG's (DPC) Act 1971?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part V (Procedures in financial matters- Article 112-117, Chapter V- C&AG of India- Article 148-151)'?",
       "opts": [
-        "5 years or 62 years of age",
-        "6 years or 65 years of age, whichever is earlier",
-        "5 years with eligibility for re-appointment",
-        "At the pleasure of the President without term limit"
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part V (Proc",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Section 4 of the DPC Act 1971 stipulates a term of 6 years or until reaching 65 years of age."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part V (Procedure."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part V (Procedures in financial matters- Article 112-117, Chapter V- C&AG of India- Article 148-151)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part V (Procedures in financial matters- Article 112-117, Chapter V- C&AG of India- Article 148-151)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c5": [
     {
-      "q": "Under Article 112 of the Constitution, the statement of estimated receipts and expenditure is known as:",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part VI (Procedures in financial matters- Article 202-207)'?",
       "opts": [
-        "Annual Appropriation Bill",
-        "Annual Financial Statement",
-        "Vote on Account",
-        "Demand for Grants"
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part VI (Pro",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Article 112 defines the Annual Financial Statement (commonly known as the Union Budget)."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part VI (Procedur."
     },
     {
-      "q": "Which Constitutional Article governs Supplementary, additional, or excess grants for the Union?",
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part VI (Procedures in financial matters- Article 202-207)', which authority exercises primary internal control?",
       "opts": [
-        "Article 113",
-        "Article 114",
-        "Article 115",
-        "Article 116"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 2,
-      "hint": "Article 115 provides for Supplementary, Additional, and Excess Grants."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What is the constitutional purpose of a Vote on Account under Article 116(1)(a)?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part VI (Procedures in financial matters- Article 202-207)'?",
       "opts": [
-        "To sanction unexpected demand during war",
-        "To grant advance funds to cover expenditure pending completion of voting of grants",
-        "To legalize expenditure incurred in excess of appropriation",
-        "To authorize borrowing from RBI"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Vote on Account provides advance funds for estimated expenditure for a part of any financial year pending the passing of Appropriation Act."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part VI (Procedures in financial matters- Article 202-207)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part VI (Pro",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part VI (Procedur."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part VI (Procedures in financial matters- Article 202-207)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part VI (Procedures in financial matters- Article 202-207)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c6": [
     {
-      "q": "How many functional subjects are listed in the Eleventh Schedule of the Constitution for Panchayats?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part IX, IX A (The Panchayats, the Municipalities, along with 11th and 12th schedules), 73rd and 74th Constitutional Amendment Acts'?",
       "opts": [
-        "18 subjects",
-        "21 subjects",
-        "29 subjects",
-        "33 subjects"
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part IX, IX ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 2,
-      "hint": "The 11th Schedule (added by 73rd Amendment) lists 29 functional subjects under Article 243G."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part IX, IX A (Th."
     },
     {
-      "q": "The Twelfth Schedule of the Constitution (74th Amendment) contains how many functional items for Municipalities?",
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part IX, IX A (The Panchayats, the Municipalities, along with 11th and 12th schedules), 73rd and 74th Constitutional Amendment Acts', which authority exercises primary internal control?",
       "opts": [
-        "12 items",
-        "18 items",
-        "24 items",
-        "29 items"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "The 12th Schedule contains 18 functional items for Municipalities under Article 243W."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Under which arrangement does the CAG provide audit oversight over Panchayati Raj Institutions (PRIs) and ULBs in States?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part IX, IX A (The Panchayats, the Municipalities, along with 11th and 12th schedules), 73rd and 74th Constitutional Amendment Acts'?",
       "opts": [
-        "Direct primary audit of all village panchayats",
-        "Technical Guidance and Support (TGS) module",
-        "Outsourced sole audit to private firms",
-        "Sole certification of Gram Panchayat vouchers"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "CAG exercises oversight over Local Body finances through Technical Guidance and Support (TGS)."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part IX, IX A (The Panchayats, the Municipalities, along with 11th and 12th schedules), 73rd and 74th Constitutional Amendment Acts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part IX, IX ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part IX, IX A (Th."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part IX, IX A (The Panchayats, the Municipalities, along with 11th and 12th schedules), 73rd and 74th Constitutional Amendment Acts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part IX, IX A (The Panchayats, the Municipalities, along with 11th and 12th schedules), 73rd and 74th Constitutional Amendment Acts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c7": [
     {
-      "q": "Under which Entry of List I (Union List) in the Seventh Schedule is the 'Audit of the accounts of the Union and of the States' placed?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part XI (along with 7th schedule)'?",
       "opts": [
-        "Entry 45",
-        "Entry 76",
-        "Entry 82",
-        "Entry 97"
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part XI (alo",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Union List Entry 76 covers 'Audit of the accounts of the Union and of the States'."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part XI (along wi."
     },
     {
-      "q": "What is the constitutional effect of public audit being placed in the Union List?",
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part XI (along with 7th schedule)', which authority exercises primary internal control?",
       "opts": [
-        "State Legislatures can create their own independent state auditors",
-        "Parliament has exclusive power to legislate on the duties and powers of the CAG",
-        "State Govts can curtail CAG's audit jurisdiction",
-        "CAG cannot audit State revenues"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Entry 76 gives Parliament exclusive authority to prescribe CAG's duties and powers across both Union and States."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which Article gives Parliament residuary power of legislation over any matter not enumerated in the Concurrent or State List?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part XI (along with 7th schedule)'?",
       "opts": [
-        "Article 246",
-        "Article 248",
-        "Article 250",
-        "Article 254"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Article 248 establishes residuary legislative powers exclusively with Parliament."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part XI (along with 7th schedule)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part XI (alo",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part XI (along wi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part XI (along with 7th schedule)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part XI (along with 7th schedule)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c8": [
     {
-      "q": "Under which Entry of List I (Union List) in the Seventh Schedule is the 'Audit of the accounts of the Union and of the States' placed?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part XII- Chapter I and II'?",
       "opts": [
-        "Entry 45",
-        "Entry 76",
-        "Entry 82",
-        "Entry 97"
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part XII- Ch",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Union List Entry 76 covers 'Audit of the accounts of the Union and of the States'."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part XII- Chapter."
     },
     {
-      "q": "What is the constitutional effect of public audit being placed in the Union List?",
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part XII- Chapter I and II', which authority exercises primary internal control?",
       "opts": [
-        "State Legislatures can create their own independent state auditors",
-        "Parliament has exclusive power to legislate on the duties and powers of the CAG",
-        "State Govts can curtail CAG's audit jurisdiction",
-        "CAG cannot audit State revenues"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Entry 76 gives Parliament exclusive authority to prescribe CAG's duties and powers across both Union and States."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which Article gives Parliament residuary power of legislation over any matter not enumerated in the Concurrent or State List?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part XII- Chapter I and II'?",
       "opts": [
-        "Article 246",
-        "Article 248",
-        "Article 250",
-        "Article 254"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Article 248 establishes residuary legislative powers exclusively with Parliament."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Constitution of India: Part XII- Chapter I and II'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Constitution of India: Part XII- Ch",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Constitution of India: Part XII- Chapter."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Constitution of India: Part XII- Chapter I and II', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Constitution of India: Part XII- Chapter I and II'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c9": [
     {
-      "q": "Under Section 10 of the CAG's (DPC) Act 1971, what is the CAG's duty regarding accounts?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'C&AG of India (Duties Power & Conditions of Service) Act 1971'?",
       "opts": [
-        "Audit of private companies",
-        "Compilation of accounts of the Union and of each State",
-        "Preparation of Union Budget",
-        "Fixation of tax rates"
+        "Strict adherence to prescribed accounting and audit standards governing C&AG of India (Duties Power & Condi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Section 10 mandates CAG to compile accounts of the Union and States, subject to presidential relief."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for C&AG of India (Duties Power & Conditions."
     },
     {
-      "q": "Section 13 of the CAG's (DPC) Act 1971 mandates the audit of expenditure to ensure:",
+      "q": "Under Government financial procedures relevant to 'C&AG of India (Duties Power & Conditions of Service) Act 1971', which authority exercises primary internal control?",
       "opts": [
-        "Rules of market bidding were followed only",
-        "Moneys disbursed were legally available and conformed to the authority governing them",
-        "Every voucher is signed by the Governor",
-        "No expenditure exceeds Rs 10 lakh"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Section 13 lays down general principles for audit of expenditure from the Consolidated Fund."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Under Section 14(1) of the DPC Act 1971, CAG audits bodies substantially financed by grants/loans of not less than:",
+      "q": "What documentation is indispensable for substantiating audit observations on 'C&AG of India (Duties Power & Conditions of Service) Act 1971'?",
       "opts": [
-        "Rs 5 lakh and 25% of total expenditure",
-        "Rs 25 lakh and 75% of total expenditure",
-        "Rs 50 lakh and 50% of total expenditure",
-        "Rs 1 crore and 100% of total expenditure"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Section 14(1) applies to bodies where grants/loans are not less than Rs 25 lakh and not less than 75% of total expenditure."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "Under Section 18 of the DPC Act 1971, what power does the CAG have regarding records and documents?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'C&AG of India (Duties Power & Conditions of Service) Act 1971'?",
       "opts": [
-        "Can only inspect records physically shown by management",
-        "Right to inspect any office/books and call for all books, accounts, and electronic data",
-        "Must take prior permission from Civil Court to examine accounts",
-        "Can only call for records after report is tabled"
+        "Strict adherence to prescribed accounting and audit standards governing C&AG of India (Duties Power & Condi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Section 18 confers statutory powers to inspect offices, demand records, and inspect accounts/vouchers."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for C&AG of India (Duties Power & Conditions."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'C&AG of India (Duties Power & Conditions of Service) Act 1971', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'C&AG of India (Duties Power & Conditions of Service) Act 1971'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s1_c10": [
     {
-      "q": "The Regulations on Audit and Accounts 2020 were framed by the CAG under which statutory authority?",
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Regulations on Audit and Accounts 2020'?",
       "opts": [
-        "Article 148(5) of the Constitution",
-        "Section 23 of the CAG's (DPC) Act 1971",
-        "General Financial Rules 2017",
-        "Indian Companies Act 2013"
+        "Strict adherence to prescribed accounting and audit standards governing Regulations on Audit and Accounts 2",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "The Regulations 2020 are framed under Section 23 of the CAG's (DPC) Act 1971."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Regulations on Audit and Accounts 2020."
     },
     {
-      "q": "Under Regulations on Audit and Accounts 2020, within what timeline should the audited entity provide replies to audit queries?",
+      "q": "Under Government financial procedures relevant to 'Regulations on Audit and Accounts 2020', which authority exercises primary internal control?",
       "opts": [
-        "Within 24 hours",
-        "Within the time specified by audit (normally not exceeding 3 days)",
-        "Within 6 months",
-        "Only during the exit conference"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Regulations require prompt response to audit requisitions and audit queries within the specified timeframe."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Under the Regulations 2020, within what time period must Action Taken Notes (ATNs) on CAG audit paragraphs be submitted?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Regulations on Audit and Accounts 2020'?",
       "opts": [
-        "1 month",
-        "4 months from the date of tabling",
-        "1 year",
-        "Before next general elections"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Standard government procedure mandates Action Taken Notes to be submitted within 4 months of tabling in Legislature."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit & CAG’s mandate), what is a core codal requirement under 'Regulations on Audit and Accounts 2020'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Regulations on Audit and Accounts 2",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Regulations on Audit and Accounts 2020."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Regulations on Audit and Accounts 2020', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Regulations on Audit and Accounts 2020'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s2_c1": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400'?",
+      "q": "In the context of SAS PC-2 (Principles and Standards of Auditing), what is a core codal requirement under 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400'?",
       "opts": [
-        "Statutory and codal execution of International Standards- INTOSAI Princip per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing International Standards- INTOSAI Pr",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for International Standards- INTOSAI Principles a."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for International Standards- INTOSAI Princip."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400'?",
+      "q": "Under Government financial procedures relevant to 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Principles and Standards of Auditing), what is a core codal requirement under 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing International Standards- INTOSAI Pr",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for International Standards- INTOSAI Princip."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'International Standards- INTOSAI Principles and selected standards: ISSAI- 1, 10, 100, 200, 300, 400'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s2_c2": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130'?",
+      "q": "In the context of SAS PC-2 (Principles and Standards of Auditing), what is a core codal requirement under 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130'?",
       "opts": [
-        "Statutory and codal execution of Ethics in Audit, including CAG's Code of per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Ethics in Audit, including CAG's Co",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Ethics in Audit, including CAG's Code of Ethi."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Ethics in Audit, including CAG's Code of."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130'?",
+      "q": "Under Government financial procedures relevant to 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Principles and Standards of Auditing), what is a core codal requirement under 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Ethics in Audit, including CAG's Co",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Ethics in Audit, including CAG's Code of."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Ethics in Audit, including CAG's Code of Ethics and ISSAI 130'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s2_c3": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'CAG's Auditing Standards (2017): General, Field & Reporting Standards'?",
+      "q": "In the context of SAS PC-2 (Principles and Standards of Auditing), what is a core codal requirement under 'CAG's Auditing Standards (2017): General, Field & Reporting Standards'?",
       "opts": [
-        "Statutory and codal execution of CAG's Auditing Standards (2017): General per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing CAG's Auditing Standards (2017): Ge",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for CAG's Auditing Standards (2017): General, Fie."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for CAG's Auditing Standards (2017): General."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'CAG's Auditing Standards (2017): General, Field & Reporting Standards'?",
+      "q": "Under Government financial procedures relevant to 'CAG's Auditing Standards (2017): General, Field & Reporting Standards', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'CAG's Auditing Standards (2017): General, Field & Reporting Standards'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'CAG's Auditing Standards (2017): General, Field & Reporting Standards'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Principles and Standards of Auditing), what is a core codal requirement under 'CAG's Auditing Standards (2017): General, Field & Reporting Standards'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing CAG's Auditing Standards (2017): Ge",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for CAG's Auditing Standards (2017): General."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'CAG's Auditing Standards (2017): General, Field & Reporting Standards', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'CAG's Auditing Standards (2017): General, Field & Reporting Standards'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s3_c1": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)'?",
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)'?",
       "opts": [
-        "Statutory and codal execution of Planning and Designing of Audit: Underst per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Planning and Designing of Audit: Un",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Planning and Designing of Audit: Understandin."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Planning and Designing of Audit: Underst."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)'?",
+      "q": "Under Government financial procedures relevant to 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Planning and Designing of Audit: Un",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Planning and Designing of Audit: Underst."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Planning and Designing of Audit: Understanding the entity, risk analysis, desk review, Audit design matrix (ADM)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s3_c2": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence'?",
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence'?",
       "opts": [
-        "Statutory and codal execution of Execution: Entry/exit conference, audit  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Execution: Entry/exit conference, a",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Execution: Entry/exit conference, audit requi."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Execution: Entry/exit conference, audit ."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence'?",
+      "q": "Under Government financial procedures relevant to 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Execution: Entry/exit conference, a",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Execution: Entry/exit conference, audit ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Execution: Entry/exit conference, audit requisition/enquiry/observation, Audit evidence'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s3_c3": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report'?",
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report'?",
       "opts": [
-        "Statutory and codal execution of Reporting: Different types of audit repo per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Reporting: Different types of audit",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Reporting: Different types of audit reports o."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Reporting: Different types of audit repo."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report'?",
+      "q": "Under Government financial procedures relevant to 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Reporting: Different types of audit",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Reporting: Different types of audit repo."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Reporting: Different types of audit reports of IAAD, Executive summary, characteristics of good audit report'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s3_c4": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Follow up: PAC/Legislative Committees, ATN/ATR'?",
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Follow up: PAC/Legislative Committees, ATN/ATR'?",
       "opts": [
-        "Statutory and codal execution of Follow up: PAC/Legislative Committees, A per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Follow up: PAC/Legislative Committe",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Follow up: PAC/Legislative Committees, ATN/AT."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Follow up: PAC/Legislative Committees, A."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Follow up: PAC/Legislative Committees, ATN/ATR'?",
+      "q": "Under Government financial procedures relevant to 'Follow up: PAC/Legislative Committees, ATN/ATR', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Follow up: PAC/Legislative Committees, ATN/ATR'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Follow up: PAC/Legislative Committees, ATN/ATR'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Process), what is a core codal requirement under 'Follow up: PAC/Legislative Committees, ATN/ATR'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Follow up: PAC/Legislative Committe",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Follow up: PAC/Legislative Committees, A."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Follow up: PAC/Legislative Committees, ATN/ATR', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Follow up: PAC/Legislative Committees, ATN/ATR'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s4_c1": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Environment audit (Environment and Climate Change Auditing Guidelines)'?",
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Environment audit (Environment and Climate Change Auditing Guidelines)'?",
       "opts": [
-        "Statutory and codal execution of Environment audit (Environment and Clima per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Environment audit (Environment and ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Environment audit (Environment and Climate Ch."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Environment audit (Environment and Clima."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Environment audit (Environment and Climate Change Auditing Guidelines)'?",
+      "q": "Under Government financial procedures relevant to 'Environment audit (Environment and Climate Change Auditing Guidelines)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Environment audit (Environment and Climate Change Auditing Guidelines)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Environment audit (Environment and Climate Change Auditing Guidelines)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Environment audit (Environment and Climate Change Auditing Guidelines)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Environment audit (Environment and ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Environment audit (Environment and Clima."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Environment audit (Environment and Climate Change Auditing Guidelines)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Environment audit (Environment and Climate Change Auditing Guidelines)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s4_c2": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)'?",
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)'?",
       "opts": [
-        "Statutory and codal execution of Role of audit in relation to fraud & Cor per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Role of audit in relation to fraud ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Role of audit in relation to fraud & Corrupti."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Role of audit in relation to fraud & Cor."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)'?",
+      "q": "Under Government financial procedures relevant to 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Role of audit in relation to fraud ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Role of audit in relation to fraud & Cor."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Role of audit in relation to fraud & Corruption (Standing Order on Fraud and Corruption)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s4_c3": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)'?",
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)'?",
       "opts": [
-        "Statutory and codal execution of Audit of PPP (Public Private Partnership per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Audit of PPP (Public Private Partne",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Audit of PPP (Public Private Partnerships in ."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Audit of PPP (Public Private Partnership."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)'?",
+      "q": "Under Government financial procedures relevant to 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Audit of PPP (Public Private Partne",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Audit of PPP (Public Private Partnership."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Audit of PPP (Public Private Partnerships in Infrastructure Projects Guidelines)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s4_c4": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Audit of internal controls (Internal Controls Evaluation Manual)'?",
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Audit of internal controls (Internal Controls Evaluation Manual)'?",
       "opts": [
-        "Statutory and codal execution of Audit of internal controls (Internal Con per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Audit of internal controls (Interna",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Audit of internal controls (Internal Controls."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Audit of internal controls (Internal Con."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Audit of internal controls (Internal Controls Evaluation Manual)'?",
+      "q": "Under Government financial procedures relevant to 'Audit of internal controls (Internal Controls Evaluation Manual)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Audit of internal controls (Internal Controls Evaluation Manual)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Audit of internal controls (Internal Controls Evaluation Manual)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Audit Specialisations), what is a core codal requirement under 'Audit of internal controls (Internal Controls Evaluation Manual)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Audit of internal controls (Interna",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Audit of internal controls (Internal Con."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Audit of internal controls (Internal Controls Evaluation Manual)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Audit of internal controls (Internal Controls Evaluation Manual)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s5_c1": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Descriptive statistics & Graphical and numerical representation of data'?",
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Descriptive statistics & Graphical and numerical representation of data'?",
       "opts": [
-        "Statutory and codal execution of Descriptive statistics & Graphical and n per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Descriptive statistics & Graphical ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Descriptive statistics & Graphical and numeri."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Descriptive statistics & Graphical and n."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Descriptive statistics & Graphical and numerical representation of data'?",
+      "q": "Under Government financial procedures relevant to 'Descriptive statistics & Graphical and numerical representation of data', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Descriptive statistics & Graphical and numerical representation of data'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Descriptive statistics & Graphical and numerical representation of data'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Descriptive statistics & Graphical and numerical representation of data'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Descriptive statistics & Graphical ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Descriptive statistics & Graphical and n."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Descriptive statistics & Graphical and numerical representation of data', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Descriptive statistics & Graphical and numerical representation of data'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s5_c2": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Measures of central tendency (mean, median, mode) and dispersion'?",
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Measures of central tendency (mean, median, mode) and dispersion'?",
       "opts": [
-        "Statutory and codal execution of Measures of central tendency (mean, medi per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Measures of central tendency (mean,",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Measures of central tendency (mean, median, m."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Measures of central tendency (mean, medi."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Measures of central tendency (mean, median, mode) and dispersion'?",
+      "q": "Under Government financial procedures relevant to 'Measures of central tendency (mean, median, mode) and dispersion', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Measures of central tendency (mean, median, mode) and dispersion'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Measures of central tendency (mean, median, mode) and dispersion'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Measures of central tendency (mean, median, mode) and dispersion'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Measures of central tendency (mean,",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Measures of central tendency (mean, medi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Measures of central tendency (mean, median, mode) and dispersion', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Measures of central tendency (mean, median, mode) and dispersion'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s5_c3": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Basic Concepts of Correlation'?",
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Basic Concepts of Correlation'?",
       "opts": [
-        "Statutory and codal execution of Basic Concepts of Correlation per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Basic Concepts of Correlation",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Basic Concepts of Correlation."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Basic Concepts of Correlation."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Basic Concepts of Correlation'?",
+      "q": "Under Government financial procedures relevant to 'Basic Concepts of Correlation', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Basic Concepts of Correlation'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Basic Concepts of Correlation'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Basic Concepts of Correlation'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Basic Concepts of Correlation",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Basic Concepts of Correlation."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Basic Concepts of Correlation', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Basic Concepts of Correlation'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc2_s5_c4": [
     {
-      "q": "In the context of SAS PC-2, what is the primary operational scope of 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)'?",
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)'?",
       "opts": [
-        "Statutory and codal execution of Sampling techniques applied in typical a per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing Sampling techniques applied in typi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-2 syllabus criteria for Sampling techniques applied in typical audit ."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Sampling techniques applied in typical a."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)'?",
+      "q": "Under Government financial procedures relevant to 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-2 (Statistics and its application for audit), what is a core codal requirement under 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing Sampling techniques applied in typi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for Sampling techniques applied in typical a."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'Sampling techniques applied in typical audit situations (Random, Systematic, Stratified, MUS)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s1_c1": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices'?",
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices'?",
       "opts": [
-        "Statutory and codal execution of 1.1 Introduction to Computers: Hardware  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1.1 Introduction to Computers: Hard",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 1.1 Introduction to Computers: Hardware compo."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.1 Introduction to Computers: Hardware ."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices'?",
+      "q": "Under Government financial procedures relevant to '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1.1 Introduction to Computers: Hard",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.1 Introduction to Computers: Hardware ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1.1 Introduction to Computers: Hardware components, CPU functions, and memory devices'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s1_c2": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems'?",
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems'?",
       "opts": [
-        "Statutory and codal execution of 1.2 Software Tools: MS Office Suite (Wor per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1.2 Software Tools: MS Office Suite",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 1.2 Software Tools: MS Office Suite (Word, Ex."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.2 Software Tools: MS Office Suite (Wor."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems'?",
+      "q": "Under Government financial procedures relevant to '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1.2 Software Tools: MS Office Suite",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.2 Software Tools: MS Office Suite (Wor."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1.2 Software Tools: MS Office Suite (Word, Excel, PowerPoint) and basic operating systems'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s1_c3": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)'?",
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)'?",
       "opts": [
-        "Statutory and codal execution of 1.3 Computer Networks: LAN/WAN/Internet  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1.3 Computer Networks: LAN/WAN/Inte",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 1.3 Computer Networks: LAN/WAN/Internet and c."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.3 Computer Networks: LAN/WAN/Internet ."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)'?",
+      "q": "Under Government financial procedures relevant to '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1.3 Computer Networks: LAN/WAN/Inte",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.3 Computer Networks: LAN/WAN/Internet ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1.3 Computer Networks: LAN/WAN/Internet and cloud computing concepts (IaaS, PaaS, SaaS)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s1_c4": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing'?",
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing'?",
       "opts": [
-        "Statutory and codal execution of 1.4 Introduction to AI/ML: Basic concept per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1.4 Introduction to AI/ML: Basic co",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 1.4 Introduction to AI/ML: Basic concepts and."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.4 Introduction to AI/ML: Basic concept."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing'?",
+      "q": "Under Government financial procedures relevant to '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1.4 Introduction to AI/ML: Basic co",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.4 Introduction to AI/ML: Basic concept."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1.4 Introduction to AI/ML: Basic concepts and real-world applications in auditing'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s1_c5": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems'?",
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems'?",
       "opts": [
-        "Statutory and codal execution of 1.5 AI in Auditing: Leverage for data an per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1.5 AI in Auditing: Leverage for da",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 1.5 AI in Auditing: Leverage for data analysi."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.5 AI in Auditing: Leverage for data an."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems'?",
+      "q": "Under Government financial procedures relevant to '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Fundamentals of IT and Computer Applications), what is a core codal requirement under '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1.5 AI in Auditing: Leverage for da",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1.5 AI in Auditing: Leverage for data an."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1.5 AI in Auditing: Leverage for data analysis, public LLM precautions, Responsible AI, risks in government AI systems'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s2_c1": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization'?",
+      "q": "In the context of SAS PC-3 (Database Management Systems), what is a core codal requirement under '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization'?",
       "opts": [
-        "Statutory and codal execution of 2.1 DBMS and RDBMS Basics: Designing dat per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 2.1 DBMS and RDBMS Basics: Designin",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 2.1 DBMS and RDBMS Basics: Designing database."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2.1 DBMS and RDBMS Basics: Designing dat."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization'?",
+      "q": "Under Government financial procedures relevant to '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Database Management Systems), what is a core codal requirement under '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2.1 DBMS and RDBMS Basics: Designin",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2.1 DBMS and RDBMS Basics: Designing dat."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2.1 DBMS and RDBMS Basics: Designing databases and principle of normalization'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s2_c2": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques'?",
+      "q": "In the context of SAS PC-3 (Database Management Systems), what is a core codal requirement under '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques'?",
       "opts": [
-        "Statutory and codal execution of 2.2 Relational Databases: Understanding  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 2.2 Relational Databases: Understan",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 2.2 Relational Databases: Understanding integ."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2.2 Relational Databases: Understanding ."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques'?",
+      "q": "Under Government financial procedures relevant to '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Database Management Systems), what is a core codal requirement under '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2.2 Relational Databases: Understan",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2.2 Relational Databases: Understanding ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2.2 Relational Databases: Understanding integrity constraints, primary and foreign keys, and data manipulation techniques'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s2_c3": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries'?",
+      "q": "In the context of SAS PC-3 (Database Management Systems), what is a core codal requirement under '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries'?",
       "opts": [
-        "Statutory and codal execution of 2.3 SQL Queries: Crafting basic queries, per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 2.3 SQL Queries: Crafting basic que",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 2.3 SQL Queries: Crafting basic queries, Util."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2.3 SQL Queries: Crafting basic queries,."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries'?",
+      "q": "Under Government financial procedures relevant to '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Database Management Systems), what is a core codal requirement under '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2.3 SQL Queries: Crafting basic que",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2.3 SQL Queries: Crafting basic queries,."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2.3 SQL Queries: Crafting basic queries, Utilizing Joins, views, and action queries'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c1": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.1 Cybersecurity Fundamentals: Thr",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.1 Cybersecurity Fundamentals: Threats,."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR'?",
+      "q": "Under Government financial procedures relevant to '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.1 Cybersecurity Fundamentals: Threats, per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.1 Cybersecurity Fundamentals: Threats, vuln."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.1 Cybersecurity Fundamentals: Thr",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.1 Cybersecurity Fundamentals: Threats,."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.1 Cybersecurity Fundamentals: Threats, vulnerabilities, risk mitigation & EDR'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c2": [
     {
-      "q": "Which Section of the Information Technology Act 2000 penalizes hacking and unauthorized access to computer systems?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives'?",
       "opts": [
-        "Section 43 & Section 66",
-        "Section 10",
-        "Section 78",
-        "Section 90"
+        "Strict adherence to prescribed accounting and audit standards governing 3.2 Cyber Laws: Overview of the IT ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Section 43 provides civil liability for data damage, and Section 66 penalizes computer-related offences."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.2 Cyber Laws: Overview of the IT Act 2."
     },
     {
-      "q": "Which Section of the IT Act was struck down by the Supreme Court in the historic Shreya Singhal case (2015)?",
+      "q": "Under Government financial procedures relevant to '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives', which authority exercises primary internal control?",
       "opts": [
-        "Section 43A",
-        "Section 66A",
-        "Section 69",
-        "Section 70"
-      ],
-      "ans": 1,
-      "hint": "Section 66A was struck down in Shreya Singhal (2015) for violating Article 19(1)(a)."
-    },
-    {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives'?",
-      "opts": [
-        "Statutory and codal execution of 3.2 Cyber Laws: Overview of the IT Act 2 per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.2 Cyber Laws: Overview of the IT Act 2000, ."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.2 Cyber Laws: Overview of the IT ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.2 Cyber Laws: Overview of the IT Act 2."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.2 Cyber Laws: Overview of the IT Act 2000, amendments & MeitY directives'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c3": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.3 Data Privacy: Principles of pro",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.3 Data Privacy: Principles of protecti."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)'?",
+      "q": "Under Government financial procedures relevant to '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.3 Data Privacy: Principles of protecti per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.3 Data Privacy: Principles of protecting pe."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.3 Data Privacy: Principles of pro",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.3 Data Privacy: Principles of protecti."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.3 Data Privacy: Principles of protecting personally identifiable information (PII)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c4": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.4 Information Asset Protection: E",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.4 Information Asset Protection: Ensuri."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption'?",
+      "q": "Under Government financial procedures relevant to '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.4 Information Asset Protection: Ensuri per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.4 Information Asset Protection: Ensuring co."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.4 Information Asset Protection: E",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.4 Information Asset Protection: Ensuri."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.4 Information Asset Protection: Ensuring confidentiality, integrity, availability, encryption'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c5": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.5 Knowing what cybersecurity meas",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.5 Knowing what cybersecurity measures ."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets'?",
+      "q": "Under Government financial procedures relevant to '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.5 Knowing what cybersecurity measures  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.5 Knowing what cybersecurity measures have ."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.5 Knowing what cybersecurity meas",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.5 Knowing what cybersecurity measures ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.5 Knowing what cybersecurity measures have been deployed in IAAD to protect IT assets'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c6": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.6 Common Cyber-Attack Methods: Un",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.6 Common Cyber-Attack Methods: Underst."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors'?",
+      "q": "Under Government financial procedures relevant to '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.6 Common Cyber-Attack Methods: Underst per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.6 Common Cyber-Attack Methods: Understandin."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.6 Common Cyber-Attack Methods: Un",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.6 Common Cyber-Attack Methods: Underst."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.6 Common Cyber-Attack Methods: Understanding OWASP vulnerabilities and prevalent attack vectors'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c7": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.7 E-Waste Management: Overview of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.7 E-Waste Management: Overview of CAG’."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives'?",
+      "q": "Under Government financial procedures relevant to '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.7 E-Waste Management: Overview of CAG’ per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.7 E-Waste Management: Overview of CAG’s E- ."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.7 E-Waste Management: Overview of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.7 E-Waste Management: Overview of CAG’."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.7 E-Waste Management: Overview of CAG’s E- Waste Management Rules and sustainability initiatives'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c8": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.8 CAG’s Data Governance Policy: K",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.8 CAG’s Data Governance Policy: Key as."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies'?",
+      "q": "Under Government financial procedures relevant to '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.8 CAG’s Data Governance Policy: Key as per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.8 CAG’s Data Governance Policy: Key aspects."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.8 CAG’s Data Governance Policy: K",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.8 CAG’s Data Governance Policy: Key as."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.8 CAG’s Data Governance Policy: Key aspects and implementation strategies'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c9": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.9 Digital Personal Data Protection Act, 2023'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.9 Digital Personal Data Protectio",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.9 Digital Personal Data Protection Act."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.9 Digital Personal Data Protection Act, 2023'?",
+      "q": "Under Government financial procedures relevant to '3.9 Digital Personal Data Protection Act, 2023', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.9 Digital Personal Data Protection Act per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.9 Digital Personal Data Protection Act, 202."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.9 Digital Personal Data Protection Act, 2023'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.9 Digital Personal Data Protection Act, 2023'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.9 Digital Personal Data Protection Act, 2023'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.9 Digital Personal Data Protection Act, 2023'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.9 Digital Personal Data Protectio",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.9 Digital Personal Data Protection Act."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.9 Digital Personal Data Protection Act, 2023', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.9 Digital Personal Data Protection Act, 2023'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c10": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.10 National IT Policies: Insights",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.10 National IT Policies: Insights into."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan'?",
+      "q": "Under Government financial procedures relevant to '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.10 National IT Policies: Insights into per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.10 National IT Policies: Insights into Digi."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.10 National IT Policies: Insights",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.10 National IT Policies: Insights into."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.10 National IT Policies: Insights into Digital India, e-Kranti, and National e-Governance Plan'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c11": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.11 Guidelines for Indian Governme",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.11 Guidelines for Indian Government We."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management'?",
+      "q": "Under Government financial procedures relevant to '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.11 Guidelines for Indian Government We per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.11 Guidelines for Indian Government Website."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.11 Guidelines for Indian Governme",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.11 Guidelines for Indian Government We."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.11 Guidelines for Indian Government Websites (GIGW): Best practices for website management'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c12": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.12 Ethical AI Usage: Principles o",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.12 Ethical AI Usage: Principles of eth."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing'?",
+      "q": "Under Government financial procedures relevant to '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.12 Ethical AI Usage: Principles of eth per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.12 Ethical AI Usage: Principles of ethical ."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.12 Ethical AI Usage: Principles o",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.12 Ethical AI Usage: Principles of eth."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.12 Ethical AI Usage: Principles of ethical AI deployment in governance and auditing'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s3_c13": [
     {
-      "q": "What does the 'CIA Triad' represent in information security?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.13 Aadhaar Act and subsequent amendments'?",
       "opts": [
-        "Central Intelligence Agency",
-        "Confidentiality, Integrity, and Availability",
-        "Control, Inspection, and Auditing",
-        "Code, Infrastructure, and Architecture"
-      ],
-      "ans": 1,
-      "hint": "The CIA Triad stands for Confidentiality, Integrity, and Availability."
-    },
-    {
-      "q": "Under CERT-In guidelines of April 2022, within what timeline must cybersecurity incidents be reported to CERT-In?",
-      "opts": [
-        "Within 6 hours of noticing",
-        "Within 24 hours",
-        "Within 7 working days",
-        "At the end of the financial year"
+        "Strict adherence to prescribed accounting and audit standards governing 3.13 Aadhaar Act and subsequent ame",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "CERT-In 2022 cybersecurity directions mandate incident reporting within 6 hours."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.13 Aadhaar Act and subsequent amendmen."
     },
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '3.13 Aadhaar Act and subsequent amendments'?",
+      "q": "Under Government financial procedures relevant to '3.13 Aadhaar Act and subsequent amendments', which authority exercises primary internal control?",
       "opts": [
-        "Statutory and codal execution of 3.13 Aadhaar Act and subsequent amendmen per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 3.13 Aadhaar Act and subsequent amendments."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '3.13 Aadhaar Act and subsequent amendments'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '3.13 Aadhaar Act and subsequent amendments'?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What key principle ensures accountability in '3.13 Aadhaar Act and subsequent amendments'?",
+      "q": "In the context of SAS PC-3 (Cybersecurity, Data privacy, E-Waste Management & Governance), what is a core codal requirement under '3.13 Aadhaar Act and subsequent amendments'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Strict adherence to prescribed accounting and audit standards governing 3.13 Aadhaar Act and subsequent ame",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3.13 Aadhaar Act and subsequent amendmen."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3.13 Aadhaar Act and subsequent amendments', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3.13 Aadhaar Act and subsequent amendments'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s4_c1": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines'?",
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines'?",
       "opts": [
-        "Statutory and codal execution of 4.1 CAG's Standing Order on IT Auditing  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 4.1 CAG's Standing Order on IT Audi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 4.1 CAG's Standing Order on IT Auditing (Augu."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.1 CAG's Standing Order on IT Auditing ."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines'?",
+      "q": "Under Government financial procedures relevant to '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4.1 CAG's Standing Order on IT Audi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.1 CAG's Standing Order on IT Auditing ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4.1 CAG's Standing Order on IT Auditing (August 2020): Essential directives and guidelines'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s4_c2": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit'?",
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit'?",
       "opts": [
-        "Statutory and codal execution of 4.2 Control Objectives and Measures: Gen per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 4.2 Control Objectives and Measures",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 4.2 Control Objectives and Measures: General ."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.2 Control Objectives and Measures: Gen."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit'?",
+      "q": "Under Government financial procedures relevant to '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4.2 Control Objectives and Measures",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.2 Control Objectives and Measures: Gen."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4.2 Control Objectives and Measures: General vs IS-specific controls, IT Audit vs IT-Assisted Audit'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s4_c3": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways'?",
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways'?",
       "opts": [
-        "Statutory and codal execution of 4.3 CAG's IT Audit Manual 2024: Recent r per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 4.3 CAG's IT Audit Manual 2024: Rec",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 4.3 CAG's IT Audit Manual 2024: Recent revisi."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.3 CAG's IT Audit Manual 2024: Recent r."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways'?",
+      "q": "Under Government financial procedures relevant to '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4.3 CAG's IT Audit Manual 2024: Rec",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.3 CAG's IT Audit Manual 2024: Recent r."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4.3 CAG's IT Audit Manual 2024: Recent revisions and key takeaways'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s4_c4": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts'?",
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts'?",
       "opts": [
-        "Statutory and codal execution of 4.4 CAG's AI Strategic Framework for Aud per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 4.4 CAG's AI Strategic Framework fo",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 4.4 CAG's AI Strategic Framework for Audit: I."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.4 CAG's AI Strategic Framework for Aud."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts'?",
+      "q": "Under Government financial procedures relevant to '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4.4 CAG's AI Strategic Framework fo",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.4 CAG's AI Strategic Framework for Aud."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4.4 CAG's AI Strategic Framework for Audit: Introduction and foundational concepts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s4_c5": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '4.5 Questions on functionalities of CAAT tools used in IAAD'?",
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.5 Questions on functionalities of CAAT tools used in IAAD'?",
       "opts": [
-        "Statutory and codal execution of 4.5 Questions on functionalities of CAAT per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 4.5 Questions on functionalities of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 4.5 Questions on functionalities of CAAT tool."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.5 Questions on functionalities of CAAT."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '4.5 Questions on functionalities of CAAT tools used in IAAD'?",
+      "q": "Under Government financial procedures relevant to '4.5 Questions on functionalities of CAAT tools used in IAAD', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '4.5 Questions on functionalities of CAAT tools used in IAAD'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '4.5 Questions on functionalities of CAAT tools used in IAAD'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Information System Auditing and IT-Enabled Audit Tools), what is a core codal requirement under '4.5 Questions on functionalities of CAAT tools used in IAAD'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4.5 Questions on functionalities of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4.5 Questions on functionalities of CAAT."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4.5 Questions on functionalities of CAAT tools used in IAAD', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4.5 Questions on functionalities of CAAT tools used in IAAD'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s5_c1": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios'?",
+      "q": "In the context of SAS PC-3 (Situation or use case based exercise on IT Audit), what is a core codal requirement under '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios'?",
       "opts": [
-        "Statutory and codal execution of 5.1 Situation / Use-Case Exercises: Draf per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 5.1 Situation / Use-Case Exercises:",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for 5.1 Situation / Use-Case Exercises: Drafting,."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5.1 Situation / Use-Case Exercises: Draf."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios'?",
+      "q": "Under Government financial procedures relevant to '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (Situation or use case based exercise on IT Audit), what is a core codal requirement under '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5.1 Situation / Use-Case Exercises:",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5.1 Situation / Use-Case Exercises: Draf."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5.1 Situation / Use-Case Exercises: Drafting, ADM & Practical IT Audit Scenarios'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s6_c1": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation'?",
+      "q": "In the context of SAS PC-3 (MS Excel Practical Examination), what is a core codal requirement under 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation'?",
       "opts": [
-        "Statutory and codal execution of MS Excel Practical: Advanced Audit Formu per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing MS Excel Practical: Advanced Audit ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for MS Excel Practical: Advanced Audit Formulas, ."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for MS Excel Practical: Advanced Audit Formu."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation'?",
+      "q": "Under Government financial procedures relevant to 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (MS Excel Practical Examination), what is a core codal requirement under 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing MS Excel Practical: Advanced Audit ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for MS Excel Practical: Advanced Audit Formu."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'MS Excel Practical: Advanced Audit Formulas, Pivot Tables & Data Validation'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc3_s7_c1": [
     {
-      "q": "In the context of SAS PC-3, what is the primary operational scope of 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises'?",
+      "q": "In the context of SAS PC-3 (CAAT / SQL Data Analytics Practical), what is a core codal requirement under 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises'?",
       "opts": [
-        "Statutory and codal execution of CAAT Tools & SQL Data Analytics Practica per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing CAAT Tools & SQL Data Analytics Pra",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-3 syllabus criteria for CAAT Tools & SQL Data Analytics Practical: Kn."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for CAAT Tools & SQL Data Analytics Practica."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises'?",
+      "q": "Under Government financial procedures relevant to 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises'?",
+      "q": "What documentation is indispensable for substantiating audit observations on 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-3 (CAAT / SQL Data Analytics Practical), what is a core codal requirement under 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing CAAT Tools & SQL Data Analytics Pra",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for CAAT Tools & SQL Data Analytics Practica."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'CAAT Tools & SQL Data Analytics Practical: Knime, Tableau & Query Exercises'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c1": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service'?",
       "opts": [
-        "Statutory and codal execution of 1. Fundamental Rules & Supplementary Rul per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 1. Fundamental Rules & Supplementary Rules (P."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service'?",
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (a) General Conditions of Service'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c2": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation'?",
       "opts": [
-        "Statutory and codal execution of 1. Fundamental Rules & Supplementary Rul per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 1. Fundamental Rules & Supplementary Rules (P."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation'?",
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (b) Pay, Additions to Pay and Pay Fixation'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c3": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension'?",
       "opts": [
-        "Statutory and codal execution of 1. Fundamental Rules & Supplementary Rul per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 1. Fundamental Rules & Supplementary Rules (P."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension'?",
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (c) Dismissal, Removal and Suspension'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c4": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement'?",
       "opts": [
-        "Statutory and codal execution of 1. Fundamental Rules & Supplementary Rul per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 1. Fundamental Rules & Supplementary Rules (P."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement'?",
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (d) Retirement'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c5": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry'?",
       "opts": [
-        "Statutory and codal execution of 1. Fundamental Rules & Supplementary Rul per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 1. Fundamental Rules & Supplementary Rules (P."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry'?",
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Fundamental Rules & Supplementary Rul."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Fundamental Rules & Supplementary Rules (Part I): (e) Medical Certificate of Fitness on first entry'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c6": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules'?",
       "opts": [
-        "Statutory and codal execution of 2. Fundamental Rules & Supplementary Rul per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 2. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 2. Fundamental Rules & Supplementary Rules (P."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Fundamental Rules & Supplementary Rul."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules'?",
+      "q": "Under Government financial procedures relevant to '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Fundamental Rules & Supplementary Rul."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Fundamental Rules & Supplementary Rules (Part II): Travelling Allowance Rules'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c7": [
     {
-      "q": "Under Rule 26 of CCS (Leave) Rules 1972, what is the maximum accumulation of Earned Leave permitted in the leave account?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '3. Fundamental Rules & Supplementary Rules (Part III): CCS (Leave) Rules 1972'?",
       "opts": [
-        "180 days",
-        "240 days",
-        "300 days (plus 15 days encashment during LTC)",
-        "Unlimited accumulation"
+        "Strict adherence to prescribed accounting and audit standards governing 3. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 2,
-      "hint": "Rule 26 caps total Earned Leave accumulation at 300 days."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Fundamental Rules & Supplementary Rul."
     },
     {
-      "q": "What is the maximum period of Child Care Leave (CCL) admissible to a female Government servant during her entire service?",
+      "q": "Under Government financial procedures relevant to '3. Fundamental Rules & Supplementary Rules (Part III): CCS (Leave) Rules 1972', which authority exercises primary internal control?",
       "opts": [
-        "180 days",
-        "365 days",
-        "730 days",
-        "1000 days"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 2,
-      "hint": "Rule 43-C permits up to 730 days of Child Care Leave during entire service for up to two eldest surviving children."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Under Rule 7 of CCS (Leave) Rules 1972, leave cannot be claimed as:",
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Fundamental Rules & Supplementary Rules (Part III): CCS (Leave) Rules 1972'?",
       "opts": [
-        "An allowance",
-        "A matter of right",
-        "Part of salary",
-        "A pension credit"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Rule 7(1) explicitly states that leave cannot be claimed as of right."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '3. Fundamental Rules & Supplementary Rules (Part III): CCS (Leave) Rules 1972'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Fundamental Rules & Supplementar",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Fundamental Rules & Supplementary Rul."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Fundamental Rules & Supplementary Rules (Part III): CCS (Leave) Rules 1972', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Fundamental Rules & Supplementary Rules (Part III): CCS (Leave) Rules 1972'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c8": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '4. Central Civil Services (Joining Time) Rules'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '4. Central Civil Services (Joining Time) Rules'?",
       "opts": [
-        "Statutory and codal execution of 4. Central Civil Services (Joining Time) per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 4. Central Civil Services (Joining ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 4. Central Civil Services (Joining Time) Rule."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Central Civil Services (Joining Time)."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '4. Central Civil Services (Joining Time) Rules'?",
+      "q": "Under Government financial procedures relevant to '4. Central Civil Services (Joining Time) Rules', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '4. Central Civil Services (Joining Time) Rules'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Central Civil Services (Joining Time) Rules'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '4. Central Civil Services (Joining Time) Rules'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Central Civil Services (Joining ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Central Civil Services (Joining Time)."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Central Civil Services (Joining Time) Rules', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Central Civil Services (Joining Time) Rules'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c9": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '5. Central Civil Services (Classification, Control and Appeal Rules)'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '5. Central Civil Services (Classification, Control and Appeal Rules)'?",
       "opts": [
-        "Statutory and codal execution of 5. Central Civil Services (Classificatio per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 5. Central Civil Services (Classifi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 5. Central Civil Services (Classification, Co."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Central Civil Services (Classificatio."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '5. Central Civil Services (Classification, Control and Appeal Rules)'?",
+      "q": "Under Government financial procedures relevant to '5. Central Civil Services (Classification, Control and Appeal Rules)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '5. Central Civil Services (Classification, Control and Appeal Rules)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Central Civil Services (Classification, Control and Appeal Rules)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '5. Central Civil Services (Classification, Control and Appeal Rules)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5. Central Civil Services (Classifi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Central Civil Services (Classificatio."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5. Central Civil Services (Classification, Control and Appeal Rules)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Central Civil Services (Classification, Control and Appeal Rules)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c10": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '6. Central Civil Services (Conduct) Rules'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '6. Central Civil Services (Conduct) Rules'?",
       "opts": [
-        "Statutory and codal execution of 6. Central Civil Services (Conduct) Rule per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 6. Central Civil Services (Conduct)",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 6. Central Civil Services (Conduct) Rules."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Central Civil Services (Conduct) Rule."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '6. Central Civil Services (Conduct) Rules'?",
+      "q": "Under Government financial procedures relevant to '6. Central Civil Services (Conduct) Rules', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '6. Central Civil Services (Conduct) Rules'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Central Civil Services (Conduct) Rules'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '6. Central Civil Services (Conduct) Rules'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 6. Central Civil Services (Conduct)",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Central Civil Services (Conduct) Rule."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '6. Central Civil Services (Conduct) Rules', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Central Civil Services (Conduct) Rules'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c11": [
     {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '7. General Provident Fund (Central Services) Rules'?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '7. General Provident Fund (Central Services) Rules'?",
       "opts": [
-        "Statutory and codal execution of 7. General Provident Fund (Central Servi per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 7. General Provident Fund (Central ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 7. General Provident Fund (Central Services) ."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 7. General Provident Fund (Central Servi."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '7. General Provident Fund (Central Services) Rules'?",
+      "q": "Under Government financial procedures relevant to '7. General Provident Fund (Central Services) Rules', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '7. General Provident Fund (Central Services) Rules'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '7. General Provident Fund (Central Services) Rules'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '7. General Provident Fund (Central Services) Rules'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 7. General Provident Fund (Central ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 7. General Provident Fund (Central Servi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '7. General Provident Fund (Central Services) Rules', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '7. General Provident Fund (Central Services) Rules'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c12": [
     {
-      "q": "What is the minimum qualifying service required for eligibility to pension under CCS (Pension) Rules?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '8. CCS Pension Rules 1972'?",
       "opts": [
-        "5 years",
-        "10 years",
-        "15 years",
-        "20 years"
+        "Strict adherence to prescribed accounting and audit standards governing 8. CCS Pension Rules 1972",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "A minimum of 10 years qualifying service is required for superannuation pension."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 8. CCS Pension Rules 1972."
     },
     {
-      "q": "What is the maximum percentage of monthly pension that can be commuted by a Central Government employee?",
+      "q": "Under Government financial procedures relevant to '8. CCS Pension Rules 1972', which authority exercises primary internal control?",
       "opts": [
-        "33.33%",
-        "40%",
-        "50%",
-        "60%"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Under Central Civil Services (Commutation of Pension) Rules, up to 40% of pension can be commuted."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Under CCS (Pension) Rules, commuted portion of pension is restored after completion of how many years?",
+      "q": "What documentation is indispensable for substantiating audit observations on '8. CCS Pension Rules 1972'?",
       "opts": [
-        "10 years",
-        "12 years",
-        "15 years",
-        "20 years"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 2,
-      "hint": "The commuted amount is restored after 15 years from the date commutation takes effect."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '8. CCS Pension Rules 1972'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 8. CCS Pension Rules 1972",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 8. CCS Pension Rules 1972."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '8. CCS Pension Rules 1972', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '8. CCS Pension Rules 1972'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s1_c13": [
     {
-      "q": "What is the mandatory Government contribution to the NPS Tier-I account for Central Government employees w.e.f. 01.04.2019?",
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '9. Defined Contribution Pension Scheme (New Pension Scheme)'?",
       "opts": [
-        "10% of (Basic Pay + DA)",
-        "12% of (Basic Pay + DA)",
-        "14% of (Basic Pay + DA)",
-        "15% of (Basic Pay + DA)"
-      ],
-      "ans": 2,
-      "hint": "Government enhanced its contribution to NPS Tier-I to 14% of Basic Pay + DA from 1 April 2019 (employee pays 10%)."
-    },
-    {
-      "q": "Upon normal superannuation at age 60, what minimum percentage of the NPS accumulated pension wealth must be utilized for annuity purchase?",
-      "opts": [
-        "20%",
-        "40%",
-        "60%",
-        "80%"
-      ],
-      "ans": 1,
-      "hint": "At least 40% of pension wealth must be annuitized; up to 60% can be withdrawn as lump sum."
-    },
-    {
-      "q": "In the context of SAS PC-4, what is the primary operational scope of '9. Defined Contribution Pension Scheme (New Pension Scheme)'?",
-      "opts": [
-        "Statutory and codal execution of 9. Defined Contribution Pension Scheme ( per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
+        "Strict adherence to prescribed accounting and audit standards governing 9. Defined Contribution Pension Sch",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Directly anchored in PC-4 syllabus criteria for 9. Defined Contribution Pension Scheme (New P."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 9. Defined Contribution Pension Scheme (."
     },
     {
-      "q": "Which standard authority governs the compliance requirements under '9. Defined Contribution Pension Scheme (New Pension Scheme)'?",
+      "q": "Under Government financial procedures relevant to '9. Defined Contribution Pension Scheme (New Pension Scheme)', which authority exercises primary internal control?",
       "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
       "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What key principle ensures accountability in '9. Defined Contribution Pension Scheme (New Pension Scheme)'?",
+      "q": "What documentation is indispensable for substantiating audit observations on '9. Defined Contribution Pension Scheme (New Pension Scheme)'?",
       "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
       "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Service rules and regulations), what is a core codal requirement under '9. Defined Contribution Pension Scheme (New Pension Scheme)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 9. Defined Contribution Pension Sch",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 9. Defined Contribution Pension Scheme (."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '9. Defined Contribution Pension Scheme (New Pension Scheme)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '9. Defined Contribution Pension Scheme (New Pension Scheme)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s2_c1": [
     {
-      "q": "Under GFR 2017 Rule 149, mandatory procurement of goods and services is conducted through which portal?",
+      "q": "In the context of SAS PC-4 (General Financial Rules), what is a core codal requirement under '1. Central Government Accounts (Receipts and Payment) Rules, 1983'?",
       "opts": [
-        "CPPP Portal",
-        "Government e-Marketplace (GeM)",
-        "National Informatics Centre (NIC)",
-        "Bharat Electronics Portal"
-      ],
-      "ans": 1,
-      "hint": "Rule 149 of GFR 2017 mandates procurement through the Government e-Marketplace (GeM)."
-    },
-    {
-      "q": "Rule 21 of GFR 2017 prescribes which foundational principle for all financial authorities?",
-      "opts": [
-        "Canons of Financial Propriety",
-        "Cash Accounting Principle",
-        "Lapse of Sanctions",
-        "Zero-Based Budgeting"
+        "Strict adherence to prescribed accounting and audit standards governing 1. Central Government Accounts (Rec",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Rule 21 defines the Canons of Financial Propriety expected of every public officer."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Central Government Accounts (Receipts."
     },
     {
-      "q": "Under GFR 2017 Rule 238, within what time period must a Utilization Certificate (UC) be submitted?",
+      "q": "Under Government financial procedures relevant to '1. Central Government Accounts (Receipts and Payment) Rules, 1983', which authority exercises primary internal control?",
       "opts": [
-        "Within 3 months of grant sanction",
-        "Within 12 months of the closure of financial year",
-        "Within 30 days of project commencement",
-        "Only upon project completion"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Utilization Certificates (Form GFR 12-A) must be submitted within 12 months of the close of the financial year."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Central Government Accounts (Receipts and Payment) Rules, 1983'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (General Financial Rules), what is a core codal requirement under '1. Central Government Accounts (Receipts and Payment) Rules, 1983'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Central Government Accounts (Rec",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Central Government Accounts (Receipts."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Central Government Accounts (Receipts and Payment) Rules, 1983', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Central Government Accounts (Receipts and Payment) Rules, 1983'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s2_c2": [
     {
-      "q": "Under GFR 2017 Rule 149, mandatory procurement of goods and services is conducted through which portal?",
+      "q": "In the context of SAS PC-4 (General Financial Rules), what is a core codal requirement under '2. General Financial Rules, 2017 (Chapters 1, 2, 3, 4, 5, 7, 9, 10, 11 & 12)'?",
       "opts": [
-        "CPPP Portal",
-        "Government e-Marketplace (GeM)",
-        "National Informatics Centre (NIC)",
-        "Bharat Electronics Portal"
-      ],
-      "ans": 1,
-      "hint": "Rule 149 of GFR 2017 mandates procurement through the Government e-Marketplace (GeM)."
-    },
-    {
-      "q": "Rule 21 of GFR 2017 prescribes which foundational principle for all financial authorities?",
-      "opts": [
-        "Canons of Financial Propriety",
-        "Cash Accounting Principle",
-        "Lapse of Sanctions",
-        "Zero-Based Budgeting"
+        "Strict adherence to prescribed accounting and audit standards governing 2. General Financial Rules, 2017 (C",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Rule 21 defines the Canons of Financial Propriety expected of every public officer."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. General Financial Rules, 2017 (Chapte."
     },
     {
-      "q": "Under GFR 2017 Rule 238, within what time period must a Utilization Certificate (UC) be submitted?",
+      "q": "Under Government financial procedures relevant to '2. General Financial Rules, 2017 (Chapters 1, 2, 3, 4, 5, 7, 9, 10, 11 & 12)', which authority exercises primary internal control?",
       "opts": [
-        "Within 3 months of grant sanction",
-        "Within 12 months of the closure of financial year",
-        "Within 30 days of project commencement",
-        "Only upon project completion"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Utilization Certificates (Form GFR 12-A) must be submitted within 12 months of the close of the financial year."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. General Financial Rules, 2017 (Chapters 1, 2, 3, 4, 5, 7, 9, 10, 11 & 12)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (General Financial Rules), what is a core codal requirement under '2. General Financial Rules, 2017 (Chapters 1, 2, 3, 4, 5, 7, 9, 10, 11 & 12)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. General Financial Rules, 2017 (C",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. General Financial Rules, 2017 (Chapte."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. General Financial Rules, 2017 (Chapters 1, 2, 3, 4, 5, 7, 9, 10, 11 & 12)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. General Financial Rules, 2017 (Chapters 1, 2, 3, 4, 5, 7, 9, 10, 11 & 12)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s2_c3": [
     {
-      "q": "Under GFR 2017 Rule 149, mandatory procurement of goods and services is conducted through which portal?",
+      "q": "In the context of SAS PC-4 (General Financial Rules), what is a core codal requirement under '3. Delegation of Financial Powers Rules 1978'?",
       "opts": [
-        "CPPP Portal",
-        "Government e-Marketplace (GeM)",
-        "National Informatics Centre (NIC)",
-        "Bharat Electronics Portal"
-      ],
-      "ans": 1,
-      "hint": "Rule 149 of GFR 2017 mandates procurement through the Government e-Marketplace (GeM)."
-    },
-    {
-      "q": "Rule 21 of GFR 2017 prescribes which foundational principle for all financial authorities?",
-      "opts": [
-        "Canons of Financial Propriety",
-        "Cash Accounting Principle",
-        "Lapse of Sanctions",
-        "Zero-Based Budgeting"
+        "Strict adherence to prescribed accounting and audit standards governing 3. Delegation of Financial Powers R",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
       "ans": 0,
-      "hint": "Rule 21 defines the Canons of Financial Propriety expected of every public officer."
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Delegation of Financial Powers Rules ."
     },
     {
-      "q": "Under GFR 2017 Rule 238, within what time period must a Utilization Certificate (UC) be submitted?",
+      "q": "Under Government financial procedures relevant to '3. Delegation of Financial Powers Rules 1978', which authority exercises primary internal control?",
       "opts": [
-        "Within 3 months of grant sanction",
-        "Within 12 months of the closure of financial year",
-        "Within 30 days of project commencement",
-        "Only upon project completion"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Utilization Certificates (Form GFR 12-A) must be submitted within 12 months of the close of the financial year."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Delegation of Financial Powers Rules 1978'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (General Financial Rules), what is a core codal requirement under '3. Delegation of Financial Powers Rules 1978'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Delegation of Financial Powers R",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Delegation of Financial Powers Rules ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Delegation of Financial Powers Rules 1978', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Delegation of Financial Powers Rules 1978'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s3_c1": [
     {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '1. Government Accounting Rules, 1990 - Chapter on General outline of the system of Accounts'?",
       "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
+        "Strict adherence to prescribed accounting and audit standards governing 1. Government Accounting Rules, 199",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Government Accounting Rules, 1990 - C."
     },
     {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
+      "q": "Under Government financial procedures relevant to '1. Government Accounting Rules, 1990 - Chapter on General outline of the system of Accounts', which authority exercises primary internal control?",
       "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Government Accounting Rules, 1990 - Chapter on General outline of the system of Accounts'?",
       "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '1. Government Accounting Rules, 1990 - Chapter on General outline of the system of Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Government Accounting Rules, 199",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Government Accounting Rules, 1990 - C."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Government Accounting Rules, 1990 - Chapter on General outline of the system of Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Government Accounting Rules, 1990 - Chapter on General outline of the system of Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     }
   ],
   "pc4_s3_c2": [
     {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '2. Account Code for Accountant General'?",
       "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
+        "Strict adherence to prescribed accounting and audit standards governing 2. Account Code for Accountant Gene",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Account Code for Accountant General."
     },
     {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
+      "q": "Under Government financial procedures relevant to '2. Account Code for Accountant General', which authority exercises primary internal control?",
       "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Account Code for Accountant General'?",
       "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    }
-  ],
-  "pc4_s3_c3": [
-    {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
-      "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
-      ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '2. Account Code for Accountant General'?",
       "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
+        "Strict adherence to prescribed accounting and audit standards governing 2. Account Code for Accountant Gene",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
       ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Account Code for Accountant General."
     },
     {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
+      "q": "Under Government financial procedures relevant to '2. Account Code for Accountant General', which authority exercises primary internal control?",
       "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
       ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    }
-  ],
-  "pc4_s3_c4": [
-    {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
-      "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
-      ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
     },
     {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Account Code for Accountant General'?",
       "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
       ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
+      "q": "Manufacture transactions are recorded under a distinct sub-head called �Manufacture� of",
       "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
-      ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    }
-  ],
-  "pc4_s3_c5": [
-    {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
-      "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
-      ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
-    },
-    {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
-      "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
-      ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
-    },
-    {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
-      "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
-      ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    }
-  ],
-  "pc4_s3_c6": [
-    {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
-      "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
-      ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
-    },
-    {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
-      "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
-      ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
-    },
-    {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
-      "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
-      ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    }
-  ],
-  "pc4_s3_c7": [
-    {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
-      "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
-      ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
-    },
-    {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
-      "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
-      ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
-    },
-    {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
-      "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
-      ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    },
-    {
-      "q": "Pick the correct one in the context of Divisional Accountant's responsibility for examining the Accounts Returns of Sub Divisional Officers to see  (i) that all vouchers and accounts are arithmetically correct  (ii) that they are in all respects properly prepared in accordance with rules  (iii) that all charges are correctly classified, those which are debitable to the personal account of a contractor, employee or other individual being recorded as such in a prescribed account  (iv) that on the basis of rates sanctioned by competent authority and of facts (e.g., quantities of work done, supplies made, etc, or service rendered) certified by authorised Government servants, the claims admitted for payment are valid and in order.",
-      "opts": [
-        "i, ii and iii",
-        "i, iii and iv",
-        "ii, iii and iv",
-        "all of the above"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Detailed head means",
-      "opts": [
-        "Programme",
-        "Function",
-        "Scheme",
-        "Sub-scheme"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Adjustment of overcharge in a Forest Division, when account of the pertaining year is open, by deduction from the bill shall be accounted as",
-      "opts": [
-        "By showing receipt",
-        "by showing expenditure",
-        "by making net amount payable",
-        "per showing receipt and expenditure simultaneously"
+        "Material Account",
+        "Work Account",
+        "Stock Account",
+        "Misc. Account"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
-      "q": "Where licence fee is recoverable in cash, a bill in suitable form should be sent to the licensee",
+      "q": "Departmental Charges are levied per",
       "opts": [
-        "After the month",
-        "Within 7 days of following month",
-        "on or before the last day of following month",
-        "on or before the last day of each month"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Form CPWA 30 is required to be submitted to the Sub Divisional Officer/Divisional Officer as the case may be on",
-      "opts": [
-        "daily",
-        "weekly",
-        "fortnightly",
-        "monthly"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Completion of work means",
-      "opts": [
-        "Abandonment of Work",
-        "Abandoned Work",
-        "work awaiting settlement",
-        "Work awaiting administrative approval"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Which denotes cash remittance and settlement between offices rendering accounts to same Accounts Officer",
-      "opts": [
-        "8671",
-        "8672",
-        "8782",
-        "8999"
+        "Rupee basis",
+        "ten basis",
+        "hundred basis",
+        "thousand basis"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
-      "q": "Who permits the Divisional Officer through Letter of Credit (LoC) to obtain by cheque on bank, the fund required for all disbursement?",
+      "q": "A productive work shall be classified as unproductive",
       "opts": [
-        "Pay & Accounts Officer",
-        "Accountant General",
-        "Chief Controller of Accounts",
-        "Chief Accounting Authority"
+        "When fails to yield relevant returns in three successive years after productive period.",
+        "When fails to yield relevant returns in four successive years after productive period.",
+        "When fails to yield relevant returns in five successive years after productive period.",
+        "When fails to yield relevant returns in seven successive years after productive period."
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In respect of establishment charges relatable to works done for other Governments, Local funds, private parties etc, recoveries will be made on percentage basis to be determined by Government and credited to",
+      "opts": [
+        "0059 Public Work Revenue",
+        "0059 Other Receipt",
+        "minus debit 2059",
+        "8443 other/Misc. receipt"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The percentage leviable on Deposit works should be adjusted on",
+      "opts": [
+        "monthly basis",
+        "quarterly basis",
+        "six monthly basis",
+        "yearly basis"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "A project classified as productive one will retain its classification unchanged after the closure of its construction estimate during",
+      "opts": [
+        "5th to 8th year",
+        "7th to 10 year",
+        "10th to 13th year",
+        "12th to 15th year"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "(most closed one), it is 11th-13th year"
     },
     {
-      "q": "If the emoluments of a Government servant had been changed in respect of a period during which he occupied a Government residence at some other station or stations, who should see that an intimation in this regard is sent to the concerned?",
-      "opts": [
-        "Government servant concerned",
-        "Division Accountant",
-        "Divisional Officer",
-        "PAO"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Refund of revenue should be recorded in which side of the cash book of Forest Division",
-      "opts": [
-        "Debit side",
-        "Credit side",
-        "contra entry (both side)",
-        "No entry required in the cash book"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "In respect of material sold or transferred, a charge is levied to cover such items of expenditure incurred on the store as do not enter their book value. Such charge is known as",
-      "opts": [
-        "Supervision charge",
-        "Storage charge",
-        "Work charged establishment",
-        "Miscellaneous charge"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "To effect periodical adjustments such as an annual adjustment to credit to the head �8009� GPF an amount equal to total of interest accruing and afforded to various Group �D� and Work Charged establishment accounts by contra debit to the head",
-      "opts": [
-        "0049",
-        "2049",
-        "4049",
-        "2075"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "If an item which properly belongs to a revenue or expenditure head is wrongly classified under another such head, the rectification shall be corrected",
-      "opts": [
-        "before close of monthly account",
-        "before accounts of the year is closed",
-        "within three years from the date error detected",
-        "anytime no matter when detected."
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "The works abstract should be checked and closed under the Supervision of",
-      "opts": [
-        "Junior Engineer",
-        "Assistant Engineer",
-        "Divisional Accountant",
-        "DO"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "If a cancelled/lost/time barred cheque is replaced in a Forest Division, the entries recorded in the cash book of Forest Division should be as",
-      "opts": [
-        "Credit side: Amount of cheque cancelled, Receipt side: details of fresh cheque being issued",
-        "Receipt side: Amount of cheque cancelled, Credit side: details of fresh cheque being issued",
-        "Credit side: Amount of cheque cancelled",
-        "Debit side: Amount of cheque cancelled"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    }
-  ],
-  "pc4_s3_c8": [
-    {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
-      "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
-      ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
-    },
-    {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
-      "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
-      ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
-    },
-    {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
-      "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
-      ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    }
-  ],
-  "pc4_s3_c9": [
-    {
-      "q": "Under CPWA Code Para 10.2.7, what is the primary record for all works done and materials supplied by a contractor?",
-      "opts": [
-        "Works Abstract",
-        "Measurement Book (Form CPWA 23)",
-        "Cash Book",
-        "Contractors' Ledger"
-      ],
-      "ans": 1,
-      "hint": "Measurement Book (Form CPWA 23) is the fundamental record of all measurements on works."
-    },
-    {
-      "q": "Under CPWA rules, what is the maximum percentage of value of imperishable materials that can be granted as Secured Advance to a contractor?",
-      "opts": [
-        "50%",
-        "75%",
-        "90%",
-        "100%"
-      ],
-      "ans": 1,
-      "hint": "Secured Advance can be granted up to 75% of the estimated value of imperishable materials brought to site."
-    },
-    {
-      "q": "What is the dual constitutional and operational role of the Divisional Accountant in a PWD/Irrigation Division?",
-      "opts": [
-        "Only a clerk who prepares cheques",
-        "Financial Advisor to Divisional Officer and representative of the Accountant General",
-        "Sub-Divisional Officer in charge of construction",
-        "Independent private auditor"
-      ],
-      "ans": 1,
-      "hint": "The Divisional Accountant functions as internal checker, financial advisor to the DO, and AG's representative."
-    }
-  ],
-  "pc9_s1_c1": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP'?",
-      "opts": [
-        "Statutory and codal execution of 1. Financial Accounting – Nature and Sco per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for 1. Financial Accounting – Nature and Scope, L."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc9_s1_c2": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors'?",
-      "opts": [
-        "Statutory and codal execution of 2. Accounting Process – Books of origina per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for 2. Accounting Process – Books of original ent."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc9_s1_c3": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '3. Depreciation, Provisions and Reserves'?",
-      "opts": [
-        "Statutory and codal execution of 3. Depreciation, Provisions and Reserves per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for 3. Depreciation, Provisions and Reserves."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '3. Depreciation, Provisions and Reserves'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '3. Depreciation, Provisions and Reserves'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc9_s1_c4": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)'?",
-      "opts": [
-        "Statutory and codal execution of 4. Final Accounts of Sole Proprietorship per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for 4. Final Accounts of Sole Proprietorship Conc."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc9_s1_c5": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts'?",
-      "opts": [
-        "Statutory and codal execution of 5. Accounts of Joint Stock Companies – S per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for 5. Accounts of Joint Stock Companies – Share ."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc9_s1_c6": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis'?",
-      "opts": [
-        "Statutory and codal execution of 6. Analysis of Financial Statements: Rat per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for 6. Analysis of Financial Statements: Ratio An."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc9_s2_c1": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)'?",
-      "opts": [
-        "Statutory and codal execution of (a) Introduction to Accounting Standards per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for (a) Introduction to Accounting Standards issu."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc9_s2_c2": [
-    {
-      "q": "In the context of SAS PC-9, what is the primary operational scope of '(b) Uniform Format of Accounts for Central Autonomous Bodies'?",
-      "opts": [
-        "Statutory and codal execution of (b) Uniform Format of Accounts for Centr per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-9 syllabus criteria for (b) Uniform Format of Accounts for Central Au."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(b) Uniform Format of Accounts for Central Autonomous Bodies'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(b) Uniform Format of Accounts for Central Autonomous Bodies'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c1": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(i) Time schedule and Instructions for preparation and submission of Accounts'?",
-      "opts": [
-        "Statutory and codal execution of (i) Time schedule and Instructions for p per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (i) Time schedule and Instructions for prepar."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(i) Time schedule and Instructions for preparation and submission of Accounts'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(i) Time schedule and Instructions for preparation and submission of Accounts'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c2": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure'?",
-      "opts": [
-        "Statutory and codal execution of (ii) Form of Appropriation Accounts & St per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (ii) Form of Appropriation Accounts & Stateme."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c3": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts'?",
-      "opts": [
-        "Statutory and codal execution of (iii) Form of the Statements, Appendices per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iii) Form of the Statements, Appendices, etc."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c4": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iv) General Checks while compiling Accounts & checks by I.T.A.'?",
-      "opts": [
-        "Statutory and codal execution of (iv) General Checks while compiling Acco per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iv) General Checks while compiling Accounts ."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iv) General Checks while compiling Accounts & checks by I.T.A.'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iv) General Checks while compiling Accounts & checks by I.T.A.'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c5": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(v) Submission of Draft Accounts to Accountant General (Audit)'?",
-      "opts": [
-        "Statutory and codal execution of (v) Submission of Draft Accounts to Acco per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (v) Submission of Draft Accounts to Accountan."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(v) Submission of Draft Accounts to Accountant General (Audit)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(v) Submission of Draft Accounts to Accountant General (Audit)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c6": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter'?",
-      "opts": [
-        "Statutory and codal execution of (vi) Certificate of the A.G. (A&E) & Cer per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (vi) Certificate of the A.G. (A&E) & Certific."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c7": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.'?",
-      "opts": [
-        "Statutory and codal execution of (vii) Instructions in printing of Accoun per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (vii) Instructions in printing of Accounts & ."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s1_c8": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard'?",
-      "opts": [
-        "Statutory and codal execution of (viii) Mandate and compilation of CFRA,  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (viii) Mandate and compilation of CFRA, overv."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s2_c1": [
-    {
-      "q": "Under Section 10 of the CAG's (DPC) Act 1971, what is the CAG's duty regarding accounts?",
-      "opts": [
-        "Audit of private companies",
-        "Compilation of accounts of the Union and of each State",
-        "Preparation of Union Budget",
-        "Fixation of tax rates"
-      ],
-      "ans": 1,
-      "hint": "Section 10 mandates CAG to compile accounts of the Union and States, subject to presidential relief."
-    },
-    {
-      "q": "Section 13 of the CAG's (DPC) Act 1971 mandates the audit of expenditure to ensure:",
-      "opts": [
-        "Rules of market bidding were followed only",
-        "Moneys disbursed were legally available and conformed to the authority governing them",
-        "Every voucher is signed by the Governor",
-        "No expenditure exceeds Rs 10 lakh"
-      ],
-      "ans": 1,
-      "hint": "Section 13 lays down general principles for audit of expenditure from the Consolidated Fund."
-    },
-    {
-      "q": "Under Section 14(1) of the DPC Act 1971, CAG audits bodies substantially financed by grants/loans of not less than:",
-      "opts": [
-        "Rs 5 lakh and 25% of total expenditure",
-        "Rs 25 lakh and 75% of total expenditure",
-        "Rs 50 lakh and 50% of total expenditure",
-        "Rs 1 crore and 100% of total expenditure"
-      ],
-      "ans": 1,
-      "hint": "Section 14(1) applies to bodies where grants/loans are not less than Rs 25 lakh and not less than 75% of total expenditure."
-    },
-    {
-      "q": "Under Section 18 of the DPC Act 1971, what power does the CAG have regarding records and documents?",
-      "opts": [
-        "Can only inspect records physically shown by management",
-        "Right to inspect any office/books and call for all books, accounts, and electronic data",
-        "Must take prior permission from Civil Court to examine accounts",
-        "Can only call for records after report is tabled"
-      ],
-      "ans": 1,
-      "hint": "Section 18 confers statutory powers to inspect offices, demand records, and inspect accounts/vouchers."
-    }
-  ],
-  "pc11_s2_c2": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(ii) Delegation of Powers in Accounting Operations'?",
-      "opts": [
-        "Statutory and codal execution of (ii) Delegation of Powers in Accounting  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (ii) Delegation of Powers in Accounting Opera."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(ii) Delegation of Powers in Accounting Operations'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(ii) Delegation of Powers in Accounting Operations'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s2_c3": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iii) General Instructions regarding procedure of Accounting'?",
-      "opts": [
-        "Statutory and codal execution of (iii) General Instructions regarding pro per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iii) General Instructions regarding procedur."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iii) General Instructions regarding procedure of Accounting'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iii) General Instructions regarding procedure of Accounting'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s2_c4": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iv) Debt, Deposit and Remittance Transactions, Review of Balances'?",
-      "opts": [
-        "Statutory and codal execution of (iv) Debt, Deposit and Remittance Transa per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iv) Debt, Deposit and Remittance Transaction."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iv) Debt, Deposit and Remittance Transactions, Review of Balances'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iv) Debt, Deposit and Remittance Transactions, Review of Balances'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s2_c5": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement'?",
-      "opts": [
-        "Statutory and codal execution of (v) Maintenance of Provident Fund, Pensi per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (v) Maintenance of Provident Fund, Pension an."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s2_c6": [
-    {
-      "q": "The Fiscal Responsibility and Budget Management (FRBM) Act was enacted in which year and became effective from?",
-      "opts": [
-        "1991, effective 1992",
-        "2003, effective 5 July 2004",
-        "2010, effective 2011",
-        "2017, effective 2018"
-      ],
-      "ans": 1,
-      "hint": "FRBM Act was passed in August 2003 and came into force on 5 July 2004."
-    },
-    {
-      "q": "Under Section 5 of the FRBM Act 2003, what major prohibition was placed on the Reserve Bank of India w.e.f. 1 April 2006?",
-      "opts": [
-        "Prohibited from issuing currency notes",
-        "Prohibited from subscribing to the primary issues of Central Government securities",
-        "Barred from setting repo rates",
-        "Forbidden from lending to commercial banks"
-      ],
-      "ans": 1,
-      "hint": "Section 5 barred RBI from subscribing to primary issues of Central Government securities to curb deficit monetization."
-    },
-    {
-      "q": "The 'Escape Clause' under Section 4(2) of the amended FRBM Act allows fiscal deficit deviation up to what percentage for national security or calamity?",
-      "opts": [
-        "0.25% of GDP",
-        "0.50% of GDP",
-        "1.00% of GDP",
-        "2.00% of GDP"
-      ],
-      "ans": 1,
-      "hint": "Section 4(2) allows up to 0.5% GDP deviation on grounds of war, calamity, structural reforms, or sharp economic decline."
-    }
-  ],
-  "pc11_s3_c1": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(i) Basic understanding of functioning of treasuries & IFMS Modules'?",
-      "opts": [
-        "Statutory and codal execution of (i) Basic understanding of functioning o per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (i) Basic understanding of functioning of tre."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(i) Basic understanding of functioning of treasuries & IFMS Modules'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(i) Basic understanding of functioning of treasuries & IFMS Modules'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s3_c2": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation'?",
-      "opts": [
-        "Statutory and codal execution of (ii) Transactions with RBI including dif per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (ii) Transactions with RBI including differen."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s3_c3": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iii) Treasury inspection in e-environment including checklist to be followed'?",
-      "opts": [
-        "Statutory and codal execution of (iii) Treasury inspection in e-environme per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iii) Treasury inspection in e-environment in."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iii) Treasury inspection in e-environment including checklist to be followed'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iii) Treasury inspection in e-environment including checklist to be followed'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s3_c4": [
-    {
-      "q": "What is the primary objective of the Single Nodal Agency (SNA) model under PFMS for Centrally Sponsored Schemes?",
-      "opts": [
-        "To disburse cash directly at village level",
-        "To eliminate idle fund parking in commercial banks and implement 'Just-in-Time' release",
-        "To abolish state finance departments",
-        "To outsource scheme monitoring to private agencies"
-      ],
-      "ans": 1,
-      "hint": "SNA accounts ensure Just-in-Time funding and eliminate unspent float parking in bank accounts."
-    },
-    {
-      "q": "In PFMS, what does the 'EAT Module' stand for?",
-      "opts": [
-        "Electronic Allocation Tracking",
-        "Expenditure, Advance and Transfer Module",
-        "Estimated Accounts Terminal",
-        "Entry, Audit and Taxation"
-      ],
-      "ans": 1,
-      "hint": "The EAT module tracks Expenditure, Advances, and Transfers down to the grassroots implementing agencies."
-    },
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts'?",
-      "opts": [
-        "Statutory and codal execution of (iv) Introduction to PFMS and inputs fro per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iv) Introduction to PFMS and inputs from PFM."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s3_c5": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks'?",
-      "opts": [
-        "Statutory and codal execution of (v) E-Kuber -Government payments/disburs per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (v) E-Kuber -Government payments/disbursement."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s4_c1": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(i) Sustainable Development Goals related to Natural Resources'?",
-      "opts": [
-        "Statutory and codal execution of (i) Sustainable Development Goals relate per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (i) Sustainable Development Goals related to ."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(i) Sustainable Development Goals related to Natural Resources'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(i) Sustainable Development Goals related to Natural Resources'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s4_c2": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)'?",
-      "opts": [
-        "Statutory and codal execution of (ii) United Nations - The System of Envi per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (ii) United Nations - The System of Environme."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s4_c3": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iii) Introduction to Panchamrit – COP26, India’s Commitment'?",
-      "opts": [
-        "Statutory and codal execution of (iii) Introduction to Panchamrit – COP26 per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iii) Introduction to Panchamrit – COP26, Ind."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iii) Introduction to Panchamrit – COP26, India’s Commitment'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iii) Introduction to Panchamrit – COP26, India’s Commitment'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s4_c4": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts'?",
-      "opts": [
-        "Statutory and codal execution of (iv) Mandate for imposition of taxes on  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iv) Mandate for imposition of taxes on resou."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s4_c5": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(v) Asset Accounting – tables and templates'?",
-      "opts": [
-        "Statutory and codal execution of (v) Asset Accounting – tables and templa per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (v) Asset Accounting – tables and templates."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(v) Asset Accounting – tables and templates'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(v) Asset Accounting – tables and templates'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s5_c1": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities'?",
-      "opts": [
-        "Statutory and codal execution of (i) Constitution of Government Accountin per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (i) Constitution of Government Accounting Sta."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s5_c2": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India'?",
-      "opts": [
-        "Statutory and codal execution of (ii) Indian Government Accounting Standa per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (ii) Indian Government Accounting Standards (."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s5_c3": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB'?",
-      "opts": [
-        "Statutory and codal execution of (iii) Cash based International Public Se per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iii) Cash based International Public Sector ."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc11_s5_c4": [
-    {
-      "q": "In the context of SAS PC-11, what is the primary operational scope of '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual'?",
-      "opts": [
-        "Statutory and codal execution of (iv) Introduction to accrual accounting  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-11 syllabus criteria for (iv) Introduction to accrual accounting in In."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s1_c1": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'a. Government budget – meaning, objectives and components'?",
-      "opts": [
-        "Statutory and codal execution of a. Government budget – meaning, objectiv per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for a. Government budget – meaning, objectives an."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'a. Government budget – meaning, objectives and components'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'a. Government budget – meaning, objectives and components'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s1_c2": [
-    {
-      "q": "Under Article 112 of the Constitution, the statement of estimated receipts and expenditure is known as:",
-      "opts": [
-        "Annual Appropriation Bill",
-        "Annual Financial Statement",
-        "Vote on Account",
-        "Demand for Grants"
-      ],
-      "ans": 1,
-      "hint": "Article 112 defines the Annual Financial Statement (commonly known as the Union Budget)."
-    },
-    {
-      "q": "Which Constitutional Article governs Supplementary, additional, or excess grants for the Union?",
-      "opts": [
-        "Article 113",
-        "Article 114",
-        "Article 115",
-        "Article 116"
-      ],
-      "ans": 2,
-      "hint": "Article 115 provides for Supplementary, Additional, and Excess Grants."
-    },
-    {
-      "q": "What is the constitutional purpose of a Vote on Account under Article 116(1)(a)?",
-      "opts": [
-        "To sanction unexpected demand during war",
-        "To grant advance funds to cover expenditure pending completion of voting of grants",
-        "To legalize expenditure incurred in excess of appropriation",
-        "To authorize borrowing from RBI"
-      ],
-      "ans": 1,
-      "hint": "Vote on Account provides advance funds for estimated expenditure for a part of any financial year pending the passing of Appropriation Act."
-    }
-  ],
-  "pc13_s1_c3": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'c. Process involved in the preparation of Government budget'?",
-      "opts": [
-        "Statutory and codal execution of c. Process involved in the preparation o per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for c. Process involved in the preparation of Gov."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'c. Process involved in the preparation of Government budget'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'c. Process involved in the preparation of Government budget'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s1_c4": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'd. Budget documents presented in Parliament/State Legislature'?",
-      "opts": [
-        "Statutory and codal execution of d. Budget documents presented in Parliam per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for d. Budget documents presented in Parliament/S."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'd. Budget documents presented in Parliament/State Legislature'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'd. Budget documents presented in Parliament/State Legislature'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s1_c5": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)'?",
-      "opts": [
-        "Statutory and codal execution of e. Budget Review (Pre-Budget, Post-Budge per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for e. Budget Review (Pre-Budget, Post-Budget, Cl."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s2_c1": [
-    {
-      "q": "The Fiscal Responsibility and Budget Management (FRBM) Act was enacted in which year and became effective from?",
-      "opts": [
-        "1991, effective 1992",
-        "2003, effective 5 July 2004",
-        "2010, effective 2011",
-        "2017, effective 2018"
-      ],
-      "ans": 1,
-      "hint": "FRBM Act was passed in August 2003 and came into force on 5 July 2004."
-    },
-    {
-      "q": "Under Section 5 of the FRBM Act 2003, what major prohibition was placed on the Reserve Bank of India w.e.f. 1 April 2006?",
-      "opts": [
-        "Prohibited from issuing currency notes",
-        "Prohibited from subscribing to the primary issues of Central Government securities",
-        "Barred from setting repo rates",
-        "Forbidden from lending to commercial banks"
-      ],
-      "ans": 1,
-      "hint": "Section 5 barred RBI from subscribing to primary issues of Central Government securities to curb deficit monetization."
-    },
-    {
-      "q": "The 'Escape Clause' under Section 4(2) of the amended FRBM Act allows fiscal deficit deviation up to what percentage for national security or calamity?",
-      "opts": [
-        "0.25% of GDP",
-        "0.50% of GDP",
-        "1.00% of GDP",
-        "2.00% of GDP"
-      ],
-      "ans": 1,
-      "hint": "Section 4(2) allows up to 0.5% GDP deviation on grounds of war, calamity, structural reforms, or sharp economic decline."
-    }
-  ],
-  "pc13_s2_c2": [
-    {
-      "q": "The Fiscal Responsibility and Budget Management (FRBM) Act was enacted in which year and became effective from?",
-      "opts": [
-        "1991, effective 1992",
-        "2003, effective 5 July 2004",
-        "2010, effective 2011",
-        "2017, effective 2018"
-      ],
-      "ans": 1,
-      "hint": "FRBM Act was passed in August 2003 and came into force on 5 July 2004."
-    },
-    {
-      "q": "Under Section 5 of the FRBM Act 2003, what major prohibition was placed on the Reserve Bank of India w.e.f. 1 April 2006?",
-      "opts": [
-        "Prohibited from issuing currency notes",
-        "Prohibited from subscribing to the primary issues of Central Government securities",
-        "Barred from setting repo rates",
-        "Forbidden from lending to commercial banks"
-      ],
-      "ans": 1,
-      "hint": "Section 5 barred RBI from subscribing to primary issues of Central Government securities to curb deficit monetization."
-    },
-    {
-      "q": "The 'Escape Clause' under Section 4(2) of the amended FRBM Act allows fiscal deficit deviation up to what percentage for national security or calamity?",
-      "opts": [
-        "0.25% of GDP",
-        "0.50% of GDP",
-        "1.00% of GDP",
-        "2.00% of GDP"
-      ],
-      "ans": 1,
-      "hint": "Section 4(2) allows up to 0.5% GDP deviation on grounds of war, calamity, structural reforms, or sharp economic decline."
-    }
-  ],
-  "pc13_s2_c3": [
-    {
-      "q": "The Fiscal Responsibility and Budget Management (FRBM) Act was enacted in which year and became effective from?",
-      "opts": [
-        "1991, effective 1992",
-        "2003, effective 5 July 2004",
-        "2010, effective 2011",
-        "2017, effective 2018"
-      ],
-      "ans": 1,
-      "hint": "FRBM Act was passed in August 2003 and came into force on 5 July 2004."
-    },
-    {
-      "q": "Under Section 5 of the FRBM Act 2003, what major prohibition was placed on the Reserve Bank of India w.e.f. 1 April 2006?",
-      "opts": [
-        "Prohibited from issuing currency notes",
-        "Prohibited from subscribing to the primary issues of Central Government securities",
-        "Barred from setting repo rates",
-        "Forbidden from lending to commercial banks"
-      ],
-      "ans": 1,
-      "hint": "Section 5 barred RBI from subscribing to primary issues of Central Government securities to curb deficit monetization."
-    },
-    {
-      "q": "The 'Escape Clause' under Section 4(2) of the amended FRBM Act allows fiscal deficit deviation up to what percentage for national security or calamity?",
-      "opts": [
-        "0.25% of GDP",
-        "0.50% of GDP",
-        "1.00% of GDP",
-        "2.00% of GDP"
-      ],
-      "ans": 1,
-      "hint": "Section 4(2) allows up to 0.5% GDP deviation on grounds of war, calamity, structural reforms, or sharp economic decline."
-    }
-  ],
-  "pc13_s2_c4": [
-    {
-      "q": "The Fiscal Responsibility and Budget Management (FRBM) Act was enacted in which year and became effective from?",
-      "opts": [
-        "1991, effective 1992",
-        "2003, effective 5 July 2004",
-        "2010, effective 2011",
-        "2017, effective 2018"
-      ],
-      "ans": 1,
-      "hint": "FRBM Act was passed in August 2003 and came into force on 5 July 2004."
-    },
-    {
-      "q": "Under Section 5 of the FRBM Act 2003, what major prohibition was placed on the Reserve Bank of India w.e.f. 1 April 2006?",
-      "opts": [
-        "Prohibited from issuing currency notes",
-        "Prohibited from subscribing to the primary issues of Central Government securities",
-        "Barred from setting repo rates",
-        "Forbidden from lending to commercial banks"
-      ],
-      "ans": 1,
-      "hint": "Section 5 barred RBI from subscribing to primary issues of Central Government securities to curb deficit monetization."
-    },
-    {
-      "q": "The 'Escape Clause' under Section 4(2) of the amended FRBM Act allows fiscal deficit deviation up to what percentage for national security or calamity?",
-      "opts": [
-        "0.25% of GDP",
-        "0.50% of GDP",
-        "1.00% of GDP",
-        "2.00% of GDP"
-      ],
-      "ans": 1,
-      "hint": "Section 4(2) allows up to 0.5% GDP deviation on grounds of war, calamity, structural reforms, or sharp economic decline."
-    }
-  ],
-  "pc13_s3_c1": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'a. Balanced/Surplus/Deficit Budgeting'?",
-      "opts": [
-        "Statutory and codal execution of a. Balanced/Surplus/Deficit Budgeting per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for a. Balanced/Surplus/Deficit Budgeting."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'a. Balanced/Surplus/Deficit Budgeting'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'a. Balanced/Surplus/Deficit Budgeting'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s3_c2": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits'?",
-      "opts": [
-        "Statutory and codal execution of b. Measures of Government Deficit: Reven per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for b. Measures of Government Deficit: Revenue, F."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s3_c3": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'c. Deficit management through internal & external debt'?",
-      "opts": [
-        "Statutory and codal execution of c. Deficit management through internal & per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for c. Deficit management through internal & exte."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'c. Deficit management through internal & external debt'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'c. Deficit management through internal & external debt'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s3_c4": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'd. Off budget borrowing (OBB)'?",
-      "opts": [
-        "Statutory and codal execution of d. Off budget borrowing (OBB) per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for d. Off budget borrowing (OBB)."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'd. Off budget borrowing (OBB)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'd. Off budget borrowing (OBB)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s4_c1": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'a. Sources of revenue for Union and State - Union/State/Concurrent List'?",
-      "opts": [
-        "Statutory and codal execution of a. Sources of revenue for Union and Stat per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for a. Sources of revenue for Union and State - U."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'a. Sources of revenue for Union and State - Union/State/Concurrent List'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'a. Sources of revenue for Union and State - Union/State/Concurrent List'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s4_c2": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'b. Financial Relation Between Union and States - Constitutional Provisions'?",
-      "opts": [
-        "Statutory and codal execution of b. Financial Relation Between Union and  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for b. Financial Relation Between Union and State."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'b. Financial Relation Between Union and States - Constitutional Provisions'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'b. Financial Relation Between Union and States - Constitutional Provisions'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s4_c3": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'c. Different Grant-in-aids given by Union to States and PRIs'?",
-      "opts": [
-        "Statutory and codal execution of c. Different Grant-in-aids given by Unio per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for c. Different Grant-in-aids given by Union to ."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'c. Different Grant-in-aids given by Union to States and PRIs'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'c. Different Grant-in-aids given by Union to States and PRIs'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s4_c4": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'd. Distribution of Tax/ Non-tax Revenues'?",
-      "opts": [
-        "Statutory and codal execution of d. Distribution of Tax/ Non-tax Revenues per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for d. Distribution of Tax/ Non-tax Revenues."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'd. Distribution of Tax/ Non-tax Revenues'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'd. Distribution of Tax/ Non-tax Revenues'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s4_c5": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'e. Article 280 - Finance commission'?",
-      "opts": [
-        "Statutory and codal execution of e. Article 280 - Finance commission per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for e. Article 280 - Finance commission."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'e. Article 280 - Finance commission'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'e. Article 280 - Finance commission'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc13_s4_c6": [
-    {
-      "q": "In the context of SAS PC-13, what is the primary operational scope of 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines'?",
-      "opts": [
-        "Statutory and codal execution of f. Key recommendations of the latest Fin per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-13 syllabus criteria for f. Key recommendations of the latest Finance ."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s1_c1": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Statutory and codal execution of 1. Chapter-12: Maintenance of Service, P per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 1. Chapter-12: Maintenance of Service, Provid."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s1_c2": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Statutory and codal execution of 2. Chapter-13: Gazetted Government Servi per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 2. Chapter-13: Gazetted Government Service En."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s1_c3": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '3. Chapter-14: Pension (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Statutory and codal execution of 3. Chapter-14: Pension (MSO A&E-Vol-1) per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 3. Chapter-14: Pension (MSO A&E-Vol-1)."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '3. Chapter-14: Pension (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '3. Chapter-14: Pension (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s1_c4": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Statutory and codal execution of 4. Chapter-15: Pre-check for payment of  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 4. Chapter-15: Pre-check for payment of Pensi."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c1": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS'?",
-      "opts": [
-        "Statutory and codal execution of 1. General understanding of budgeting, e per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 1. General understanding of budgeting, expend."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c2": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report'?",
-      "opts": [
-        "Statutory and codal execution of 2. Process flow of IFMS used by treasuri per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 2. Process flow of IFMS used by treasuries an."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c3": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)'?",
-      "opts": [
-        "Statutory and codal execution of 3. Difference between Treasury Inspectio per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 3. Difference between Treasury Inspection and."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c4": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '4. Understanding of data extraction and analytics tool: IDEA'?",
-      "opts": [
-        "Statutory and codal execution of 4. Understanding of data extraction and  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 4. Understanding of data extraction and analy."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '4. Understanding of data extraction and analytics tool: IDEA'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '4. Understanding of data extraction and analytics tool: IDEA'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c5": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '5. Purpose and nature of various registers and records maintained at the Treasury'?",
-      "opts": [
-        "Statutory and codal execution of 5. Purpose and nature of various registe per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 5. Purpose and nature of various registers an."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '5. Purpose and nature of various registers and records maintained at the Treasury'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '5. Purpose and nature of various registers and records maintained at the Treasury'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c6": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '6. Pension disbursement function of the Treasury'?",
-      "opts": [
-        "Statutory and codal execution of 6. Pension disbursement function of the  per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 6. Pension disbursement function of the Treas."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '6. Pension disbursement function of the Treasury'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '6. Pension disbursement function of the Treasury'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c7": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '7. Internal Controls relevant to treasuries'?",
-      "opts": [
-        "Statutory and codal execution of 7. Internal Controls relevant to treasur per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 7. Internal Controls relevant to treasuries."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '7. Internal Controls relevant to treasuries'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '7. Internal Controls relevant to treasuries'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "pc15_s2_c8": [
-    {
-      "q": "In the context of SAS PC-15, what is the primary operational scope of '8. CAG’s Compliance Auditing Guidelines'?",
-      "opts": [
-        "Statutory and codal execution of 8. CAG’s Compliance Auditing Guidelines per Government standards",
-        "Arbitrary executive discretion without codal rules",
-        "Non-binding advisory recommendation only",
-        "Exclusively commercial corporate accounting"
-      ],
-      "ans": 0,
-      "hint": "Directly anchored in PC-15 syllabus criteria for 8. CAG’s Compliance Auditing Guidelines."
-    },
-    {
-      "q": "Which standard authority governs the compliance requirements under '8. CAG’s Compliance Auditing Guidelines'?",
-      "opts": [
-        "Authorized Codal Rules, GFR, and CAG Regulations",
-        "Unpublished executive circulars",
-        "Local municipal council bylaws only",
-        "Private chartered accounting conventions"
-      ],
-      "ans": 0,
-      "hint": "Public financial accounting and audit in IA&AD is governed by Codal rules, GFR, and CAG Regulations."
-    },
-    {
-      "q": "What key principle ensures accountability in '8. CAG’s Compliance Auditing Guidelines'?",
-      "opts": [
-        "Maintenance of verifiable primary records, vouchers, and statutory checks",
-        "Verbal approvals and informal notes",
-        "Exemption from legislative reporting",
-        "Retrospective modification of audited accounts"
-      ],
-      "ans": 0,
-      "hint": "All government accounts and audit findings require authentic documentary evidence and statutory review."
-    }
-  ],
-  "cpwa_pc16_bonus": [
-    {
-      "q": "Pick the correct one in the context of Divisional Accountant's responsibility for examining the Accounts Returns of Sub Divisional Officers to see  (i) that all vouchers and accounts are arithmetically correct  (ii) that they are in all respects properly prepared in accordance with rules  (iii) that all charges are correctly classified, those which are debitable to the personal account of a contractor, employee or other individual being recorded as such in a prescribed account  (iv) that on the basis of rates sanctioned by competent authority and of facts (e.g., quantities of work done, supplies made, etc, or service rendered) certified by authorised Government servants, the claims admitted for payment are valid and in order.",
-      "opts": [
-        "i, ii and iii",
-        "i, iii and iv",
-        "ii, iii and iv",
-        "all of the above"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Detailed head means",
-      "opts": [
-        "Programme",
-        "Function",
-        "Scheme",
-        "Sub-scheme"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Adjustment of overcharge in a Forest Division, when account of the pertaining year is open, by deduction from the bill shall be accounted as",
-      "opts": [
-        "By showing receipt",
-        "by showing expenditure",
-        "by making net amount payable",
-        "per showing receipt and expenditure simultaneously"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Where licence fee is recoverable in cash, a bill in suitable form should be sent to the licensee",
-      "opts": [
-        "After the month",
-        "Within 7 days of following month",
-        "on or before the last day of following month",
-        "on or before the last day of each month"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Form CPWA 30 is required to be submitted to the Sub Divisional Officer/Divisional Officer as the case may be on",
-      "opts": [
-        "daily",
-        "weekly",
-        "fortnightly",
-        "monthly"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Completion of work means",
-      "opts": [
-        "Abandonment of Work",
-        "Abandoned Work",
-        "work awaiting settlement",
-        "Work awaiting administrative approval"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Which denotes cash remittance and settlement between offices rendering accounts to same Accounts Officer",
-      "opts": [
-        "8671",
-        "8672",
-        "8782",
-        "8999"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Who permits the Divisional Officer through Letter of Credit (LoC) to obtain by cheque on bank, the fund required for all disbursement?",
-      "opts": [
-        "Pay & Accounts Officer",
-        "Accountant General",
-        "Chief Controller of Accounts",
-        "Chief Accounting Authority"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "If the emoluments of a Government servant had been changed in respect of a period during which he occupied a Government residence at some other station or stations, who should see that an intimation in this regard is sent to the concerned?",
-      "opts": [
-        "Government servant concerned",
-        "Division Accountant",
-        "Divisional Officer",
-        "PAO"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Refund of revenue should be recorded in which side of the cash book of Forest Division",
-      "opts": [
-        "Debit side",
-        "Credit side",
-        "contra entry (both side)",
-        "No entry required in the cash book"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "In respect of material sold or transferred, a charge is levied to cover such items of expenditure incurred on the store as do not enter their book value. Such charge is known as",
-      "opts": [
-        "Supervision charge",
-        "Storage charge",
-        "Work charged establishment",
-        "Miscellaneous charge"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "To effect periodical adjustments such as an annual adjustment to credit to the head �8009� GPF an amount equal to total of interest accruing and afforded to various Group �D� and Work Charged establishment accounts by contra debit to the head",
-      "opts": [
-        "0049",
-        "2049",
-        "4049",
-        "2075"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "If an item which properly belongs to a revenue or expenditure head is wrongly classified under another such head, the rectification shall be corrected",
-      "opts": [
-        "before close of monthly account",
-        "before accounts of the year is closed",
-        "within three years from the date error detected",
-        "anytime no matter when detected."
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "The works abstract should be checked and closed under the Supervision of",
-      "opts": [
-        "Junior Engineer",
-        "Assistant Engineer",
-        "Divisional Accountant",
-        "DO"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "If a cancelled/lost/time barred cheque is replaced in a Forest Division, the entries recorded in the cash book of Forest Division should be as",
-      "opts": [
-        "Credit side: Amount of cheque cancelled, Receipt side: details of fresh cheque being issued",
-        "Receipt side: Amount of cheque cancelled, Credit side: details of fresh cheque being issued",
-        "Credit side: Amount of cheque cancelled",
-        "Debit side: Amount of cheque cancelled"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Manufacture and workshop accounts consist of two accounts. Pick the correct one",
-      "opts": [
-        "Operation and Outturn Accounts",
-        "Input and Output Accounts",
-        "Direct and Indirect Accounts",
-        "Major and Minor Accounts"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Sub-ordinate officers who renders who renders account to the Divisional Forest Officer should close his accounts by",
-      "opts": [
-        "26th or such later day but before last day of the month",
-        "26th or such earlier day as prescribed by the AG",
-        "27th or such later day but before last day of the month",
-        "27th or such earlier day as prescribed by the AG"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "The amount of each deposit work should be rateably divided into",
-      "opts": [
-        "single part",
-        "two parts",
-        "three parts",
-        "four parts"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "If the final bill of a contractor shall be credited to 8443 if the same has been passed but not made to contractor within",
-      "opts": [
-        "One month",
-        "two months",
-        "six months",
-        "twelve months"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "In the case of vacation of quarter by a Government servant before the last day ofthe month, owing to his departure on transfer, leave or retirement, the demand for thelicence fees for the broken period should be made",
-      "opts": [
-        "at once",
-        "Within 7 days of vacation",
-        "Within one month of vacation",
-        "Within two months of vacation"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Calculate OB of cash book Notes and cones- 500 (including Rs. 50 soiled), Revenue stamps-25, undisbursed TA advance-500, temporary impress with SDO R-300",
-      "opts": [
-        "1325",
-        "1275",
-        "525",
-        "825"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "A detailed record of the expenditure relating to each sanctioned works in Forest Division should be kept in a register named Register of Works in",
-      "opts": [
-        "F.A 2",
-        "F.A 3",
-        "F.A 4",
-        "F.A 5"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "If no inspection by Accounts Officer takes place in a year and entries have been in CPWA 60 during this period, the register or its extract as the case may be shall be submitted to Accounts Officer in the month of",
-      "opts": [
-        "March of Current year",
-        "April of following year",
-        "May of following year",
-        "September of following year"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Sanctions accorded by the Divisional Officer to the cases of write off of stores or losses of public money is checked by",
-      "opts": [
-        "Divisional Officer himself",
-        "Divisional Accountant",
-        "Pay & Accounts Officer",
-        "Chief Controller of Accounts"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "State Government of which State has absolved the Divisional Accountant of his responsibility to examine all claims included in bills presented direct at Treasuries by the Divisional Officer and to see that the service books and leave accounts of subordinates are maintained in accordance with rule and that the admissibility of leave applied for by subordinates is verified before the competent authority decides upon their leave applications?",
-      "opts": [
-        "Government of Bihar",
-        "Government of West Bengal",
-        "Government of Maharashtra",
-        "Government of Tamil Nadu"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "The primary responsibility of checking and compiling the accounts of Public Works/Irrigation Divisions and other work connected therewith rests with the",
-      "opts": [
-        "A.G",
-        "Group Officer",
-        "AAO/AO/Sr.AO",
-        "Clerk/Accountant/Sr. Accountant"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "All corrections made in the Monthly Account or in any of the schedule should be advised to the through special letters for correction, after verification, of the relevant records of the division to",
-      "opts": [
-        "Office of SE",
-        "Office of CE",
-        "Authority next to Divisional Office",
-        "Divisional Office"
-      ],
-      "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Pick the correct ones regarding Work Register Form 15 (i) It is maintained in two part to serve as collective record of important sanctions. (ii) Part I-of the register will contain sanctions to works and Part II will contain sanctions to contracts. (iii) In Part-I-sanctions to works-only those sanctions would be registered where the cost of work is more than Rupees one crore and where more than one public works/Irrigation Divisions are engaged in the construction/execution. (iv) No Work Register need be maintained by the R.A.O's/or by the Accountant General (A&E) in case of Irrigation etc., projects where centralized Accounting organizations has been set up and if that organization is maintaining identical records.",
-      "opts": [
-        "i, ii and iii",
-        "i, ii and iv",
-        "ii, iii and iv",
-        "all of the above"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "The head \"Public Work Remittances\" comprises",
-      "opts": [
-        "Two divisions",
-        "Three divisions",
-        "Four divisions",
-        "Five divisions"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Each Accountant General should prepare a statement in form 18 and submit it, in the case of State through the State Government so as to reach the Central Government not later than the",
-      "opts": [
-        "31st March",
-        "1st May",
-        "1st November",
-        "31st December"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Entry in the Contractors� & Disbursers Ledger is made from the entry made in",
-      "opts": [
-        "Cash Book",
-        "Register of Revenue & Expenditure",
-        "Register of work",
-        "Register of plus/minus memorandum"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Where no formal correction is required, rectification of an error in a Forest Division should be made as",
-      "opts": [
-        "No noting is required",
-        "Making a suitable note in red ink against the incorrect entry in the cash book",
-        "A suitable note in red ink in all the accounts concerned",
-        "As advised by the A.G"
-      ],
-      "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "Conservators and other Forest Officers, other that Divisional Officer are to submit their accounts to",
-      "opts": [
-        "Accountant General Separately",
-        "State Government",
-        "No separate account is submitted",
-        "Combined with Division Accounts"
-      ],
-      "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "In case of instances of gain on foreign exchange shall be recorded by a revenue division",
-      "opts": [
-        "0070",
-        "0075",
-        "Functional Major Head",
-        "8680"
-      ],
-      "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
-    },
-    {
-      "q": "All estimates which are neither remunerative in themselves or considered necessary for the development of the project shall be charged to",
+      "q": "Charges on account of restoration of damaged caused by extraordinary casualties such as flood, fire should be debited to",
       "opts": [
         "Revenue",
         "Capital",
         "Contingency",
-        "Any of the above"
+        "Special"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In the Schedule of Miscellaneous Works Advances, Form C.P.W.A 70, for the month other than March, each item may be shown in a lump sum, which do not exceed",
+      "opts": [
+        "Rs.5",
+        "Rs.50",
+        "Rs.100",
+        "Rs.500"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The time within the submission of Monthly Accounts for March, a consolidated certificate in respect of the balances, other than cash, should be forwarded to the Accounts Officer",
+      "opts": [
+        "Two Weeks",
+        "Three Weeks",
+        "Four Weeks",
+        "Six Weeks"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If an error be detected after submission to the Pay and Accounts Officer of the Divisional Officer�s Supplementary Account of the year, it should nevertheless be reported to the Chief Controller of Accounts for instructions unless the amount be not more than",
+      "opts": [
+        "ten rupees.",
+        "Twenty Five",
+        "One Hundred",
+        "One thousand"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Where the bulk of the items are not based on the Department's Schedule of Rates, Percentage Rate tender form should be restricted to works whose value does not exceed",
+      "opts": [
+        "Rs. 1 crore",
+        "Rs. 50 lakhs",
+        "Rs. 25 lakhs",
+        "Rs.10 lakhs."
+      ],
+      "ans": 3,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "An intimation to notice of breach of rule of store administration shall be sent to",
+      "opts": [
+        "SE",
+        "DG (Works)",
+        "Chief Controller of Accounts",
+        "PAO"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct one (i) The Goods Received Sheets will be printed in the form of booklets and will be duly machine-numbered, with the office copy intact and other perforated. (ii) These will be prepared in triplicate. (iii) One copy being retained by the store keeper and the other two sent to the sub-divisional Office. (iv) Out of these two, one copy will be passed on to the Accounts Branch and the other to the Divisional Office for posting the Priced Stores Ledger and making payments.",
+      "opts": [
+        "i, ii, and iii",
+        "i, iii and iv",
+        "ii, iii and iv",
+        "All of the above"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Discrepancies revealed should be pointed out to SDO in connection with checking of entries of completed Bin Card with",
+      "opts": [
+        "Stock book",
+        "Priced Store Ledger",
+        "Good Received Sheet",
+        "Summary of Indents"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In support of every sale of store for Divisional Officer to effect recovery, a sale Account in Form 19 should be prepared by",
+      "opts": [
+        "Sub-division",
+        "Division office",
+        "Store superintendent",
+        "Accounts branch"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Payments for a work done otherwise than by daily labour and for all supplies required for specific works may be are made without the basis of measurements recorded in measurement books with the approval of",
+      "opts": [
+        "Administrative Ministry/Department after consultation with the Chief Controller of Accounts,",
+        "Chief Controller of Accounts after consultation with the Administrative Ministry/Department",
+        "Administrative Ministry/Department after consultation with the Controller General of Accounts",
+        "Divisional Officer after consultation with Pay and Accounts Officer"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The Standard Measurement Books will be brought up-to-date with reference to the building or work concerned within",
+      "opts": [
+        "one month of closing of the accounts of the estimate therefore",
+        "Two months of closing of the accounts of the estimate therefore",
+        "Three months of closing of the accounts of the estimate therefore",
+        "Six months of closing of the accounts of the estimate therefore"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The form used for all final and running payments to those relating to lump sum contracts is",
+      "opts": [
+        "CPWA 26A and 26 B",
+        "CPWA 26 and 27",
+        "CPWA 27A and 27 B",
+        "CPWA 27 and 28"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct one (i) A separate running account is maintained in respect of each contract. (ii) Transactions relating to two or more separate working estimates should not be brought on to the same running account and should not be covered by a single contract. (iii) In exceptional cases where more than one working estimate is covered by a single contract, the contract agreement need not be split up but the estimates should be consolidated to facilitate the maintenance of proper accounts in respect of that contract. (iv) Some special accounts procedure in this regards will be devised on the merits of each case by the Controller General of Accounts.",
+      "opts": [
+        "i, ii and iii",
+        "ii, iii and iv",
+        "i, iii and iv",
+        "All of the above"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Camp Equipage purchased for the Office of the SE shall be debited",
+      "opts": [
+        "Tools & Machinery",
+        "Contingency",
+        "Direction and Administration",
+        "Misc. Expenditure"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    }
+  ],
+  "pc4_s3_c3": [
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '3. List of Major and Minor Heads of Accounts of Receipts and Disbursements of Central and State Governments (LMMH)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. List of Major and Minor Heads of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. List of Major and Minor Heads of Acco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. List of Major and Minor Heads of Accounts of Receipts and Disbursements of Central and State Governments (LMMH)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. List of Major and Minor Heads of Accounts of Receipts and Disbursements of Central and State Governments (LMMH)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '3. List of Major and Minor Heads of Accounts of Receipts and Disbursements of Central and State Governments (LMMH)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. List of Major and Minor Heads of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. List of Major and Minor Heads of Acco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. List of Major and Minor Heads of Accounts of Receipts and Disbursements of Central and State Governments (LMMH)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. List of Major and Minor Heads of Accounts of Receipts and Disbursements of Central and State Governments (LMMH)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc4_s3_c4": [
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '4. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapters 3,4,5,6,7,10,11,16,17,19 &20)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Comptroller and Auditor General’",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Comptroller and Auditor General’s Man."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapters 3,4,5,6,7,10,11,16,17,19 &20)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapters 3,4,5,6,7,10,11,16,17,19 &20)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '4. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapters 3,4,5,6,7,10,11,16,17,19 &20)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Comptroller and Auditor General’",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Comptroller and Auditor General’s Man."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapters 3,4,5,6,7,10,11,16,17,19 &20)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapters 3,4,5,6,7,10,11,16,17,19 &20)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc4_s3_c5": [
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '5. Comptroller and Auditor General’s Manual Standing Orders (A&E) Volume-II (Chapters 1 & 2)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5. Comptroller and Auditor General’",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Comptroller and Auditor General’s Man."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5. Comptroller and Auditor General’s Manual Standing Orders (A&E) Volume-II (Chapters 1 & 2)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Comptroller and Auditor General’s Manual Standing Orders (A&E) Volume-II (Chapters 1 & 2)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '5. Comptroller and Auditor General’s Manual Standing Orders (A&E) Volume-II (Chapters 1 & 2)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5. Comptroller and Auditor General’",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Comptroller and Auditor General’s Man."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5. Comptroller and Auditor General’s Manual Standing Orders (A&E) Volume-II (Chapters 1 & 2)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Comptroller and Auditor General’s Manual Standing Orders (A&E) Volume-II (Chapters 1 & 2)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
     },
     {
       "q": "Major head for capital outlay on Power Projects is",
@@ -6420,7 +5847,7 @@ window.SAS_QUIZ_BANK = {
         "4901"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Refund of unexpended balance of a deposit work on completed works shall be shown as",
@@ -6431,7 +5858,7 @@ window.SAS_QUIZ_BANK = {
         "minus credit to 8443"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "\"Budget authority'' for the preparation and submission to the Government the budget estimates r elating to Central Public Works Department is",
@@ -6486,7 +5913,7 @@ window.SAS_QUIZ_BANK = {
         "Statement VII: Showing the fund position of the Division pertaining to sanction given to works"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Minor Works in Public Works Division falls within delegated powers of",
@@ -6585,7 +6012,7 @@ window.SAS_QUIZ_BANK = {
         "all of the above"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The Pay and Accounts Officer of the Division concerned, after verification of related documents viz the Paid Cheques/Receipted Challans will return the second copy of the �Main Scroll� duly certified without documents to Focal Point Branch",
@@ -6596,7 +6023,7 @@ window.SAS_QUIZ_BANK = {
         "within a week"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Motor car advance to Govt servant shall be booked under the head",
@@ -6607,7 +6034,7 @@ window.SAS_QUIZ_BANK = {
         "7630"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the correct one (i) On receipt of a copy of daily Receipt and Payment Scroll from bank, the Divisional Officer will effect reconciliation of the transactions indicated in the Receipt Scroll and Payment Scroll in Part I � Cash Remitted and Acknowledged� and Part II � Cheques issued and paid respectively in the Schedule of Reconciliation of Cheques and Remittances� in Form C.P.W.A 51. (ii) CPWA 51 with schedule of Reconciliation should be sent by the Divisional Officer along with Monthly Account to the Pay & Accounts Officer of his Division. . (iii) The Divisional Officer should also prepare and furnish list of cheques issued but not encashed and remittances made but not accounted for during the month as well as cheques issued and remittances made during the previous months accounted for in the bank scroll during the month on hand. (iv) P.A.O. of the Division on receipt of Form C.P.W.A 51 along with Monthly Account from the Divisional Officer will reconcile the figures of Bank Scrolls booked in his account with those reported by the Divisional Officer in CPWA Form",
@@ -6618,7 +6045,7 @@ window.SAS_QUIZ_BANK = {
         "All of the above"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The Monthly Account of a Public Works Division shall be submitted to the Pay and Accounts Officer by",
@@ -6629,7 +6056,7 @@ window.SAS_QUIZ_BANK = {
         "15th of the succeeding month"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the correct one Cash vouchers and transfer entry orders should be posted in Schedule Docket CPWA 61, those relating to (i) charges on works other than percentages charged for establishment, tools and plant, etc, (ii) charges on works including percentages charged for establishment, tools and plant, etc, (iii) other items of expenditure or disbursement for which a contingent bill is required (iv) other items of expenditure or disbursement for which a contingent bill is not required",
@@ -6640,7 +6067,7 @@ window.SAS_QUIZ_BANK = {
         "ii and iv"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "For apprising of the excess over estimate a copy of schedule CPWA 64 pertaining to the accounts for the month of Sep and Mar (Supple) should be sent by the Divisional Officer to",
@@ -6651,7 +6078,7 @@ window.SAS_QUIZ_BANK = {
         "CCA"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the correct ones regarding C.P.W.A 73, Stock Account (i) It is prepared in two parts (ii) Part 1 of this form is the main account showing the receipts, issues and balances classified by sub- head, separate figures being given in respect of the sub-heads �manufacture�, �Land Kiln� �Handling and other incidental charges� etc, and all the other sub heads such as small stores, building materials being lumped up. (iii) Part II of it is the Detailed Account of issues (iv) Part I iswritten up first, and from this part and the Schedule of debits to Stock, Form C.P.W.A 72, is prepared Part II.",
@@ -6662,7 +6089,7 @@ window.SAS_QUIZ_BANK = {
         "All of the above"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The figures relating to the several major and sub-major heads in classified Abstract of Expenditure should be entered in separate sections, arranged in the order indicated in the",
@@ -6673,7 +6100,7 @@ window.SAS_QUIZ_BANK = {
         "List of Major and Minor Heads of Accounts."
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the correct ones (i) The Monthly Account should be prepared in the Form C.P.W.A 80 (with all supporting registers, schedules, vouchers, etc.) for presentation to the DO and submission to the PAO. (ii) This account is an abstract of the entrie receipts and disbursements of the month as worked out in the Abstract Book(Form C.P.W.A 81) and as detailed in the various schedules and registers, (iii) It also shows the opening and closing cash balances. (iv) On the back of the form are printed (1) a memorandum of miscellaneous cash receipts paid into Banks, and (2) a certificate in respect of the closing cash balances of subordinate disbursing officers.",
@@ -6684,7 +6111,7 @@ window.SAS_QUIZ_BANK = {
         "All of the above"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Which of the following are correct in respect of abstract of Contractors� & Disbursers� Ledger (i) It should be prepared monthly for submission to State Government (ii) It should be prepared yearly for submission to A.G (iii) It should be shown in consecutive order first the disbursers� and then Contractors� (iv) Grand total should be given at the foot of the abstract",
@@ -6695,7 +6122,7 @@ window.SAS_QUIZ_BANK = {
         "All of the above"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The entry in the account in respect of payment on muster roll in Forest Division should be supported by",
@@ -6706,7 +6133,7 @@ window.SAS_QUIZ_BANK = {
         "Both b & c"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The account of Minor Head �Suspense� under those functional Budgeted Major Heads of Accounts where expenditure on Works is involved is divided into three (3) distinct sub heads. Pick the incorrect one",
@@ -6717,7 +6144,7 @@ window.SAS_QUIZ_BANK = {
         "Workshop"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "When the actual value of the materials is not known, an estimated figure should be adopted, any difference being adjusted, as soon as known should be afforded in the MPSSA by",
@@ -6728,7 +6155,7 @@ window.SAS_QUIZ_BANK = {
         "a debit or minus debit entry"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The transactions connected with each manufacture either for general requirements or for a particular work shall be kept in a separate account called",
@@ -6739,7 +6166,6080 @@ window.SAS_QUIZ_BANK = {
         "Manufacture Account"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    }
+  ],
+  "pc4_s3_c6": [
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '6. Civil Accounts Manual (Revised second edition 2007) issued by CGA'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 6. Civil Accounts Manual (Revised s",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Civil Accounts Manual (Revised second."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '6. Civil Accounts Manual (Revised second edition 2007) issued by CGA', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Civil Accounts Manual (Revised second edition 2007) issued by CGA'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '6. Civil Accounts Manual (Revised second edition 2007) issued by CGA'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 6. Civil Accounts Manual (Revised s",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Civil Accounts Manual (Revised second."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '6. Civil Accounts Manual (Revised second edition 2007) issued by CGA', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Civil Accounts Manual (Revised second edition 2007) issued by CGA'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "Pick the correct one regarding Secured Advance (i) A formal agreement should be drawn up with the contractor under which Government secures a lien on the materials (ii) Expense entailed for proper watch and safe custody of material brought on site is borne by the Division (iii) Payment of such advances should be made only on the certificate of an officer not below the rank of Divisional Officer (iv) A certificate by the Divisional Officer should be given to the effect that the quantities of materials upon which the advances are made have actually been brought to site, that the contractor has not previously received any advance on that security and that all the materials are required by the contractor for use on items of work for which rate for finished work have been agreed upon",
+      "opts": [
+        "i only",
+        "i and iii",
+        "ii, iii and iv",
+        "All of the above"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Responsible to ensure that at no time the expenditure exceeds the amount of LoC",
+      "opts": [
+        "Divisional Accountant",
+        "Divisional Officer",
+        "Paying Bank Branch",
+        "PAO"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The price allowed to the contractors for return of unused store shall be determined in such way that it does not exceed",
+      "opts": [
+        "Schedule of rates",
+        "Market rate",
+        "Amount charged to contractor at the time of issue including storage charge",
+        "Amount charged to contractor at the time of issue excluding storage charge"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Deposit transactions of the Public Works Department are of",
+      "opts": [
+        "five kinds",
+        "three kinds",
+        "two kinds",
+        "four kinds"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "A contribution paid by a local body or private party with the express object of meeting the whole or part of the cost of construction by the Public Works Department of a specific work which is eventually to be property of Government should accounted for as",
+      "opts": [
+        "Reduction of Expenditure",
+        "Revenue Receipt",
+        "Misc. Receipt",
+        "Misc. Deposit"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Which of the following is not amongst the sub-heads of the Stock account?",
+      "opts": [
+        "Small Stores",
+        "Building Materials",
+        "Road & Bridge Material",
+        "Painters� Stores"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Amounts received from beneficiary cultivators on Takavi work in advance i.e. before execution of the works shall be accounted for",
+      "opts": [
+        "8443",
+        "8550",
+        "0059",
+        "2059"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "All inter-divisional transactions falling within the same Circle of Account are to be settled through",
+      "opts": [
+        "Book Transfer",
+        "Advance Payment",
+        "CSSA",
+        "MPSSA"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Departmental charges for Construction works costing more than Rs.five crores is",
+      "opts": [
+        "5%",
+        "10%",
+        "6%",
+        "7%"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the incorrect one regarding category �Suspense Accounts� from the following:",
+      "opts": [
+        "Contractors-Other Transaction",
+        "Contractors- Advance Payments",
+        "Contractors -Secured Advance",
+        "Contractors-Material"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The expenditure incurred on ceremonies connected with the inauguration of important public works in the case of irrigation projects (Commercial), should be debited to the",
+      "opts": [
+        "Outlay of project",
+        "Revenue account of the project",
+        "Direction and Administration",
+        "Contingency of sanctioned"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In addition to the provision for all expenditure which can be foreseen for a work, a provision of .contingency shall be kept as follows:",
+      "opts": [
+        "3% in case estimated cost up to Rs. 1 crore and 5% for more than 1 crore subject to minimum 5 lakh",
+        "5% in case estimated cost up to Rs. 1 crore and 3% for more than 1 crore subject to minimum 5 lakh",
+        "5% in case estimated cost up to Rs. 1 crore and 10% for more than 1 crore subject to minimum 10 lakh",
+        "10% in case estimated cost up to Rs. 1 crore and 5% for more than 1 crore subject to minimum 10 lakh"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The materials, other than those stipulated in the agreement, should not be issued to contractor without the express authority of the SE except in respect of existing stocks not exceeding",
+      "opts": [
+        "Rs. 50,000/- in any month for any one contract",
+        "Rs. 5,000/- in any month for any one contract",
+        "Rs. 25,000/- in any month for any one contract",
+        "Rs. 15,000/- in any month for any one contract"
+      ],
+      "ans": 1,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "Pick the correct one (i) The charges classified under a suspense sub-head should include all ordinary expenses incidental to construction. (ii) If any part of a work is pulled down and rebuilt to any serious extent, the extra charge for construction should ordinarily be debited to the sub-head concerned. (iii) In case the amount involved be so large as to affect sensibly the cost or rate of the sub-head, it may be debited to the sub-head �Contingencies� (iv) A new sub-head additional to the original sanctioned subheads of the estimate with the sanction of the competent authority may also be created to account for such expenditure",
+      "opts": [
+        "i, ii and iii",
+        "i, ii and iv",
+        "ii, iii and iv",
+        "All of the above"
+      ],
+      "ans": 3,
+      "hint": "(Works Manual 2014)"
+    }
+  ],
+  "pc4_s3_c7": [
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '7. Central Public Works Accounts Code with Appendices'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 7. Central Public Works Accounts Co",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 7. Central Public Works Accounts Code wi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '7. Central Public Works Accounts Code with Appendices', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '7. Central Public Works Accounts Code with Appendices'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '7. Central Public Works Accounts Code with Appendices'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 7. Central Public Works Accounts Co",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 7. Central Public Works Accounts Code wi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '7. Central Public Works Accounts Code with Appendices', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '7. Central Public Works Accounts Code with Appendices'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "Pick the correct one in the context of Divisional Accountant's responsibility for examining the Accounts Returns of Sub Divisional Officers to see  (i) that all vouchers and accounts are arithmetically correct  (ii) that they are in all respects properly prepared in accordance with rules  (iii) that all charges are correctly classified, those which are debitable to the personal account of a contractor, employee or other individual being recorded as such in a prescribed account  (iv) that on the basis of rates sanctioned by competent authority and of facts (e.g., quantities of work done, supplies made, etc, or service rendered) certified by authorised Government servants, the claims admitted for payment are valid and in order.",
+      "opts": [
+        "i, ii and iii",
+        "i, iii and iv",
+        "ii, iii and iv",
+        "all of the above"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Detailed head means",
+      "opts": [
+        "Programme",
+        "Function",
+        "Scheme",
+        "Sub-scheme"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Adjustment of overcharge in a Forest Division, when account of the pertaining year is open, by deduction from the bill shall be accounted as",
+      "opts": [
+        "By showing receipt",
+        "by showing expenditure",
+        "by making net amount payable",
+        "per showing receipt and expenditure simultaneously"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Where licence fee is recoverable in cash, a bill in suitable form should be sent to the licensee",
+      "opts": [
+        "After the month",
+        "Within 7 days of following month",
+        "on or before the last day of following month",
+        "on or before the last day of each month"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Form CPWA 30 is required to be submitted to the Sub Divisional Officer/Divisional Officer as the case may be on",
+      "opts": [
+        "daily",
+        "weekly",
+        "fortnightly",
+        "monthly"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Completion of work means",
+      "opts": [
+        "Abandonment of Work",
+        "Abandoned Work",
+        "work awaiting settlement",
+        "Work awaiting administrative approval"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Which denotes cash remittance and settlement between offices rendering accounts to same Accounts Officer",
+      "opts": [
+        "8671",
+        "8672",
+        "8782",
+        "8999"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Who permits the Divisional Officer through Letter of Credit (LoC) to obtain by cheque on bank, the fund required for all disbursement?",
+      "opts": [
+        "Pay & Accounts Officer",
+        "Accountant General",
+        "Chief Controller of Accounts",
+        "Chief Accounting Authority"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If the emoluments of a Government servant had been changed in respect of a period during which he occupied a Government residence at some other station or stations, who should see that an intimation in this regard is sent to the concerned?",
+      "opts": [
+        "Government servant concerned",
+        "Division Accountant",
+        "Divisional Officer",
+        "PAO"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Refund of revenue should be recorded in which side of the cash book of Forest Division",
+      "opts": [
+        "Debit side",
+        "Credit side",
+        "contra entry (both side)",
+        "No entry required in the cash book"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In respect of material sold or transferred, a charge is levied to cover such items of expenditure incurred on the store as do not enter their book value. Such charge is known as",
+      "opts": [
+        "Supervision charge",
+        "Storage charge",
+        "Work charged establishment",
+        "Miscellaneous charge"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "To effect periodical adjustments such as an annual adjustment to credit to the head �8009� GPF an amount equal to total of interest accruing and afforded to various Group �D� and Work Charged establishment accounts by contra debit to the head",
+      "opts": [
+        "0049",
+        "2049",
+        "4049",
+        "2075"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If an item which properly belongs to a revenue or expenditure head is wrongly classified under another such head, the rectification shall be corrected",
+      "opts": [
+        "before close of monthly account",
+        "before accounts of the year is closed",
+        "within three years from the date error detected",
+        "anytime no matter when detected."
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The works abstract should be checked and closed under the Supervision of",
+      "opts": [
+        "Junior Engineer",
+        "Assistant Engineer",
+        "Divisional Accountant",
+        "DO"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If a cancelled/lost/time barred cheque is replaced in a Forest Division, the entries recorded in the cash book of Forest Division should be as",
+      "opts": [
+        "Credit side: Amount of cheque cancelled, Receipt side: details of fresh cheque being issued",
+        "Receipt side: Amount of cheque cancelled, Credit side: details of fresh cheque being issued",
+        "Credit side: Amount of cheque cancelled",
+        "Debit side: Amount of cheque cancelled"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Manufacture and workshop accounts consist of two accounts. Pick the correct one",
+      "opts": [
+        "Operation and Outturn Accounts",
+        "Input and Output Accounts",
+        "Direct and Indirect Accounts",
+        "Major and Minor Accounts"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Sub-ordinate officers who renders who renders account to the Divisional Forest Officer should close his accounts by",
+      "opts": [
+        "26th or such later day but before last day of the month",
+        "26th or such earlier day as prescribed by the AG",
+        "27th or such later day but before last day of the month",
+        "27th or such earlier day as prescribed by the AG"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The amount of each deposit work should be rateably divided into",
+      "opts": [
+        "single part",
+        "two parts",
+        "three parts",
+        "four parts"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If the final bill of a contractor shall be credited to 8443 if the same has been passed but not made to contractor within",
+      "opts": [
+        "One month",
+        "two months",
+        "six months",
+        "twelve months"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In the case of vacation of quarter by a Government servant before the last day ofthe month, owing to his departure on transfer, leave or retirement, the demand for thelicence fees for the broken period should be made",
+      "opts": [
+        "at once",
+        "Within 7 days of vacation",
+        "Within one month of vacation",
+        "Within two months of vacation"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Calculate OB of cash book Notes and cones- 500 (including Rs. 50 soiled), Revenue stamps-25, undisbursed TA advance-500, temporary impress with SDO R-300",
+      "opts": [
+        "1325",
+        "1275",
+        "525",
+        "825"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "A detailed record of the expenditure relating to each sanctioned works in Forest Division should be kept in a register named Register of Works in",
+      "opts": [
+        "F.A 2",
+        "F.A 3",
+        "F.A 4",
+        "F.A 5"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If no inspection by Accounts Officer takes place in a year and entries have been in CPWA 60 during this period, the register or its extract as the case may be shall be submitted to Accounts Officer in the month of",
+      "opts": [
+        "March of Current year",
+        "April of following year",
+        "May of following year",
+        "September of following year"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Sanctions accorded by the Divisional Officer to the cases of write off of stores or losses of public money is checked by",
+      "opts": [
+        "Divisional Officer himself",
+        "Divisional Accountant",
+        "Pay & Accounts Officer",
+        "Chief Controller of Accounts"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "State Government of which State has absolved the Divisional Accountant of his responsibility to examine all claims included in bills presented direct at Treasuries by the Divisional Officer and to see that the service books and leave accounts of subordinates are maintained in accordance with rule and that the admissibility of leave applied for by subordinates is verified before the competent authority decides upon their leave applications?",
+      "opts": [
+        "Government of Bihar",
+        "Government of West Bengal",
+        "Government of Maharashtra",
+        "Government of Tamil Nadu"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The primary responsibility of checking and compiling the accounts of Public Works/Irrigation Divisions and other work connected therewith rests with the",
+      "opts": [
+        "A.G",
+        "Group Officer",
+        "AAO/AO/Sr.AO",
+        "Clerk/Accountant/Sr. Accountant"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "All corrections made in the Monthly Account or in any of the schedule should be advised to the through special letters for correction, after verification, of the relevant records of the division to",
+      "opts": [
+        "Office of SE",
+        "Office of CE",
+        "Authority next to Divisional Office",
+        "Divisional Office"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct ones regarding Work Register Form 15 (i) It is maintained in two part to serve as collective record of important sanctions. (ii) Part I-of the register will contain sanctions to works and Part II will contain sanctions to contracts. (iii) In Part-I-sanctions to works-only those sanctions would be registered where the cost of work is more than Rupees one crore and where more than one public works/Irrigation Divisions are engaged in the construction/execution. (iv) No Work Register need be maintained by the R.A.O's/or by the Accountant General (A&E) in case of Irrigation etc., projects where centralized Accounting organizations has been set up and if that organization is maintaining identical records.",
+      "opts": [
+        "i, ii and iii",
+        "i, ii and iv",
+        "ii, iii and iv",
+        "all of the above"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The head \"Public Work Remittances\" comprises",
+      "opts": [
+        "Two divisions",
+        "Three divisions",
+        "Four divisions",
+        "Five divisions"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Each Accountant General should prepare a statement in form 18 and submit it, in the case of State through the State Government so as to reach the Central Government not later than the",
+      "opts": [
+        "31st March",
+        "1st May",
+        "1st November",
+        "31st December"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Entry in the Contractors� & Disbursers Ledger is made from the entry made in",
+      "opts": [
+        "Cash Book",
+        "Register of Revenue & Expenditure",
+        "Register of work",
+        "Register of plus/minus memorandum"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Where no formal correction is required, rectification of an error in a Forest Division should be made as",
+      "opts": [
+        "No noting is required",
+        "Making a suitable note in red ink against the incorrect entry in the cash book",
+        "A suitable note in red ink in all the accounts concerned",
+        "As advised by the A.G"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Conservators and other Forest Officers, other that Divisional Officer are to submit their accounts to",
+      "opts": [
+        "Accountant General Separately",
+        "State Government",
+        "No separate account is submitted",
+        "Combined with Division Accounts"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In case of instances of gain on foreign exchange shall be recorded by a revenue division",
+      "opts": [
+        "0070",
+        "0075",
+        "Functional Major Head",
+        "8680"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "All estimates which are neither remunerative in themselves or considered necessary for the development of the project shall be charged to",
+      "opts": [
+        "Revenue",
+        "Capital",
+        "Contingency",
+        "Any of the above"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    }
+  ],
+  "pc4_s3_c8": [
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '8. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapter 8-Accounts of Public works & Chapter 9-Accounts of Forests)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 8. Comptroller and Auditor General’",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 8. Comptroller and Auditor General’s Man."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '8. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapter 8-Accounts of Public works & Chapter 9-Accounts of Forests)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '8. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapter 8-Accounts of Public works & Chapter 9-Accounts of Forests)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '8. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapter 8-Accounts of Public works & Chapter 9-Accounts of Forests)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 8. Comptroller and Auditor General’",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 8. Comptroller and Auditor General’s Man."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '8. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapter 8-Accounts of Public works & Chapter 9-Accounts of Forests)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '8. Comptroller and Auditor General’s Manual of Standing Orders(A&E) Volume-I (Chapter 8-Accounts of Public works & Chapter 9-Accounts of Forests)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc4_s3_c9": [
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '9. Book of Forms referred in CPWA Code'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 9. Book of Forms referred in CPWA C",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 9. Book of Forms referred in CPWA Code."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '9. Book of Forms referred in CPWA Code', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '9. Book of Forms referred in CPWA Code'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-4 (Civil Accounts & CPWA Code), what is a core codal requirement under '9. Book of Forms referred in CPWA Code'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 9. Book of Forms referred in CPWA C",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 9. Book of Forms referred in CPWA Code."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '9. Book of Forms referred in CPWA Code', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '9. Book of Forms referred in CPWA Code'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s1_c1": [
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Financial Accounting – Nature an",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Financial Accounting – Nature and Sco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Financial Accounting – Nature an",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Financial Accounting – Nature and Sco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Financial Accounting – Nature and Scope, Limitations, Basic concepts and Conventions, GAAP'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s1_c2": [
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. Accounting Process – Books of or",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Accounting Process – Books of origina."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. Accounting Process – Books of or",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Accounting Process – Books of origina."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Accounting Process – Books of original entry, Journal, Ledger, BRS, Trial Balance and Rectification of Errors'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s1_c3": [
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '3. Depreciation, Provisions and Reserves'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Depreciation, Provisions and Res",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Depreciation, Provisions and Reserves."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Depreciation, Provisions and Reserves', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Depreciation, Provisions and Reserves'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '3. Depreciation, Provisions and Reserves'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Depreciation, Provisions and Res",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Depreciation, Provisions and Reserves."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Depreciation, Provisions and Reserves', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Depreciation, Provisions and Reserves'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s1_c4": [
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Final Accounts of Sole Proprieto",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Final Accounts of Sole Proprietorship."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Final Accounts of Sole Proprieto",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Final Accounts of Sole Proprietorship."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Final Accounts of Sole Proprietorship Concerns & Non-Profit Organizations (Fund Accounting)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s1_c5": [
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5. Accounts of Joint Stock Companie",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Accounts of Joint Stock Companies – S."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5. Accounts of Joint Stock Companie",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Accounts of Joint Stock Companies – S."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Accounts of Joint Stock Companies – Share Capital, Borrowings, Final Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s1_c6": [
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 6. Analysis of Financial Statements",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Analysis of Financial Statements: Rat."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-9 (Financial Accounting), what is a core codal requirement under '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 6. Analysis of Financial Statements",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Analysis of Financial Statements: Rat."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Analysis of Financial Statements: Ratio Analysis, Common-Size, Comparative, Trend, Funds Flow & Cash Flow Analysis'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s2_c1": [
+    {
+      "q": "In the context of SAS PC-9 (Accounting Standards & Uniform Format of Accounts), what is a core codal requirement under '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (a) Introduction to Accounting Stan",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (a) Introduction to Accounting Standards."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-9 (Accounting Standards & Uniform Format of Accounts), what is a core codal requirement under '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (a) Introduction to Accounting Stan",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (a) Introduction to Accounting Standards."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(a) Introduction to Accounting Standards issued by ICAI (AS 1 to AS 29)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc9_s2_c2": [
+    {
+      "q": "Under which sections of the CAG's (DPC) Act 1971 does the CAG certify accounts of Autonomous Bodies?",
+      "opts": [
+        "Sections 10 and 11",
+        "Section 19(2) and Section 20",
+        "Sections 13 and 16",
+        "Sections 21 and 22"
+      ],
+      "ans": 1,
+      "hint": "Separate Audit Reports (SAR) on Autonomous Bodies are issued under Sections 19(2) and 20 of the DPC Act 1971."
+    },
+    {
+      "q": "What is the primary document issued by the CAG conveying audit comments on the accounts of an Autonomous Body?",
+      "opts": [
+        "Inspection Report Part-I",
+        "Separate Audit Report (SAR)",
+        "Annual Financial Statement",
+        "Treasury Inspection Memo"
+      ],
+      "ans": 1,
+      "hint": "The CAG issues a Separate Audit Report (SAR) containing the audit certificate and comments on financial statements."
+    },
+    {
+      "q": "Under the Uniform Format of Accounts for Autonomous Bodies, unspent government grant balances should be shown as:",
+      "opts": [
+        "Current Year Revenue Income",
+        "Current Liability / Capital Fund until utilized",
+        "General Reserve",
+        "Miscellaneous Receipts"
+      ],
+      "ans": 1,
+      "hint": "Unspent grants represent a liability to Government/grantor until legitimately utilized per AS-12 / IGAS 2."
+    },
+    {
+      "q": "How must monetary distortions in the Balance Sheet of an Autonomous Body be reflected in audit comments?",
+      "opts": [
+        "Described generally without numbers",
+        "Quantified exactly showing the net impact on surplus/deficit and capital fund",
+        "Reported only to the internal auditor",
+        "Omitted if below Rs 50 lakh"
+      ],
+      "ans": 1,
+      "hint": "SAR comments must precisely quantify the monetary impact on the true and fair view of the accounts."
+    },
+    {
+      "q": "What accounting standard governs Government Grants accounting in autonomous commercial entities?",
+      "opts": [
+        "AS-2 (Valuation of Inventories)",
+        "AS-12 (Accounting for Government Grants)",
+        "AS-9 (Revenue Recognition)",
+        "AS-20 (Earnings Per Share)"
+      ],
+      "ans": 1,
+      "hint": "Accounting Standard 12 (AS-12) prescribes accounting for government grants and disclosures."
+    }
+  ],
+  "pc11_s1_c1": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(i) Time schedule and Instructions for preparation and submission of Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Time schedule and Instructions ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Time schedule and Instructions for p."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Time schedule and Instructions for preparation and submission of Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Time schedule and Instructions for preparation and submission of Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(i) Time schedule and Instructions for preparation and submission of Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Time schedule and Instructions ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Time schedule and Instructions for p."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Time schedule and Instructions for preparation and submission of Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Time schedule and Instructions for preparation and submission of Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s1_c2": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Form of Appropriation Accounts",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Form of Appropriation Accounts & St."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Form of Appropriation Accounts",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Form of Appropriation Accounts & St."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Form of Appropriation Accounts & Statement of recoveries adjusted in reduction of expenditure'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s1_c3": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Form of the Statements, Appen",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Form of the Statements, Appendices."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Form of the Statements, Appen",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Form of the Statements, Appendices."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Form of the Statements, Appendices, etc. incorporated in Finance Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s1_c4": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(iv) General Checks while compiling Accounts & checks by I.T.A.'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) General Checks while compiling",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) General Checks while compiling Acco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) General Checks while compiling Accounts & checks by I.T.A.', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) General Checks while compiling Accounts & checks by I.T.A.'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(iv) General Checks while compiling Accounts & checks by I.T.A.'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) General Checks while compiling",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) General Checks while compiling Acco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) General Checks while compiling Accounts & checks by I.T.A.', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) General Checks while compiling Accounts & checks by I.T.A.'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s1_c5": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(v) Submission of Draft Accounts to Accountant General (Audit)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) Submission of Draft Accounts to",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) Submission of Draft Accounts to Acco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) Submission of Draft Accounts to Accountant General (Audit)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) Submission of Draft Accounts to Accountant General (Audit)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(v) Submission of Draft Accounts to Accountant General (Audit)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) Submission of Draft Accounts to",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) Submission of Draft Accounts to Acco."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) Submission of Draft Accounts to Accountant General (Audit)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) Submission of Draft Accounts to Accountant General (Audit)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s1_c6": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (vi) Certificate of the A.G. (A&E) ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (vi) Certificate of the A.G. (A&E) & Cer."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (vi) Certificate of the A.G. (A&E) ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (vi) Certificate of the A.G. (A&E) & Cer."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(vi) Certificate of the A.G. (A&E) & Certificate of the A.G. (Audit) including emphasis of matter'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s1_c7": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (vii) Instructions in printing of A",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (vii) Instructions in printing of Accoun."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (vii) Instructions in printing of A",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (vii) Instructions in printing of Accoun."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(vii) Instructions in printing of Accounts & Forwarding of Bond copies to C.A.G.'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s1_c8": [
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (viii) Mandate and compilation of C",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (viii) Mandate and compilation of CFRA, ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Finance & Appropriation Accounts & CFRA), what is a core codal requirement under '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (viii) Mandate and compilation of C",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (viii) Mandate and compilation of CFRA, ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(viii) Mandate and compilation of CFRA, overview and visual presentation – CFRA dashboard'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s2_c1": [
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(i) Duties and powers of CAG in relation to compilation of accounts (Constitution & DPC Act 1971)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Duties and powers of CAG in rel",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Duties and powers of CAG in relation."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Duties and powers of CAG in relation to compilation of accounts (Constitution & DPC Act 1971)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Duties and powers of CAG in relation to compilation of accounts (Constitution & DPC Act 1971)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(i) Duties and powers of CAG in relation to compilation of accounts (Constitution & DPC Act 1971)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Duties and powers of CAG in rel",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Duties and powers of CAG in relation."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Duties and powers of CAG in relation to compilation of accounts (Constitution & DPC Act 1971)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Duties and powers of CAG in relation to compilation of accounts (Constitution & DPC Act 1971)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s2_c2": [
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(ii) Delegation of Powers in Accounting Operations'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Delegation of Powers in Accoun",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Delegation of Powers in Accounting ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Delegation of Powers in Accounting Operations', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Delegation of Powers in Accounting Operations'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(ii) Delegation of Powers in Accounting Operations'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Delegation of Powers in Accoun",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Delegation of Powers in Accounting ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Delegation of Powers in Accounting Operations', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Delegation of Powers in Accounting Operations'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s2_c3": [
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(iii) General Instructions regarding procedure of Accounting'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) General Instructions regardin",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) General Instructions regarding pro."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) General Instructions regarding procedure of Accounting', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) General Instructions regarding procedure of Accounting'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(iii) General Instructions regarding procedure of Accounting'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) General Instructions regardin",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) General Instructions regarding pro."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) General Instructions regarding procedure of Accounting', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) General Instructions regarding procedure of Accounting'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s2_c4": [
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(iv) Debt, Deposit and Remittance Transactions, Review of Balances'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Debt, Deposit and Remittance T",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Debt, Deposit and Remittance Transa."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Debt, Deposit and Remittance Transactions, Review of Balances', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Debt, Deposit and Remittance Transactions, Review of Balances'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(iv) Debt, Deposit and Remittance Transactions, Review of Balances'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Debt, Deposit and Remittance T",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Debt, Deposit and Remittance Transa."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Debt, Deposit and Remittance Transactions, Review of Balances', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Debt, Deposit and Remittance Transactions, Review of Balances'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s2_c5": [
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) Maintenance of Provident Fund, ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) Maintenance of Provident Fund, Pensi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) Maintenance of Provident Fund, ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) Maintenance of Provident Fund, Pensi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) Maintenance of Provident Fund, Pension and Gazetted Entitlement'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s2_c6": [
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(vi) Introduction to Budget Review and State FRBM targets during compilation of Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (vi) Introduction to Budget Review ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (vi) Introduction to Budget Review and S."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(vi) Introduction to Budget Review and State FRBM targets during compilation of Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(vi) Introduction to Budget Review and State FRBM targets during compilation of Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Processes in compilation of accounts by State AG), what is a core codal requirement under '(vi) Introduction to Budget Review and State FRBM targets during compilation of Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (vi) Introduction to Budget Review ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (vi) Introduction to Budget Review and S."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(vi) Introduction to Budget Review and State FRBM targets during compilation of Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(vi) Introduction to Budget Review and State FRBM targets during compilation of Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s3_c1": [
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(i) Basic understanding of functioning of treasuries & IFMS Modules'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Basic understanding of function",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Basic understanding of functioning o."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Basic understanding of functioning of treasuries & IFMS Modules', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Basic understanding of functioning of treasuries & IFMS Modules'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(i) Basic understanding of functioning of treasuries & IFMS Modules'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Basic understanding of function",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Basic understanding of functioning o."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Basic understanding of functioning of treasuries & IFMS Modules', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Basic understanding of functioning of treasuries & IFMS Modules'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s3_c2": [
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Transactions with RBI includin",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Transactions with RBI including dif."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Transactions with RBI includin",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Transactions with RBI including dif."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Transactions with RBI including difference in Cash Balances, flow of e-receipts and RBD reconciliation'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s3_c3": [
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(iii) Treasury inspection in e-environment including checklist to be followed'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Treasury inspection in e-envi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Treasury inspection in e-environme."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Treasury inspection in e-environment including checklist to be followed', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Treasury inspection in e-environment including checklist to be followed'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(iii) Treasury inspection in e-environment including checklist to be followed'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Treasury inspection in e-envi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Treasury inspection in e-environme."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Treasury inspection in e-environment including checklist to be followed', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Treasury inspection in e-environment including checklist to be followed'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s3_c4": [
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Introduction to PFMS and input",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Introduction to PFMS and inputs fro."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Introduction to PFMS and input",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Introduction to PFMS and inputs fro."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Introduction to PFMS and inputs from PFMS for Finance Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s3_c5": [
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) E-Kuber -Government payments/di",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) E-Kuber -Government payments/disburs."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Accounting in digital environment), what is a core codal requirement under '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) E-Kuber -Government payments/di",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) E-Kuber -Government payments/disburs."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) E-Kuber -Government payments/disbursements of RBI through E-Kuber and role of Treasury, DDO, Agency Banks'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s4_c1": [
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(i) Sustainable Development Goals related to Natural Resources'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Sustainable Development Goals r",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Sustainable Development Goals relate."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Sustainable Development Goals related to Natural Resources', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Sustainable Development Goals related to Natural Resources'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(i) Sustainable Development Goals related to Natural Resources'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Sustainable Development Goals r",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Sustainable Development Goals relate."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Sustainable Development Goals related to Natural Resources', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Sustainable Development Goals related to Natural Resources'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s4_c2": [
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) United Nations - The System of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) United Nations - The System of Envi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) United Nations - The System of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) United Nations - The System of Envi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) United Nations - The System of Environmental-Economic Accounting 2012 (SEEA Central Framework)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s4_c3": [
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(iii) Introduction to Panchamrit – COP26, India’s Commitment'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Introduction to Panchamrit – ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Introduction to Panchamrit – COP26."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Introduction to Panchamrit – COP26, India’s Commitment', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Introduction to Panchamrit – COP26, India’s Commitment'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(iii) Introduction to Panchamrit – COP26, India’s Commitment'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Introduction to Panchamrit – ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Introduction to Panchamrit – COP26."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Introduction to Panchamrit – COP26, India’s Commitment', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Introduction to Panchamrit – COP26, India’s Commitment'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s4_c4": [
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Mandate for imposition of taxe",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Mandate for imposition of taxes on ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Mandate for imposition of taxe",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Mandate for imposition of taxes on ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Mandate for imposition of taxes on resources & preparation of Asset Accounts'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s4_c5": [
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(v) Asset Accounting – tables and templates'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) Asset Accounting – tables and t",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) Asset Accounting – tables and templa."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) Asset Accounting – tables and templates', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) Asset Accounting – tables and templates'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Natural Resource Accounts & Asset Account Preparation), what is a core codal requirement under '(v) Asset Accounting – tables and templates'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (v) Asset Accounting – tables and t",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (v) Asset Accounting – tables and templa."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(v) Asset Accounting – tables and templates', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(v) Asset Accounting – tables and templates'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s5_c1": [
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Constitution of Government Acco",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Constitution of Government Accountin."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (i) Constitution of Government Acco",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (i) Constitution of Government Accountin."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(i) Constitution of Government Accounting Standards Advisory Board (GASAB), structure and responsibilities'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s5_c2": [
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Indian Government Accounting S",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Indian Government Accounting Standa."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (ii) Indian Government Accounting S",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (ii) Indian Government Accounting Standa."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(ii) Indian Government Accounting Standards (IGAS 1, 2 and 3) notified by Government of India'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s5_c3": [
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Cash based International Publ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Cash based International Public Se."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iii) Cash based International Publ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iii) Cash based International Public Se."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iii) Cash based International Public Sector Accounting Standards (IPSAS) issued by IPSASB'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc11_s5_c4": [
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Introduction to accrual accoun",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Introduction to accrual accounting ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-11 (Government Accounting Standards and Cash based IPSAS), what is a core codal requirement under '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing (iv) Introduction to accrual accoun",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for (iv) Introduction to accrual accounting ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '(iv) Introduction to accrual accounting in India – limitation of cash-based and advantages of accrual'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s1_c1": [
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'a. Government budget – meaning, objectives and components'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Government budget – meaning, obj",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Government budget – meaning, objectiv."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Government budget – meaning, objectives and components', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Government budget – meaning, objectives and components'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'a. Government budget – meaning, objectives and components'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Government budget – meaning, obj",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Government budget – meaning, objectiv."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Government budget – meaning, objectives and components', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Government budget – meaning, objectives and components'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s1_c2": [
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'b. Constitutional provisions related to budgeting and appropriation of funds (Articles 112-117, 202-207)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Constitutional provisions relate",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Constitutional provisions related to ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Constitutional provisions related to budgeting and appropriation of funds (Articles 112-117, 202-207)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Constitutional provisions related to budgeting and appropriation of funds (Articles 112-117, 202-207)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'b. Constitutional provisions related to budgeting and appropriation of funds (Articles 112-117, 202-207)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Constitutional provisions relate",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Constitutional provisions related to ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Constitutional provisions related to budgeting and appropriation of funds (Articles 112-117, 202-207)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Constitutional provisions related to budgeting and appropriation of funds (Articles 112-117, 202-207)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s1_c3": [
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'c. Process involved in the preparation of Government budget'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Process involved in the preparat",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Process involved in the preparation o."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Process involved in the preparation of Government budget', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Process involved in the preparation of Government budget'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'c. Process involved in the preparation of Government budget'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Process involved in the preparat",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Process involved in the preparation o."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Process involved in the preparation of Government budget', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Process involved in the preparation of Government budget'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s1_c4": [
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'd. Budget documents presented in Parliament/State Legislature'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. Budget documents presented in Pa",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. Budget documents presented in Parliam."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. Budget documents presented in Parliament/State Legislature', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. Budget documents presented in Parliament/State Legislature'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'd. Budget documents presented in Parliament/State Legislature'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. Budget documents presented in Pa",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. Budget documents presented in Parliam."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. Budget documents presented in Parliament/State Legislature', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. Budget documents presented in Parliament/State Legislature'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s1_c5": [
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing e. Budget Review (Pre-Budget, Post-",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for e. Budget Review (Pre-Budget, Post-Budge."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Budgeting & Budget Review), what is a core codal requirement under 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing e. Budget Review (Pre-Budget, Post-",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for e. Budget Review (Pre-Budget, Post-Budge."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'e. Budget Review (Pre-Budget, Post-Budget, Classification, Supplementary, Announcements & Speech)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s2_c1": [
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'a. Objective of FRBM Act 2003'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Objective of FRBM Act 2003",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Objective of FRBM Act 2003."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Objective of FRBM Act 2003', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Objective of FRBM Act 2003'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'a. Objective of FRBM Act 2003'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Objective of FRBM Act 2003",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Objective of FRBM Act 2003."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Objective of FRBM Act 2003', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Objective of FRBM Act 2003'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s2_c2": [
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'b. Provisions of FRBM Act'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Provisions of FRBM Act",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Provisions of FRBM Act."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Provisions of FRBM Act', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Provisions of FRBM Act'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'b. Provisions of FRBM Act'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Provisions of FRBM Act",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Provisions of FRBM Act."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Provisions of FRBM Act', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Provisions of FRBM Act'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s2_c3": [
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'c. Fiscal policy statements under FRBM Act'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Fiscal policy statements under F",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Fiscal policy statements under FRBM A."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Fiscal policy statements under FRBM Act', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Fiscal policy statements under FRBM Act'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'c. Fiscal policy statements under FRBM Act'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Fiscal policy statements under F",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Fiscal policy statements under FRBM A."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Fiscal policy statements under FRBM Act', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Fiscal policy statements under FRBM Act'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s2_c4": [
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'd. FRBM Act exemptions/escape clause'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. FRBM Act exemptions/escape claus",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. FRBM Act exemptions/escape clause."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. FRBM Act exemptions/escape clause', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. FRBM Act exemptions/escape clause'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (FRBM Act 2003), what is a core codal requirement under 'd. FRBM Act exemptions/escape clause'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. FRBM Act exemptions/escape claus",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. FRBM Act exemptions/escape clause."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. FRBM Act exemptions/escape clause', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. FRBM Act exemptions/escape clause'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s3_c1": [
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'a. Balanced/Surplus/Deficit Budgeting'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Balanced/Surplus/Deficit Budgeti",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Balanced/Surplus/Deficit Budgeting."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Balanced/Surplus/Deficit Budgeting', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Balanced/Surplus/Deficit Budgeting'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'a. Balanced/Surplus/Deficit Budgeting'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Balanced/Surplus/Deficit Budgeti",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Balanced/Surplus/Deficit Budgeting."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Balanced/Surplus/Deficit Budgeting', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Balanced/Surplus/Deficit Budgeting'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s3_c2": [
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Measures of Government Deficit: ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Measures of Government Deficit: Reven."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Measures of Government Deficit: ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Measures of Government Deficit: Reven."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Measures of Government Deficit: Revenue, Fiscal, Primary & Effective Deficits'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s3_c3": [
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'c. Deficit management through internal & external debt'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Deficit management through inter",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Deficit management through internal &."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Deficit management through internal & external debt', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Deficit management through internal & external debt'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'c. Deficit management through internal & external debt'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Deficit management through inter",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Deficit management through internal &."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Deficit management through internal & external debt', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Deficit management through internal & external debt'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s3_c4": [
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'd. Off budget borrowing (OBB)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. Off budget borrowing (OBB)",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. Off budget borrowing (OBB)."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. Off budget borrowing (OBB)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. Off budget borrowing (OBB)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Government Deficit), what is a core codal requirement under 'd. Off budget borrowing (OBB)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. Off budget borrowing (OBB)",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. Off budget borrowing (OBB)."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. Off budget borrowing (OBB)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. Off budget borrowing (OBB)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s4_c1": [
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'a. Sources of revenue for Union and State - Union/State/Concurrent List'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Sources of revenue for Union and",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Sources of revenue for Union and Stat."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Sources of revenue for Union and State - Union/State/Concurrent List', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Sources of revenue for Union and State - Union/State/Concurrent List'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'a. Sources of revenue for Union and State - Union/State/Concurrent List'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing a. Sources of revenue for Union and",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for a. Sources of revenue for Union and Stat."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'a. Sources of revenue for Union and State - Union/State/Concurrent List', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'a. Sources of revenue for Union and State - Union/State/Concurrent List'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s4_c2": [
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'b. Financial Relation Between Union and States - Constitutional Provisions'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Financial Relation Between Union",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Financial Relation Between Union and ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Financial Relation Between Union and States - Constitutional Provisions', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Financial Relation Between Union and States - Constitutional Provisions'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'b. Financial Relation Between Union and States - Constitutional Provisions'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing b. Financial Relation Between Union",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for b. Financial Relation Between Union and ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'b. Financial Relation Between Union and States - Constitutional Provisions', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'b. Financial Relation Between Union and States - Constitutional Provisions'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s4_c3": [
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'c. Different Grant-in-aids given by Union to States and PRIs'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Different Grant-in-aids given by",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Different Grant-in-aids given by Unio."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Different Grant-in-aids given by Union to States and PRIs', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Different Grant-in-aids given by Union to States and PRIs'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'c. Different Grant-in-aids given by Union to States and PRIs'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing c. Different Grant-in-aids given by",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for c. Different Grant-in-aids given by Unio."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'c. Different Grant-in-aids given by Union to States and PRIs', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'c. Different Grant-in-aids given by Union to States and PRIs'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s4_c4": [
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'd. Distribution of Tax/ Non-tax Revenues'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. Distribution of Tax/ Non-tax Rev",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. Distribution of Tax/ Non-tax Revenues."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. Distribution of Tax/ Non-tax Revenues', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. Distribution of Tax/ Non-tax Revenues'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'd. Distribution of Tax/ Non-tax Revenues'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing d. Distribution of Tax/ Non-tax Rev",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for d. Distribution of Tax/ Non-tax Revenues."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'd. Distribution of Tax/ Non-tax Revenues', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'd. Distribution of Tax/ Non-tax Revenues'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s4_c5": [
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'e. Article 280 - Finance commission'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing e. Article 280 - Finance commission",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for e. Article 280 - Finance commission."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'e. Article 280 - Finance commission', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'e. Article 280 - Finance commission'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'e. Article 280 - Finance commission'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing e. Article 280 - Finance commission",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for e. Article 280 - Finance commission."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'e. Article 280 - Finance commission', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'e. Article 280 - Finance commission'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc13_s4_c6": [
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing f. Key recommendations of the lates",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for f. Key recommendations of the latest Fin."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-13 (Flow of Resources/funds), what is a core codal requirement under 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing f. Key recommendations of the lates",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for f. Key recommendations of the latest Fin."
+    },
+    {
+      "q": "Under Government financial procedures relevant to 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on 'f. Key recommendations of the latest Finance commission & Single Nodal Agency (SNA) Guidelines'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s1_c1": [
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Chapter-12: Maintenance of Servi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Chapter-12: Maintenance of Service, P."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. Chapter-12: Maintenance of Servi",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. Chapter-12: Maintenance of Service, P."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. Chapter-12: Maintenance of Service, Provident and other Funds (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s1_c2": [
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. Chapter-13: Gazetted Government ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Chapter-13: Gazetted Government Servi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. Chapter-13: Gazetted Government ",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Chapter-13: Gazetted Government Servi."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Chapter-13: Gazetted Government Service Entitlements (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s1_c3": [
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '3. Chapter-14: Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Chapter-14: Pension (MSO A&E-Vol",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Chapter-14: Pension (MSO A&E-Vol-1)."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Chapter-14: Pension (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Chapter-14: Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '3. Chapter-14: Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Chapter-14: Pension (MSO A&E-Vol",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Chapter-14: Pension (MSO A&E-Vol-1)."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Chapter-14: Pension (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Chapter-14: Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s1_c4": [
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Chapter-15: Pre-check for paymen",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Chapter-15: Pre-check for payment of ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (GPF, Pension and Gazetted Entitlements), what is a core codal requirement under '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Chapter-15: Pre-check for paymen",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Chapter-15: Pre-check for payment of ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Chapter-15: Pre-check for payment of Pension (MSO A&E-Vol-1)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c1": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. General understanding of budgeti",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. General understanding of budgeting, e."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 1. General understanding of budgeti",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 1. General understanding of budgeting, e."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '1. General understanding of budgeting, expenditure, sanction, receipts, banks modules of IFMS'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c2": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. Process flow of IFMS used by tre",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Process flow of IFMS used by treasuri."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 2. Process flow of IFMS used by tre",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 2. Process flow of IFMS used by treasuri."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '2. Process flow of IFMS used by treasuries and content and purpose of each data entry screen and report'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c3": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Difference between Treasury Insp",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Difference between Treasury Inspectio."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 3. Difference between Treasury Insp",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 3. Difference between Treasury Inspectio."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '3. Difference between Treasury Inspection and Audit of Integrated Financial Management System (IFMS)'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c4": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '4. Understanding of data extraction and analytics tool: IDEA'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Understanding of data extraction",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Understanding of data extraction and ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Understanding of data extraction and analytics tool: IDEA', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Understanding of data extraction and analytics tool: IDEA'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '4. Understanding of data extraction and analytics tool: IDEA'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 4. Understanding of data extraction",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 4. Understanding of data extraction and ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '4. Understanding of data extraction and analytics tool: IDEA', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '4. Understanding of data extraction and analytics tool: IDEA'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c5": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '5. Purpose and nature of various registers and records maintained at the Treasury'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5. Purpose and nature of various re",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Purpose and nature of various registe."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5. Purpose and nature of various registers and records maintained at the Treasury', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Purpose and nature of various registers and records maintained at the Treasury'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '5. Purpose and nature of various registers and records maintained at the Treasury'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 5. Purpose and nature of various re",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 5. Purpose and nature of various registe."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '5. Purpose and nature of various registers and records maintained at the Treasury', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '5. Purpose and nature of various registers and records maintained at the Treasury'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c6": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '6. Pension disbursement function of the Treasury'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 6. Pension disbursement function of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Pension disbursement function of the ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '6. Pension disbursement function of the Treasury', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Pension disbursement function of the Treasury'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '6. Pension disbursement function of the Treasury'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 6. Pension disbursement function of",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 6. Pension disbursement function of the ."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '6. Pension disbursement function of the Treasury', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '6. Pension disbursement function of the Treasury'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c7": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '7. Internal Controls relevant to treasuries'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 7. Internal Controls relevant to tr",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 7. Internal Controls relevant to treasur."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '7. Internal Controls relevant to treasuries', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '7. Internal Controls relevant to treasuries'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '7. Internal Controls relevant to treasuries'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 7. Internal Controls relevant to tr",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 7. Internal Controls relevant to treasur."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '7. Internal Controls relevant to treasuries', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '7. Internal Controls relevant to treasuries'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "pc15_s2_c8": [
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '8. CAG’s Compliance Auditing Guidelines'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 8. CAG’s Compliance Auditing Guidel",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 8. CAG’s Compliance Auditing Guidelines."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '8. CAG’s Compliance Auditing Guidelines', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '8. CAG’s Compliance Auditing Guidelines'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    },
+    {
+      "q": "In the context of SAS PC-15 (Treasury Inspection), what is a core codal requirement under '8. CAG’s Compliance Auditing Guidelines'?",
+      "opts": [
+        "Strict adherence to prescribed accounting and audit standards governing 8. CAG’s Compliance Auditing Guidel",
+        "Discretionary executive relaxation without written sanction",
+        "Non-disclosure of financial transactions below materiality threshold",
+        "Exclusively commercial corporate practices without statutory rules"
+      ],
+      "ans": 0,
+      "hint": "Compliance with statutory provisions and codal rules is mandatory for 8. CAG’s Compliance Auditing Guidelines."
+    },
+    {
+      "q": "Under Government financial procedures relevant to '8. CAG’s Compliance Auditing Guidelines', which authority exercises primary internal control?",
+      "opts": [
+        "The designated Head of Office / Accounts Officer / Drawing & Disbursing Officer",
+        "External commercial consultants without statutory responsibility",
+        "Private rating agencies",
+        "Autonomous trade associations"
+      ],
+      "ans": 0,
+      "hint": "Public financial accountability rests with the designated administrative and accounts authorities."
+    },
+    {
+      "q": "What documentation is indispensable for substantiating audit observations on '8. CAG’s Compliance Auditing Guidelines'?",
+      "opts": [
+        "Incontrovertible primary vouchers, sanctioned estimates, and verified records",
+        "Verbal assurances given during inspection",
+        "Informal handwritten chits without dates",
+        "Anonymous representations"
+      ],
+      "ans": 0,
+      "hint": "Audit findings must be substantiated by incontrovertible documentary evidence per CAG Auditing Standards."
+    }
+  ],
+  "cpwa_pc16_bonus": [
+    {
+      "q": "Pick the correct one in the context of Divisional Accountant's responsibility for examining the Accounts Returns of Sub Divisional Officers to see  (i) that all vouchers and accounts are arithmetically correct  (ii) that they are in all respects properly prepared in accordance with rules  (iii) that all charges are correctly classified, those which are debitable to the personal account of a contractor, employee or other individual being recorded as such in a prescribed account  (iv) that on the basis of rates sanctioned by competent authority and of facts (e.g., quantities of work done, supplies made, etc, or service rendered) certified by authorised Government servants, the claims admitted for payment are valid and in order.",
+      "opts": [
+        "i, ii and iii",
+        "i, iii and iv",
+        "ii, iii and iv",
+        "all of the above"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Detailed head means",
+      "opts": [
+        "Programme",
+        "Function",
+        "Scheme",
+        "Sub-scheme"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Adjustment of overcharge in a Forest Division, when account of the pertaining year is open, by deduction from the bill shall be accounted as",
+      "opts": [
+        "By showing receipt",
+        "by showing expenditure",
+        "by making net amount payable",
+        "per showing receipt and expenditure simultaneously"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Where licence fee is recoverable in cash, a bill in suitable form should be sent to the licensee",
+      "opts": [
+        "After the month",
+        "Within 7 days of following month",
+        "on or before the last day of following month",
+        "on or before the last day of each month"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Form CPWA 30 is required to be submitted to the Sub Divisional Officer/Divisional Officer as the case may be on",
+      "opts": [
+        "daily",
+        "weekly",
+        "fortnightly",
+        "monthly"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Completion of work means",
+      "opts": [
+        "Abandonment of Work",
+        "Abandoned Work",
+        "work awaiting settlement",
+        "Work awaiting administrative approval"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Which denotes cash remittance and settlement between offices rendering accounts to same Accounts Officer",
+      "opts": [
+        "8671",
+        "8672",
+        "8782",
+        "8999"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Who permits the Divisional Officer through Letter of Credit (LoC) to obtain by cheque on bank, the fund required for all disbursement?",
+      "opts": [
+        "Pay & Accounts Officer",
+        "Accountant General",
+        "Chief Controller of Accounts",
+        "Chief Accounting Authority"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If the emoluments of a Government servant had been changed in respect of a period during which he occupied a Government residence at some other station or stations, who should see that an intimation in this regard is sent to the concerned?",
+      "opts": [
+        "Government servant concerned",
+        "Division Accountant",
+        "Divisional Officer",
+        "PAO"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Refund of revenue should be recorded in which side of the cash book of Forest Division",
+      "opts": [
+        "Debit side",
+        "Credit side",
+        "contra entry (both side)",
+        "No entry required in the cash book"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In respect of material sold or transferred, a charge is levied to cover such items of expenditure incurred on the store as do not enter their book value. Such charge is known as",
+      "opts": [
+        "Supervision charge",
+        "Storage charge",
+        "Work charged establishment",
+        "Miscellaneous charge"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "To effect periodical adjustments such as an annual adjustment to credit to the head �8009� GPF an amount equal to total of interest accruing and afforded to various Group �D� and Work Charged establishment accounts by contra debit to the head",
+      "opts": [
+        "0049",
+        "2049",
+        "4049",
+        "2075"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If an item which properly belongs to a revenue or expenditure head is wrongly classified under another such head, the rectification shall be corrected",
+      "opts": [
+        "before close of monthly account",
+        "before accounts of the year is closed",
+        "within three years from the date error detected",
+        "anytime no matter when detected."
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The works abstract should be checked and closed under the Supervision of",
+      "opts": [
+        "Junior Engineer",
+        "Assistant Engineer",
+        "Divisional Accountant",
+        "DO"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If a cancelled/lost/time barred cheque is replaced in a Forest Division, the entries recorded in the cash book of Forest Division should be as",
+      "opts": [
+        "Credit side: Amount of cheque cancelled, Receipt side: details of fresh cheque being issued",
+        "Receipt side: Amount of cheque cancelled, Credit side: details of fresh cheque being issued",
+        "Credit side: Amount of cheque cancelled",
+        "Debit side: Amount of cheque cancelled"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Manufacture and workshop accounts consist of two accounts. Pick the correct one",
+      "opts": [
+        "Operation and Outturn Accounts",
+        "Input and Output Accounts",
+        "Direct and Indirect Accounts",
+        "Major and Minor Accounts"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Sub-ordinate officers who renders who renders account to the Divisional Forest Officer should close his accounts by",
+      "opts": [
+        "26th or such later day but before last day of the month",
+        "26th or such earlier day as prescribed by the AG",
+        "27th or such later day but before last day of the month",
+        "27th or such earlier day as prescribed by the AG"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The amount of each deposit work should be rateably divided into",
+      "opts": [
+        "single part",
+        "two parts",
+        "three parts",
+        "four parts"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If the final bill of a contractor shall be credited to 8443 if the same has been passed but not made to contractor within",
+      "opts": [
+        "One month",
+        "two months",
+        "six months",
+        "twelve months"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In the case of vacation of quarter by a Government servant before the last day ofthe month, owing to his departure on transfer, leave or retirement, the demand for thelicence fees for the broken period should be made",
+      "opts": [
+        "at once",
+        "Within 7 days of vacation",
+        "Within one month of vacation",
+        "Within two months of vacation"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Calculate OB of cash book Notes and cones- 500 (including Rs. 50 soiled), Revenue stamps-25, undisbursed TA advance-500, temporary impress with SDO R-300",
+      "opts": [
+        "1325",
+        "1275",
+        "525",
+        "825"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "A detailed record of the expenditure relating to each sanctioned works in Forest Division should be kept in a register named Register of Works in",
+      "opts": [
+        "F.A 2",
+        "F.A 3",
+        "F.A 4",
+        "F.A 5"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "If no inspection by Accounts Officer takes place in a year and entries have been in CPWA 60 during this period, the register or its extract as the case may be shall be submitted to Accounts Officer in the month of",
+      "opts": [
+        "March of Current year",
+        "April of following year",
+        "May of following year",
+        "September of following year"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Sanctions accorded by the Divisional Officer to the cases of write off of stores or losses of public money is checked by",
+      "opts": [
+        "Divisional Officer himself",
+        "Divisional Accountant",
+        "Pay & Accounts Officer",
+        "Chief Controller of Accounts"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "State Government of which State has absolved the Divisional Accountant of his responsibility to examine all claims included in bills presented direct at Treasuries by the Divisional Officer and to see that the service books and leave accounts of subordinates are maintained in accordance with rule and that the admissibility of leave applied for by subordinates is verified before the competent authority decides upon their leave applications?",
+      "opts": [
+        "Government of Bihar",
+        "Government of West Bengal",
+        "Government of Maharashtra",
+        "Government of Tamil Nadu"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The primary responsibility of checking and compiling the accounts of Public Works/Irrigation Divisions and other work connected therewith rests with the",
+      "opts": [
+        "A.G",
+        "Group Officer",
+        "AAO/AO/Sr.AO",
+        "Clerk/Accountant/Sr. Accountant"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "All corrections made in the Monthly Account or in any of the schedule should be advised to the through special letters for correction, after verification, of the relevant records of the division to",
+      "opts": [
+        "Office of SE",
+        "Office of CE",
+        "Authority next to Divisional Office",
+        "Divisional Office"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct ones regarding Work Register Form 15 (i) It is maintained in two part to serve as collective record of important sanctions. (ii) Part I-of the register will contain sanctions to works and Part II will contain sanctions to contracts. (iii) In Part-I-sanctions to works-only those sanctions would be registered where the cost of work is more than Rupees one crore and where more than one public works/Irrigation Divisions are engaged in the construction/execution. (iv) No Work Register need be maintained by the R.A.O's/or by the Accountant General (A&E) in case of Irrigation etc., projects where centralized Accounting organizations has been set up and if that organization is maintaining identical records.",
+      "opts": [
+        "i, ii and iii",
+        "i, ii and iv",
+        "ii, iii and iv",
+        "all of the above"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The head \"Public Work Remittances\" comprises",
+      "opts": [
+        "Two divisions",
+        "Three divisions",
+        "Four divisions",
+        "Five divisions"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Each Accountant General should prepare a statement in form 18 and submit it, in the case of State through the State Government so as to reach the Central Government not later than the",
+      "opts": [
+        "31st March",
+        "1st May",
+        "1st November",
+        "31st December"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Entry in the Contractors� & Disbursers Ledger is made from the entry made in",
+      "opts": [
+        "Cash Book",
+        "Register of Revenue & Expenditure",
+        "Register of work",
+        "Register of plus/minus memorandum"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Where no formal correction is required, rectification of an error in a Forest Division should be made as",
+      "opts": [
+        "No noting is required",
+        "Making a suitable note in red ink against the incorrect entry in the cash book",
+        "A suitable note in red ink in all the accounts concerned",
+        "As advised by the A.G"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Conservators and other Forest Officers, other that Divisional Officer are to submit their accounts to",
+      "opts": [
+        "Accountant General Separately",
+        "State Government",
+        "No separate account is submitted",
+        "Combined with Division Accounts"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "In case of instances of gain on foreign exchange shall be recorded by a revenue division",
+      "opts": [
+        "0070",
+        "0075",
+        "Functional Major Head",
+        "8680"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "All estimates which are neither remunerative in themselves or considered necessary for the development of the project shall be charged to",
+      "opts": [
+        "Revenue",
+        "Capital",
+        "Contingency",
+        "Any of the above"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Major head for capital outlay on Power Projects is",
+      "opts": [
+        "4708",
+        "4601",
+        "4801",
+        "4901"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Refund of unexpended balance of a deposit work on completed works shall be shown as",
+      "opts": [
+        "debit to 8443",
+        "minus debit to 8443",
+        "credit to 8443",
+        "minus credit to 8443"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "\"Budget authority'' for the preparation and submission to the Government the budget estimates r elating to Central Public Works Department is",
+      "opts": [
+        "CE",
+        "DG (Works)",
+        "Principal Accounts Officer",
+        "Chief Controller of Accounts"
+      ],
+      "ans": 1,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "In case of a Deposit Work the percentage of anticipated project cost should be realised before preparation of preliminary estimates is",
+      "opts": [
+        "1%",
+        "2%",
+        "5%",
+        "10%"
+      ],
+      "ans": 0,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "The conventional MBs shall be replaced by a bound volume of computerised measurements to be furnished by the contractor where works of estimated cost put to tender of",
+      "opts": [
+        "Rs. 10 lakh and above",
+        "Rs. 15 lakh and above",
+        "Rs. 50 lakh and above",
+        "Rs. 1 crore and above"
+      ],
+      "ans": 1,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "Objection Book in Accountant General�s Office is maintained in respect of objection relating to",
+      "opts": [
+        "Mismatch of Account",
+        "Non-receipt of vouchers and stamped Receipt",
+        "Delay in receipt of vouchers and stamped receipt",
+        "All of the above"
+      ],
+      "ans": 1,
+      "hint": "(MSO)"
+    },
+    {
+      "q": "Pick the incorrect Accounts Wing�s statement and its heading/details",
+      "opts": [
+        "Statement IV: Amount outstanding under III OR items adjustable by PWD (ForWorks Miscellaneous Remittances issued during FY).",
+        "Statement V: Showing the Arrears in reconciliation.",
+        "Statement VI: Showing the defects in the preparation of Monthly Accounts.",
+        "Statement VII: Showing the fund position of the Division pertaining to sanction given to works"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Minor Works in Public Works Division falls within delegated powers of",
+      "opts": [
+        "DO",
+        "SE",
+        "CE",
+        "DG (Works)"
+      ],
+      "ans": 3,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "Accounts of transaction with other Governments, Railways, Posts and Telegraphs and Defence must be settled completely and communicated to the Accountant General at the latest by the",
+      "opts": [
+        "7th of April",
+        "12th April",
+        "15th April",
+        "30th April"
+      ],
+      "ans": 1,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "Spot quotations should be collected by",
+      "opts": [
+        "EE or AE only",
+        "SE only",
+        "CE only",
+        "DG (Works) only"
+      ],
+      "ans": 0,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "Videography should be undertaken at various stages of construction for",
+      "opts": [
+        "All works costing Rs. 15 crores and above, and any work of unique importance and character irrespective of the value of the work",
+        "All works costing Rs. 10 crores and above, and any work of unique importance and character irrespective of the value of the work",
+        "All works costing Rs. 5 crores and above, and any work of unique importance and character irrespective of the value of the work",
+        "All works costing Rs. 1 crore and above, and any work of unique importance and character irrespective of the value of the work"
+      ],
+      "ans": 0,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "Before taking any measurement of any work, the Engineer-in-Charge or a subordinate deputed by him shall give a",
+      "opts": [
+        "week�s notice to the contractor",
+        "15 days� notice to contractor",
+        "a five days� notice to contractor",
+        "3 days' notice to the contractor."
+      ],
+      "ans": 3,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "The entries recorded in each of the Measurement Books are subjected to a percentage check at least once",
+      "opts": [
+        "a fortnight",
+        "a month",
+        "a year",
+        "a three year"
+      ],
+      "ans": 2,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "The earnest money in cash may be accepted up-to",
+      "opts": [
+        "Rs.10,000",
+        "Rs. 50000",
+        "Rs. 500000",
+        "50% of EMD subject to Rs. 1000000"
+      ],
+      "ans": 0,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "A register of building/structure declared unsafe shall be maintained in the",
+      "opts": [
+        "Sub Divisional Office",
+        "Division Office",
+        "Circle Office",
+        "Zonal office."
+      ],
+      "ans": 3,
+      "hint": "(Works Manual 2014)"
+    },
+    {
+      "q": "The Divisional Accountant should examine the accounts returns of Sub-Divisional Officers to see:- (i) that they have been received in a complete state and all sums receivable are duly realized, and on realization remitted to Divisional cash Chest for proper accounting. (ii) that they have been submitted within the time frame of submission. (iii) That all bills which are required to be prepared/submitted by D.O. are prepared in accordance with the rules applicable to each case and are covered by sanction and appropriation. (iv) that, on the basis of rates sanctioned by competent authorities, and of facts certified by authorized officers, the claims presented for payment are valid and in order.",
+      "opts": [
+        "i, ii and iii",
+        "ii, iii and iv",
+        "i, iii and iv",
+        "all of the above"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The Pay and Accounts Officer of the Division concerned, after verification of related documents viz the Paid Cheques/Receipted Challans will return the second copy of the �Main Scroll� duly certified without documents to Focal Point Branch",
+      "opts": [
+        "Within 24 hours",
+        "Within 48 hours",
+        "within 72 hours",
+        "within a week"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Motor car advance to Govt servant shall be booked under the head",
+      "opts": [
+        "8550",
+        "8658",
+        "7610",
+        "7630"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct one (i) On receipt of a copy of daily Receipt and Payment Scroll from bank, the Divisional Officer will effect reconciliation of the transactions indicated in the Receipt Scroll and Payment Scroll in Part I � Cash Remitted and Acknowledged� and Part II � Cheques issued and paid respectively in the Schedule of Reconciliation of Cheques and Remittances� in Form C.P.W.A 51. (ii) CPWA 51 with schedule of Reconciliation should be sent by the Divisional Officer along with Monthly Account to the Pay & Accounts Officer of his Division. . (iii) The Divisional Officer should also prepare and furnish list of cheques issued but not encashed and remittances made but not accounted for during the month as well as cheques issued and remittances made during the previous months accounted for in the bank scroll during the month on hand. (iv) P.A.O. of the Division on receipt of Form C.P.W.A 51 along with Monthly Account from the Divisional Officer will reconcile the figures of Bank Scrolls booked in his account with those reported by the Divisional Officer in CPWA Form",
+      "opts": [
+        "i, ii and iii",
+        "ii, iii and iv",
+        "i, iii and iv",
+        "All of the above"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The Monthly Account of a Public Works Division shall be submitted to the Pay and Accounts Officer by",
+      "opts": [
+        "5th of the succeeding month",
+        "8th of the succeeding month",
+        "10th of the succeeding month",
+        "15th of the succeeding month"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct one Cash vouchers and transfer entry orders should be posted in Schedule Docket CPWA 61, those relating to (i) charges on works other than percentages charged for establishment, tools and plant, etc, (ii) charges on works including percentages charged for establishment, tools and plant, etc, (iii) other items of expenditure or disbursement for which a contingent bill is required (iv) other items of expenditure or disbursement for which a contingent bill is not required",
+      "opts": [
+        "i, and iii",
+        "i and iv",
+        "ii and iii",
+        "ii and iv"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "For apprising of the excess over estimate a copy of schedule CPWA 64 pertaining to the accounts for the month of Sep and Mar (Supple) should be sent by the Divisional Officer to",
+      "opts": [
+        "SE",
+        "DG (Works)",
+        "PAO",
+        "CCA"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct ones regarding C.P.W.A 73, Stock Account (i) It is prepared in two parts (ii) Part 1 of this form is the main account showing the receipts, issues and balances classified by sub- head, separate figures being given in respect of the sub-heads �manufacture�, �Land Kiln� �Handling and other incidental charges� etc, and all the other sub heads such as small stores, building materials being lumped up. (iii) Part II of it is the Detailed Account of issues (iv) Part I iswritten up first, and from this part and the Schedule of debits to Stock, Form C.P.W.A 72, is prepared Part II.",
+      "opts": [
+        "i, ii and iii",
+        "i, iii and iv",
+        "ii, iii and iv",
+        "All of the above"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The figures relating to the several major and sub-major heads in classified Abstract of Expenditure should be entered in separate sections, arranged in the order indicated in the",
+      "opts": [
+        "Work Estimate",
+        "Register of Works",
+        "Works Abstract",
+        "List of Major and Minor Heads of Accounts."
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Pick the correct ones (i) The Monthly Account should be prepared in the Form C.P.W.A 80 (with all supporting registers, schedules, vouchers, etc.) for presentation to the DO and submission to the PAO. (ii) This account is an abstract of the entrie receipts and disbursements of the month as worked out in the Abstract Book(Form C.P.W.A 81) and as detailed in the various schedules and registers, (iii) It also shows the opening and closing cash balances. (iv) On the back of the form are printed (1) a memorandum of miscellaneous cash receipts paid into Banks, and (2) a certificate in respect of the closing cash balances of subordinate disbursing officers.",
+      "opts": [
+        "i, ii and iii",
+        "i, iii and iv",
+        "ii, iii and iv",
+        "All of the above"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "Which of the following are correct in respect of abstract of Contractors� & Disbursers� Ledger (i) It should be prepared monthly for submission to State Government (ii) It should be prepared yearly for submission to A.G (iii) It should be shown in consecutive order first the disbursers� and then Contractors� (iv) Grand total should be given at the foot of the abstract",
+      "opts": [
+        "Only (i)",
+        "(i) (ii)& (iii)",
+        "Only (iv)",
+        "All of the above"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The entry in the account in respect of payment on muster roll in Forest Division should be supported by",
+      "opts": [
+        "A copy of Muster Roll",
+        "A voucher setting forth the brief particular of works & certificate of disbursing officer",
+        "A certificate of Divisional Officer",
+        "Both b & c"
+      ],
+      "ans": 1,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The account of Minor Head �Suspense� under those functional Budgeted Major Heads of Accounts where expenditure on Works is involved is divided into three (3) distinct sub heads. Pick the incorrect one",
+      "opts": [
+        "Material",
+        "Stock",
+        "Misc. Works Advances",
+        "Workshop"
+      ],
+      "ans": 0,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "When the actual value of the materials is not known, an estimated figure should be adopted, any difference being adjusted, as soon as known should be afforded in the MPSSA by",
+      "opts": [
+        "a debit entry",
+        "a debit or credit entry",
+        "a credit or minus credit entry",
+        "a debit or minus debit entry"
+      ],
+      "ans": 2,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
+    },
+    {
+      "q": "The transactions connected with each manufacture either for general requirements or for a particular work shall be kept in a separate account called",
+      "opts": [
+        "Job Account",
+        "Log Account",
+        "Production Account",
+        "Manufacture Account"
+      ],
+      "ans": 3,
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Manufacture transactions are recorded under a distinct sub-head called �Manufacture� of",
@@ -6750,7 +12250,7 @@ window.SAS_QUIZ_BANK = {
         "Misc. Account"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Departmental Charges are levied per",
@@ -6761,7 +12261,7 @@ window.SAS_QUIZ_BANK = {
         "thousand basis"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "A productive work shall be classified as unproductive",
@@ -6772,7 +12272,7 @@ window.SAS_QUIZ_BANK = {
         "When fails to yield relevant returns in seven successive years after productive period."
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "In respect of establishment charges relatable to works done for other Governments, Local funds, private parties etc, recoveries will be made on percentage basis to be determined by Government and credited to",
@@ -6783,7 +12283,7 @@ window.SAS_QUIZ_BANK = {
         "8443 other/Misc. receipt"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The percentage leviable on Deposit works should be adjusted on",
@@ -6794,7 +12294,7 @@ window.SAS_QUIZ_BANK = {
         "yearly basis"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "A project classified as productive one will retain its classification unchanged after the closure of its construction estimate during",
@@ -6816,7 +12316,7 @@ window.SAS_QUIZ_BANK = {
         "Special"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "In the Schedule of Miscellaneous Works Advances, Form C.P.W.A 70, for the month other than March, each item may be shown in a lump sum, which do not exceed",
@@ -6827,7 +12327,7 @@ window.SAS_QUIZ_BANK = {
         "Rs.500"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The time within the submission of Monthly Accounts for March, a consolidated certificate in respect of the balances, other than cash, should be forwarded to the Accounts Officer",
@@ -6838,7 +12338,7 @@ window.SAS_QUIZ_BANK = {
         "Six Weeks"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "If an error be detected after submission to the Pay and Accounts Officer of the Divisional Officer�s Supplementary Account of the year, it should nevertheless be reported to the Chief Controller of Accounts for instructions unless the amount be not more than",
@@ -6849,7 +12349,7 @@ window.SAS_QUIZ_BANK = {
         "One thousand"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Where the bulk of the items are not based on the Department's Schedule of Rates, Percentage Rate tender form should be restricted to works whose value does not exceed",
@@ -6871,7 +12371,7 @@ window.SAS_QUIZ_BANK = {
         "PAO"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the correct one (i) The Goods Received Sheets will be printed in the form of booklets and will be duly machine-numbered, with the office copy intact and other perforated. (ii) These will be prepared in triplicate. (iii) One copy being retained by the store keeper and the other two sent to the sub-divisional Office. (iv) Out of these two, one copy will be passed on to the Accounts Branch and the other to the Divisional Office for posting the Priced Stores Ledger and making payments.",
@@ -6882,7 +12382,7 @@ window.SAS_QUIZ_BANK = {
         "All of the above"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Discrepancies revealed should be pointed out to SDO in connection with checking of entries of completed Bin Card with",
@@ -6893,7 +12393,7 @@ window.SAS_QUIZ_BANK = {
         "Summary of Indents"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "In support of every sale of store for Divisional Officer to effect recovery, a sale Account in Form 19 should be prepared by",
@@ -6904,7 +12404,7 @@ window.SAS_QUIZ_BANK = {
         "Accounts branch"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Payments for a work done otherwise than by daily labour and for all supplies required for specific works may be are made without the basis of measurements recorded in measurement books with the approval of",
@@ -6915,7 +12415,7 @@ window.SAS_QUIZ_BANK = {
         "Divisional Officer after consultation with Pay and Accounts Officer"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The Standard Measurement Books will be brought up-to-date with reference to the building or work concerned within",
@@ -6926,7 +12426,7 @@ window.SAS_QUIZ_BANK = {
         "Six months of closing of the accounts of the estimate therefore"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The form used for all final and running payments to those relating to lump sum contracts is",
@@ -6937,7 +12437,7 @@ window.SAS_QUIZ_BANK = {
         "CPWA 27 and 28"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the correct one (i) A separate running account is maintained in respect of each contract. (ii) Transactions relating to two or more separate working estimates should not be brought on to the same running account and should not be covered by a single contract. (iii) In exceptional cases where more than one working estimate is covered by a single contract, the contract agreement need not be split up but the estimates should be consolidated to facilitate the maintenance of proper accounts in respect of that contract. (iv) Some special accounts procedure in this regards will be devised on the merits of each case by the Controller General of Accounts.",
@@ -6948,7 +12448,7 @@ window.SAS_QUIZ_BANK = {
         "All of the above"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Camp Equipage purchased for the Office of the SE shall be debited",
@@ -6959,7 +12459,7 @@ window.SAS_QUIZ_BANK = {
         "Misc. Expenditure"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the correct one regarding Secured Advance (i) A formal agreement should be drawn up with the contractor under which Government secures a lien on the materials (ii) Expense entailed for proper watch and safe custody of material brought on site is borne by the Division (iii) Payment of such advances should be made only on the certificate of an officer not below the rank of Divisional Officer (iv) A certificate by the Divisional Officer should be given to the effect that the quantities of materials upon which the advances are made have actually been brought to site, that the contractor has not previously received any advance on that security and that all the materials are required by the contractor for use on items of work for which rate for finished work have been agreed upon",
@@ -6970,7 +12470,7 @@ window.SAS_QUIZ_BANK = {
         "All of the above"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Responsible to ensure that at no time the expenditure exceeds the amount of LoC",
@@ -6981,7 +12481,7 @@ window.SAS_QUIZ_BANK = {
         "PAO"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The price allowed to the contractors for return of unused store shall be determined in such way that it does not exceed",
@@ -6992,7 +12492,7 @@ window.SAS_QUIZ_BANK = {
         "Amount charged to contractor at the time of issue excluding storage charge"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Deposit transactions of the Public Works Department are of",
@@ -7003,7 +12503,7 @@ window.SAS_QUIZ_BANK = {
         "four kinds"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "A contribution paid by a local body or private party with the express object of meeting the whole or part of the cost of construction by the Public Works Department of a specific work which is eventually to be property of Government should accounted for as",
@@ -7014,7 +12514,7 @@ window.SAS_QUIZ_BANK = {
         "Misc. Deposit"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Which of the following is not amongst the sub-heads of the Stock account?",
@@ -7025,7 +12525,7 @@ window.SAS_QUIZ_BANK = {
         "Painters� Stores"
       ],
       "ans": 2,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Amounts received from beneficiary cultivators on Takavi work in advance i.e. before execution of the works shall be accounted for",
@@ -7036,7 +12536,7 @@ window.SAS_QUIZ_BANK = {
         "2059"
       ],
       "ans": 0,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "All inter-divisional transactions falling within the same Circle of Account are to be settled through",
@@ -7047,7 +12547,7 @@ window.SAS_QUIZ_BANK = {
         "MPSSA"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Departmental charges for Construction works costing more than Rs.five crores is",
@@ -7058,7 +12558,7 @@ window.SAS_QUIZ_BANK = {
         "7%"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "Pick the incorrect one regarding category �Suspense Accounts� from the following:",
@@ -7069,7 +12569,7 @@ window.SAS_QUIZ_BANK = {
         "Contractors-Material"
       ],
       "ans": 3,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The expenditure incurred on ceremonies connected with the inauguration of important public works in the case of irrigation projects (Commercial), should be debited to the",
@@ -7080,7 +12580,7 @@ window.SAS_QUIZ_BANK = {
         "Contingency of sanctioned"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "In addition to the provision for all expenditure which can be foreseen for a work, a provision of .contingency shall be kept as follows:",
@@ -7091,7 +12591,7 @@ window.SAS_QUIZ_BANK = {
         "10% in case estimated cost up to Rs. 1 crore and 5% for more than 1 crore subject to minimum 10 lakh"
       ],
       "ans": 1,
-      "hint": "Codal standard in CPWA Code and Forest Accounts"
+      "hint": "Codal provision in Central Public Works Accounts Code / Forest Accounts Manual"
     },
     {
       "q": "The materials, other than those stipulated in the agreement, should not be issued to contractor without the express authority of the SE except in respect of existing stocks not exceeding",
