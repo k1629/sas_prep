@@ -375,6 +375,27 @@ function initKeyboardNav() {
 
 // Render Sidebar Navigation with Categorized Topics and Subtopics
 
+let expandedPaperIndices = new Set([0]);
+
+function togglePaperAccordion(pIdx) {
+  if (expandedPaperIndices.has(pIdx)) {
+    expandedPaperIndices.delete(pIdx);
+  } else {
+    expandedPaperIndices.add(pIdx);
+  }
+  renderPapersNav();
+}
+
+function expandAllPapers() {
+  SAS_CURRICULUM.forEach((_, idx) => expandedPaperIndices.add(idx));
+  renderPapersNav();
+}
+
+function collapseAllPapers() {
+  expandedPaperIndices.clear();
+  renderPapersNav();
+}
+
 function renderPapersNav() {
 
   papersListEl.innerHTML = "";
@@ -421,7 +442,7 @@ function renderPapersNav() {
 
       </div>
 
-      <span style="font-size: 0.75rem; flex-shrink: 0; margin-left: 4px;">${pIdx === currentPaperIndex ? "▼" : "▶"}</span>
+      <span style="font-size: 0.75rem; flex-shrink: 0; margin-left: 4px;">${expandedPaperIndices.has(pIdx) ? "▼" : "▶"}</span>
 
     `;
 
@@ -429,7 +450,7 @@ function renderPapersNav() {
 
     const sectionsList = document.createElement("div");
 
-    sectionsList.className = `sections-list ${pIdx === currentPaperIndex ? "open" : ""}`;
+    sectionsList.className = `sections-list ${expandedPaperIndices.has(pIdx) ? "open" : ""}`;
 
 
 
@@ -518,6 +539,7 @@ function renderPapersNav() {
         currentPaperIndex = pIdx;
 
         currentSectionIndex = sIdx;
+        expandedPaperIndices.add(pIdx);
 
         currentChapterIndex = 0;
 
@@ -551,28 +573,8 @@ function renderPapersNav() {
 
 
 
-    paperBtn.onclick = () => {
-
-      if (currentPaperIndex === pIdx) {
-
-        sectionsList.classList.toggle("open");
-
-      } else {
-
-        currentPaperIndex = pIdx;
-
-        currentSectionIndex = 0;
-
-        currentChapterIndex = 0;
-
-        stopSpeech();
-
-        renderPapersNav();
-
-        loadCurrentSection();
-
-      }
-
+    paperBtn.onclick = (e) => {
+      togglePaperAccordion(pIdx);
     };
 
 
@@ -632,6 +634,8 @@ function navigateChapter(delta) {
     } else if (currentPaperIndex < SAS_CURRICULUM.length - 1) {
 
       currentPaperIndex++;
+
+      expandedPaperIndices.add(currentPaperIndex);
 
       currentSectionIndex = 0;
 
@@ -2483,15 +2487,17 @@ function updateProgressUI() {
 
   const pct = totalChapters > 0 ? Math.round((completedChapters / totalChapters) * 100) : 0;
 
-  overallProgressPctEl.textContent = `${pct}% (${completedChapters}/${totalChapters} Chapters)`;
+  if (overallProgressPctEl) overallProgressPctEl.textContent = ${pct}% (/ Chapters);
 
-  overallProgressBarEl.style.width = `${pct}%`;
+  if (overallProgressBarEl) overallProgressBarEl.style.width = ${pct}%;
 
 }
 
 
 
 function initSearch() {
+
+  if (!searchInputEl) return;
 
   searchInputEl.addEventListener("input", (e) => {
 
@@ -2546,6 +2552,7 @@ function initSearch() {
             currentPaperIndex = pIdx;
 
             currentSectionIndex = sIdx;
+        expandedPaperIndices.add(pIdx);
 
             currentChapterIndex = 0;
 
