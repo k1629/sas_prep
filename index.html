@@ -38,97 +38,46 @@
 
     <!-- Left Sidebar -->
 
-    <aside class="sidebar">
-
-      <div class="sidebar-header">
-
-        <div class="sidebar-brand-row">
-
-          <span class="brand-badge">IA&AD • Civil Accounts</span>
-
-          <span class="exam-target-badge">🎯 Target: 6 Months</span>
-
-        </div>
-
-        <h1 class="sidebar-title">SAS Exam Master Hub</h1>
-
-        
-
-        <!-- 6-Month Countdown -->
-
-        <div class="countdown-card">
-
-          <div class="countdown-label">⏳ SAS EXAM COUNTDOWN</div>
-
-          <div id="countdownTimer" class="countdown-val">180 Days Remaining</div>
-
-        </div>
-
-
-
-        <!-- Overall Readiness Progress Card -->
-
-        <div class="overall-progress-card">
-
-          <div class="progress-header">
-
-            <span>Overall Syllabus Readiness</span>
-
-            <span id="overallProgressPct" class="progress-pct">0% (0/25 Topics)</span>
-
+    <aside class="sidebar" id="appSidebar">
+      <div class="sidebar-header syllabus-header">
+        <div class="syllabus-header-top">
+          <div class="syllabus-brand-meta">
+            <span class="brand-badge">IA&AD • Civil Accounts</span>
+            <span class="syllabus-paper-count">8 Papers</span>
           </div>
-
-          <div class="progress-bar-bg">
-
-            <div id="overallProgressBar" class="progress-bar-fill"></div>
-
-          </div>
-
+          <button id="btnSidebarCollapse" class="btn-sidebar-collapse" onclick="toggleSidebar()" title="Collapse Syllabus">
+            ◀
+          </button>
         </div>
-
+        <div class="syllabus-title-row">
+          <h2 class="syllabus-heading">📚 Syllabus</h2>
+          <div class="syllabus-quick-tools">
+            <button type="button" class="btn-syllabus-tool" onclick="expandAllPapers()" title="Expand all papers">⊞ Expand</button>
+            <button type="button" class="btn-syllabus-tool" onclick="collapseAllPapers()" title="Collapse all papers">⊟ Collapse</button>
+          </div>
+        </div>
       </div>
 
-
-
-      <!-- Live Search -->
-
-      <div class="search-container">
-
-        <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search rules, codes, papers, topics...">
-
-      </div>
-
-
-
-      <!-- Paper & Section Navigation -->
-
+      <!-- Pure Syllabus Navigation Tree -->
       <nav id="papersList" class="papers-nav"></nav>
 
-
-
-      <!-- Sidebar Footer Controls -->
-
+      <!-- Minimal Sidebar Footer -->
       <div class="sidebar-footer">
-
         <button id="btnThemeToggle" onclick="toggleTheme()" class="btn-footer-secondary">🌓 Mode</button>
-
         <div style="display: flex; gap: 6px;">
-
           <button onclick="exportBackup()" class="btn-footer-accent" title="Export Notes & Progress Backup">💾 Export</button>
-
           <label class="btn-footer-accent" style="cursor: pointer; margin: 0;" title="Import Notes & Progress Backup">
-
             📥 Import
-
             <input type="file" id="importFileInput" accept=".json" onchange="importBackup(event)" style="display: none;">
-
           </label>
-
         </div>
-
       </div>
-
     </aside>
+
+    <!-- Floating Syllabus Open Button (visible when sidebar is collapsed) -->
+    <button id="floatingSyllabusToggle" class="floating-syllabus-toggle" onclick="toggleSidebar()" title="Open Syllabus Portal">
+      <span>📚 Syllabus ▶</span>
+    </button>
 
     <div id="sidebarBackdrop" class="sidebar-backdrop" onclick="toggleMobileSidebar()"></div>
 
@@ -222,7 +171,22 @@
 
       <div class="content-body">
 
-        <!-- Section Header Card -->
+        <!-- Study Readiness Bar (Countdown & Progress) -->
+        <div class="study-readiness-bar">
+          <div class="readiness-item countdown-box">
+            <span class="readiness-label">⏳ SAS EXAM COUNTDOWN:</span>
+            <span id="countdownTimer" class="readiness-val">180 Days Remaining</span>
+          </div>
+          <div class="readiness-item progress-box">
+            <div class="readiness-header-mini">
+              <span class="readiness-label">🎯 Overall Syllabus Readiness:</span>
+              <span id="overallProgressPct" class="readiness-val">0% (0/155 Chapters)</span>
+            </div>
+            <div class="progress-bar-bg-mini">
+              <div id="overallProgressBar" class="progress-bar-fill-mini"></div>
+            </div>
+          </div>
+        </div><!-- Section Header Card -->
 
         <section class="section-header-card">
 
@@ -835,9 +799,10 @@
   <script>
 
         function toggleSidebar() {
-      const sidebar = document.querySelector('.sidebar');
+      const sidebar = document.getElementById('appSidebar') || document.querySelector('.sidebar');
       const backdrop = document.getElementById('sidebarBackdrop');
       const icon = document.getElementById('sidebarToggleIcon');
+      const floatingBtn = document.getElementById('floatingSyllabusToggle');
       const isMobile = window.innerWidth <= 768;
 
       if (isMobile) {
@@ -850,17 +815,29 @@
           sidebar.classList.toggle('desktop-collapsed');
           const isCollapsed = sidebar.classList.contains('desktop-collapsed');
           if (icon) icon.textContent = isCollapsed ? '▶' : '◀';
+          if (floatingBtn) floatingBtn.style.display = isCollapsed ? 'inline-flex' : 'none';
           localStorage.setItem('sas_sidebar_collapsed', isCollapsed ? '1' : '0');
         }
       }
     }
 
+    function toggleMobileSidebar() {
+      const sidebar = document.getElementById('appSidebar') || document.querySelector('.sidebar');
+      const backdrop = document.getElementById('sidebarBackdrop');
+      if (sidebar && backdrop) {
+        sidebar.classList.remove('mobile-open');
+        backdrop.classList.remove('active');
+      }
+    }
+
     // Auto-restore desktop collapsed preference
     if (window.innerWidth > 768 && localStorage.getItem('sas_sidebar_collapsed') === '1') {
-      const sb = document.querySelector('.sidebar');
+      const sb = document.getElementById('appSidebar') || document.querySelector('.sidebar');
       const ic = document.getElementById('sidebarToggleIcon');
+      const fb = document.getElementById('floatingSyllabusToggle');
       if (sb) sb.classList.add('desktop-collapsed');
       if (ic) ic.textContent = '▶';
+      if (fb) fb.style.display = 'inline-flex';
     }
 
 
