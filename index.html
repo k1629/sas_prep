@@ -803,7 +803,7 @@
       const backdrop = document.getElementById('sidebarBackdrop');
       const icon = document.getElementById('sidebarToggleIcon');
       const floatingBtn = document.getElementById('floatingSyllabusToggle');
-      const isMobile = window.innerWidth <= 768;
+      const isMobile = window.innerWidth <= 640;
 
       if (isMobile) {
         if (sidebar && backdrop) {
@@ -816,7 +816,6 @@
           const isCollapsed = sidebar.classList.contains('desktop-collapsed');
           if (icon) icon.textContent = isCollapsed ? '▶' : '◀';
           if (floatingBtn) floatingBtn.style.display = isCollapsed ? 'inline-flex' : 'none';
-          localStorage.setItem('sas_sidebar_collapsed', isCollapsed ? '1' : '0');
         }
       }
     }
@@ -830,32 +829,25 @@
       }
     }
 
-    // Auto-restore desktop collapsed preference
-    if (window.innerWidth > 768 && localStorage.getItem('sas_sidebar_collapsed') === '1') {
-      const sb = document.getElementById('appSidebar') || document.querySelector('.sidebar');
-      const ic = document.getElementById('sidebarToggleIcon');
-      const fb = document.getElementById('floatingSyllabusToggle');
-      if (sb) sb.classList.add('desktop-collapsed');
-      if (ic) ic.textContent = '▶';
-      if (fb) fb.style.display = 'inline-flex';
-    }
+    // Always ensure syllabus portion is visible all the time on the left side by default
+    try {
+      localStorage.removeItem('sas_sidebar_collapsed');
+    } catch (e) {}
 
-
+    const sb = document.getElementById('appSidebar') || document.querySelector('.sidebar');
+    const ic = document.getElementById('sidebarToggleIcon');
+    const fb = document.getElementById('floatingSyllabusToggle');
+    if (sb) sb.classList.remove('desktop-collapsed');
+    if (ic) ic.textContent = '◀';
+    if (fb) fb.style.display = 'none';
 
     if ("serviceWorker" in navigator) {
-
       window.addEventListener("load", () => {
-
         navigator.serviceWorker.register("./sw.js")
-
           .then(reg => console.log("[PWA] Service Worker registered:", reg.scope))
-
           .catch(err => console.log("[PWA] Service Worker registration notice:", err));
-
       });
-
     }
-
   </script>
 
 </body>
