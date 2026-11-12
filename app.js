@@ -375,218 +375,107 @@ function initKeyboardNav() {
 
 // Render Sidebar Navigation with Categorized Topics and Subtopics
 
-let expandedPaperIndices = new Set([0]);
-
-function togglePaperAccordion(pIdx) {
-  if (expandedPaperIndices.has(pIdx)) {
-    expandedPaperIndices.delete(pIdx);
-  } else {
-    expandedPaperIndices.add(pIdx);
-  }
-  renderPapersNav();
-}
-
-function expandAllPapers() {
-  SAS_CURRICULUM.forEach((_, idx) => expandedPaperIndices.add(idx));
-  renderPapersNav();
-}
-
-function collapseAllPapers() {
-  expandedPaperIndices.clear();
-  renderPapersNav();
-}
 
 function renderPapersNav() {
-
+  if (!papersListEl) return;
   papersListEl.innerHTML = "";
-
   
-
   let currentGroup = "";
-
   SAS_CURRICULUM.forEach((paper, pIdx) => {
-
     if (paper.group !== currentGroup) {
-
       currentGroup = paper.group;
-
       const groupHeading = document.createElement("div");
-
       groupHeading.className = "paper-group-title";
-
       groupHeading.textContent = currentGroup;
-
       papersListEl.appendChild(groupHeading);
-
     }
 
-
-
     const accordion = document.createElement("div");
-
     accordion.className = "paper-accordion";
 
-
-
     const paperBtn = document.createElement("button");
-
     paperBtn.className = `paper-btn ${pIdx === currentPaperIndex ? "active" : ""}`;
-
     paperBtn.innerHTML = `
-
       <div style="display: flex; align-items: center; overflow: hidden;">
-
         <span class="paper-tag">${paper.paperCode}</span>
-
         <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${paper.paperTitle}</span>
-
       </div>
-
-      <span style="font-size: 0.75rem; flex-shrink: 0; margin-left: 4px;">${expandedPaperIndices.has(pIdx) ? "▼" : "▶"}</span>
-
+      <span style="font-size: 0.75rem; flex-shrink: 0; margin-left: 4px;">${pIdx === currentPaperIndex ? "▼" : "▶"}</span>
     `;
 
-
-
     const sectionsList = document.createElement("div");
-
-    sectionsList.className = `sections-list ${expandedPaperIndices.has(pIdx) ? "open" : ""}`;
-
-
+    sectionsList.className = `sections-list ${pIdx === currentPaperIndex ? "open" : ""}`;
 
     let lastCategory = "";
 
-
-
     paper.sections.forEach((sec, sIdx) => {
-
-      // Grouping logic strictly matching syllabus_complete.pdf (Civil Accounts)
-
       let categoryHeader = "";
-
       const code = sec.topicCode || "";
-
       const pCode = paper.paperCode || "";
 
-
-
       if (pCode === "PC-3") {
-
         if (code.includes("Theory")) {
-
           categoryHeader = "Part A: Information Technology (Theory - 60 Marks)";
-
         } else if (code.includes("Practical")) {
-
           categoryHeader = "Part B: Practical Examination (40 Marks)";
-
         }
-
       }
-
-
 
       if (categoryHeader && categoryHeader !== lastCategory) {
-
         lastCategory = categoryHeader;
-
         const subHead = document.createElement("div");
-
         subHead.className = "sidebar-subheading";
-
         subHead.textContent = categoryHeader;
-
         sectionsList.appendChild(subHead);
-
       }
 
-
-
       const secItem = document.createElement("div");
-
       secItem.className = `section-item ${pIdx === currentPaperIndex && sIdx === currentSectionIndex ? "active" : ""}`;
-
       
-
       const status = getSectionStatus(sec.id);
-
       const dotClass = status === "completed" ? "completed" : status === "in-progress" ? "in-progress" : status === "revision" ? "revision" : "";
-
-
 
       const shortBadge = sec.topicCode ? sec.topicCode.replace("Subtopic ", "Sub ").replace("Topic ", "T") : `T${sIdx+1}`;
 
-
-
       secItem.innerHTML = `
-
         <div style="display: flex; align-items: center; overflow: hidden; gap: 4px;">
-
           <span class="subtopic-badge">${shortBadge}</span>
-
           <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${sec.title}">${sec.title}</span>
-
         </div>
-
         <span class="status-dot ${dotClass}"></span>
-
       `;
 
-
-
       secItem.onclick = () => {
-
         currentPaperIndex = pIdx;
-
         currentSectionIndex = sIdx;
-        expandedPaperIndices.add(pIdx);
-
         currentChapterIndex = 0;
-
         stopSpeech();
-
         renderPapersNav();
-
         loadCurrentSection();
-
-        // Auto-close mobile drawer on selection
-
-        const sb = document.querySelector('.sidebar');
-
-        const bd = document.getElementById('sidebarBackdrop');
-
-        if (sb && sb.classList.contains('mobile-open')) {
-
-          sb.classList.remove('mobile-open');
-
-          if (bd) bd.classList.remove('active');
-
-        }
-
       };
 
-
-
       sectionsList.appendChild(secItem);
-
     });
 
-
-
-    paperBtn.onclick = (e) => {
-      togglePaperAccordion(pIdx);
+    paperBtn.onclick = () => {
+      if (currentPaperIndex === pIdx) {
+        sectionsList.classList.toggle("open");
+        const arrow = paperBtn.querySelector("span:last-child");
+        if (arrow) arrow.textContent = sectionsList.classList.contains("open") ? "▼" : "▶";
+      } else {
+        currentPaperIndex = pIdx;
+        currentSectionIndex = 0;
+        currentChapterIndex = 0;
+        stopSpeech();
+        renderPapersNav();
+        loadCurrentSection();
+      }
     };
 
-
-
     accordion.appendChild(paperBtn);
-
     accordion.appendChild(sectionsList);
-
     papersListEl.appendChild(accordion);
-
   });
-
 }
 
 
