@@ -39,29 +39,18 @@
     <!-- Left Sidebar -->
 
     <aside class="sidebar" id="appSidebar">
-      <div class="sidebar-header syllabus-header">
-        <div class="syllabus-header-top">
-          <div class="syllabus-brand-meta">
-            <span class="brand-badge">IA&AD • Civil Accounts</span>
-            <span class="syllabus-paper-count">8 Papers</span>
-          </div>
-          <button id="btnSidebarCollapse" class="btn-sidebar-collapse" onclick="toggleSidebar()" title="Collapse Syllabus">
-            ◀
-          </button>
+      <div class="sidebar-header">
+        <div class="sidebar-brand-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span class="brand-badge">IA&AD • Civil Accounts</span>
+          <span style="font-size: 0.72rem; font-weight: 700; color: #38bdf8; background: rgba(56, 189, 248, 0.15); padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.25);">8 Papers</span>
         </div>
-        <div class="syllabus-title-row">
-          <h2 class="syllabus-heading">📚 Syllabus</h2>
-          <div class="syllabus-quick-tools">
-            <button type="button" class="btn-syllabus-tool" onclick="expandAllPapers()" title="Expand all papers">⊞ Expand</button>
-            <button type="button" class="btn-syllabus-tool" onclick="collapseAllPapers()" title="Collapse all papers">⊟ Collapse</button>
-          </div>
-        </div>
+        <h1 class="sidebar-title" style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0;">📚 SAS Syllabus</h1>
       </div>
 
       <!-- Pure Syllabus Navigation Tree -->
       <nav id="papersList" class="papers-nav"></nav>
 
-      <!-- Minimal Sidebar Footer -->
+      <!-- Sidebar Footer Controls -->
       <div class="sidebar-footer">
         <button id="btnThemeToggle" onclick="toggleTheme()" class="btn-footer-secondary">🌓 Mode</button>
         <div style="display: flex; gap: 6px;">
@@ -75,9 +64,7 @@
     </aside>
 
     <!-- Floating Syllabus Open Button (visible when sidebar is collapsed) -->
-    <button id="floatingSyllabusToggle" class="floating-syllabus-toggle" onclick="toggleSidebar()" title="Open Syllabus Portal">
-      <span>📚 Syllabus ▶</span>
-    </button>
+    
 
     <div id="sidebarBackdrop" class="sidebar-backdrop" onclick="toggleMobileSidebar()"></div>
 
@@ -91,9 +78,7 @@
 
       <header class="audio-toolbar">
 
-                <button id="btnToggleSidebar" class="btn-sidebar-toggle" onclick="toggleSidebar()" title="Toggle Syllabus Portal">
-          <span id="sidebarToggleIcon">◀</span> <span>Syllabus</span>
-        </button>
+                
 
         <div class="audio-controls">
 
@@ -771,86 +756,34 @@
   <script src="quiz_bank.js"></script>
 
   <script src="app.js"></script>
-
   <script>
-
     function toggleTheme() {
-
-      const current = document.documentElement.getAttribute("data-theme");
-
+      const current = document.documentElement.getAttribute("data-theme") || "light";
       const next = current === "dark" ? "light" : "dark";
-
       document.documentElement.setAttribute("data-theme", next);
-
-      localStorage.setItem("sas_app_theme", next);
-
+      localStorage.setItem("sas_theme", next);
     }
 
-    const savedTheme = localStorage.getItem("sas_app_theme");
+    const savedTheme = localStorage.getItem("sas_theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
 
-    if (savedTheme) {
-
-      document.documentElement.setAttribute("data-theme", savedTheme);
-
-    }
-
-  </script>
-
-  <script>
-
-        function toggleSidebar() {
-      const sidebar = document.getElementById('appSidebar') || document.querySelector('.sidebar');
-      const backdrop = document.getElementById('sidebarBackdrop');
-      const icon = document.getElementById('sidebarToggleIcon');
-      const floatingBtn = document.getElementById('floatingSyllabusToggle');
-      const isMobile = window.innerWidth <= 640;
-
-      if (isMobile) {
-        if (sidebar && backdrop) {
-          sidebar.classList.toggle('mobile-open');
-          backdrop.classList.toggle('active');
-        }
-      } else {
-        if (sidebar) {
-          sidebar.classList.toggle('desktop-collapsed');
-          const isCollapsed = sidebar.classList.contains('desktop-collapsed');
-          if (icon) icon.textContent = isCollapsed ? '▶' : '◀';
-          if (floatingBtn) floatingBtn.style.display = isCollapsed ? 'inline-flex' : 'none';
-        }
-      }
-    }
-
-    function toggleMobileSidebar() {
-      const sidebar = document.getElementById('appSidebar') || document.querySelector('.sidebar');
-      const backdrop = document.getElementById('sidebarBackdrop');
-      if (sidebar && backdrop) {
-        sidebar.classList.remove('mobile-open');
-        backdrop.classList.remove('active');
-      }
-    }
-
-    // Always ensure syllabus portion is visible all the time on the left side by default
+    // Ensure localStorage has no leftover collapsed flag
     try {
       localStorage.removeItem('sas_sidebar_collapsed');
-    } catch (e) {}
+      localStorage.removeItem('sidebar_collapsed');
+    } catch(e) {}
 
-    const sb = document.getElementById('appSidebar') || document.querySelector('.sidebar');
-    const ic = document.getElementById('sidebarToggleIcon');
-    const fb = document.getElementById('floatingSyllabusToggle');
-    if (sb) sb.classList.remove('desktop-collapsed');
-    if (ic) ic.textContent = '◀';
-    if (fb) fb.style.display = 'none';
-
+    // Service Worker registration with cache-bust update check
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("./sw.js")
-          .then(reg => console.log("[PWA] Service Worker registered:", reg.scope))
+          .then(reg => {
+            console.log("[PWA] Service Worker registered:", reg.scope);
+            reg.update();
+          })
           .catch(err => console.log("[PWA] Service Worker registration notice:", err));
       });
     }
   </script>
-
 </body>
-
 </html>
-
