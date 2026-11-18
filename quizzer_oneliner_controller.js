@@ -966,8 +966,36 @@
   };
 
   // ==========================================
-  // 4. GLOBAL TAB ROUTING HOOK
+  // 4. GLOBAL TAB ROUTING & RESPONSIVE COLLAPSE
   // ==========================================
+  window.collapseMobileSidebar = function() {
+    const sidebar = document.querySelector('.sidebar');
+    const backdrop = document.getElementById('sidebarBackdrop');
+    const container = document.querySelector('.app-container');
+    if (sidebar) sidebar.classList.remove('mobile-open');
+    if (backdrop) backdrop.classList.remove('active');
+    if (container) container.classList.remove('sidebar-mobile-open');
+  };
+
+  window.toggleMobileSidebar = function() {
+    const sidebar = document.querySelector('.sidebar');
+    const backdrop = document.getElementById('sidebarBackdrop');
+    const container = document.querySelector('.app-container');
+
+    if (window.innerWidth <= 850) {
+      const isOpen = sidebar && sidebar.classList.contains('mobile-open');
+      if (isOpen) {
+        window.collapseMobileSidebar();
+      } else {
+        if (sidebar) sidebar.classList.add('mobile-open');
+        if (backdrop) backdrop.classList.add('active');
+        if (container) container.classList.add('sidebar-mobile-open');
+      }
+    } else {
+      if (container) container.classList.toggle('sidebar-collapsed');
+    }
+  };
+
   const originalSwitchTab = window.switchTab;
 
   window.switchTab = function(tabId) {
@@ -988,6 +1016,27 @@
     if (topQuizzer) topQuizzer.classList.toggle("active", tabId === "sas_quizzer");
     if (topOneliner) topOneliner.classList.toggle("active", tabId === "sas_oneliner");
 
+    // Hide section header card on quizzer or oneliner tabs for full height view
+    const secHeader = document.querySelector(".section-header-card");
+    if (secHeader) {
+      if (tabId === "sas_quizzer" || tabId === "sas_oneliner") {
+        secHeader.style.display = "none";
+      } else {
+        secHeader.style.display = "";
+      }
+    }
+
+    // Scroll content container smoothly to top
+    const contentBody = document.querySelector(".content-body");
+    if (contentBody) {
+      contentBody.scrollTop = 0;
+    }
+
+    // Auto-collapse mobile sidebar when switching to right side views
+    if (window.innerWidth <= 850) {
+      window.collapseMobileSidebar();
+    }
+
     // Initialize SAS Quizzer on demand
     if (tabId === "sas_quizzer") {
       if (!quizzerState.initialized) {
@@ -1002,6 +1051,52 @@
       }
     }
   };
+
+  function attachLayoutListeners() {
+    const mainContent = document.querySelector(".main-content");
+    if (mainContent) {
+      // Auto-collapse syllabus on mobile when accessing right side of page
+      mainContent.addEventListener("click", (e) => {
+        if (window.innerWidth <= 850) {
+          const sidebar = document.querySelector(".sidebar");
+          if (sidebar && sidebar.classList.contains("mobile-open")) {
+            if (!e.target.closest("#btnMobileMenu") && !e.target.closest(".btn-toggle-sidebar")) {
+              window.collapseMobileSidebar();
+            }
+          }
+        }
+      });
+    }
+
+    // Auto-collapse when selecting a chapter or section in the syllabus list
+    const papersList = document.getElementById("papersList");
+    if (papersList) {
+      papersList.addEventListener("click", (e) => {
+        if (e.target.closest(".section-item") || e.target.closest(".chapter-item")) {
+          if (window.innerWidth <= 850) {
+            setTimeout(() => {
+              window.collapseMobileSidebar();
+            }, 120);
+          }
+        }
+      });
+    }
+
+    // Add close button to sidebar header for mobile / drawer view
+    const brandRow = document.querySelector(".sidebar-brand-row");
+    if (brandRow && !document.getElementById("btnSidebarHeaderClose")) {
+      const closeBtn = document.createElement("button");
+      closeBtn.id = "btnSidebarHeaderClose";
+      closeBtn.className = "btn-sidebar-close";
+      closeBtn.innerHTML = "✕";
+      closeBtn.title = "Collapse Syllabus";
+      closeBtn.onclick = function(e) {
+        e.stopPropagation();
+        window.toggleMobileSidebar();
+      };
+      brandRow.appendChild(closeBtn);
+    }
+  }
 
   // Keyboard navigation for Quizzer (1-4 for options, arrows for prev/next)
   document.addEventListener("keydown", function(e) {
@@ -1032,18 +1127,18 @@
       .replace(/'/g, "&#039;");
   }
 
-  // Pre-load on DOM ready
+  // Pre-load on DOM ready & setup layout listeners
+  function onReadyInit() {
+    buildQuizzerDatabase();
+    buildOneLinersDatabase();
+    attachLayoutListeners();
+  }
+
   if (document.readyState !== "loading") {
-    setTimeout(() => {
-      buildQuizzerDatabase();
-      buildOneLinersDatabase();
-    }, 200);
+    setTimeout(onReadyInit, 150);
   } else {
     document.addEventListener("DOMContentLoaded", () => {
-      setTimeout(() => {
-        buildQuizzerDatabase();
-        buildOneLinersDatabase();
-      }, 200);
+      setTimeout(onReadyInit, 150);
     });
   }
 
