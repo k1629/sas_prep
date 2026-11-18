@@ -1599,6 +1599,12 @@
 
 
   <script src="app.js"></script>
+  <script>
+    // Immediate execution fallback to guarantee syllabus appears on first load
+    if (typeof initApp === "function") {
+      initApp();
+    }
+  </script>
 
 
 
