@@ -753,10 +753,9 @@ function initKeyboardNav() {
 
 
 function renderPapersNav() {
-
-
-
-  papersListEl.innerHTML = "";
+  const listEl = document.getElementById("papersList") || papersListEl;
+  if (!listEl) return;
+  listEl.innerHTML = "";
 
 
 
@@ -792,7 +791,7 @@ function renderPapersNav() {
 
 
 
-      papersListEl.appendChild(groupHeading);
+      (document.getElementById("papersList") || papersListEl).appendChild(groupHeading);
 
 
 
@@ -1164,7 +1163,7 @@ function renderPapersNav() {
 
 
 
-    papersListEl.appendChild(accordion);
+    (document.getElementById("papersList") || papersListEl).appendChild(accordion);
 
 
 
@@ -5112,7 +5111,7 @@ function initSearch() {
 
 
 
-          papersListEl.appendChild(item);
+          (document.getElementById("papersList") || papersListEl).appendChild(item);
 
 
 
@@ -5276,7 +5275,21 @@ function importBackup(event) {
 
 
 
-window.addEventListener("DOMContentLoaded", initApp);
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initApp);
+} else {
+  initApp();
+}
+
+window.addEventListener("load", () => {
+  if (typeof initApp === "function") {
+    const listEl = document.getElementById("papersList");
+    if (listEl && listEl.children.length === 0) {
+      console.log("[SAS Prep] Initializing on window load fallback...");
+      initApp();
+    }
+  }
+});
 
 
 
