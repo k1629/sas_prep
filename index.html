@@ -414,6 +414,15 @@
 
 
 
+              <!-- Global Top Right Navigation Tabs -->
+        <div class="top-nav-tabs">
+          <button id="topNavBtn_quizzer" class="btn-top-tab quizzer-glow" onclick="switchTab('sas_quizzer')" title="Full Paper-Wise SAS Quizzer">
+            🎯 SAS Quizzer
+          </button>
+          <button id="topNavBtn_oneliner" class="btn-top-tab oneliner-glow" onclick="switchTab('sas_oneliner')" title="Paper-Wise SAS One-Liner Facts">
+            ⚡ SAS One Liner
+          </button>
+        </div>
       </header>
 
 
@@ -719,6 +728,8 @@
 
 
           <button id="tabBtn_files" class="tab-btn" onclick="switchTab('files')">📂 Workspace Files</button>
+          <button id="tabBtn_sas_quizzer" class="tab-btn highlight-quizzer" onclick="switchTab('sas_quizzer')">🎯 SAS Quizzer</button>
+          <button id="tabBtn_sas_oneliner" class="tab-btn highlight-oneliner" onclick="switchTab('sas_oneliner')">⚡ SAS One Liner</button>
 
 
 
@@ -1578,6 +1589,172 @@
 
 
 
+    
+        <!-- Tab 10: Full Paper-Wise SAS Quizzer -->
+        <div id="panel_sas_quizzer" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3 style="display:flex; align-items:center; gap:8px;">
+                  🎯 SAS Universal Quizzer &amp; Mock Tests
+                  <span id="quizzerTotalBadge" class="badge" style="background:#2563eb; color:#fff; font-size:0.75rem;">1,118 Questions</span>
+                </h3>
+                <p style="font-size:0.82rem; color:var(--text-muted); margin-top:2px;">
+                  Paper-wise practice &amp; mock exams compiled from Civil Accounts Curriculum + SASQuizzer APK Database
+                </p>
+              </div>
+            </div>
+
+            <!-- Quizzer Paper Selector Strip -->
+            <div class="quizzer-filter-box">
+              <div class="quizzer-filter-row">
+                <span class="filter-label">📚 Select Paper:</span>
+                <div id="quizzerPaperPills" class="pill-group">
+                  <button class="pill-btn active" onclick="selectQuizzerPaper('ALL')">All Papers (Mock)</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-1')">PC-1: Language</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-2')">PC-2: Audit</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-3')">PC-3: IT</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-4')">PC-4: GFR &amp; CPWA</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-9')">PC-9: Accounting</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-11')">PC-11: Govt Accts</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-13')">PC-13: Budget</button>
+                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-15')">PC-15: Pension</button>
+                  <button class="pill-btn apk-pill" onclick="selectQuizzerPaper('APK_CPWA')">🏗️ CPWA Mock (APK)</button>
+                </div>
+              </div>
+
+              <div class="quizzer-subfilter-row">
+                <div style="flex:1; min-width:200px;">
+                  <label class="filter-label" for="quizzerTopicSelect">📖 Topic / Scope:</label>
+                  <select id="quizzerTopicSelect" class="select-control" onchange="onQuizzerTopicChange()" style="width:100%;">
+                    <option value="ALL">All Available Topics in Selected Paper</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="filter-label">⚙️ Mode:</label>
+                  <div class="pill-group">
+                    <button id="btnModePractice" class="pill-btn active" onclick="setQuizzerMode('practice')">⚡ Practice (Instant Hints)</button>
+                    <button id="btnModeExam" class="pill-btn" onclick="setQuizzerMode('exam')">⏱️ Exam Mock (Score at End)</button>
+                  </div>
+                </div>
+                <div>
+                  <label class="filter-label" for="quizzerCountSelect">🔢 Count:</label>
+                  <select id="quizzerCountSelect" class="select-control" onchange="restartQuizzerQuiz()">
+                    <option value="10">10 Questions</option>
+                    <option value="25" selected>25 Questions</option>
+                    <option value="50">50 Questions</option>
+                    <option value="ALL">All Questions</option>
+                  </select>
+                </div>
+                <div style="display:flex; align-items:flex-end; gap:8px;">
+                  <button class="btn-primary" onclick="restartQuizzerQuiz()" style="padding:7px 14px; font-size:0.85rem;">🔄 Start / Retake</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quiz Questions Container -->
+            <div id="quizzerActiveArea" class="quizzer-active-area">
+              <div id="quizzerHeaderRow" class="quizzer-header-row">
+                <span id="quizzerProgressText" style="font-weight:700; color:var(--primary); font-size:0.9rem;">Question 1 of 25</span>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span id="quizzerTimer" class="quizzer-timer-badge" style="display:none;">⏳ 20:00</span>
+                  <span id="quizzerScoreLive" class="quizzer-score-pill">Score: 0 / 0</span>
+                </div>
+              </div>
+
+              <!-- Question Palette Grid -->
+              <div id="quizzerPalette" class="quizzer-palette"></div>
+
+              <!-- Question Display Card -->
+              <div id="quizzerCard" class="quizzer-card">
+                <div id="quizzerMetaBadge" class="quizzer-meta-tag">PC-1 • Chapter 1</div>
+                <div id="quizzerQuestionText" class="quizzer-question-text">Loading question...</div>
+                <div id="quizzerOptionsList" class="quizzer-options-list"></div>
+                <div id="quizzerHintBox" class="quizzer-hint-box" style="display:none;"></div>
+              </div>
+
+              <!-- Bottom Nav Buttons -->
+              <div class="quizzer-footer-nav">
+                <button id="btnQuizzerPrev" class="btn-secondary" onclick="navigateQuizzerQ(-1)">◀ Previous</button>
+                <div style="display:flex; gap:8px;">
+                  <button id="btnQuizzerSubmit" class="btn-primary" onclick="submitQuizzerExam()" style="background:#059669; border-color:#059669;">🏁 Submit Mock Test</button>
+                </div>
+                <button id="btnQuizzerNext" class="btn-primary" onclick="navigateQuizzerQ(1)">Next ▶</button>
+              </div>
+            </div>
+
+            <!-- Quiz Results / Review Card -->
+            <div id="quizzerResultsArea" class="quizzer-results-area" style="display:none;"></div>
+          </div>
+        </div>
+
+        <!-- Tab 11: Paper-Wise SAS One Liner Facts -->
+        <div id="panel_sas_oneliner" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3 style="display:flex; align-items:center; gap:8px;">
+                  ⚡ SAS One-Liner High-Yield Codal Facts
+                  <span id="onelinerCountBadge" class="badge" style="background:#059669; color:#fff; font-size:0.75rem;">5,328 Facts</span>
+                </h3>
+                <p style="font-size:0.82rem; color:var(--text-muted); margin-top:2px;">
+                  Point-wise key figures, limits, codal rules, and forms extracted from Rahi's drive materials &amp; SASQuizzer APK
+                </p>
+              </div>
+              <div style="display:flex; gap:8px;">
+                <button class="btn-small" onclick="readAllFilteredOneLiners()">🔊 Read Page Aloud</button>
+                <button class="btn-small" onclick="copyFilteredOneLiners()">📋 Copy All Filtered</button>
+              </div>
+            </div>
+
+            <!-- One Liner Filter Box -->
+            <div class="oneliner-filter-box">
+              <div class="oneliner-filter-row">
+                <span class="filter-label">📚 Filter Paper:</span>
+                <div id="onelinerPaperPills" class="pill-group">
+                  <button class="pill-btn active" onclick="selectOneLinerPaper('ALL')">All Papers</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-1')">PC-1: Language</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-2')">PC-2: Audit</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-3')">PC-3: IT</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-4')">PC-4: GFR &amp; CPWA</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-9')">PC-9: Accounting</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-11')">PC-11: Govt Accts</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-13')">PC-13: Budget</button>
+                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-15')">PC-15: Pension</button>
+                  <button class="pill-btn apk-pill" onclick="selectOneLinerPaper('CPWA_APK')">🏗️ CPWA / APK Facts</button>
+                </div>
+              </div>
+
+              <div class="oneliner-search-row">
+                <div style="flex:1; position:relative;">
+                  <input type="text" id="onelinerSearchInput" class="search-input" placeholder="🔍 Instant search in one-liners (e.g. 75%, Form 23, Article 112, GeM, Pension, Gratuity...)" oninput="filterOneLiners()">
+                </div>
+                <div style="display:flex; gap:8px; align-items:center;">
+                  <button id="btnStarredOnly" class="pill-btn" onclick="toggleStarredOneLiners()">⭐ Starred Only (<span id="starredCount">0</span>)</button>
+                  <select id="onelinerPageSize" class="select-control" onchange="renderOneLinersList()">
+                    <option value="50">50 per page</option>
+                    <option value="100">100 per page</option>
+                    <option value="250">250 per page</option>
+                    <option value="ALL">Show All</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats & Quick Jump -->
+            <div id="onelinerStatsBar" class="oneliner-stats-bar">
+              <span id="onelinerCountText">Showing 1 - 50 of 5,328 Facts</span>
+              <div id="onelinerPagination" class="pagination-controls"></div>
+            </div>
+
+            <!-- One Liners List -->
+            <div id="onelinersList" class="oneliners-list"></div>
+
+            <!-- Bottom Pagination -->
+            <div id="onelinerPaginationBottom" class="pagination-controls" style="margin-top:14px; justify-content:center; display:flex;"></div>
+          </div>
+        </div>
+
     </main>
 
 
@@ -1595,10 +1772,12 @@
 
 
   <script src="quiz_bank.js"></script>
+  <script src="oneliners_data.js"></script>
 
 
 
   <script src="app.js"></script>
+  <script src="quizzer_oneliner_controller.js"></script>
   <script>
     // Immediate execution fallback to guarantee syllabus appears on first load
     if (typeof initApp === "function") {
