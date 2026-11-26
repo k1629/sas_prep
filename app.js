@@ -1049,11 +1049,11 @@ function renderPapersNav() {
 
         renderPapersNav();
 
-
-
         loadCurrentSection();
 
-
+        if (activeTab === 'sas_quizzer' || activeTab === 'sas_oneliner') {
+          switchTab('content');
+        }
 
         // Auto-close mobile drawer on selection
 
@@ -1824,13 +1824,11 @@ function loadCurrentChapter() {
 
 
       <div class="formatted-study-content">
-
-
-
         ${formatMarkdown(currentChapter.content)}
+      </div>
 
-
-
+      <div id="chapterSourceMaterial" class="chapter-source-material">
+        <div class="source-loading">📚 Loading full official source material from PDFs...</div>
       </div>
 
 
@@ -1909,11 +1907,7 @@ function loadCurrentChapter() {
 
   `;
 
-
-
-
-
-
+  loadChapterSourceMaterial(paper.paperCode, currentChapter.id);
 
   loadSummaryForChapter(currentChapter);
 
@@ -1929,8 +1923,222 @@ function loadCurrentChapter() {
 
   loadChapterQuiz();
 
+}
 
+// ============================================================
+// Full Official Source Material Loader & Renderer per Chapter
+// ============================================================
+window.__SAS_SOURCE_CACHE = window.__SAS_SOURCE_CACHE || {};
 
+function escapeHtmlSource(str) {
+  return String(str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function formatSourceText(rawText, query) {
+  const safe = escapeHtmlSource(rawText || "");
+  const paras = safe.split(/\n\n+/).map(p => p.trim()).filter(Boolean);
+  let html = paras.map(p => {
+    const withBreaks = p.replace(/\n/g, "<br>");
+    return `<p>${withBreaks}</p>`;
+  }).join("");
+  if (query && query.length >= 2) {
+    const escapedQ = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`(${escapedQ})`, "gi");
+    html = html.replace(/(<[^>]+>)|([^<]+)/g, (m, tag, txt) => {
+      if (tag) return tag;
+      return txt.replace(re, '<mark class="source-highlight">$1</mark>');
+    });
+  }
+  return html;
+}
+
+async function fetchPaperSources(paperCode) {
+  if (window.__SAS_SOURCE_CACHE[paperCode]) {
+    return window.__SAS_SOURCE_CACHE[paperCode];
+  }
+  const resp = await fetch(`./data/sources/${encodeURIComponent(paperCode)}.json`);
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  const data = await resp.json();
+  window.__SAS_SOURCE_CACHE[paperCode] = data;
+  return data;
+}
+
+async function loadChapterSourceMaterial(paperCode, chapterId, scopeMode = "chapter") {
+  const container = document.getElementById("chapterSourceMaterial");
+  if (!container) return;
+
+  try {
+    const bundle = await fetchPaperSources(paperCode);
+    // Guard against rapid chapter switching
+    const activePaper = SAS_CURRICULUM[currentPaperIndex];
+    const activeSec = activePaper && activePaper.sections[currentSectionIndex];
+    const activeCh = activeSec && activeSec.chapters[currentChapterIndex];
+    if (!activeCh || activeCh.id !== chapterId) return;
+
+    const targetChapters = scopeMode === "section"
+      ? (activeSec.chapters || [])
+      : [activeCh];
+
+    // Collect unique docId -> ordered Set of secIds across targetChapters
+    const docSecMap = new Map();
+    const docOrder = [];
+    targetChapters.forEach(ch => {
+      const refs = (bundle.chapters && bundle.chapters[ch.id]) || [];
+      refs.forEach(r => {
+        if (!docSecMap.has(r.docId)) {
+          docSecMap.set(r.docId, new Set());
+          docOrder.push(r.docId);
+        }
+        const set = docSecMap.get(r.docId);
+        (r.secIds || []).forEach(sid => set.add(sid));
+      });
+    });
+
+    if (!docOrder.length) {
+      container.innerHTML = `<div class="source-empty">No additional source PDF sections mapped for this chapter.</div>`;
+      return;
+    }
+
+    const docEntries = docOrder.map(docId => {
+      const doc = bundle.docs[docId];
+      if (!doc) return null;
+      const secSet = docSecMap.get(docId);
+      const secs = doc.secs.filter(s => secSet.has(s.id));
+      return { docId, title: doc.title, secs };
+    }).filter(d => d && d.secs.length > 0);
+
+    const totalSecs = docEntries.reduce((acc, d) => acc + d.secs.length, 0);
+    const totalChars = docEntries.reduce((acc, d) => acc + d.secs.reduce((a, s) => a + (s.text || "").length, 0), 0);
+
+    window.__ACTIVE_CHAPTER_SOURCES = {
+      paperCode,
+      chapterId,
+      sectionTitle: activeSec.title,
+      scopeMode,
+      docEntries,
+      selectedDocId: "ALL",
+      query: ""
+    };
+    renderChapterSourceUI(container, totalSecs, totalChars);
+  } catch (err) {
+    console.warn("Source material load error:", err);
+    container.innerHTML = `<div class="source-empty">⚠️ Could not load full source PDFs (${escapeHtmlSource(err.message)}).</div>`;
+  }
+}
+
+function switchSourceScope(scopeMode) {
+  const st = window.__ACTIVE_CHAPTER_SOURCES;
+  if (!st) return;
+  loadChapterSourceMaterial(st.paperCode, st.chapterId, scopeMode);
+}
+
+function renderChapterSourceUI(container, totalSecs, totalChars) {
+  const state = window.__ACTIVE_CHAPTER_SOURCES;
+  if (!state) return;
+  const { docEntries, scopeMode } = state;
+  const approxPages = Math.max(1, Math.round(totalChars / 2200));
+
+  const filterPills = [
+    `<button class="source-doc-pill active" data-doc="ALL" onclick="filterChapterSources('ALL')">All Sources (${totalSecs})</button>`,
+    ...docEntries.map(d =>
+      `<button class="source-doc-pill" data-doc="${escapeHtmlSource(d.docId)}" onclick="filterChapterSources('${escapeHtmlSource(d.docId)}')">${escapeHtmlSource(d.title)} (${d.secs.length})</button>`
+    )
+  ].join("");
+
+  container.innerHTML = `
+    <div class="source-header-bar">
+      <div class="source-header-title">
+        <h4>📚 Complete Official Source Material from PDFs</h4>
+        <div class="source-scope-toggle">
+          <button class="source-scope-btn ${scopeMode === "chapter" ? "active" : ""}" onclick="switchSourceScope('chapter')">📄 This Chapter</button>
+          <button class="source-scope-btn ${scopeMode === "section" ? "active" : ""}" onclick="switchSourceScope('section')">📚 Entire Topic (All Chapters)</button>
+        </div>
+        <span class="source-meta-badge">${docEntries.length} Document${docEntries.length > 1 ? "s" : ""} • ${totalSecs} Sections (~${approxPages} pages)</span>
+      </div>
+      <div class="source-controls">
+        <input type="text" id="sourceSearchInput" class="source-search-input" placeholder="🔍 Search within source material..." oninput="onSourceSearchInput(this.value)">
+        <button class="btn-small" onclick="toggleAllSourceSections(true)">Expand All</button>
+        <button class="btn-small" onclick="toggleAllSourceSections(false)">Collapse All</button>
+      </div>
+      <div class="source-doc-pills">${filterPills}</div>
+    </div>
+    <div id="sourceSectionsBody" class="source-sections-body"></div>
+  `;
+
+  renderFilteredSourceSections();
+}
+
+function filterChapterSources(docId) {
+  if (!window.__ACTIVE_CHAPTER_SOURCES) return;
+  window.__ACTIVE_CHAPTER_SOURCES.selectedDocId = docId;
+  document.querySelectorAll(".source-doc-pill").forEach(btn => {
+    btn.classList.toggle("active", btn.getAttribute("data-doc") === docId);
+  });
+  renderFilteredSourceSections();
+}
+
+function onSourceSearchInput(val) {
+  if (!window.__ACTIVE_CHAPTER_SOURCES) return;
+  window.__ACTIVE_CHAPTER_SOURCES.query = (val || "").trim();
+  renderFilteredSourceSections();
+}
+
+function toggleAllSourceSections(expand) {
+  document.querySelectorAll("#sourceSectionsBody details.source-sec-card").forEach(el => {
+    el.open = expand;
+  });
+}
+
+function renderFilteredSourceSections() {
+  const bodyEl = document.getElementById("sourceSectionsBody");
+  const state = window.__ACTIVE_CHAPTER_SOURCES;
+  if (!bodyEl || !state) return;
+
+  const { docEntries, selectedDocId, query } = state;
+  const qLower = query.toLowerCase();
+
+  let html = "";
+  let matchedCount = 0;
+
+  docEntries.forEach(doc => {
+    if (selectedDocId !== "ALL" && doc.docId !== selectedDocId) return;
+    const secs = qLower
+      ? doc.secs.filter(s => (s.title + "\n" + s.text).toLowerCase().includes(qLower))
+      : doc.secs;
+    if (!secs.length) return;
+
+    matchedCount += secs.length;
+
+    html += `
+      <div class="source-doc-group">
+        <div class="source-doc-group-header">
+          <span class="source-doc-icon">📄</span>
+          <span class="source-doc-name">${escapeHtmlSource(doc.title)}</span>
+          <span class="source-doc-count">${secs.length} section${secs.length > 1 ? "s" : ""}</span>
+        </div>
+        ${secs.map((sec) => `
+          <details class="source-sec-card" open>
+            <summary class="source-sec-summary">
+              <span class="source-sec-title">${escapeHtmlSource(sec.title)}</span>
+              <span class="source-sec-chars">${Math.round((sec.text || "").length / 100) / 10}k chars</span>
+            </summary>
+            <div class="source-sec-body">
+              ${formatSourceText(sec.text, query)}
+            </div>
+          </details>
+        `).join("")}
+      </div>
+    `;
+  });
+
+  if (!html) {
+    html = `<div class="source-empty">No sections match "${escapeHtmlSource(query)}".</div>`;
+  }
+  bodyEl.innerHTML = html;
 }
 
 
@@ -3672,41 +3880,55 @@ function renderChecklist(section) {
 
 
 function switchTab(tabId) {
-
-
-
   activeTab = tabId;
 
-
-
   document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
-
-
-
   document.querySelectorAll(".tab-panel").forEach(panel => panel.classList.remove("active"));
-
-
-
-
-
-
+  document.querySelectorAll(".btn-top-tab").forEach(btn => btn.classList.remove("active"));
 
   const targetBtn = document.getElementById(`tabBtn_${tabId}`);
-
-
-
   const targetPanel = document.getElementById(`panel_${tabId}`);
 
-
-
   if (targetBtn) targetBtn.classList.add("active");
-
-
-
   if (targetPanel) targetPanel.classList.add("active");
 
+  if (tabId === 'sas_quizzer') {
+    const topBtn = document.getElementById('topNavBtn_quizzer');
+    if (topBtn) topBtn.classList.add('active');
+  } else if (tabId === 'sas_oneliner') {
+    const topBtn = document.getElementById('topNavBtn_oneliner');
+    if (topBtn) topBtn.classList.add('active');
+  }
 
+  // Update mobile bottom navigation buttons
+  document.querySelectorAll(".bnav-btn").forEach(btn => btn.classList.remove("active"));
+  const bnavMap = {
+    'content': 'bnav_content',
+    'sas_quizzer': 'bnav_quizzer',
+    'sas_oneliner': 'bnav_oneliner',
+    'cheatsheet': 'bnav_cheatsheet'
+  };
+  const bnavId = bnavMap[tabId];
+  if (bnavId) {
+    const bBtn = document.getElementById(bnavId);
+    if (bBtn) bBtn.classList.add("active");
+  }
 
+  const contentBody = document.querySelector('.content-body');
+  if (contentBody) {
+    const isGlobal = (tabId === 'sas_quizzer' || tabId === 'sas_oneliner' || tabId === 'cheatsheet');
+    contentBody.classList.toggle('global-mode-active', isGlobal);
+  }
+
+  // Auto-collapse mobile sidebar when switching to panels on small screens
+  if (window.innerWidth <= 850) {
+    const sidebar = document.querySelector('.sidebar');
+    const backdrop = document.getElementById('sidebarBackdrop');
+    if (sidebar && sidebar.classList.contains('mobile-open')) {
+      sidebar.classList.remove('mobile-open');
+      if (backdrop) backdrop.classList.remove('active');
+    }
+  }
 }
 
 
@@ -3975,7 +4197,7 @@ function clearTutorChat() {
 
 
 
-async // Global Search across entire Civil Accounts syllabus
+// Global Search across entire Civil Accounts syllabus
 
 function findGlobalSyllabusContext(query) {
 
@@ -5317,7 +5539,7 @@ window.addEventListener("load", () => {
 
 
 
-let activeQuizScope = "chapter"; // "chapter", "section", "paper", "cpwa"
+var activeQuizScope = "chapter"; // "chapter", "section", "paper", "cpwa"
 
 let activeQuizState = {
 
