@@ -40,7 +40,7 @@
 
   <link rel="manifest" href="manifest.json">
 
-
+  <link rel="icon" type="image/png" href="icon-192.png">
 
   <link rel="apple-touch-icon" href="icon-192.png">
 
@@ -102,7 +102,10 @@
 
 
 
-        <h1 class="sidebar-title">SAS Exam Master Hub</h1>
+        <div class="sidebar-title-row">
+          <img src="icon-192.png" alt="SAS Exam Master Hub Logo" class="sidebar-logo">
+          <h1 class="sidebar-title">SAS Exam Master Hub</h1>
+        </div>
 
 
 
@@ -119,6 +122,25 @@
 
 
           <div class="countdown-label">⏳ SAS EXAM COUNTDOWN</div>
+
+        <!-- Daily Study Streak Card -->
+        <div class="study-streak-card">
+          <div class="streak-header">
+            <span>🔥 STUDY STREAK</span>
+            <span id="streakDaysCount" class="streak-badge">1 Day</span>
+          </div>
+          <div class="daily-goal-checklist">
+            <label class="daily-goal-item">
+              <input type="checkbox" id="goalChapterRead" onchange="toggleDailyGoal('chapter')">
+              <span>Read 1 Chapter</span>
+            </label>
+            <label class="daily-goal-item">
+              <input type="checkbox" id="goalQuizPracticed" onchange="toggleDailyGoal('quiz')">
+              <span>Solve 20 MCQs</span>
+            </label>
+          </div>
+        </div>
+
 
 
 
@@ -410,12 +432,31 @@
 
 
 
+        
+          <!-- Continuous Audio & Reader Controls -->
+          <label class="commute-mode-toggle" title="Continuous Audio: Auto-play next chapter when finished">
+            <input type="checkbox" id="continuousAudioToggle" onchange="toggleContinuousAudio(this.checked)">
+            <span class="commute-label">🔄 Auto-Next</span>
+          </label>
+
+          <div class="reader-toolbar-quick">
+            <button class="btn-tool-sm" onclick="adjustFontSize(-1)" title="Smaller text">A-</button>
+            <span id="fontSizeDisplay" class="font-size-badge">100%</span>
+            <button class="btn-tool-sm" onclick="adjustFontSize(1)" title="Larger text">A+</button>
+            <button id="btnSepiaToggle" class="btn-tool-sm" onclick="toggleSepiaMode()" title="Toggle Sepia Eye-Care Mode">📜</button>
+            <button class="btn-tool-sm" onclick="window.print()" title="Print or Save as Clean PDF">🖨️</button>
+          </div>
+
         </div>
 
 
 
               <!-- Global Top Right Navigation Tabs -->
         <div class="top-nav-tabs">
+          <button id="btnTopSearch" class="btn-top-tab search-tab" onclick="openSearchModal()" title="Instant Search across all papers (Ctrl+K)">
+            🔍 Search <span class="kbd-hint">Ctrl+K</span>
+          </button>
+
           <button id="topNavBtn_quizzer" class="btn-top-tab quizzer-glow" onclick="switchTab('sas_quizzer')" title="Full Paper-Wise SAS Quizzer">
             🎯 SAS Quizzer
           </button>
@@ -433,11 +474,13 @@
 
       <!-- Content Scrollable Body -->
 
-
-
       <div class="content-body">
 
-
+        <!-- Global Mode Return Banner (shown in SAS Quizzer / One-Liner) -->
+        <div id="globalModeBanner" class="global-mode-banner">
+          <button class="btn-back-study" onclick="switchTab('content')">← Back to Study Hub</button>
+          <span class="global-mode-hint">Global Exam Mode — select any paper in the sidebar to return to notes</span>
+        </div>
 
         <!-- Section Header Card -->
 
@@ -728,10 +771,9 @@
 
 
           <button id="tabBtn_files" class="tab-btn" onclick="switchTab('files')">📂 Workspace Files</button>
+          <button id="tabBtn_cheatsheet" class="tab-btn highlight-cheatsheet" onclick="switchTab('cheatsheet')">📋 Formulas & Codal Forms</button>
           <button id="tabBtn_sas_quizzer" class="tab-btn highlight-quizzer" onclick="switchTab('sas_quizzer')">🎯 SAS Quizzer</button>
           <button id="tabBtn_sas_oneliner" class="tab-btn highlight-oneliner" onclick="switchTab('sas_oneliner')">⚡ SAS One Liner</button>
-
-
 
         </div>
 
@@ -746,6 +788,18 @@
 
 
         <div id="panel_content" class="tab-panel active">
+
+          <!-- Floating Table of Contents (Outline Drawer) -->
+          <button id="btnToggleOutline" class="btn-floating-outline" onclick="toggleChapterOutline()" title="Jump to Sub-Section / Table of Contents">📑 Outline <span id="outlineCountBadge" class="outline-badge">0</span></button>
+          <aside id="chapterOutlineDrawer" class="chapter-outline-drawer">
+            <div class="outline-drawer-header">
+              <h4>📑 Chapter Sections</h4>
+              <button class="btn-close-drawer" onclick="toggleChapterOutline(false)">✕</button>
+            </div>
+            <nav id="chapterOutlineList" class="outline-drawer-list"></nav>
+          </aside>
+          <div id="outlineBackdrop" class="outline-backdrop" onclick="toggleChapterOutline(false)"></div>
+
 
 
 
@@ -1537,6 +1591,9 @@
 
 
 
+        
+        <!-- Tab: Formulas & Codal Forms Hub -->
+        <div id="panel_cheatsheet" class="tab-panel"></div>
         <div id="panel_files" class="tab-panel">
 
 
@@ -1698,7 +1755,7 @@
                   <span id="onelinerCountBadge" class="badge" style="background:#059669; color:#fff; font-size:0.75rem;">5,328 Facts</span>
                 </h3>
                 <p style="font-size:0.82rem; color:var(--text-muted); margin-top:2px;">
-                  Point-wise key figures, limits, codal rules, and forms extracted from Rahi's drive materials &amp; SASQuizzer APK
+                  Point-wise key figures, limits, codal rules, and forms across all SAS Civil Accounts papers
                 </p>
               </div>
               <div style="display:flex; gap:8px;">
@@ -1731,6 +1788,8 @@
                 </div>
                 <div style="display:flex; gap:8px; align-items:center;">
                   <button id="btnStarredOnly" class="pill-btn" onclick="toggleStarredOneLiners()">⭐ Starred Only (<span id="starredCount">0</span>)</button>
+                  <button id="btnHardOnly" class="pill-btn srs-hard-pill" onclick="toggleSRSFilter('hard')">🔴 Hard (<span id="srsHardCount">0</span>)</button>
+                  <button id="btnGoodOnly" class="pill-btn srs-good-pill" onclick="toggleSRSFilter('good')">🟡 Good (<span id="srsGoodCount">0</span>)</button>
                   <select id="onelinerPageSize" class="select-control" onchange="renderOneLinersList()">
                     <option value="50">50 per page</option>
                     <option value="100">100 per page</option>
@@ -1914,6 +1973,53 @@
       localStorage.removeItem('sidebar_collapsed');
     } catch(e) {}
   </script>
+
+  <!-- Global Search Modal Dialog (Ctrl+K) -->
+  <div id="searchModal" class="search-modal-backdrop" onclick="closeSearchModalOnBackdrop(event)">
+    <div class="search-modal-card">
+      <div class="search-modal-input-row">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="globalSearchInput" placeholder="Search rules, acts, forms, chapters (e.g. Rule 14, ISSAI 300, AS-3, Form 24)..." oninput="onGlobalSearchInput(this.value)">
+        <button class="search-clear-btn" onclick="clearGlobalSearch()">✕</button>
+      </div>
+      <div class="search-modal-filters">
+        <button class="search-filter-pill active" data-filter="all" onclick="setSearchFilter('all')">All</button>
+        <button class="search-filter-pill" data-filter="chapter" onclick="setSearchFilter('chapter')">📖 Chapters</button>
+        <button class="search-filter-pill" data-filter="oneliner" onclick="setSearchFilter('oneliner')">⚡ One-Liners</button>
+        <button class="search-filter-pill" data-filter="quiz" onclick="setSearchFilter('quiz')">🎯 Quizzes</button>
+      </div>
+      <div id="searchResultsList" class="search-results-list">
+        <div class="search-empty-state">Type a keyword or Codal Rule to search across all 8 Civil Accounts papers.</div>
+      </div>
+      <div class="search-modal-footer">
+        <span><kbd>Esc</kbd> to close</span>
+        <span><kbd>Ctrl</kbd>+<kbd>K</kbd> shortcut</span>
+        <span>Instant cross-syllabus search</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <button class="bnav-btn active" id="bnav_content" onclick="switchTab('content')">
+      <span class="bnav-icon">📖</span><span class="bnav-label">Content</span>
+    </button>
+    <button class="bnav-btn" id="bnav_quizzer" onclick="switchTab('sas_quizzer')">
+      <span class="bnav-icon">🎯</span><span class="bnav-label">Quizzer</span>
+    </button>
+    <button class="bnav-btn" id="bnav_oneliner" onclick="switchTab('sas_oneliner')">
+      <span class="bnav-icon">⚡</span><span class="bnav-label">One-Liner</span>
+    </button>
+    <button class="bnav-btn" id="bnav_cheatsheet" onclick="switchTab('cheatsheet')">
+      <span class="bnav-icon">📋</span><span class="bnav-label">Formulas</span>
+    </button>
+    <button class="bnav-btn" id="bnav_search" onclick="openSearchModal()">
+      <span class="bnav-icon">🔍</span><span class="bnav-label">Search</span>
+    </button>
+  </nav>
+
+  <script src="study_tools.js"></script>
+
 </body>
 
 
