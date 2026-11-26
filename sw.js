@@ -1,5 +1,5 @@
 // Service Worker for SAS Civil Accounts Examination Prep PWA
-const CACHE_NAME = "sas-prep-v13";
+const CACHE_NAME = "sas-prep-v17";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
@@ -8,6 +8,7 @@ const ASSETS_TO_CACHE = [
   "./quiz_bank.js",
   "./oneliners_data.js",
   "./quizzer_oneliner_controller.js",
+  "./study_tools.js",
   "./curriculum_data.js",
   "./manifest.json",
   "./icon-192.png",
