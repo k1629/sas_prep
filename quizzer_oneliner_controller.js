@@ -456,23 +456,72 @@
     let wrong = 0;
     let unattempted = 0;
     const missedList = [];
+    const paperBreakdown = {};
 
     quizzerState.activeList.forEach((q, idx) => {
+      const p = q.paperBadge || q.paper || "PC";
+      if (!paperBreakdown[p]) paperBreakdown[p] = { total: 0, correct: 0, wrong: 0, unattempted: 0 };
+      paperBreakdown[p].total++;
+
       if (quizzerState.userAnswers.hasOwnProperty(idx)) {
         if (quizzerState.userAnswers[idx] === q.ans) {
           correct++;
+          paperBreakdown[p].correct++;
         } else {
           wrong++;
+          paperBreakdown[p].wrong++;
           missedList.push({ ...q, chosen: quizzerState.userAnswers[idx], qIdx: idx });
         }
       } else {
         unattempted++;
+        paperBreakdown[p].unattempted++;
         missedList.push({ ...q, chosen: null, qIdx: idx });
       }
     });
 
-    const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
-    const isPass = percent >= 50; // SAS Civil Accounts qualifying benchmark
+    // Official SAS Negative Marking: -0.25 per wrong answer
+    const penalty = +(wrong * 0.25).toFixed(2);
+    const rawScore = correct * 1.0;
+    const netScore = Math.max(0, +(rawScore - penalty).toFixed(2));
+    const percent = total > 0 ? Math.round((netScore / total) * 100) : 0;
+    const accuracy = (correct + wrong) > 0 ? Math.round((correct / (correct + wrong)) * 100) : 0;
+    const isPass = percent >= 50; // SAS Civil Accounts qualifying benchmark (50%)
+
+    // Save exam attempt in history
+    try {
+      const hist = JSON.parse(localStorage.getItem("sas_exam_history") || "[]");
+      hist.unshift({
+        date: new Date().toISOString(),
+        paper: quizzerState.selectedPaper,
+        total,
+        correct,
+        wrong,
+        netScore,
+        percent,
+        isPass
+      });
+      localStorage.setItem("sas_exam_history", JSON.stringify(hist.slice(0, 20)));
+    } catch(e) {}
+
+    // Build Diagnostic Matrix HTML
+    let diagRows = "";
+    for (const [pName, stats] of Object.entries(paperBreakdown)) {
+      const pNet = Math.max(0, +(stats.correct - stats.wrong * 0.25).toFixed(2));
+      const pPct = stats.total > 0 ? Math.round((pNet / stats.total) * 100) : 0;
+      const statusBadge = pPct >= 60 ? "<span style='color:#10b981; font-weight:700;'>🟢 Strong</span>" :
+                          (pPct >= 50 ? "<span style='color:#f59e0b; font-weight:700;'>🟡 Borderline</span>" :
+                                        "<span style='color:#ef4444; font-weight:700;'>🔴 Needs Revision</span>");
+      diagRows += `
+        <tr>
+          <td style="padding:6px 10px; border-bottom:1px solid var(--border); font-weight:600;">${pName}</td>
+          <td style="padding:6px 10px; border-bottom:1px solid var(--border); text-align:center;">${stats.total}</td>
+          <td style="padding:6px 10px; border-bottom:1px solid var(--border); text-align:center; color:#10b981;">${stats.correct}</td>
+          <td style="padding:6px 10px; border-bottom:1px solid var(--border); text-align:center; color:#ef4444;">${stats.wrong}</td>
+          <td style="padding:6px 10px; border-bottom:1px solid var(--border); text-align:center; font-weight:700;">${pNet} (${pPct}%)</td>
+          <td style="padding:6px 10px; border-bottom:1px solid var(--border); text-align:center;">${statusBadge}</td>
+        </tr>
+      `;
+    }
 
     // Show Results Card
     const resultsArea = document.getElementById("quizzerResultsArea");
@@ -485,28 +534,54 @@
         <div class="quizzer-score-card ${isPass ? 'pass-card' : 'fail-card'}">
           <div style="font-size:2.8rem; margin-bottom:8px;">${isPass ? "🏆" : "📚"}</div>
           <h2>${isPass ? "Congratulations! Pass Standard Achieved" : "Review Required - Below 50% Benchmark"}</h2>
+          
           <div class="score-display">
-            <span class="score-num">${correct}</span>
-            <span class="score-total">/ ${total}</span>
+            <span class="score-num">${netScore}</span>
+            <span class="score-total">/ ${total} Net Marks</span>
             <span class="score-percent">(${percent}%)</span>
           </div>
-          <p style="color:var(--text-muted); margin: 8px 0 16px 0;">
+
+          <div style="font-size:0.86rem; color:var(--text-muted); margin: 6px 0 16px 0;">
             Paper: <strong>${PAPERS_INFO[quizzerState.selectedPaper]?.name || quizzerState.selectedPaper}</strong> | Mode: <strong>${quizzerState.mode.toUpperCase()}</strong>
-          </p>
+          </div>
 
           <div class="result-stats-row">
             <div class="stat-box stat-correct">
               <div class="stat-val">${correct}</div>
-              <div class="stat-label">Correct</div>
+              <div class="stat-label">Correct (+${rawScore})</div>
             </div>
             <div class="stat-box stat-wrong">
               <div class="stat-val">${wrong}</div>
-              <div class="stat-label">Incorrect</div>
+              <div class="stat-label">Wrong (-${penalty})</div>
             </div>
             <div class="stat-box stat-unattempted">
               <div class="stat-val">${unattempted}</div>
               <div class="stat-label">Unanswered</div>
             </div>
+            <div class="stat-box" style="background:var(--bg-card-subtle); border:1px solid var(--border);">
+              <div class="stat-val" style="color:var(--primary);">${accuracy}%</div>
+              <div class="stat-label">Accuracy</div>
+            </div>
+          </div>
+
+          <!-- Paper-wise Diagnostic Matrix -->
+          <div style="margin-top:20px; text-align:left; background:var(--bg-card); border:1px solid var(--border); border-radius:8px; padding:12px 16px;">
+            <h4 style="margin:0 0 8px 0; font-size:0.92rem; color:var(--text-main);">📊 Paper-Wise Performance & Diagnostic Matrix</h4>
+            <table style="width:100%; border-collapse:collapse; font-size:0.82rem;">
+              <thead>
+                <tr style="background:var(--bg-card-subtle); color:var(--text-muted);">
+                  <th style="padding:6px 10px; text-align:left;">Paper</th>
+                  <th style="padding:6px 10px; text-align:center;">Total</th>
+                  <th style="padding:6px 10px; text-align:center;">Correct</th>
+                  <th style="padding:6px 10px; text-align:center;">Wrong</th>
+                  <th style="padding:6px 10px; text-align:center;">Net Score</th>
+                  <th style="padding:6px 10px; text-align:center;">Diagnostic</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${diagRows}
+              </tbody>
+            </table>
           </div>
 
           <div style="display:flex; justify-content:center; gap:12px; margin-top:20px; flex-wrap:wrap;">
@@ -612,7 +687,59 @@
     pageSize: 50,
     currentPage: 1,
     filteredList: [],
-    starredIds: new Set()
+    starredIds: new Set(),
+    srsFilter: "ALL",
+    srsRatings: {}
+  };
+
+  
+  function loadSRSRatings() {
+    try {
+      const saved = localStorage.getItem("sas_srs_ratings");
+      if (saved) {
+        oneLinerState.srsRatings = JSON.parse(saved);
+      }
+    } catch(e) {}
+  }
+
+  function saveSRSRatings() {
+    try {
+      localStorage.setItem("sas_srs_ratings", JSON.stringify(oneLinerState.srsRatings));
+      updateSRSCountBadges();
+    } catch(e) {}
+  }
+
+  function updateSRSCountBadges() {
+    const hardCount = Object.values(oneLinerState.srsRatings).filter(r => r === 'hard').length;
+    const goodCount = Object.values(oneLinerState.srsRatings).filter(r => r === 'good').length;
+    const hardEl = document.getElementById("srsHardCount");
+    const goodEl = document.getElementById("srsGoodCount");
+    if (hardEl) hardEl.textContent = hardCount;
+    if (goodEl) goodEl.textContent = goodCount;
+  }
+
+  window.rateSRSOneLiner = function(id, rating) {
+    if (oneLinerState.srsRatings[id] === rating) {
+      delete oneLinerState.srsRatings[id]; // Toggle off
+    } else {
+      oneLinerState.srsRatings[id] = rating;
+    }
+    saveSRSRatings();
+    renderOneLinersList();
+  };
+
+  window.toggleSRSFilter = function(filter) {
+    if (oneLinerState.srsFilter === filter) {
+      oneLinerState.srsFilter = "ALL";
+    } else {
+      oneLinerState.srsFilter = filter;
+    }
+    const btnHard = document.getElementById("btnHardOnly");
+    const btnGood = document.getElementById("btnGoodOnly");
+    if (btnHard) btnHard.classList.toggle("active", oneLinerState.srsFilter === "hard");
+    if (btnGood) btnGood.classList.toggle("active", oneLinerState.srsFilter === "good");
+    oneLinerState.currentPage = 1;
+    filterOneLiners();
   };
 
   function loadStarredOneLiners() {
@@ -642,6 +769,8 @@
     }
 
     loadStarredOneLiners();
+    loadSRSRatings();
+    updateSRSCountBadges();
     let idCounter = 1;
 
     for (const [paperKey, factList] of Object.entries(window.SAS_ONELINERS)) {
@@ -729,6 +858,12 @@
     oneLinerState.filteredList = allOneLiners.filter(item => {
       if (pFilter !== "ALL" && item.paper !== pFilter) return false;
       if (starredOnly && !oneLinerState.starredIds.has(item.id)) return false;
+      if (oneLinerState.srsFilter !== "ALL") {
+        const rating = oneLinerState.srsRatings[item.id];
+        if (oneLinerState.srsFilter === "hard" && rating !== "hard") return false;
+        if (oneLinerState.srsFilter === "good" && rating !== "good") return false;
+        if (oneLinerState.srsFilter === "easy" && rating !== "easy") return false;
+      }
       if (query) {
         const text = `${item.paper} ${item.topic} ${item.tag} ${item.fact}`.toLowerCase();
         if (!text.includes(query)) return false;
@@ -779,6 +914,7 @@
     let html = "";
     pageItems.forEach((item, idx) => {
       const isStarred = oneLinerState.starredIds.has(item.id);
+      const srsVal = oneLinerState.srsRatings[item.id] || "";
       const highlightedFact = highlightKeywords(escapeHtml(item.fact), oneLinerState.searchQuery);
 
       html += `
@@ -790,6 +926,11 @@
               ${item.tag ? `<span class="oneliner-subtag">${escapeHtml(item.tag)}</span>` : ''}
             </div>
             <div class="oneliner-card-actions">
+              <div class="srs-chips-row">
+                <button class="srs-chip srs-chip-hard ${srsVal === 'hard' ? 'active' : ''}" onclick="rateSRSOneLiner('${item.id}', 'hard')" title="Hard: Review Daily">🔴 Hard</button>
+                <button class="srs-chip srs-chip-good ${srsVal === 'good' ? 'active' : ''}" onclick="rateSRSOneLiner('${item.id}', 'good')" title="Good: Mastered Soon">🟡 Good</button>
+                <button class="srs-chip srs-chip-easy ${srsVal === 'easy' ? 'active' : ''}" onclick="rateSRSOneLiner('${item.id}', 'easy')" title="Easy: Mastered">🟢 Easy</button>
+              </div>
               <button class="action-btn-circle ${isStarred ? 'starred' : ''}" onclick="toggleStarOneLiner('${item.id}', this)" title="${isStarred ? 'Remove from Starred' : 'Star for Revision'}">
                 ${isStarred ? '★' : '☆'}
               </button>
