@@ -375,6 +375,7 @@
     if (btnPrev) btnPrev.disabled = (idx === 0);
     if (btnNext) btnNext.disabled = (idx === total - 1);
 
+    updateQuizzerFavoriteButton(q);
     renderQuizzerPalette();
     updateQuizzerScoreLive();
   }
@@ -778,6 +779,8 @@
         allOneLiners.push({
           id: `ol_${idCounter++}`,
           paper: item.paper || paperKey,
+          chapterId: item.chapterId || "",
+          chapter: item.chapter || "",
           topic: item.topic || "Core Codal Rule",
           fact: item.fact || "",
           tag: item.tag || "Codal Key Fact"
@@ -804,6 +807,7 @@
 
   window.selectOneLinerPaper = function(paperCode) {
     oneLinerState.selectedPaper = paperCode;
+    oneLinerState.selectedChapterId = "ALL";
     oneLinerState.currentPage = 1;
 
     // Update pill buttons
@@ -857,6 +861,9 @@
 
     oneLinerState.filteredList = allOneLiners.filter(item => {
       if (pFilter !== "ALL" && item.paper !== pFilter) return false;
+      if (oneLinerState.selectedChapterId && oneLinerState.selectedChapterId !== "ALL") {
+        if (item.chapterId && item.chapterId !== oneLinerState.selectedChapterId) return false;
+      }
       if (starredOnly && !oneLinerState.starredIds.has(item.id)) return false;
       if (oneLinerState.srsFilter !== "ALL") {
         const rating = oneLinerState.srsRatings[item.id];
@@ -1191,6 +1198,172 @@
         initOneLiners();
       }
     }
+
+    // Render Favorites on demand
+    if (tabId === "sas_favorites") {
+      buildQuizzerDatabase();
+      renderFavoritesPanel();
+    }
+  };
+
+  // ==========================================
+  // 5. FAVORITE QUESTIONS ENGINE & SYLLABUS SYNC
+  // ==========================================
+  let favoriteQuestionsMap = {};
+  try {
+    const savedFavs = localStorage.getItem("sas_favorite_questions");
+    if (savedFavs) favoriteQuestionsMap = JSON.parse(savedFavs) || {};
+  } catch (e) {
+    favoriteQuestionsMap = {};
+  }
+
+  function saveFavoritesStore() {
+    try {
+      localStorage.setItem("sas_favorite_questions", JSON.stringify(favoriteQuestionsMap));
+    } catch (e) {}
+    updateFavoritesBadges();
+  }
+
+  function getFavKey(q) {
+    return (q.q || "").trim().toLowerCase().slice(0, 120);
+  }
+
+  function updateFavoritesBadges() {
+    const count = Object.keys(favoriteQuestionsMap).length;
+    const sb = document.getElementById("sidebarFavCount");
+    const pb = document.getElementById("favoritesTotalBadge");
+    if (sb) sb.textContent = count;
+    if (pb) pb.textContent = `${count} Saved`;
+  }
+
+  function updateQuizzerFavoriteButton(q) {
+    const btn = document.getElementById("btnFavQuestion");
+    if (!btn || !q) return;
+    const isFav = !!favoriteQuestionsMap[getFavKey(q)];
+    btn.classList.toggle("favorited", isFav);
+    btn.innerHTML = isFav ? "⭐ Favorited" : "☆ Like / Favorite";
+  }
+
+  window.toggleCurrentQuizzerFavorite = function() {
+    const q = quizzerState.activeList[quizzerState.currentIndex];
+    if (!q) return;
+    const key = getFavKey(q);
+    if (favoriteQuestionsMap[key]) {
+      delete favoriteQuestionsMap[key];
+    } else {
+      favoriteQuestionsMap[key] = {
+        key,
+        id: q.id,
+        q: q.q,
+        opts: q.opts,
+        ans: q.ans,
+        hint: q.hint,
+        paper: q.paper,
+        paperBadge: q.paperBadge,
+        chId: q.chId,
+        chapterTitle: q.chapterTitle
+      };
+    }
+    saveFavoritesStore();
+    updateQuizzerFavoriteButton(q);
+  };
+
+  window.removeFavoriteQuestion = function(encodedKey) {
+    const key = decodeURIComponent(encodedKey);
+    delete favoriteQuestionsMap[key];
+    saveFavoritesStore();
+    renderFavoritesPanel();
+    const curQ = quizzerState.activeList[quizzerState.currentIndex];
+    if (curQ) updateQuizzerFavoriteButton(curQ);
+  };
+
+  window.clearAllFavorites = function() {
+    if (!Object.keys(favoriteQuestionsMap).length) return;
+    if (!confirm("Remove all saved favorite questions?")) return;
+    favoriteQuestionsMap = {};
+    saveFavoritesStore();
+    renderFavoritesPanel();
+  };
+
+  window.renderFavoritesPanel = function() {
+    updateFavoritesBadges();
+    const container = document.getElementById("favoritesListContainer");
+    if (!container) return;
+    const list = Object.values(favoriteQuestionsMap);
+    if (!list.length) {
+      container.innerHTML = `<div class="source-empty" style="margin-top:16px;">No favorite questions yet. Click <strong>☆ Like / Favorite</strong> on any question in <strong>Quizzes</strong> to save it here automatically!</div>`;
+      return;
+    }
+    const letters = ["A", "B", "C", "D", "E"];
+    container.innerHTML = list.map((q, idx) => `
+      <div class="fav-q-card">
+        <div class="fav-q-header">
+          <span class="quizzer-meta-tag" style="margin:0;">${escapeHtml(q.paperBadge || q.paper)} • ${escapeHtml(q.chapterTitle || "")}</span>
+          <button class="btn-small" onclick="removeFavoriteQuestion('${encodeURIComponent(q.key)}')" title="Remove from Favorites">✕ Remove</button>
+        </div>
+        <div class="fav-q-text"><strong>Q${idx + 1}.</strong> ${escapeHtml(q.q)}</div>
+        <div class="fav-q-opts">
+          ${(q.opts || []).map((o, oi) => `
+            <div class="fav-q-opt ${oi === q.ans ? "is-correct" : ""}">
+              <strong>${letters[oi]}.</strong> ${escapeHtml(o)} ${oi === q.ans ? "✓" : ""}
+            </div>
+          `).join("")}
+        </div>
+        ${q.hint ? `<div class="fav-q-hint">💡 ${escapeHtml(q.hint)}</div>` : ""}
+      </div>
+    `).join("");
+  };
+
+  window.practiceFavoritesQuiz = function() {
+    const list = Object.values(favoriteQuestionsMap);
+    if (!list.length) {
+      alert("You have no favorite questions yet. Like some questions in Quizzes first!");
+      return;
+    }
+    if (typeof window.switchTab === "function") window.switchTab("sas_quizzer");
+    if (!quizzerState.initialized) buildQuizzerDatabase();
+    quizzerState.activeList = list.slice().sort(() => Math.random() - 0.5);
+    quizzerState.currentIndex = 0;
+    quizzerState.userAnswers = {};
+    quizzerState.isSubmitted = false;
+    const resultsArea = document.getElementById("quizzerResultsArea");
+    const activeArea = document.getElementById("quizzerActiveArea");
+    if (resultsArea) resultsArea.style.display = "none";
+    if (activeArea) activeArea.style.display = "block";
+    renderQuizzerQuestion();
+    renderQuizzerPalette();
+    updateQuizzerScoreLive();
+  };
+
+  window.syncQuizzerWithSyllabus = function(paperCode, chId) {
+    if (!allQuizzerQuestions.length) buildQuizzerDatabase();
+    const normP = normalizePaperCode(paperCode);
+    quizzerState.selectedPaper = normP;
+    populateQuizzerTopicSelect();
+    const sel = document.getElementById("quizzerTopicSelect");
+    const hasChapterQs = allQuizzerQuestions.some(q => q.chId === chId);
+    quizzerState.selectedTopic = hasChapterQs ? chId : "ALL";
+    if (sel) sel.value = quizzerState.selectedTopic;
+    // Highlight paper pill
+    document.querySelectorAll("#quizzerPaperPills .pill-btn").forEach(btn => {
+      const attr = btn.getAttribute("onclick") || "";
+      btn.classList.toggle("active", attr.includes(`'${paperCode}'`));
+    });
+    restartQuizzerQuiz();
+    quizzerState.initialized = true;
+  };
+
+  window.syncOneLinerWithSyllabus = function(paperCode, chId) {
+    if (!allOneLiners.length) buildOneLinersDatabase();
+    oneLinerState.selectedPaper = paperCode;
+    oneLinerState.selectedChapterId = chId || "ALL";
+    oneLinerState.currentPage = 1;
+    document.querySelectorAll("#onelinerPaperPills .pill-btn").forEach(btn => {
+      const attr = btn.getAttribute("onclick") || "";
+      btn.classList.toggle("active", attr.includes(`'${paperCode}'`));
+    });
+    filterOneLiners();
+    oneLinerState.initialized = true;
   };
 
   function attachLayoutListeners() {
@@ -1272,6 +1445,7 @@
   function onReadyInit() {
     buildQuizzerDatabase();
     buildOneLinersDatabase();
+    updateFavoritesBadges();
     attachLayoutListeners();
   }
 
