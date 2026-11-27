@@ -1051,8 +1051,28 @@ function renderPapersNav() {
 
         loadCurrentSection();
 
-        if (activeTab === 'sas_quizzer' || activeTab === 'sas_oneliner') {
-          switchTab('content');
+        // When user is in SAS Quizzer or One-Liner mode, sync the quizzer/one-liner
+        // to this section WITHOUT switching over to the SAS Material!
+        if (window.currentAppMode === "quizzer" || activeTab === "sas_quizzer" || activeTab === "sas_oneliner" || activeTab === "sas_favorites") {
+          const rawPaper = (paper.paperCode || "").replace("-", "");
+          if (activeTab === "sas_quizzer" && typeof selectQuizzerPaper === "function") {
+            selectQuizzerPaper(rawPaper);
+            if (sec.chapters && sec.chapters.length > 0) {
+              const firstChId = sec.chapters[0].id;
+              const topicSel = document.getElementById("quizzerTopicSelect");
+              if (topicSel) {
+                for (let i = 0; i < topicSel.options.length; i++) {
+                  if (topicSel.options[i].value === firstChId) {
+                    topicSel.value = firstChId;
+                    if (typeof onQuizzerTopicChange === "function") onQuizzerTopicChange();
+                    break;
+                  }
+                }
+              }
+            }
+          } else if (activeTab === "sas_oneliner" && typeof selectOneLinerPaper === "function") {
+            selectOneLinerPaper(paper.paperCode);
+          }
         }
 
         // Auto-close mobile drawer on selection
@@ -1141,8 +1161,15 @@ function renderPapersNav() {
 
         loadCurrentSection();
 
-
-
+        // If in Quizzer or One-Liner mode, sync paper filter without switching tabs
+        if (window.currentAppMode === "quizzer" || activeTab === "sas_quizzer" || activeTab === "sas_oneliner") {
+          const rawPaper = (paper.paperCode || "").replace("-", "");
+          if (activeTab === "sas_quizzer" && typeof selectQuizzerPaper === "function") {
+            selectQuizzerPaper(rawPaper);
+          } else if (activeTab === "sas_oneliner" && typeof selectOneLinerPaper === "function") {
+            selectOneLinerPaper(paper.paperCode);
+          }
+        }
       }
 
 
@@ -1763,148 +1790,78 @@ function loadCurrentChapter() {
 
 
 
+  const wordCount = (currentChapter.content || "").split(/\s+/).filter(Boolean).length;
+  const readMins = Math.max(2, Math.round(wordCount / 180));
+  const headingMatches = [];
+  (currentChapter.content || "").replace(/^(#{2,4})\s+(.+)$/gm, (_, hashes, title) => {
+    const cleanT = title.replace(/[*_`]/g, "").trim();
+    const slug = "sec_hd_" + headingMatches.length;
+    headingMatches.push({ level: hashes.length, title: cleanT, slug });
+    return _;
+  });
+
+  let formattedNotes = formatMarkdown(currentChapter.content || "");
+  let hdIdx = 0;
+  formattedNotes = formattedNotes.replace(/<(h[2-4])>/g, (m, tag) => `<${tag} id="sec_hd_${hdIdx++}">`);
+
   wholeContentEl.innerHTML = `
-
-
-
-    <div class="chapter-content-box">
-
-
-
-      <div class="card-toolbar" style="margin-bottom: 16px;">
-
-
-
-        <div>
-
-
-
-          <span class="chapter-stepper-tag">Syllabus Subtopic ${currentChapterIndex + 1} of ${chapters.length}</span>
-
-
-
-          <h3 style="margin-top: 4px;">${currentChapter.title}</h3>
-
-
-
+    <div class="chapter-content-box" id="wholeContentTop">
+      <div class="chapter-hero-card">
+        <div class="chapter-hero-meta">
+          <span class="chapter-stepper-tag">${paper.paperCode} • ${section.topicCode || "Topic"}: ${section.title}</span>
+          <span class="chapter-num-pill">Chapter ${currentChapterIndex + 1} of ${chapters.length}</span>
+          <span class="read-time-pill">⏱️ ~${readMins} min notes + Full PDFs</span>
         </div>
-
-
-
-        <div class="card-actions">
-
-
-
-          <button class="btn-ai-pill" onclick="triggerAISummary()">✨ Summarize Chapter</button>
-
-
-
-          <button class="btn-ai-pill" style="background: linear-gradient(135deg, #2563eb, #38bdf8);" onclick="triggerAICrux()">📘 Chapter Crux</button>
-
-
-
-          <button class="btn-save-pill" onclick="openTextEdition()">✍️ Chapter Notes</button>
-
-
-
+        <h3 class="chapter-hero-title">${currentChapter.title}</h3>
+        ${currentChapter.sourceDoc ? `<div class="chapter-hero-src">📘 <strong>Source Manuals:</strong> ${currentChapter.sourceDoc}</div>` : ""}
+        <div class="chapter-hero-actions">
+          <button class="btn-ai-pill" onclick="triggerAISummary()">✨ Summary</button>
+          <button class="btn-ai-pill" style="background: linear-gradient(135deg, #2563eb, #38bdf8);" onclick="triggerAICrux()">💎 Crux</button>
+          <button class="btn-save-pill" onclick="openTextEdition()">✍️ Text Edition</button>
           <button class="btn-small" onclick="playSpeech()">🔊 Listen</button>
-
-
-
         </div>
-
-
-
+        ${headingMatches.length > 0 ? `
+          <div class="toc-jump-bar">
+            <span class="toc-label">🧭 Jump to:</span>
+            ${headingMatches.slice(0, 8).map(h => `<button class="toc-jump-pill" onclick="scrollToStudyAnchor('${h.slug}')">${h.title}</button>`).join("")}
+            <button class="toc-jump-pill toc-pdf-pill" onclick="scrollToStudyAnchor('chapterSourceMaterial')">📚 Official PDFs ↓</button>
+          </div>
+        ` : ""}
       </div>
 
-
-
-      
-
-
+      <div class="study-section-divider">
+        <span>📝 PART 1 — STRUCTURED EXAM NOTES</span>
+      </div>
 
       <div class="formatted-study-content">
-        ${formatMarkdown(currentChapter.content)}
+        ${formattedNotes}
+      </div>
+
+      <div class="study-section-divider" style="margin-top:26px;">
+        <span>📚 PART 2 — COMPLETE OFFICIAL SOURCE MATERIAL (CHAPTER & TOPIC WISE)</span>
       </div>
 
       <div id="chapterSourceMaterial" class="chapter-source-material">
         <div class="source-loading">📚 Loading full official source material from PDFs...</div>
       </div>
 
-
-
-
-
-
-
       <div class="chapter-bottom-nav">
-
-
-
         <button class="btn-chapter-bottom" onclick="navigateChapter(-1)" ${!prevChapter && currentSectionIndex === 0 ? "disabled style='opacity:0.4;'" : ""}>
-
-
-
           ◀ ${prevChapter ? prevChapter.title.slice(0, 32) + '...' : 'Previous Section'}
-
-
-
         </button>
-
-
-
-        
-
-
 
         <div class="chapter-completion-toggle">
-
-
-
           <label style="cursor: pointer; display: flex; align-items: center; gap: 8px;">
-
-
-
             <input type="checkbox" id="chapterCompletedCheckbox" ${isCompleted ? 'checked' : ''} onchange="toggleChapterCompleted(this.checked)" style="width: 18px; height: 18px; cursor: pointer;">
-
-
-
             <span style="font-weight: 600; color: var(--text-main);">Mark Chapter as Mastered</span>
-
-
-
           </label>
-
-
-
         </div>
 
-
-
-
-
-
-
         <button class="btn-chapter-bottom" onclick="navigateChapter(1)">
-
-
-
           ${nextChapter ? nextChapter.title.slice(0, 32) + '...' : 'Next Section'} ▶
-
-
-
         </button>
-
-
-
       </div>
-
-
-
     </div>
-
-
-
   `;
 
   loadChapterSourceMaterial(paper.paperCode, currentChapter.id);
@@ -1947,13 +1904,81 @@ function escapeHtmlSource(str) {
     .replace(/"/g, "&quot;");
 }
 
+function scrollToStudyAnchor(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function formatSourceText(rawText, query) {
-  const safe = escapeHtmlSource(rawText || "");
-  const paras = safe.split(/\n\n+/).map(p => p.trim()).filter(Boolean);
-  let html = paras.map(p => {
-    const withBreaks = p.replace(/\n/g, "<br>");
-    return `<p>${withBreaks}</p>`;
-  }).join("");
+  let safe = escapeHtmlSource(rawText || "");
+  // Split inline new points onto their own lines so every point starts a fresh paragraph
+  safe = safe
+    .replace(/([.;:?!])\s+(?=(?:\(\d{1,3}\)|\([a-z]{1,3}\)|\([ivxlc]{1,5}\)|\d{1,2}[\.\)]|[•●▪])\s+)/gi, "$1\n")
+    .replace(/([.;:?!])\s+(?=(?:NOTE|Note|Exception|Provided\s+that|Explanation|Proviso|Important)\b)/g, "$1\n")
+    .replace(/\s+([•●▪])\s+/g, "\n$1 ");
+
+  const lines = safe.split(/\n/);
+  const blocks = [];
+  let paraBuf = [];
+  let activePointMode = false;
+
+  const flushPara = () => {
+    if (!paraBuf.length) return;
+    const text = paraBuf.join(" ").trim();
+    if (text) {
+      if (/^(?:NOTE|Exception|Provided\s+that|Explanation|Important|Proviso)\b/i.test(text)) {
+        blocks.push(`<div class="src-callout">${text}</div>`);
+      } else if (activePointMode) {
+        blocks.push(`<div class="src-list-item">${text}</div>`);
+      } else {
+        blocks.push(`<p>${text}</p>`);
+      }
+    }
+    paraBuf = [];
+    activePointMode = false;
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const ln = lines[i].trim();
+    if (!ln) {
+      flushPara();
+      continue;
+    }
+
+    const isHeading =
+      /^(?:CHAPTER|PART|SECTION|ARTICLE|SCHEDULE|APPENDIX|ANNEXURE)\s+[A-Z0-9IVX]+/i.test(ln) ||
+      /^(?:\d+\.\d+(?:\.\d+)?)\s+[A-Z]/.test(ln) ||
+      (ln.length >= 6 && ln.length <= 85 && ln === ln.toUpperCase() && /[A-Z]{3,}/.test(ln) && !/^\d+$/.test(ln));
+
+    const isNewPoint = /^(?:[•●▪\-\*]|\([a-z0-9]{1,4}\)|[a-z]\)|\d{1,2}[\.\)])\s+/i.test(ln);
+
+    if (isHeading) {
+      flushPara();
+      blocks.push(`<h5 class="src-heading">${ln}</h5>`);
+    } else if (isNewPoint) {
+      flushPara();
+      activePointMode = true;
+      paraBuf.push(ln);
+    } else {
+      paraBuf.push(ln);
+      const curLen = paraBuf.join(" ").length;
+      const endsSentence = /[\.\?\:\!]$/.test(ln);
+      // Flush at natural PDF paragraph ends or after ~220 chars at a sentence boundary
+      if (endsSentence && (curLen > 220 || ln.length < 58)) {
+        flushPara();
+      }
+    }
+  }
+  flushPara();
+
+  let html = blocks.join("");
+
+  // Highlight codal references like Article 148, Rule 149, Section 13, F.R. 56, S.R. 22
+  html = html.replace(/(<[^>]+>)|([^<]+)/g, (m, tag, txt) => {
+    if (tag) return tag;
+    return txt.replace(/\b((?:Article|Rule|Section|Para|F\.R\.|S\.R\.|Form|Schedule)\s+\d+[A-Za-z0-9\.\(\)\-]*)/g, '<span class="src-ref-chip">$1</span>');
+  });
+
   if (query && query.length >= 2) {
     const escapedQ = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const re = new RegExp(`(${escapedQ})`, "gi");
@@ -2023,12 +2048,31 @@ async function loadChapterSourceMaterial(paperCode, chapterId, scopeMode = "chap
     const totalSecs = docEntries.reduce((acc, d) => acc + d.secs.length, 0);
     const totalChars = docEntries.reduce((acc, d) => acc + d.secs.reduce((a, s) => a + (s.text || "").length, 0), 0);
 
+    const chapterEntries = targetChapters.map((ch, cIdx) => {
+      const refs = (bundle.chapters && bundle.chapters[ch.id]) || [];
+      const chDocs = refs.map(r => {
+        const doc = bundle.docs[r.docId];
+        if (!doc) return null;
+        const secSet = new Set(r.secIds);
+        const secs = doc.secs.filter(s => secSet.has(s.id));
+        return { docId: r.docId, title: doc.title, secs };
+      }).filter(d => d && d.secs.length > 0);
+      return {
+        chId: ch.id,
+        chNum: cIdx + 1,
+        chTitle: ch.title,
+        chContent: ch.content || "",
+        docs: chDocs
+      };
+    });
+
     window.__ACTIVE_CHAPTER_SOURCES = {
       paperCode,
       chapterId,
       sectionTitle: activeSec.title,
       scopeMode,
       docEntries,
+      chapterEntries,
       selectedDocId: "ALL",
       query: ""
     };
@@ -2107,27 +2151,94 @@ function renderFilteredSourceSections() {
   const state = window.__ACTIVE_CHAPTER_SOURCES;
   if (!bodyEl || !state) return;
 
-  const { docEntries, selectedDocId, query } = state;
+  const { docEntries, chapterEntries, scopeMode, selectedDocId, query } = state;
   const qLower = query.toLowerCase();
 
   let html = "";
-  let matchedCount = 0;
 
-  docEntries.forEach(doc => {
-    if (selectedDocId !== "ALL" && doc.docId !== selectedDocId) return;
+  // In "section" (Entire Topic) mode, organize cleanly Chapter-by-Chapter with a Topic Roadmap!
+  if (scopeMode === "section" && chapterEntries && chapterEntries.length > 0) {
+    html += `
+      <div class="topic-roadmap-box">
+        <div class="topic-roadmap-title">🗺️ Topic Chapters Roadmap (${chapterEntries.length} Chapters in "${escapeHtmlSource(state.sectionTitle)}")</div>
+        <div class="topic-roadmap-grid">
+          ${chapterEntries.map(ce => `
+            <button class="topic-roadmap-pill" onclick="scrollToStudyAnchor('topic_ch_${escapeHtmlSource(ce.chId)}')">
+              <span class="roadmap-num">Ch ${ce.chNum}</span>
+              <span>${escapeHtmlSource(ce.chTitle)}</span>
+            </button>
+          `).join("")}
+        </div>
+      </div>
+    `;
+
+    chapterEntries.forEach(ce => {
+      const filteredDocs = ce.docs
+        .filter(d => selectedDocId === "ALL" || d.docId === selectedDocId)
+        .map(d => ({
+          ...d,
+          secs: qLower ? d.secs.filter(s => (s.title + "\n" + s.text).toLowerCase().includes(qLower)) : d.secs
+        }))
+        .filter(d => d.secs.length > 0);
+
+      const notesMatch = !qLower || (ce.chTitle + "\n" + ce.chContent).toLowerCase().includes(qLower);
+      if (!filteredDocs.length && !notesMatch) return;
+
+      html += `
+        <div class="topic-chapter-block" id="topic_ch_${escapeHtmlSource(ce.chId)}">
+          <div class="topic-chapter-banner">
+            <span class="topic-ch-badge">Chapter ${ce.chNum}</span>
+            <h4 class="topic-ch-heading">${escapeHtmlSource(ce.chTitle)}</h4>
+            <button class="btn-small" onclick="scrollToStudyAnchor('wholeContentTop')" style="margin-left:auto;">↑ Top</button>
+          </div>
+          ${ce.chContent && notesMatch ? `
+            <div class="topic-ch-notes formatted-study-content">
+              ${formatMarkdown(ce.chContent)}
+            </div>
+          ` : ""}
+          ${filteredDocs.map(doc => `
+            <div class="source-doc-group">
+              <div class="source-doc-group-header">
+                <span class="source-doc-icon">📄</span>
+                <span class="source-doc-name">${escapeHtmlSource(doc.title)}</span>
+                <span class="source-doc-count">${doc.secs.length} section${doc.secs.length > 1 ? "s" : ""}</span>
+              </div>
+              ${doc.secs.map(sec => `
+                <details class="source-sec-card" open>
+                  <summary class="source-sec-summary">
+                    <span class="source-sec-title">${escapeHtmlSource(sec.title)}</span>
+                    <span class="source-sec-chars">${Math.round((sec.text || "").length / 100) / 10}k chars</span>
+                  </summary>
+                  <div class="source-sec-body">
+                    ${formatSourceText(sec.text, query)}
+                  </div>
+                </details>
+              `).join("")}
+            </div>
+          `).join("")}
+        </div>
+      `;
+    });
+
+    bodyEl.innerHTML = html || `<div class="source-empty">No sections match "${escapeHtmlSource(query)}".</div>`;
+    return;
+  }
+
+  // In "chapter" mode, group cleanly by Source Document with jump links
+  const visibleDocs = docEntries.filter(doc => selectedDocId === "ALL" || doc.docId === selectedDocId);
+  visibleDocs.forEach(doc => {
     const secs = qLower
       ? doc.secs.filter(s => (s.title + "\n" + s.text).toLowerCase().includes(qLower))
       : doc.secs;
     if (!secs.length) return;
 
-    matchedCount += secs.length;
-
     html += `
-      <div class="source-doc-group">
+      <div class="source-doc-group" id="src_doc_${escapeHtmlSource(doc.docId)}">
         <div class="source-doc-group-header">
           <span class="source-doc-icon">📄</span>
           <span class="source-doc-name">${escapeHtmlSource(doc.title)}</span>
           <span class="source-doc-count">${secs.length} section${secs.length > 1 ? "s" : ""}</span>
+          <button class="btn-small" onclick="scrollToStudyAnchor('wholeContentTop')" style="margin-left:8px;">↑ Top</button>
         </div>
         ${secs.map((sec) => `
           <details class="source-sec-card" open>
