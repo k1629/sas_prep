@@ -82,119 +82,45 @@
 
 
 
-      <div class="sidebar-header">
-
-
-
-        <div class="sidebar-brand-row">
-
-
-
-          <span class="brand-badge">IA&AD • Civil Accounts</span>
-
-
-
-          <span class="exam-target-badge">🎯 Target: 6 Months</span>
-
-
-
+      <div class="sidebar-header" style="padding: 12px 14px 10px;">
+        <div class="sidebar-brand-row" style="margin-bottom: 8px;">
+          <span class="brand-badge">IA&amp;AD • Civil Accounts</span>
+          <span id="countdownTimer" class="exam-target-badge">🎯 SAS Hub</span>
         </div>
 
-
-
-        <div class="sidebar-title-row">
-          <img src="icon-192.png" alt="SAS Exam Master Hub Logo" class="sidebar-logo">
-          <h1 class="sidebar-title">SAS Exam Master Hub</h1>
+        <!-- Primary Top-Left Mode Switcher (Only ONE active at a time) -->
+        <div class="sidebar-mode-switcher">
+          <button id="modeBtn_material" class="mode-switch-btn active" onclick="setAppMode('material')">
+            📚 SAS Material
+          </button>
+          <button id="modeBtn_quizzer" class="mode-switch-btn" onclick="setAppMode('quizzer')">
+            🎯 SAS Quizzer
+          </button>
         </div>
 
-
-
-        
-
-
-
-        <!-- 6-Month Countdown -->
-
-
-
-        <div class="countdown-card">
-          <div class="countdown-label">⏳ SAS EXAM COUNTDOWN</div>
-
-        <!-- Daily Study Streak Card -->
-          <div id="countdownTimer"class="countdown-val">180 Days Remaining</div>
+        <!-- SAS Material Sub-Buttons (shown when SAS Material is active) -->
+        <div id="sidebarMaterialNav" class="sidebar-subnav">
+          <button id="sideBtn_content" class="side-nav-btn active" onclick="switchTab('content')">📖 Whole Content</button>
+          <button id="sideBtn_summary" class="side-nav-btn" onclick="switchTab('summary')">⚡ Summary</button>
+          <button id="sideBtn_crux" class="side-nav-btn" onclick="switchTab('crux')">💎 Crux</button>
+          <button id="sideBtn_edition" class="side-nav-btn" onclick="switchTab('edition')">✍️ Text Edition</button>
+          <button id="sideBtn_coverage" class="side-nav-btn" onclick="switchTab('coverage')">🎯 What to Cover</button>
+          <button id="sideBtn_tutor" class="side-nav-btn" onclick="switchTab('tutor')">🤖 AI Tutor &amp; Doubts</button>
+          <button id="sideBtn_files" class="side-nav-btn" onclick="switchTab('files')">📂 Workspace Files</button>
         </div>
 
-        <!-- Daily Study Streak Card -->
-        <div class="study-streak-card">
-          <div class="streak-header">
-            <span>🔥 STUDY STREAK</span>
-            <span id="streakDaysCount" class="streak-badge">1 Day</span>
-          </div>
-          <div class="daily-goal-checklist">
-            <label class="daily-goal-item">
-              <input type="checkbox" id="goalChapterRead" onchange="toggleDailyGoal('chapter')">
-              <span>Read 1 Chapter</span>
-            </label>
-            <label class="daily-goal-item">
-              <input type="checkbox" id="goalQuizPracticed" onchange="toggleDailyGoal('quiz')">
-              <span>Solve 20 MCQs</span>
-            </label>
-          </div>
+        <!-- SAS Quizzer Sub-Buttons (shown when SAS Quizzer is active) -->
+        <div id="sidebarQuizzerNav" class="sidebar-subnav" style="display: none;">
+          <button id="sideBtn_sas_quizzer" class="side-nav-btn active" onclick="switchTab('sas_quizzer')">🎯 Quizzes</button>
+          <button id="sideBtn_sas_oneliner" class="side-nav-btn" onclick="switchTab('sas_oneliner')">⚡ One-liner</button>
+          <button id="sideBtn_sas_favorites" class="side-nav-btn" onclick="switchTab('sas_favorites')">
+            <span>⭐ Favorites</span>
+            <span id="sidebarFavCount" class="fav-count-pill">0</span>
+          </button>
         </div>
 
-
-
-
-
-
-
-        <!-- Overall Readiness Progress Card -->
-
-
-
-        <div class="overall-progress-card">
-
-
-
-          <div class="progress-header">
-
-
-
-            <span>Overall Syllabus Readiness</span>
-
-
-
-            <span id="overallProgressPct" class="progress-pct">0% (0/25 Topics)</span>
-
-
-
-          </div>
-
-
-
-          <div class="progress-bar-bg">
-
-
-
-            <div id="overallProgressBar" class="progress-bar-fill"></div>
-
-
-
-          </div>
-
-
-
-        </div>
-
-
-
+        <div class="sidebar-syllabus-label">📑 SYLLABUS (PAPER &amp; TOPIC)</div>
       </div>
-
-
-
-
-
-
 
       <!-- Paper & Section Navigation -->
 
@@ -276,504 +202,48 @@
 
 
 
-      <header class="audio-toolbar">
-
-
-
-        <button id="btnMobileMenu" class="btn-mobile-menu" onclick="toggleMobileSidebar()" title="Toggle Papers Menu">
-
-
-
-          ☰ Papers
-
-
-
+      <header class="audio-toolbar compact-context-toolbar">
+        <button id="btnMobileMenu" class="btn-mobile-menu" onclick="toggleMobileSidebar()" title="Toggle Menu">
+          ☰ Menu
         </button>
 
-
-
-        <div class="audio-controls">
-
-
-
-          <button id="btnPlayAudio" class="btn-audio primary" onclick="playSpeech()">
-
-
-
-            <span class="btn-icon">🎧</span> <span id="playAudioLabel">Listen to Section</span>
-
-
-
-          </button>
-
-
-
-          <button id="btnPauseAudio" class="btn-audio" onclick="pauseSpeech()" title="Pause audio">
-
-
-
-            ⏸ Pause
-
-
-
-          </button>
-
-
-
-          <button id="btnStopAudio" class="btn-audio" onclick="stopSpeech()" title="Stop audio">
-
-
-
-            ⏹ Stop
-
-
-
-          </button>
-
-
-
-          <div id="audioVisualizer" class="audio-visualizer">
-
-
-
-            <span class="wave-bar"></span>
-
-
-
-            <span class="wave-bar"></span>
-
-
-
-            <span class="wave-bar"></span>
-
-
-
-            <span class="wave-bar"></span>
-
-
-
-            <span class="wave-bar"></span>
-
-
-
-          </div>
-
-
-
+        <div class="compact-context-info">
+          <span id="breadcrumbs" class="paper-breadcrumbs">PC-1 • Language Skills</span>
+          <span class="context-sep">›</span>
+          <span id="sectionHeading" class="context-topic-name">Draft Paragraph &amp; Audit Comments</span>
+          <span class="context-sep">›</span>
+          <span id="chapterNumberBadge" class="chapter-num-pill">1 of 2</span>
+          <span id="chapterTitleHeader" class="context-chapter-name">Chapter 1</span>
         </div>
 
-
-
-
-
-
-
-        <!-- Audio Settings -->
-
-
-
-        <div class="audio-settings">
-
-
-
-          <label for="speedSelect" class="audio-label">Speed:</label>
-
-
-
-          <select id="speedSelect" class="select-control speed-select">
-
-
-
-            <option value="0.8">0.8x</option>
-
-
-
-            <option value="1.0" selected>1.0x</option>
-
-
-
-            <option value="1.2">1.2x</option>
-
-
-
-            <option value="1.4">1.4x</option>
-
-
-
-            <option value="1.6">1.6x</option>
-
-
-
-            <option value="2.0">2.0x</option>
-
-
-
-          </select>
-
-
-
-
-
-
-
-          <label for="voiceSelect" class="audio-label">Voice:</label>
-
-
-
-          <select id="voiceSelect" class="select-control voice-select"></select>
-
-
-
-        
-          <!-- Continuous Audio & Reader Controls -->
-          <label class="commute-mode-toggle" title="Continuous Audio: Auto-play next chapter when finished">
-            <input type="checkbox" id="continuousAudioToggle" onchange="toggleContinuousAudio(this.checked)">
-            <span class="commute-label">🔄 Auto-Next</span>
-          </label>
-
-          <div class="reader-toolbar-quick">
-            <button class="btn-tool-sm" onclick="adjustFontSize(-1)" title="Smaller text">A-</button>
-            <span id="fontSizeDisplay" class="font-size-badge">100%</span>
-            <button class="btn-tool-sm" onclick="adjustFontSize(1)" title="Larger text">A+</button>
-            <button id="btnSepiaToggle" class="btn-tool-sm" onclick="toggleSepiaMode()" title="Toggle Sepia Eye-Care Mode">📜</button>
-            <button class="btn-tool-sm" onclick="window.print()" title="Print or Save as Clean PDF">🖨️</button>
+        <div class="compact-context-actions">
+          <div id="materialChapterNavBtns" style="display:flex; gap:4px; align-items:center;">
+            <button id="btnPrevChapterTop" class="btn-small" onclick="navigateChapter(-1)" title="Previous Chapter">◀</button>
+            <button id="btnNextChapterTop" class="btn-small" onclick="navigateChapter(1)" title="Next Chapter">▶</button>
+            <button id="btnPlayAudio" class="btn-small" onclick="playSpeech()" title="Listen">🔊</button>
           </div>
-
-        </div>
-
-
-
-              <!-- Global Top Right Navigation Tabs -->
-        <div class="top-nav-tabs">
-          <button id="btnTopSearch" class="btn-top-tab search-tab" onclick="openSearchModal()" title="Instant Search across all papers (Ctrl+K)">
-            🔍 Search <span class="kbd-hint">Ctrl+K</span>
-          </button>
-
-          <button id="topNavBtn_quizzer" class="btn-top-tab quizzer-glow" onclick="switchTab('sas_quizzer')" title="Full Paper-Wise SAS Quizzer">
-            🎯 SAS Quizzer
-          </button>
-          <button id="topNavBtn_oneliner" class="btn-top-tab oneliner-glow" onclick="switchTab('sas_oneliner')" title="Paper-Wise SAS One-Liner Facts">
-            ⚡ SAS One Liner
-          </button>
+          <button id="btnTopSearch" class="btn-small" onclick="openSearchModal()" title="Search (Ctrl+K)">🔍</button>
         </div>
       </header>
 
-
-
-
-
-
+      <!-- Hidden compatibility elements for legacy references -->
+      <div style="display:none;">
+        <span id="weightagePill"></span>
+        <select id="statusSelect" onchange="onStatusChange(this.value)"><option value="not_started">Not Started</option></select>
+        <span id="overallProgressPct"></span>
+        <div id="overallProgressBar"></div>
+        <button id="btnPauseAudio"></button>
+        <button id="btnStopAudio"></button>
+        <span id="playAudioLabel"></span>
+        <select id="speechRateSelect"><option value="1">1x</option></select>
+      </div>
 
       <!-- Content Scrollable Body -->
-
-      <div class="content-body">
-
-        <!-- Global Mode Return Banner (shown in SAS Quizzer / One-Liner) -->
-        <div id="globalModeBanner" class="global-mode-banner">
-          <button class="btn-back-study" onclick="switchTab('content')">← Back to Study Hub</button>
-          <span class="global-mode-hint">Global Exam Mode — select any paper in the sidebar to return to notes</span>
-        </div>
-
-        <!-- Section Header Card -->
-
-
-
-        <section class="section-header-card">
-
-
-
-          <div class="header-top-row">
-
-
-
-            <span id="breadcrumbs" class="paper-breadcrumbs">PC-1 • Language Skills (Group I)</span>
-
-
-
-            <span id="weightagePill" class="weightage-pill">25-30 Marks</span>
-
-
-
-          </div>
-
-
-
-          <h2 id="sectionHeading" class="section-heading">Draft Paragraph & Audit Comments</h2>
-
-
-
-          
-
-
-
-          <!-- Fast Action Strip -->
-
-
-
-          <div class="action-strip">
-
-
-
-            <div class="status-selector-row">
-
-
-
-              <span class="status-label">Status:</span>
-
-
-
-              <select id="statusSelect" class="select-control status-select" onchange="onStatusChange(this.value)">
-
-
-
-                <option value="not_started">⬜ Not Started</option>
-
-
-
-                <option value="in-progress">🟡 In Progress</option>
-
-
-
-                <option value="completed">🟢 Mastered & Completed</option>
-
-
-
-                <option value="revision">⭐ High-Priority Revision</option>
-
-
-
-              </select>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <!-- Quick AI Action Buttons -->
-
-
-
-            <div class="ai-actions-group">
-
-
-
-              <button class="btn-ai-action summary-btn" onclick="triggerAISummary()" title="Generate or view high-yield AI summary">
-
-
-
-                <span class="sparkle">✨</span> Summary
-
-
-
-              </button>
-
-
-
-              <button class="btn-ai-action crux-btn" onclick="triggerAICrux()" title="Generate or view statutory crux material">
-
-
-
-                <span class="sparkle">📘</span> Crux Material
-
-
-
-              </button>
-
-
-
-              <button class="btn-ai-action edition-btn" onclick="openTextEdition()" title="Open editable text workspace">
-
-
-
-                <span class="sparkle">✍️</span> Text Edition
-
-
-
-              </button>
-
-
-
-              <button class="btn-ai-action tutor-btn" onclick="switchTab('tutor')" title="Ask AI Tutor any doubts on this section">
-
-
-
-                <span class="sparkle">🤖</span> Ask AI Tutor
-
-
-
-              </button>
-
-
-
-              <button class="btn-ai-action quiz-btn" onclick="triggerAIQuiz()" title="Generate SAS exam case studies & MCQs">
-
-
-
-                <span class="sparkle">🎯</span> Practice Quiz
-
-
-
-              </button>
-
-
-
-            </div>
-
-
-
-          </div>
-
-
-
-                </section>
-
-
-
-
-
-
-
-        <!-- Chapter Navigation Stepper Card -->
-
-
-
-        <div class="chapter-stepper-card">
-
-
-
-          <div class="chapter-stepper-top">
-
-
-
-            <div class="chapter-info-badge">
-
-
-
-              <span class="chapter-stepper-tag">CHAPTER</span>
-
-
-
-              <span id="chapterNumberBadge" class="chapter-num-pill">1 of 4</span>
-
-
-
-              <span id="chapterTitleHeader" class="chapter-title-text">Chapter 1: Title</span>
-
-
-
-            </div>
-
-
-
-            <div class="chapter-stepper-controls">
-
-
-
-              <button id="btnPrevChapterTop" class="btn-chapter-step" onclick="navigateChapter(-1)" title="Previous Chapter">
-
-
-
-                ◀ Previous Chapter
-
-
-
-              </button>
-
-
-
-              <button id="btnNextChapterTop" class="btn-chapter-step" onclick="navigateChapter(1)" title="Next Chapter">
-
-
-
-                Next Chapter ▶
-
-
-
-              </button>
-
-
-
-            </div>
-
-
-
-          </div>
-
-
-
-          <!-- Clickable Chapter Pills -->
-
-
-
+      <div class="content-body full-page-body">
+        <!-- Chapter Pills Strip (Material Mode only) -->
+        <div id="materialChaptersStrip" class="chapter-pills-strip">
           <div id="chaptersTabList" class="chapter-pills-row"></div>
-
-
-
         </div>
-
-
-
-
-
-
-
-        <!-- Navigation Tabs Bar -->
-
-
-
-        <div class="tabs-bar">
-
-
-
-          <button id="tabBtn_content" class="tab-btn active" onclick="switchTab('content')">📖 Whole Content</button>
-
-
-
-          <button id="tabBtn_summary" class="tab-btn" onclick="switchTab('summary')">⚡ Summary</button>
-
-
-
-          <button id="tabBtn_crux" class="tab-btn" onclick="switchTab('crux')">📘 Crux Material</button>
-
-
-
-          <button id="tabBtn_edition" class="tab-btn" onclick="switchTab('edition')">✍️ Text Edition</button>
-
-
-
-          <button id="tabBtn_coverage" class="tab-btn" onclick="switchTab('coverage')">🎯 What Exactly to Cover</button>
-
-
-
-          <button id="tabBtn_tutor" class="tab-btn" onclick="switchTab('tutor')">🤖 AI Tutor & Doubts</button>
-
-
-
-          <button id="tabBtn_quiz" class="tab-btn" onclick="switchTab('quiz')">🎯 MCQ Quizzer</button>
-
-
-
-          <button id="tabBtn_flashcards" class="tab-btn" onclick="switchTab('flashcards')">💡 Flashcards & Summary</button>
-
-
-
-          <button id="tabBtn_files" class="tab-btn" onclick="switchTab('files')">📂 Workspace Files</button>
-          <button id="tabBtn_cheatsheet" class="tab-btn highlight-cheatsheet" onclick="switchTab('cheatsheet')">📋 Formulas & Codal Forms</button>
-          <button id="tabBtn_sas_quizzer" class="tab-btn highlight-quizzer" onclick="switchTab('sas_quizzer')">🎯 SAS Quizzer</button>
-          <button id="tabBtn_sas_oneliner" class="tab-btn highlight-oneliner" onclick="switchTab('sas_oneliner')">⚡ SAS One Liner</button>
-
-        </div>
-
-
-
-
-
-
 
         <!-- Tab 1: Whole Content View -->
 
@@ -1716,7 +1186,10 @@
 
               <!-- Question Display Card -->
               <div id="quizzerCard" class="quizzer-card">
-                <div id="quizzerMetaBadge" class="quizzer-meta-tag">PC-1 • Chapter 1</div>
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px;">
+                  <div id="quizzerMetaBadge" class="quizzer-meta-tag" style="margin-bottom:0;">PC-1 • Chapter 1</div>
+                  <button id="btnFavQuestion" class="btn-fav-toggle" onclick="toggleCurrentQuizzerFavorite()" title="Save to Favorites">☆ Like / Favorite</button>
+                </div>
                 <div id="quizzerQuestionText" class="quizzer-question-text">Loading question...</div>
                 <div id="quizzerOptionsList" class="quizzer-options-list"></div>
                 <div id="quizzerHintBox" class="quizzer-hint-box" style="display:none;"></div>
@@ -1803,6 +1276,28 @@
 
             <!-- Bottom Pagination -->
             <div id="onelinerPaginationBottom" class="pagination-controls" style="margin-top:14px; justify-content:center; display:flex;"></div>
+          </div>
+        </div>
+
+        <!-- Tab 12: Favorite Questions -->
+        <div id="panel_sas_favorites" class="tab-panel">
+          <div class="study-card">
+            <div class="card-toolbar">
+              <div>
+                <h3 style="display:flex; align-items:center; gap:8px;">
+                  ⭐ Favorite Questions
+                  <span id="favoritesTotalBadge" class="badge" style="background:#f59e0b; color:#fff; font-size:0.75rem;">0 Saved</span>
+                </h3>
+                <p style="font-size:0.82rem; color:var(--text-muted); margin-top:2px;">
+                  Questions you liked in SAS Quizzer are automatically saved here for targeted revision.
+                </p>
+              </div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                <button class="btn-primary" onclick="practiceFavoritesQuiz()" style="padding:7px 14px; font-size:0.85rem;">🎯 Practice Favorites as Quiz</button>
+                <button class="btn-small" onclick="clearAllFavorites()">🗑️ Clear All</button>
+              </div>
+            </div>
+            <div id="favoritesListContainer" class="favorites-list-container"></div>
           </div>
         </div>
 
