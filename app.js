@@ -1909,6 +1909,15 @@ function loadCurrentChapter() {
 
   loadChapterSourceMaterial(paper.paperCode, currentChapter.id);
 
+  if (window.currentAppMode === "quizzer") {
+    if (typeof window.syncQuizzerWithSyllabus === "function") {
+      window.syncQuizzerWithSyllabus(paper.paperCode, currentChapter.id);
+    }
+    if (typeof window.syncOneLinerWithSyllabus === "function") {
+      window.syncOneLinerWithSyllabus(paper.paperCode, currentChapter.id);
+    }
+  }
+
   loadSummaryForChapter(currentChapter);
 
 
@@ -2390,6 +2399,18 @@ function loadTextEditionForChapter(chapter) {
 
 
 
+
+  if (window.location.hostname.includes("github.io") || window.location.protocol === "file:") {
+    const saved = userStore.textEditions[effKey] || localStorage.getItem(`sas_notes_${effKey}`);
+    if (saved) {
+      textEditionInputEl.value = saved;
+      editionStatusIndicatorEl.textContent = "Loaded from Local Storage";
+    } else {
+      textEditionInputEl.value = `# ${chapter.title}\n\n## 1. Statutory Provisions\n${chapter.crux || ''}\n\n## 2. Personal Notes & Mnemonics\n- Add your exam points here...`;
+      editionStatusIndicatorEl.textContent = "Ready";
+    }
+    return;
+  }
 
   fetch(`/api/load-text-edition?sectionId=${section.id}&chapterId=${chapter.id}`)
 
@@ -3255,6 +3276,13 @@ function saveTextEdition() {
 
 
 
+  if (window.location.hostname.includes("github.io") || window.location.protocol === "file:") {
+    localStorage.setItem(`sas_notes_${effKey}`, content);
+    editionStatusIndicatorEl.textContent = "Saved to Local Storage ✓";
+    setTimeout(() => { editionStatusIndicatorEl.textContent = "Ready"; }, 2000);
+    return;
+  }
+
   fetch("/api/save-text-edition", {
 
 
@@ -3879,17 +3907,87 @@ function renderChecklist(section) {
 
 
 
+window.currentAppMode = "material";
+window.lastMaterialTab = "content";
+window.lastQuizzerTab = "sas_quizzer";
+
+window.setAppMode = function(mode) {
+  window.currentAppMode = mode === "quizzer" ? "quizzer" : "material";
+  const isQuizzer = window.currentAppMode === "quizzer";
+
+  const btnMat = document.getElementById("modeBtn_material");
+  const btnQuiz = document.getElementById("modeBtn_quizzer");
+  if (btnMat) btnMat.classList.toggle("active", !isQuizzer);
+  if (btnQuiz) btnQuiz.classList.toggle("active", isQuizzer);
+
+  const navMat = document.getElementById("sidebarMaterialNav");
+  const navQuiz = document.getElementById("sidebarQuizzerNav");
+  if (navMat) navMat.style.display = isQuizzer ? "none" : "flex";
+  if (navQuiz) navQuiz.style.display = isQuizzer ? "flex" : "none";
+
+  const strip = document.getElementById("materialChaptersStrip");
+  const navBtns = document.getElementById("materialChapterNavBtns");
+  if (strip) strip.style.display = isQuizzer ? "none" : "";
+  if (navBtns) navBtns.style.display = isQuizzer ? "none" : "flex";
+
+  if (isQuizzer) {
+    switchTab(window.lastQuizzerTab || "sas_quizzer");
+  } else {
+    switchTab(window.lastMaterialTab || "content");
+  }
+};
+
 function switchTab(tabId) {
   activeTab = tabId;
 
+  const isQuizzerTab = (tabId === "sas_quizzer" || tabId === "sas_oneliner" || tabId === "sas_favorites");
+  if (isQuizzerTab) {
+    window.lastQuizzerTab = tabId;
+    if (window.currentAppMode !== "quizzer") {
+      window.currentAppMode = "quizzer";
+      const btnMat = document.getElementById("modeBtn_material");
+      const btnQuiz = document.getElementById("modeBtn_quizzer");
+      if (btnMat) btnMat.classList.remove("active");
+      if (btnQuiz) btnQuiz.classList.add("active");
+      const navMat = document.getElementById("sidebarMaterialNav");
+      const navQuiz = document.getElementById("sidebarQuizzerNav");
+      if (navMat) navMat.style.display = "none";
+      if (navQuiz) navQuiz.style.display = "flex";
+      const strip = document.getElementById("materialChaptersStrip");
+      const navBtns = document.getElementById("materialChapterNavBtns");
+      if (strip) strip.style.display = "none";
+      if (navBtns) navBtns.style.display = "none";
+    }
+  } else {
+    window.lastMaterialTab = tabId;
+    if (window.currentAppMode !== "material") {
+      window.currentAppMode = "material";
+      const btnMat = document.getElementById("modeBtn_material");
+      const btnQuiz = document.getElementById("modeBtn_quizzer");
+      if (btnMat) btnMat.classList.add("active");
+      if (btnQuiz) btnQuiz.classList.remove("active");
+      const navMat = document.getElementById("sidebarMaterialNav");
+      const navQuiz = document.getElementById("sidebarQuizzerNav");
+      if (navMat) navMat.style.display = "flex";
+      if (navQuiz) navQuiz.style.display = "none";
+      const strip = document.getElementById("materialChaptersStrip");
+      const navBtns = document.getElementById("materialChapterNavBtns");
+      if (strip) strip.style.display = "";
+      if (navBtns) navBtns.style.display = "flex";
+    }
+  }
+
   document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+  document.querySelectorAll(".side-nav-btn").forEach(btn => btn.classList.remove("active"));
   document.querySelectorAll(".tab-panel").forEach(panel => panel.classList.remove("active"));
   document.querySelectorAll(".btn-top-tab").forEach(btn => btn.classList.remove("active"));
 
   const targetBtn = document.getElementById(`tabBtn_${tabId}`);
+  const sideBtn = document.getElementById(`sideBtn_${tabId}`);
   const targetPanel = document.getElementById(`panel_${tabId}`);
 
   if (targetBtn) targetBtn.classList.add("active");
+  if (sideBtn) sideBtn.classList.add("active");
   if (targetPanel) targetPanel.classList.add("active");
 
   if (tabId === 'sas_quizzer') {
