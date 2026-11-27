@@ -4389,6 +4389,244 @@ mark.source-highlight {
   border-top: 1px dashed var(--border);
 }
 
+/* ============================================================
+   Chapter Hero, TOC Jump Bar & Rich PDF Headings/Callouts
+   ============================================================ */
+.chapter-hero-card {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(14, 165, 233, 0.06));
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+
+.chapter-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.read-time-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.14);
+  color: #10b981;
+}
+
+.chapter-hero-title {
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.35;
+}
+
+.chapter-hero-src {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.chapter-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.toc-jump-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+
+.toc-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.toc-jump-pill {
+  padding: 4px 10px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.toc-jump-pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.toc-pdf-pill {
+  background: rgba(37, 99, 235, 0.14);
+  border-color: rgba(59, 130, 246, 0.4);
+  color: #60a5fa;
+}
+
+.study-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 14px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+}
+
+.study-section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.src-heading {
+  margin: 14px 0 8px 0;
+  padding: 6px 10px;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(37, 99, 235, 0.08);
+  border-left: 3px solid var(--primary);
+  border-radius: 4px;
+}
+
+.src-callout {
+  margin: 10px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 4px solid #f59e0b;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.src-list-item {
+  margin: 10px 0 10px 8px;
+  padding: 6px 12px;
+  border-left: 3px solid rgba(59, 130, 246, 0.45);
+  background: rgba(59, 130, 246, 0.04);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.src-ref-chip {
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: rgba(59, 130, 246, 0.14);
+  color: #60a5fa;
+  font-weight: 600;
+  font-size: 0.88em;
+}
+
+.topic-roadmap-box {
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+
+.topic-roadmap-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.topic-roadmap-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.topic-roadmap-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.topic-roadmap-pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.roadmap-num {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.topic-chapter-block {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 22px;
+  background: var(--bg-card);
+}
+
+.topic-chapter-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.topic-ch-badge {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.topic-ch-heading {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.topic-ch-notes {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--bg-card-subtle);
+}
+
 
 
 /* =========================================================================
