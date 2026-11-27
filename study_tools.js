@@ -7,6 +7,24 @@
 (function() {
   "use strict";
 
+  // Helper functions for safe HTML and search highlighting
+  function escapeHtml(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function highlightKeywords(text, query) {
+    if (!query || !text) return text;
+    const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(`(${escapedQuery})`, "gi");
+    return text.replace(regex, `<mark class="highlight-search">$1</mark>`);
+  }
+
   // State management for study tools
   window.SAS_STUDY_TOOLS = {
     fontSizeLevel: 0, // -2, -1, 0, 1, 2, 3
@@ -298,8 +316,47 @@
   };
 
   // -------------------------------------------------------------
-  // 4. FLOATING TABLE OF CONTENTS (OUTLINE DRAWER)
+  // 4. FLOATING TABLE OF CONTENTS (OUTLINE DRAWER) & IN-CHAPTER SEARCH
   // -------------------------------------------------------------
+  window.searchInCurrentChapter = function(query) {
+    const container = document.getElementById("wholeContent");
+    if (!container) return;
+    const q = (query || "").trim();
+    const countBadge = document.getElementById("inChapterMatchBadge");
+
+    if (!window._origChapterHTML || window._lastSearchedChapter !== window.currentChapterIndex) {
+      window._origChapterHTML = container.innerHTML;
+      window._lastSearchedChapter = window.currentChapterIndex;
+    }
+
+    if (!q) {
+      container.innerHTML = window._origChapterHTML;
+      if (countBadge) {
+        countBadge.textContent = "";
+        countBadge.style.display = "none";
+      }
+      return;
+    }
+
+    const cleanHTML = window._origChapterHTML;
+    const escapedQ = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(`(?![^<]*>)(${escapedQ})`, "gi");
+    const matches = cleanHTML.match(regex);
+    const count = matches ? matches.length : 0;
+
+    container.innerHTML = cleanHTML.replace(regex, `<mark class="chapter-search-hit">$1</mark>`);
+
+    if (countBadge) {
+      countBadge.textContent = `${count} match${count === 1 ? '' : 'es'}`;
+      countBadge.style.display = count > 0 ? "inline-block" : "none";
+    }
+
+    const firstHit = container.querySelector(".chapter-search-hit");
+    if (firstHit) {
+      firstHit.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   function setupOutlineObserver() {
     // When loadCurrentChapter updates #wholeContent, re-render outline
     const contentBox = document.getElementById("wholeContent");
