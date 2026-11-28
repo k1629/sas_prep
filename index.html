@@ -270,7 +270,7 @@
       </div>
 
       <!-- Content Scrollable Body -->
-      <div class="content-body full-page-body">
+      <div class="content-body full-page-body" id="mainContentBody">
 
         <!-- Today's Smart Study Plan Strip -->
         <div id="dailyStudyPlanCard" class="daily-plan-card">
@@ -319,6 +319,27 @@
 
 
         <div id="panel_content" class="tab-panel active">
+
+          <!-- Sticky Reading Bar with Progress & Quick Jump -->
+          <div id="stickyReadingBar" class="sticky-reading-bar">
+            <div id="readingProgressLine" class="reading-progress-line"></div>
+            <div class="sticky-reading-content">
+              <div class="sticky-reading-title">
+                <span id="stickyChapterTag" class="sticky-tag">PC-1</span>
+                <span id="stickyChapterTitle" class="sticky-title">Chapter Title</span>
+              </div>
+              <div class="sticky-jump-chips" id="stickyJumpChips"></div>
+              <div class="sticky-actions">
+                <button class="btn-outline-pill" onclick="toggleChapterOutline()" title="Open Table of Contents">📑 Outline <span id="stickyOutlineBadge" class="outline-badge">0</span></button>
+                <button class="btn-back-to-top" onclick="scrollToReadingTop()" title="Scroll Back to Top">▲ Top</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Back to Top Button -->
+          <button id="btnFloatingBackToTop" class="btn-floating-back-to-top" onclick="scrollToReadingTop()" title="Scroll to Top">
+            ▲ Top
+          </button>
 
           <!-- Floating Table of Contents (Outline Drawer) -->
           <button id="btnToggleOutline" class="btn-floating-outline" onclick="toggleChapterOutline()" title="Jump to Sub-Section / Table of Contents">📑 Outline <span id="outlineCountBadge" class="outline-badge">0</span></button>
