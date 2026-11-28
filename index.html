@@ -85,7 +85,10 @@
       <div class="sidebar-header" style="padding: 12px 14px 10px;">
         <div class="sidebar-brand-row" style="margin-bottom: 8px;">
           <span class="brand-badge">IA&amp;AD • Civil Accounts</span>
-          <span id="countdownTimer" class="exam-target-badge">🎯 SAS Hub</span>
+          <!-- Interactive Trial / Subscription Status Badge -->
+          <span id="trialStatusBadge" class="exam-target-badge trial-badge" onclick="openProfileModal()" title="Click to view Candidate Profile & Subscription">
+            ⏳ Trial: 7 Days
+          </span>
         </div>
 
         <!-- Primary Top-Left Mode Switcher (Only ONE active at a time) -->
@@ -135,45 +138,18 @@
 
 
       <!-- Sidebar Footer Controls -->
-
-
-
       <div class="sidebar-footer">
-
-
-
+        <button id="btnProfileDrawer" onclick="openProfileModal()" class="btn-footer-profile" title="Candidate Profile & Sync">
+          👤 Profile
+        </button>
         <button id="btnThemeToggle" onclick="toggleTheme()" class="btn-footer-secondary">🌓 Mode</button>
-
-
-
         <div style="display: flex; gap: 6px;">
-
-
-
           <button onclick="exportBackup()" class="btn-footer-accent" title="Export Notes & Progress Backup">💾 Export</button>
-
-
-
           <label class="btn-footer-accent" style="cursor: pointer; margin: 0;" title="Import Notes & Progress Backup">
-
-
-
             📥 Import
-
-
-
             <input type="file" id="importFileInput" accept=".json" onchange="importBackup(event)" style="display: none;">
-
-
-
           </label>
-
-
-
         </div>
-
-
-
       </div>
 
 
@@ -202,36 +178,56 @@
 
 
 
-      <header class="audio-toolbar compact-context-toolbar">
-        <button id="btnMobileMenu" class="btn-mobile-menu" onclick="toggleMobileSidebar()" title="Toggle Menu">
-          ☰ Menu
-        </button>
+      <!-- Top Study Utility & Progress Bar -->
+      <header class="audio-toolbar study-utility-bar">
+        <button id="btnMobileMenu" class="btn-mobile-menu mobile-only-menu-btn" onclick="toggleMobileSidebar()" title="Open Syllabus">☰</button>
 
-        <div class="compact-context-info">
-          <span id="breadcrumbs" class="paper-breadcrumbs">PC-1 • Language Skills</span>
-          <span class="context-sep">›</span>
-          <span id="sectionHeading" class="context-topic-name">Draft Paragraph &amp; Audit Comments</span>
-          <span class="context-sep">›</span>
-          <span id="chapterNumberBadge" class="chapter-num-pill">1 of 2</span>
-          <span id="chapterTitleHeader" class="context-chapter-name">Chapter 1</span>
+        <div class="utility-left-group">
+          <div class="utility-readiness-pill" title="Overall Syllabus Mastery">
+            <span id="overallProgressPct" class="utility-pct-text">0% Ready</span>
+            <div class="utility-mini-bar"><div id="overallProgressBar" class="utility-mini-fill"></div></div>
+          </div>
+
+          <select id="statusSelect" class="select-control utility-status-select" onchange="onStatusChange(this.value)" title="Topic Study Status">
+            <option value="not_started">⬜ Not Started</option>
+            <option value="in-progress">🟡 In Progress</option>
+            <option value="completed">🟢 Mastered</option>
+            <option value="revision">⭐ Revision</option>
+          </select>
+
+          <div class="utility-context-chip">
+            <span id="breadcrumbs" class="paper-breadcrumbs">PC-1 • Language Skills</span>
+            <span class="context-sep">›</span>
+            <span id="sectionHeading" class="context-topic-name">Draft Paragraph</span>
+            <span class="context-sep">›</span>
+            <span id="chapterNumberBadge" class="chapter-num-pill">1 of 2</span>
+            <span id="chapterTitleHeader" class="context-chapter-name">Chapter 1</span>
+          </div>
         </div>
 
-        <div class="compact-context-actions">
-          <div id="materialChapterNavBtns" style="display:flex; gap:4px; align-items:center;">
-            <button id="btnPrevChapterTop" class="btn-small" onclick="navigateChapter(-1)" title="Previous Chapter">◀</button>
-            <button id="btnNextChapterTop" class="btn-small" onclick="navigateChapter(1)" title="Next Chapter">▶</button>
-            <button id="btnPlayAudio" class="btn-small" onclick="playSpeech()" title="Listen">🔊</button>
+        <div class="utility-right-group">
+          <div class="focus-timer-pill" title="25-min Study Focus Timer">
+            <span id="focusTimerDisplay">⏱️ 25:00</span>
+            <button id="btnFocusTimerToggle" class="timer-mini-btn" onclick="toggleFocusTimer()" title="Start/Pause Focus Timer">▶</button>
+            <button class="timer-mini-btn" onclick="resetFocusTimer()" title="Reset Timer">↺</button>
           </div>
-          <button id="btnTopSearch" class="btn-small" onclick="openSearchModal()" title="Search (Ctrl+K)">🔍</button>
+
+          <div class="font-size-pill" title="Adjust Reading Font Size">
+            <button class="timer-mini-btn" onclick="adjustStudyFontSize(-1)">A-</button>
+            <button class="timer-mini-btn" onclick="adjustStudyFontSize(1)">A+</button>
+          </div>
+
+          <button class="btn-small utility-quiz-btn" onclick="launchChapterQuizFromBar()" title="Take MCQ Quiz for this Chapter">🎯 Quiz Chapter</button>
+          <button class="btn-small" onclick="toggleTheme()" title="Toggle Light/Dark Theme">🌓</button>
         </div>
       </header>
 
       <!-- Hidden compatibility elements for legacy references -->
       <div style="display:none;">
         <span id="weightagePill"></span>
-        <select id="statusSelect" onchange="onStatusChange(this.value)"><option value="not_started">Not Started</option></select>
-        <span id="overallProgressPct"></span>
-        <div id="overallProgressBar"></div>
+        <button id="btnPrevChapterTop" onclick="navigateChapter(-1)"></button>
+        <button id="btnNextChapterTop" onclick="navigateChapter(1)"></button>
+        <button id="btnPlayAudio" onclick="playSpeech()"></button>
         <button id="btnPauseAudio"></button>
         <button id="btnStopAudio"></button>
         <span id="playAudioLabel"></span>
@@ -240,6 +236,44 @@
 
       <!-- Content Scrollable Body -->
       <div class="content-body full-page-body">
+
+        <!-- Today's Smart Study Plan Strip -->
+        <div id="dailyStudyPlanCard" class="daily-plan-card">
+          <div class="daily-plan-header">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="daily-plan-icon">🎯</span>
+              <div>
+                <h4 style="margin:0; font-size:0.95rem; font-weight:700;">Today's Recommended Study Target</h4>
+                <span class="daily-plan-sub">Based on your 6-month Civil Accounts preparation roadmap</span>
+              </div>
+            </div>
+            <button class="btn-small" onclick="document.getElementById('dailyStudyPlanCard').classList.toggle('collapsed')">Toggle</button>
+          </div>
+          <div class="daily-plan-steps">
+            <div class="plan-step-pill" onclick="switchTab('content')">
+              <span class="pstep-num">1</span>
+              <div>
+                <strong>Core Reading</strong>
+                <span class="pstep-desc">Master current chapter statutory rules</span>
+              </div>
+            </div>
+            <div class="plan-step-pill" onclick="setAppMode('quizzer'); switchTab('sas_quizzer')">
+              <span class="pstep-num">2</span>
+              <div>
+                <strong>Daily Practice Quiz</strong>
+                <span class="pstep-desc">Solve 25 MCQs in SAS Quizzer</span>
+              </div>
+            </div>
+            <div class="plan-step-pill" onclick="setAppMode('quizzer'); switchTab('sas_oneliner')">
+              <span class="pstep-num">3</span>
+              <div>
+                <strong>Rapid Revision</strong>
+                <span class="pstep-desc">Review 20 high-yield codal one-liners</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Chapter Pills Strip (Material Mode only) -->
         <div id="materialChaptersStrip" class="chapter-pills-strip">
           <div id="chaptersTabList" class="chapter-pills-row"></div>
@@ -1504,6 +1538,264 @@
       <span class="bnav-icon">🔍</span><span class="bnav-label">Search</span>
     </button>
   </nav>
+
+  <!-- Candidate Profile & Cloud Sync Modal -->
+  <div id="profileModal" class="search-modal-backdrop" style="display: none;" onclick="if(event.target === this) closeProfileModal()">
+    <div class="profile-modal-card">
+      <div class="profile-modal-header">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="profile-avatar-circle">👤</div>
+          <div>
+            <h3 id="profileCandidateName">Audit Officer Candidate</h3>
+            <span id="profileCandidateEmail" class="profile-email-text">candidate@iaad.gov.in</span>
+          </div>
+        </div>
+        <button class="btn-sidebar-close" onclick="closeProfileModal()">✕</button>
+      </div>
+
+      <div class="profile-modal-body">
+        <!-- Subscription & Trial Banner -->
+        <div id="profileSubscriptionCard" class="profile-sub-box">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <span class="sub-label">Access Status</span>
+              <h4 id="profileSubHeading">Free Trial: 7 Days Left</h4>
+            </div>
+            <button id="btnUpgradeSub" class="btn-primary" onclick="openPaywallModal()">⚡ Upgrade Pro</button>
+          </div>
+          <p id="profileSubDesc" style="font-size:0.8rem; color:var(--text-muted); margin-top:6px;">
+            Full access to all 9 SAS Civil Accounts papers, 1,118 Quizzer questions, and 5,328 One-Liners.
+          </p>
+        </div>
+
+        <!-- Sync & Progress Stats -->
+        <div class="profile-stats-grid">
+          <div class="profile-stat-item">
+            <span class="pstat-val" id="profileSyllabusReadiness">0%</span>
+            <span class="pstat-label">Syllabus Covered</span>
+          </div>
+          <div class="profile-stat-item">
+            <span class="pstat-val" id="profileQuizAccuracy">0%</span>
+            <span class="pstat-label">MCQ Accuracy</span>
+          </div>
+          <div class="profile-stat-item">
+            <span class="pstat-val" id="profileStarredCount">0</span>
+            <span class="pstat-label">Starred Facts</span>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <button class="btn-secondary" style="width:100%; justify-content:center;" onclick="triggerSimulatedLogin()">
+            🔄 Switch / Link Google Account
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscription Paywall Modal -->
+  <div id="paywallModal" class="search-modal-backdrop" style="display: none;" onclick="if(event.target === this) closePaywallModal()">
+    <div class="paywall-modal-card">
+      <div style="text-align:right;">
+        <button class="btn-sidebar-close" onclick="closePaywallModal()">✕</button>
+      </div>
+      <div class="paywall-header-center">
+        <span class="paywall-badge-pro">👑 SAS MASTERY PRO</span>
+        <h2>Unlock Complete Civil Accounts Preparation</h2>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-top:6px;">
+          Your 7-day free trial has expired. Subscribe to maintain cloud-synced progress, unlimited MCQ practice, and statutory summaries.
+        </p>
+      </div>
+
+      <div class="pricing-plans-grid">
+        <div class="plan-card">
+          <h4>1 Month Sprint</h4>
+          <div class="plan-price">₹199 <span>/ month</span></div>
+          <ul class="plan-features">
+            <li>✓ All 9 Civil Accounts Papers</li>
+            <li>✓ 1,118 Question Quiz Bank</li>
+            <li>✓ 5,328 Codal One-Liners</li>
+          </ul>
+          <button class="btn-secondary" style="width:100%;" onclick="openUpiPayment('1_month', 199, 1)">Pay ₹199 via UPI</button>
+        </div>
+
+        <div class="plan-card popular-plan">
+          <span class="plan-tag">RECOMMENDED</span>
+          <h4>6 Months Complete Exam</h4>
+          <div class="plan-price">₹499 <span>/ 6 months</span></div>
+          <ul class="plan-features">
+            <li>✓ Complete 6-Month Study Journey</li>
+            <li>✓ Unlimited Gemini AI Tutor & Crux</li>
+            <li>✓ Full CPWA & Government Accounts Mocks</li>
+            <li>✓ Cloud Sync across Phone & PC</li>
+          </ul>
+          <button class="btn-primary" style="width:100%;" onclick="openUpiPayment('6_months', 499, 6)">Pay ₹499 via UPI / GPay</button>
+        </div>
+      </div>
+
+      <!-- Direct Zero-Cost UPI Drawer -->
+      <div id="upiPaymentDrawer" class="upi-payment-drawer" style="display:none;">
+        <hr style="border:0; border-top:1px solid var(--border); margin:16px 0;">
+        <h4 style="margin:0 0 6px;">📱 Instant UPI Payment (0% Gateway Fees)</h4>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:10px;">
+          Scan with Google Pay, PhonePe, Paytm, or BHIM. Enter your transaction UTR / Reference ID below to activate immediately.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center;">
+          <div class="upi-qr-placeholder">
+            <span style="font-size:1.8rem;">📲</span>
+            <span style="font-size:0.75rem; font-weight:700; color:var(--primary);">Scan &amp; Pay</span>
+          </div>
+          <div style="flex:1; min-width:200px;">
+            <div style="font-size:0.85rem; margin-bottom:4px;">
+              <strong>UPI ID:</strong> <code id="displayUpiId" style="background:var(--bg-card-subtle); padding:2px 6px; border-radius:4px;">auditexam@upi</code>
+            </div>
+            <div style="font-size:0.85rem; margin-bottom:8px;">
+              <strong>Amount:</strong> <span id="displayUpiAmount" style="font-weight:700; color:var(--accent);">₹499</span>
+            </div>
+            <div style="display:flex; gap:6px;">
+              <input type="text" id="upiRefInput" class="search-input" placeholder="Enter 12-digit UPI Ref / UTR No." style="font-size:0.8rem; padding:6px 10px;">
+              <button class="btn-primary" style="white-space:nowrap; padding:6px 12px; font-size:0.8rem;" onclick="verifyUpiPayment()">Activate Pro</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin-top:14px;">
+        🔒 100% Direct UPI activation • Instant access to complete syllabus &amp; mock quizzes.
+      </p>
+    </div>
+  </div>
+
+  <script type="module">
+    import * as SasAuth from './firebase_auth_sync.js';
+    window.SasAuth = SasAuth;
+
+    // Connect UI callbacks
+    window.openProfileModal = function() {
+      const modal = document.getElementById('profileModal');
+      if (modal) modal.style.display = 'flex';
+      renderProfileModalData();
+    };
+
+    window.closeProfileModal = function() {
+      const modal = document.getElementById('profileModal');
+      if (modal) modal.style.display = 'none';
+    };
+
+    window.openPaywallModal = function() {
+      closeProfileModal();
+      const modal = document.getElementById('paywallModal');
+      if (modal) modal.style.display = 'flex';
+    };
+
+    window.closePaywallModal = function() {
+      const modal = document.getElementById('paywallModal');
+      if (modal) modal.style.display = 'none';
+    };
+
+    let pendingUpiPlan = "6_months";
+    let pendingUpiMonths = 6;
+
+    window.openUpiPayment = function(plan, amount, months) {
+      pendingUpiPlan = plan;
+      pendingUpiMonths = months;
+      const drawer = document.getElementById("upiPaymentDrawer");
+      const amtEl = document.getElementById("displayUpiAmount");
+      if (amtEl) amtEl.textContent = "₹" + amount;
+      if (drawer) drawer.style.display = "block";
+    };
+
+    window.verifyUpiPayment = async function() {
+      const refInput = document.getElementById("upiRefInput");
+      const utr = (refInput ? refInput.value : "").trim();
+      if (!utr || utr.length < 4) {
+        alert("Please enter your UPI reference number / UTR ID from your payment app.");
+        return;
+      }
+      await SasAuth.activateProSubscription(pendingUpiPlan, pendingUpiMonths);
+      alert("🎉 Payment Reference " + utr + " accepted! Your SAS Mastery Pro subscription is now active.");
+      closePaywallModal();
+      renderProfileModalData();
+    };
+
+    window.mockSubscribe = async function(plan, months) {
+      const btn = event ? event.target : null;
+      if (btn) btn.textContent = 'Processing Payment...';
+      setTimeout(async () => {
+        await SasAuth.activateProSubscription(plan, months);
+        if (btn) btn.textContent = 'Subscribed ✅';
+        alert('🎉 Subscription activated successfully! Thank you for subscribing to SAS Mastery Pro.');
+        closePaywallModal();
+        renderProfileModalData();
+      }, 700);
+    };
+
+    window.triggerSimulatedLogin = function() {
+      const name = prompt('Enter your name for the profile:', 'Audit Candidate');
+      if (name) {
+        SasAuth.userProfile.displayName = name;
+        SasAuth.syncProgressToCloud({});
+        renderProfileModalData();
+      }
+    };
+
+    function renderProfileModalData() {
+      const p = SasAuth.userProfile;
+      if (!p) return;
+      const nameEl = document.getElementById('profileCandidateName');
+      const emailEl = document.getElementById('profileCandidateEmail');
+      const subHeadingEl = document.getElementById('profileSubHeading');
+      const subCardEl = document.getElementById('profileSubscriptionCard');
+      const trialBadge = document.getElementById('trialStatusBadge');
+
+      if (nameEl) nameEl.textContent = p.displayName || 'Audit Officer Candidate';
+      if (emailEl) emailEl.textContent = p.email || 'candidate@iaad.gov.in';
+
+      // Connect dynamic study progress stats
+      const readinessEl = document.getElementById('profileSyllabusReadiness');
+      const accuracyEl = document.getElementById('profileQuizAccuracy');
+      const starredEl = document.getElementById('profileStarredCount');
+
+      if (readinessEl && window.userStore && window.userStore.status) {
+        const completed = Object.values(window.userStore.status).filter(s => s === 'completed').length;
+        const total = 25;
+        readinessEl.textContent = Math.round((completed / total) * 100) + '%';
+      }
+      if (starredEl) {
+        const favs = localStorage.getItem('sas_favorite_oneliners');
+        starredEl.textContent = favs ? JSON.parse(favs).length : 0;
+      }
+      if (accuracyEl && window.quizzerHistory) {
+        accuracyEl.textContent = window.quizzerHistory.accuracy ? window.quizzerHistory.accuracy + '%' : 'N/A';
+      }
+
+      const status = SasAuth.calculateSubscriptionStatus(p);
+      if (status.isSubscriptionActive) {
+        if (subHeadingEl) subHeadingEl.innerHTML = '👑 Pro Subscription Active';
+        if (trialBadge) {
+          trialBadge.textContent = '👑 Pro Member';
+          trialBadge.className = 'exam-target-badge pro-badge';
+        }
+      } else if (status.isTrialActive) {
+        if (subHeadingEl) subHeadingEl.innerHTML = `⏳ Free Trial: ${status.daysLeft} Day${status.daysLeft === 1 ? '' : 's'} Remaining`;
+        if (trialBadge) {
+          trialBadge.textContent = `⏳ Trial: ${status.daysLeft}d`;
+          trialBadge.className = 'exam-target-badge trial-badge';
+        }
+      } else {
+        if (subHeadingEl) subHeadingEl.innerHTML = '⚠️ Free Trial Expired';
+        if (trialBadge) {
+          trialBadge.textContent = '⚠️ Trial Expired';
+          trialBadge.className = 'exam-target-badge expired-badge';
+        }
+      }
+    }
+
+    // Initialize on page load
+    SasAuth.initAuthAndSync((profile, status) => {
+      renderProfileModalData();
+    });
+  </script>
 
   <script src="study_tools.js"></script>
 
