@@ -1793,9 +1793,6 @@ function loadCurrentChapter() {
         <h3 class="chapter-hero-title">${currentChapter.title}</h3>
         ${currentChapter.sourceDoc ? `<div class="chapter-hero-src">📘 <strong>Source Manuals:</strong> ${currentChapter.sourceDoc}</div>` : ""}
         <div class="chapter-hero-actions">
-          <button class="btn-ai-pill" onclick="triggerAISummary()">✨ Summary</button>
-          <button class="btn-ai-pill" style="background: linear-gradient(135deg, #2563eb, #38bdf8);" onclick="triggerAICrux()">💎 Crux</button>
-          <button class="btn-save-pill" onclick="openTextEdition()">✍️ Text Edition</button>
           <button class="btn-small" onclick="playSpeech()">🔊 Listen</button>
           <button class="btn-small" style="background:var(--primary); color:#fff; border-color:var(--primary);" onclick="toggleChapterOutline()">📑 Table of Contents</button>
         </div>
@@ -2321,8 +2318,8 @@ function renderFilteredSourceSections() {
           <span class="source-doc-count">${secs.length} section${secs.length > 1 ? "s" : ""}</span>
           <button class="btn-small" onclick="scrollToStudyAnchor('wholeContentTop')" style="margin-left:8px;">↑ Top</button>
         </div>
-        ${secs.map((sec) => `
-          <details class="source-sec-card" open>
+        ${secs.map((sec, idx) => `
+          <details class="source-sec-card" ${(idx < 2 || qLower.length >= 2) ? "open" : ""}>
             <summary class="source-sec-summary">
               <span class="source-sec-title">${escapeHtmlSource(sec.title)}</span>
               <span class="source-sec-chars">${Math.round((sec.text || "").length / 100) / 10}k chars</span>
@@ -4158,6 +4155,17 @@ if (__studyFontScale !== 1) {
   document.documentElement.style.setProperty("--study-font-scale", String(__studyFontScale));
 }
 
+window.toggleStudyToolsPopover = function(ev) {
+  if (ev) ev.stopPropagation();
+  const pop = document.getElementById("studyToolsPopover");
+  if (!pop) return;
+  pop.style.display = pop.style.display === "none" ? "flex" : "none";
+};
+document.addEventListener("click", () => {
+  const pop = document.getElementById("studyToolsPopover");
+  if (pop && pop.style.display !== "none") pop.style.display = "none";
+});
+
 window.launchChapterQuizFromBar = function() {
   const paper = SAS_CURRICULUM[currentPaperIndex];
   const sec = paper && paper.sections[currentSectionIndex];
@@ -4233,6 +4241,11 @@ function switchTab(tabId) {
       if (strip) strip.style.display = "";
       if (navBtns) navBtns.style.display = "flex";
     }
+  }
+
+  const dailyCard = document.getElementById("dailyStudyPlanCard");
+  if (dailyCard) {
+    dailyCard.style.display = (isQuizzerTab || tabId === "edition") ? "none" : "";
   }
 
   document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
