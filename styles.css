@@ -6381,7 +6381,18 @@ html, body {
 
 /* Scroll Offset for Headings and Jump Anchors */
 h2[id^="sec_hd_"], h3[id^="sec_hd_"], h4[id^="sec_hd_"], #chapterSourceMaterial, .study-section-divider {
-  scroll-margin-top: 85px;
+  scroll-margin-top: 130px !important;
+}
+
+.sticky-jump-chips {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+  padding-right: 8px;
 }
 
 /* Active Highlight in Table of Contents Drawer */
