@@ -151,20 +151,27 @@
   }
 
   window.selectQuizzerPaper = function(paperCode) {
-    quizzerState.selectedPaper = paperCode;
-    // Update pill buttons
-    const pills = document.querySelectorAll("#quizzerPaperPills .filter-pill");
+    const mapped = paperCode === "APK_CPWA" ? "CPWA" : (paperCode === "ALL" ? "ALL" : normalizePaperCode(paperCode));
+    quizzerState.selectedPaper = mapped;
+    const selP = document.getElementById("quizzerPaperSelect");
+    if (selP) selP.value = paperCode;
+    // Update pill buttons if present
+    const pills = document.querySelectorAll("#quizzerPaperPills .pill-btn");
     pills.forEach(p => {
       const onclickAttr = p.getAttribute("onclick") || "";
-      if (onclickAttr.includes(`'${paperCode}'`)) {
-        p.classList.add("active");
-      } else {
-        p.classList.remove("active");
-      }
+      p.classList.toggle("active", onclickAttr.includes(`'${paperCode}'`));
     });
 
     populateQuizzerTopicSelect();
     restartQuizzerQuiz();
+  };
+
+  window.toggleQuizzerPalette = function() {
+    const pal = document.getElementById("quizzerPalette");
+    const btn = document.getElementById("btnTogglePalette");
+    if (!pal) return;
+    const isCollapsed = pal.classList.toggle("collapsed");
+    if (btn) btn.textContent = isCollapsed ? "🗺️ Palette" : "🗺️ Hide Palette";
   };
 
   window.onQuizzerTopicChange = function() {
@@ -727,7 +734,8 @@
     }
     saveSRSRatings();
     renderOneLinersList();
-  };
+  }
+  window.filterOneLiners = filterOneLiners;;
 
   window.toggleSRSFilter = function(filter) {
     if (oneLinerState.srsFilter === filter) {
@@ -810,15 +818,14 @@
     oneLinerState.selectedChapterId = "ALL";
     oneLinerState.currentPage = 1;
 
-    // Update pill buttons
-    const pills = document.querySelectorAll("#onelinerPaperPills .filter-pill");
+    const selP = document.getElementById("onelinerPaperSelect");
+    if (selP) selP.value = paperCode;
+
+    // Update pill buttons if present
+    const pills = document.querySelectorAll("#onelinerPaperPills .pill-btn");
     pills.forEach(p => {
       const onclickAttr = p.getAttribute("onclick") || "";
-      if (onclickAttr.includes(`'${paperCode}'`)) {
-        p.classList.add("active");
-      } else {
-        p.classList.remove("active");
-      }
+      p.classList.toggle("active", onclickAttr.includes(`'${paperCode}'`));
     });
 
     filterOneLiners();
@@ -856,6 +863,8 @@
     if (allOneLiners.length === 0) buildOneLinersDatabase();
 
     const pFilter = oneLinerState.selectedPaper;
+    const sInput = document.getElementById("onelinerSearchInput");
+    if (sInput) oneLinerState.searchQuery = (sInput.value || "").trim().toLowerCase();
     const query = oneLinerState.searchQuery;
     const starredOnly = oneLinerState.onlyStarred;
 
@@ -880,6 +889,7 @@
 
     renderOneLinersList();
   }
+  window.filterOneLiners = filterOneLiners;
 
   function renderOneLinersList() {
     const listContainer = document.getElementById("onelinersList");
@@ -1344,6 +1354,8 @@
     const hasChapterQs = allQuizzerQuestions.some(q => q.chId === chId);
     quizzerState.selectedTopic = hasChapterQs ? chId : "ALL";
     if (sel) sel.value = quizzerState.selectedTopic;
+    const selP = document.getElementById("quizzerPaperSelect");
+    if (selP) selP.value = paperCode;
     // Highlight paper pill
     document.querySelectorAll("#quizzerPaperPills .pill-btn").forEach(btn => {
       const attr = btn.getAttribute("onclick") || "";
@@ -1358,6 +1370,8 @@
     oneLinerState.selectedPaper = paperCode;
     oneLinerState.selectedChapterId = chId || "ALL";
     oneLinerState.currentPage = 1;
+    const selP = document.getElementById("onelinerPaperSelect");
+    if (selP) selP.value = paperCode;
     document.querySelectorAll("#onelinerPaperPills .pill-btn").forEach(btn => {
       const attr = btn.getAttribute("onclick") || "";
       btn.classList.toggle("active", attr.includes(`'${paperCode}'`));
