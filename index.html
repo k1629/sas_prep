@@ -97,6 +97,9 @@
           </svg>
           Continue with Google
         </button>
+        <button id="btnGateGuest" class="btn-gate-guest" onclick="handleGateGuestEntry()">
+          Continue as Guest (Free Preview) →
+        </button>
       </div>
 
       <div class="auth-gate-footer">
@@ -213,7 +216,7 @@
 
 
 
-      <!-- Top Study Utility & Progress Bar -->
+      <!-- Top Study Utility & Progress Bar (Streamlined) -->
       <header class="audio-toolbar study-utility-bar">
         <button id="btnMobileMenu" class="btn-mobile-menu mobile-only-menu-btn" onclick="toggleMobileSidebar()" title="Open Syllabus">☰</button>
 
@@ -240,20 +243,31 @@
           </div>
         </div>
 
-        <div class="utility-right-group">
-          <div class="focus-timer-pill" title="25-min Study Focus Timer">
-            <span id="focusTimerDisplay">⏱️ 25:00</span>
-            <button id="btnFocusTimerToggle" class="timer-mini-btn" onclick="toggleFocusTimer()" title="Start/Pause Focus Timer">▶</button>
-            <button class="timer-mini-btn" onclick="resetFocusTimer()" title="Reset Timer">↺</button>
+        <div class="utility-right-group" style="position:relative;">
+          <button id="btnStudyTools" class="btn-small" onclick="toggleStudyToolsPopover(event)" title="Study Timer, Font Size & Theme">⚙️ Tools ▾</button>
+          <div id="studyToolsPopover" class="study-tools-popover" style="display:none;" onclick="event.stopPropagation()">
+            <div class="tools-pop-row">
+              <span class="tools-pop-label">Focus Timer</span>
+              <div class="focus-timer-pill">
+                <span id="focusTimerDisplay">⏱️ 25:00</span>
+                <button id="btnFocusTimerToggle" class="timer-mini-btn" onclick="toggleFocusTimer()">▶</button>
+                <button class="timer-mini-btn" onclick="resetFocusTimer()">↺</button>
+              </div>
+            </div>
+            <div class="tools-pop-row">
+              <span class="tools-pop-label">Font Size</span>
+              <div class="font-size-pill">
+                <button class="timer-mini-btn" onclick="adjustStudyFontSize(-1)">A-</button>
+                <button class="timer-mini-btn" onclick="adjustStudyFontSize(1)">A+</button>
+              </div>
+            </div>
+            <div class="tools-pop-row">
+              <button class="btn-small utility-quiz-btn" style="width:100%;" onclick="launchChapterQuizFromBar(); toggleStudyToolsPopover();">🎯 Quiz This Chapter</button>
+            </div>
+            <div class="tools-pop-row">
+              <button class="btn-small" style="width:100%;" onclick="toggleTheme()">🌓 Toggle Light/Dark Theme</button>
+            </div>
           </div>
-
-          <div class="font-size-pill" title="Adjust Reading Font Size">
-            <button class="timer-mini-btn" onclick="adjustStudyFontSize(-1)">A-</button>
-            <button class="timer-mini-btn" onclick="adjustStudyFontSize(1)">A+</button>
-          </div>
-
-          <button class="btn-small utility-quiz-btn" onclick="launchChapterQuizFromBar()" title="Take MCQ Quiz for this Chapter">🎯 Quiz Chapter</button>
-          <button class="btn-small" onclick="toggleTheme()" title="Toggle Light/Dark Theme">🌓</button>
         </div>
       </header>
 
@@ -272,8 +286,8 @@
       <!-- Content Scrollable Body -->
       <div class="content-body full-page-body" id="mainContentBody">
 
-        <!-- Today's Smart Study Plan Strip -->
-        <div id="dailyStudyPlanCard" class="daily-plan-card">
+        <!-- Today's Smart Study Plan Strip (Collapsed by Default) -->
+        <div id="dailyStudyPlanCard" class="daily-plan-card collapsed">
           <div class="daily-plan-header">
             <div style="display:flex; align-items:center; gap:8px;">
               <span class="daily-plan-icon">🎯</span>
@@ -1214,27 +1228,26 @@
               </div>
             </div>
 
-            <!-- Quizzer Paper Selector Strip -->
-            <div class="quizzer-filter-box">
-              <div class="quizzer-filter-row">
-                <span class="filter-label">📚 Select Paper:</span>
-                <div id="quizzerPaperPills" class="pill-group">
-                  <button class="pill-btn active" onclick="selectQuizzerPaper('ALL')">All Papers (Mock)</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-1')">PC-1: Language</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-2')">PC-2: Audit</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-3')">PC-3: IT</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-4')">PC-4: GFR &amp; CPWA</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-9')">PC-9: Accounting</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-11')">PC-11: Govt Accts</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-13')">PC-13: Budget</button>
-                  <button class="pill-btn" onclick="selectQuizzerPaper('PC-15')">PC-15: Pension</button>
-                  <button class="pill-btn apk-pill" onclick="selectQuizzerPaper('APK_CPWA')">🏗️ CPWA Mock (APK)</button>
+            <!-- Compact 1-Row Quizzer Filter Bar -->
+            <div class="quizzer-filter-box quizzer-compact-bar">
+              <div class="quizzer-subfilter-row" style="margin-top:0; gap:8px;">
+                <div style="min-width:170px;">
+                  <label class="filter-label" for="quizzerPaperSelect">📚 Paper:</label>
+                  <select id="quizzerPaperSelect" class="select-control" onchange="selectQuizzerPaper(this.value)" style="width:100%;">
+                    <option value="ALL">All Papers (Mock)</option>
+                    <option value="PC-1">PC-1: Language</option>
+                    <option value="PC-2">PC-2: Audit</option>
+                    <option value="PC-3">PC-3: IT</option>
+                    <option value="PC-4">PC-4: GFR &amp; CPWA</option>
+                    <option value="PC-9">PC-9: Accounting</option>
+                    <option value="PC-11">PC-11: Govt Accts</option>
+                    <option value="PC-13">PC-13: Budget</option>
+                    <option value="PC-15">PC-15: Pension</option>
+                    <option value="APK_CPWA">🏗️ CPWA Mock (APK)</option>
+                  </select>
                 </div>
-              </div>
-
-              <div class="quizzer-subfilter-row">
                 <div style="flex:1; min-width:200px;">
-                  <label class="filter-label" for="quizzerTopicSelect">📖 Topic / Scope:</label>
+                  <label class="filter-label" for="quizzerTopicSelect">📖 Topic / Chapter:</label>
                   <select id="quizzerTopicSelect" class="select-control" onchange="onQuizzerTopicChange()" style="width:100%;">
                     <option value="ALL">All Available Topics in Selected Paper</option>
                   </select>
@@ -1242,21 +1255,22 @@
                 <div>
                   <label class="filter-label">⚙️ Mode:</label>
                   <div class="pill-group">
-                    <button id="btnModePractice" class="pill-btn active" onclick="setQuizzerMode('practice')">⚡ Practice (Instant Hints)</button>
-                    <button id="btnModeExam" class="pill-btn" onclick="setQuizzerMode('exam')">⏱️ Exam Mock (Score at End)</button>
+                    <button id="btnModePractice" class="pill-btn active" onclick="setQuizzerMode('practice')">⚡ Practice</button>
+                    <button id="btnModeExam" class="pill-btn" onclick="setQuizzerMode('exam')">⏱️ Exam</button>
                   </div>
                 </div>
                 <div>
                   <label class="filter-label" for="quizzerCountSelect">🔢 Count:</label>
-                  <select id="quizzerCountSelect" class="select-control" onchange="restartQuizzerQuiz()">
-                    <option value="10">10 Questions</option>
-                    <option value="25" selected>25 Questions</option>
-                    <option value="50">50 Questions</option>
-                    <option value="ALL">All Questions</option>
+                  <select id="quizzerCountSelect" class="select-control" onchange="onQuizzerCountChange()">
+                    <option value="10">10 Qs</option>
+                    <option value="25" selected>25 Qs</option>
+                    <option value="50">50 Qs</option>
+                    <option value="ALL">All Qs</option>
                   </select>
                 </div>
-                <div style="display:flex; align-items:flex-end; gap:8px;">
-                  <button class="btn-primary" onclick="restartQuizzerQuiz()" style="padding:7px 14px; font-size:0.85rem;">🔄 Start / Retake</button>
+                <div style="display:flex; align-items:flex-end; gap:6px;">
+                  <button class="btn-primary" onclick="restartQuizzerQuiz()" style="padding:7px 12px; font-size:0.84rem;">🔄 Start</button>
+                  <button id="btnTogglePalette" class="btn-small" onclick="toggleQuizzerPalette()" style="padding:7px 10px;">🗺️ Palette</button>
                 </div>
               </div>
             </div>
@@ -1271,8 +1285,8 @@
                 </div>
               </div>
 
-              <!-- Question Palette Grid -->
-              <div id="quizzerPalette" class="quizzer-palette"></div>
+              <!-- Question Palette Grid (Collapsed by Default) -->
+              <div id="quizzerPalette" class="quizzer-palette collapsed"></div>
 
               <!-- Question Display Card -->
               <div id="quizzerCard" class="quizzer-card">
@@ -1319,36 +1333,32 @@
               </div>
             </div>
 
-            <!-- One Liner Filter Box -->
+            <!-- Compact One Liner Filter Box -->
             <div class="oneliner-filter-box">
-              <div class="oneliner-filter-row">
-                <span class="filter-label">📚 Filter Paper:</span>
-                <div id="onelinerPaperPills" class="pill-group">
-                  <button class="pill-btn active" onclick="selectOneLinerPaper('ALL')">All Papers</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-1')">PC-1: Language</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-2')">PC-2: Audit</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-3')">PC-3: IT</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-4')">PC-4: GFR &amp; CPWA</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-9')">PC-9: Accounting</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-11')">PC-11: Govt Accts</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-13')">PC-13: Budget</button>
-                  <button class="pill-btn" onclick="selectOneLinerPaper('PC-15')">PC-15: Pension</button>
-                  <button class="pill-btn apk-pill" onclick="selectOneLinerPaper('CPWA_APK')">🏗️ CPWA / APK Facts</button>
+              <div class="oneliner-search-row" style="margin-top:0; gap:8px; flex-wrap:wrap;">
+                <select id="onelinerPaperSelect" class="select-control" onchange="selectOneLinerPaper(this.value)" style="min-width:170px;">
+                  <option value="ALL">All Papers</option>
+                  <option value="PC-1">PC-1: Language</option>
+                  <option value="PC-2">PC-2: Audit</option>
+                  <option value="PC-3">PC-3: IT</option>
+                  <option value="PC-4">PC-4: GFR &amp; CPWA</option>
+                  <option value="PC-9">PC-9: Accounting</option>
+                  <option value="PC-11">PC-11: Govt Accts</option>
+                  <option value="PC-13">PC-13: Budget</option>
+                  <option value="PC-15">PC-15: Pension</option>
+                  <option value="CPWA_APK">🏗️ CPWA / APK Facts</option>
+                </select>
+                <div style="flex:1; min-width:220px; position:relative;">
+                  <input type="text" id="onelinerSearchInput" class="search-input" placeholder="🔍 Search one-liners (e.g. 75%, Form 23, Article 112, GeM...)" oninput="filterOneLiners()">
                 </div>
-              </div>
-
-              <div class="oneliner-search-row">
-                <div style="flex:1; position:relative;">
-                  <input type="text" id="onelinerSearchInput" class="search-input" placeholder="🔍 Instant search in one-liners (e.g. 75%, Form 23, Article 112, GeM, Pension, Gratuity...)" oninput="filterOneLiners()">
-                </div>
-                <div style="display:flex; gap:8px; align-items:center;">
-                  <button id="btnStarredOnly" class="pill-btn" onclick="toggleStarredOneLiners()">⭐ Starred Only (<span id="starredCount">0</span>)</button>
+                <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+                  <button id="btnStarredOnly" class="pill-btn" onclick="toggleStarredOneLiners()">⭐ Starred (<span id="starredCount">0</span>)</button>
                   <button id="btnHardOnly" class="pill-btn srs-hard-pill" onclick="toggleSRSFilter('hard')">🔴 Hard (<span id="srsHardCount">0</span>)</button>
                   <button id="btnGoodOnly" class="pill-btn srs-good-pill" onclick="toggleSRSFilter('good')">🟡 Good (<span id="srsGoodCount">0</span>)</button>
-                  <select id="onelinerPageSize" class="select-control" onchange="renderOneLinersList()">
-                    <option value="50">50 per page</option>
-                    <option value="100">100 per page</option>
-                    <option value="250">250 per page</option>
+                  <select id="onelinerPageSize" class="select-control" onchange="onOneLinerPageSizeChange()">
+                    <option value="50">50 / page</option>
+                    <option value="100">100 / page</option>
+                    <option value="250">250 / page</option>
                     <option value="ALL">Show All</option>
                   </select>
                 </div>
