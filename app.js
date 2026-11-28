@@ -1033,15 +1033,21 @@ function renderPapersNav() {
 
         currentPaperIndex = pIdx;
 
-
-
         currentSectionIndex = sIdx;
-
-
 
         currentChapterIndex = 0;
 
-
+        // Content Access Gating: Paper 1 (pIdx === 0) is always free preview.
+        // Papers 2-9 require an active trial or paid Pro subscription.
+        if (pIdx > 0 && window.SasAuth) {
+          const subStatus = window.SasAuth.calculateSubscriptionStatus(window.SasAuth.userProfile);
+          if (!subStatus.isTrialActive && !subStatus.isSubscriptionActive) {
+            if (typeof window.openPaywallModal === "function") {
+              window.openPaywallModal();
+            }
+            return;
+          }
+        }
 
         stopSpeech();
 
@@ -4021,6 +4027,72 @@ function renderChecklist(section) {
 window.currentAppMode = "material";
 window.lastMaterialTab = "content";
 window.lastQuizzerTab = "sas_quizzer";
+
+// Top Study Utility Bar: Focus Timer, Reading Font Size & Quick Chapter Quiz
+let __focusTimerSec = 25 * 60;
+let __focusTimerId = null;
+
+window.toggleFocusTimer = function() {
+  const btn = document.getElementById("btnFocusTimerToggle");
+  if (__focusTimerId) {
+    clearInterval(__focusTimerId);
+    __focusTimerId = null;
+    if (btn) btn.textContent = "▶";
+  } else {
+    if (btn) btn.textContent = "⏸";
+    __focusTimerId = setInterval(() => {
+      if (__focusTimerSec > 0) {
+        __focusTimerSec--;
+        updateFocusTimerDisplay();
+      } else {
+        clearInterval(__focusTimerId);
+        __focusTimerId = null;
+        if (btn) btn.textContent = "▶";
+        alert("25-minute focus session complete! Great job.");
+      }
+    }, 1000);
+  }
+};
+
+window.resetFocusTimer = function() {
+  if (__focusTimerId) {
+    clearInterval(__focusTimerId);
+    __focusTimerId = null;
+  }
+  __focusTimerSec = 25 * 60;
+  const btn = document.getElementById("btnFocusTimerToggle");
+  if (btn) btn.textContent = "▶";
+  updateFocusTimerDisplay();
+};
+
+function updateFocusTimerDisplay() {
+  const el = document.getElementById("focusTimerDisplay");
+  if (!el) return;
+  const m = Math.floor(__focusTimerSec / 60);
+  const s = __focusTimerSec % 60;
+  el.textContent = `⏱️ ${m}:${s < 10 ? "0" : ""}${s}`;
+}
+
+let __studyFontScale = parseFloat(localStorage.getItem("sas_study_font_scale") || "1");
+window.adjustStudyFontSize = function(delta) {
+  __studyFontScale = Math.min(1.35, Math.max(0.85, __studyFontScale + delta * 0.08));
+  localStorage.setItem("sas_study_font_scale", String(__studyFontScale));
+  document.documentElement.style.setProperty("--study-font-scale", String(__studyFontScale));
+};
+if (__studyFontScale !== 1) {
+  document.documentElement.style.setProperty("--study-font-scale", String(__studyFontScale));
+}
+
+window.launchChapterQuizFromBar = function() {
+  const paper = SAS_CURRICULUM[currentPaperIndex];
+  const sec = paper && paper.sections[currentSectionIndex];
+  const ch = sec && sec.chapters[currentChapterIndex];
+  window.setAppMode("quizzer");
+  switchTab("sas_quizzer");
+  if (paper && ch && typeof window.syncQuizzerWithSyllabus === "function") {
+    window.syncQuizzerWithSyllabus(paper.paperCode, ch.id);
+  }
+};
 
 window.setAppMode = function(mode) {
   window.currentAppMode = mode === "quizzer" ? "quizzer" : "material";
