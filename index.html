@@ -48,7 +48,10 @@
 
   <link rel="stylesheet" href="styles.css">
 
-
+  <!-- Firebase Web SDK (v10 compat CDN - zero build step required) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -1584,9 +1587,12 @@
           </div>
         </div>
 
-        <div style="margin-top:16px;">
-          <button class="btn-secondary" style="width:100%; justify-content:center;" onclick="triggerSimulatedLogin()">
-            🔄 Switch / Link Google Account
+        <div style="margin-top:16px; display:flex; flex-direction:column; gap:8px;">
+          <button id="btnGoogleAuth" class="btn-primary" style="width:100%; justify-content:center; background:#ffffff; color:#0f172a; border-color:#cbd5e1;" onclick="handleGoogleSignIn()">
+            <span style="font-size:1.1rem; margin-right:4px;">🌐</span> Sign in with Google
+          </button>
+          <button id="btnSignOutAuth" class="btn-secondary" style="width:100%; justify-content:center; display:none;" onclick="handleSignOut()">
+            🚪 Sign Out
           </button>
         </div>
       </div>
@@ -1730,12 +1736,16 @@
       }, 700);
     };
 
-    window.triggerSimulatedLogin = function() {
-      const name = prompt('Enter your name for the profile:', 'Audit Candidate');
-      if (name) {
-        SasAuth.userProfile.displayName = name;
-        SasAuth.syncProgressToCloud({});
+    window.handleGoogleSignIn = async function() {
+      const user = await SasAuth.signInWithGoogle();
+      if (user) {
         renderProfileModalData();
+      }
+    };
+
+    window.handleSignOut = async function() {
+      if (confirm("Are you sure you want to sign out?")) {
+        await SasAuth.signOutUser();
       }
     };
 
@@ -1747,6 +1757,16 @@
       const subHeadingEl = document.getElementById('profileSubHeading');
       const subCardEl = document.getElementById('profileSubscriptionCard');
       const trialBadge = document.getElementById('trialStatusBadge');
+      const btnGoogleAuth = document.getElementById('btnGoogleAuth');
+      const btnSignOutAuth = document.getElementById('btnSignOutAuth');
+
+      if (SasAuth.currentUser && SasAuth.currentUser.email && !SasAuth.currentUser.uid.startsWith('guest_')) {
+        if (btnGoogleAuth) btnGoogleAuth.style.display = 'none';
+        if (btnSignOutAuth) btnSignOutAuth.style.display = 'flex';
+      } else {
+        if (btnGoogleAuth) btnGoogleAuth.style.display = 'flex';
+        if (btnSignOutAuth) btnSignOutAuth.style.display = 'none';
+      }
 
       if (nameEl) nameEl.textContent = p.displayName || 'Audit Officer Candidate';
       if (emailEl) emailEl.textContent = p.email || 'candidate@iaad.gov.in';
