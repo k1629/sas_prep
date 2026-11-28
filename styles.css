@@ -5233,6 +5233,52 @@ mark.source-highlight {
   font-size: calc(0.95rem * var(--study-font-scale, 1));
 }
 
+.study-tools-popover {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  z-index: 200;
+  width: 230px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tools-pop-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tools-pop-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.daily-plan-card.collapsed .daily-plan-steps {
+  display: none;
+}
+
+.daily-plan-card.collapsed {
+  padding: 8px 14px;
+  margin-bottom: 10px;
+}
+
+.quizzer-palette.collapsed {
+  display: none;
+}
+
+.quizzer-compact-bar {
+  padding: 10px 14px !important;
+}
+
 
 
 /* =========================================================================
