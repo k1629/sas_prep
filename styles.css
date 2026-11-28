@@ -4073,28 +4073,20 @@ body {
   margin: 0 0 20px;
 }
 
-.auth-gate-trial-callout {
-  background: linear-gradient(135deg, rgba(212, 168, 83, 0.12), rgba(37, 99, 235, 0.12));
-  border: 1px solid rgba(212, 168, 83, 0.3);
-  border-radius: 12px;
-  padding: 12px 14px;
+.auth-gate-trial-badge-row {
   margin-bottom: 22px;
-  text-align: left;
 }
 
-.ag-pill {
+.ag-tag-pill {
   display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #fbbf24;
-  margin-bottom: 4px;
-}
-
-.auth-gate-trial-callout p {
   font-size: 0.78rem;
-  color: var(--text-muted);
-  margin: 0;
-  line-height: 1.35;
+  font-weight: 700;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 20px;
+  padding: 5px 14px;
+  letter-spacing: 0.02em;
 }
 
 .auth-gate-actions {
