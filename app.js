@@ -1891,7 +1891,7 @@ function scrollToStudyAnchor(id) {
   if (container) {
     const elTop = el.getBoundingClientRect().top;
     const containerTop = container.getBoundingClientRect().top;
-    const targetScroll = container.scrollTop + (elTop - containerTop) - 75;
+    const targetScroll = container.scrollTop + (elTop - containerTop) - 120;
     container.scrollTo({ top: Math.max(0, targetScroll), behavior: "smooth" });
   } else {
     el.scrollIntoView({ behavior: "smooth", block: "start" });
