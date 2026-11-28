@@ -532,42 +532,97 @@ function formatMarkdown(text) {
 
 
 
+function initScrollSpyAndStickyBar() {
+  const container = document.getElementById("mainContentBody") || window;
+  const stickyBar = document.getElementById("stickyReadingBar");
+  const progressLine = document.getElementById("readingProgressLine");
+  const btnBackToTop = document.getElementById("btnFloatingBackToTop");
+  
+  const onScroll = () => {
+    let scrollTop = 0;
+    let scrollHeight = 0;
+    let clientHeight = 0;
+    
+    if (container === window) {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollHeight = document.documentElement.scrollHeight;
+      clientHeight = window.innerHeight;
+    } else {
+      scrollTop = container.scrollTop;
+      scrollHeight = container.scrollHeight;
+      clientHeight = container.clientHeight;
+    }
+    
+    // 1. Reading Progress Line
+    const maxScroll = scrollHeight - clientHeight;
+    const progressPct = maxScroll > 0 ? Math.min(100, Math.max(0, (scrollTop / maxScroll) * 100)) : 0;
+    if (progressLine) {
+      progressLine.style.width = `${progressPct}%`;
+    }
+    
+    // 2. Sticky Bar Visibility (trigger when scrolled past hero card ~220px)
+    if (stickyBar) {
+      if (scrollTop > 220) {
+        stickyBar.classList.add("visible");
+      } else {
+        stickyBar.classList.remove("visible");
+      }
+    }
+    
+    // 3. Floating Back to Top Button
+    if (btnBackToTop) {
+      if (scrollTop > 450) {
+        btnBackToTop.classList.add("visible");
+      } else {
+        btnBackToTop.classList.remove("visible");
+      }
+    }
+    
+    // 4. ScrollSpy for Table of Contents Outline Drawer
+    const outlineItems = document.querySelectorAll("#chapterOutlineList .outline-item");
+    if (outlineItems.length > 0) {
+      let currentActiveId = null;
+      outlineItems.forEach(item => {
+        const targetId = item.dataset.targetId;
+        if (targetId) {
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            const rect = targetEl.getBoundingClientRect();
+            if (rect.top <= 140) {
+              currentActiveId = targetId;
+            }
+          }
+        }
+      });
+      
+      outlineItems.forEach(item => {
+        if (item.dataset.targetId === currentActiveId) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      });
+    }
+  };
+  
+  if (container === window) {
+    window.addEventListener("scroll", onScroll, { passive: true });
+  } else {
+    container.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+}
+
 function initApp() {
-
-
-
   loadUserProgress();
-
-
-
   initCountdown();
-
-
-
   renderPapersNav();
-
-
-
   loadCurrentSection();
-
-
-
   initSpeechSynthesis();
-
-
-
   initSearch();
-
-
-
   initKeyboardNav();
-
-
-
+  initScrollSpyAndStickyBar();
   updateProgressUI();
-
-
-
 }
 
 
@@ -1217,188 +1272,103 @@ function renderPapersNav() {
 
 
 function navigateChapter(delta) {
-
-
-
   const paper = SAS_CURRICULUM[currentPaperIndex];
-
-
-
+  if (!paper) return;
   const section = paper.sections[currentSectionIndex];
-
-
-
+  if (!section) return;
   const chapters = section.chapters || [];
-
-
-
   if (chapters.length === 0) return;
-
-
-
-
-
-
 
   const targetIdx = currentChapterIndex + delta;
 
-
-
+  // Case 1: Moving within current section
   if (targetIdx >= 0 && targetIdx < chapters.length) {
-
-
-
     currentChapterIndex = targetIdx;
-
-
-
     stopSpeech();
-
-
-
+    scrollToReadingTop();
     renderChapterNavigation();
-
-
-
     loadCurrentChapter();
-
-
-
-  } else if (targetIdx >= chapters.length) {
-
-
-
-    if (currentSectionIndex < paper.sections.length - 1) {
-
-
-
-      currentSectionIndex++;
-
-
-
-      currentChapterIndex = 0;
-
-
-
-      stopSpeech();
-
-
-
-      renderPapersNav();
-
-
-
-      loadCurrentSection();
-
-
-
-    } else if (currentPaperIndex < SAS_CURRICULUM.length - 1) {
-
-
-
-      currentPaperIndex++;
-
-
-
-      currentSectionIndex = 0;
-
-
-
-      currentChapterIndex = 0;
-
-
-
-      stopSpeech();
-
-
-
-      renderPapersNav();
-
-
-
-      loadCurrentSection();
-
-
-
-    }
-
-
-
-  } else if (targetIdx < 0) {
-
-
-
-    if (currentSectionIndex > 0) {
-
-
-
-      currentSectionIndex--;
-
-
-
-      const prevSec = paper.sections[currentSectionIndex];
-
-
-
-      currentChapterIndex = (prevSec.chapters || []).length - 1;
-
-
-
-      stopSpeech();
-
-
-
-      renderPapersNav();
-
-
-
-      loadCurrentSection();
-
-
-
-    }
-
-
-
+    
+    // Smooth scroll active chapter pill into view
+    setTimeout(() => {
+      const activePill = document.querySelector("#chaptersTabList .chapter-pill.active");
+      if (activePill) activePill.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    }, 50);
   }
-
-
-
+  // Case 2: Moving forward past the end of current section
+  else if (targetIdx >= chapters.length) {
+    if (currentSectionIndex < paper.sections.length - 1) {
+      currentSectionIndex++;
+      currentChapterIndex = 0;
+      stopSpeech();
+      scrollToReadingTop();
+      renderPapersNav();
+      loadCurrentSection();
+      
+      // Auto-scroll active section item in sidebar
+      setTimeout(() => {
+        const activeSec = document.querySelector(".section-item.active");
+        if (activeSec) activeSec.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 100);
+    } else if (currentPaperIndex < SAS_CURRICULUM.length - 1) {
+      currentPaperIndex++;
+      currentSectionIndex = 0;
+      currentChapterIndex = 0;
+      stopSpeech();
+      scrollToReadingTop();
+      renderPapersNav();
+      loadCurrentSection();
+      
+      setTimeout(() => {
+        const activeSec = document.querySelector(".section-item.active");
+        if (activeSec) activeSec.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 100);
+    } else {
+      // Reached the end of the entire curriculum
+      alert("🎉 Congratulations! You have completed all chapters across all 8 Civil Accounts papers!");
+    }
+  }
+  // Case 3: Moving backward before the beginning of current section
+  else if (targetIdx < 0) {
+    if (currentSectionIndex > 0) {
+      currentSectionIndex--;
+      const prevSec = paper.sections[currentSectionIndex];
+      currentChapterIndex = Math.max(0, (prevSec.chapters || []).length - 1);
+      stopSpeech();
+      scrollToReadingTop();
+      renderPapersNav();
+      loadCurrentSection();
+      
+      setTimeout(() => {
+        const activeSec = document.querySelector(".section-item.active");
+        if (activeSec) activeSec.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 100);
+    } else if (currentPaperIndex > 0) {
+      currentPaperIndex--;
+      const prevPaper = SAS_CURRICULUM[currentPaperIndex];
+      currentSectionIndex = Math.max(0, (prevPaper.sections || []).length - 1);
+      const prevSec = prevPaper.sections[currentSectionIndex];
+      currentChapterIndex = Math.max(0, (prevSec.chapters || []).length - 1);
+      stopSpeech();
+      scrollToReadingTop();
+      renderPapersNav();
+      loadCurrentSection();
+      
+      setTimeout(() => {
+        const activeSec = document.querySelector(".section-item.active");
+        if (activeSec) activeSec.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 100);
+    }
+  }
 }
-
-
-
-
-
-
 
 function selectChapter(idx) {
-
-
-
   currentChapterIndex = idx;
-
-
-
   stopSpeech();
-
-
-
+  scrollToReadingTop();
   renderChapterNavigation();
-
-
-
   loadCurrentChapter();
-
-
-
 }
-
-
-
-
-
-
 
 function renderChapterNavigation() {
 
@@ -1741,63 +1711,55 @@ function loadCurrentSection() {
 
 
 function loadCurrentChapter() {
-
-
-
   const paper = SAS_CURRICULUM[currentPaperIndex];
-
-
-
+  if (!paper) return;
   const section = paper.sections[currentSectionIndex];
-
-
-
+  if (!section) return;
   const chapters = section.chapters || [];
-
-
-
   if (chapters.length === 0) return;
 
-
-
-
-
-
-
   if (currentChapterIndex >= chapters.length) currentChapterIndex = 0;
-
-
-
   const currentChapter = chapters[currentChapterIndex];
-
-
-
   const effChapterKey = `${section.id}_${currentChapter.id}`;
-
-
-
-
-
-
-
   const isCompleted = !!userStore.chapterStatus[effChapterKey];
 
+  // Calculate intelligent context-aware labels for Next & Previous buttons
+  let prevTargetLabel = "◀ Previous Topic";
+  let prevTargetDisabled = false;
+  if (currentChapterIndex > 0) {
+    const prevCh = chapters[currentChapterIndex - 1];
+    prevTargetLabel = `◀ Previous Topic: ${prevCh.title.slice(0, 26)}...`;
+  } else if (currentSectionIndex > 0) {
+    const prevSec = paper.sections[currentSectionIndex - 1];
+    prevTargetLabel = `◀ Previous Section: ${prevSec.title.slice(0, 22)}...`;
+  } else if (currentPaperIndex > 0) {
+    const prevP = SAS_CURRICULUM[currentPaperIndex - 1];
+    prevTargetLabel = `◀ Previous Paper: ${prevP.paperCode}`;
+  } else {
+    prevTargetLabel = "◀ Start of Syllabus";
+    prevTargetDisabled = true;
+  }
 
-
-  const prevChapter = currentChapterIndex > 0 ? chapters[currentChapterIndex - 1] : null;
-
-
-
-  const nextChapter = currentChapterIndex < chapters.length - 1 ? chapters[currentChapterIndex + 1] : null;
-
-
-
-
-
-
+  let nextTargetLabel = "Next Topic ▶";
+  let nextTargetDisabled = false;
+  if (currentChapterIndex < chapters.length - 1) {
+    const nextCh = chapters[currentChapterIndex + 1];
+    nextTargetLabel = `Next Topic: ${nextCh.title.slice(0, 26)}... ▶`;
+  } else if (currentSectionIndex < paper.sections.length - 1) {
+    const nextSec = paper.sections[currentSectionIndex + 1];
+    nextTargetLabel = `Next Section: ${nextSec.title.slice(0, 22)}... ▶`;
+  } else if (currentPaperIndex < SAS_CURRICULUM.length - 1) {
+    const nextP = SAS_CURRICULUM[currentPaperIndex + 1];
+    nextTargetLabel = `Next Paper: ${nextP.paperCode} ▶`;
+  } else {
+    nextTargetLabel = "Syllabus Completed 🎉";
+    nextTargetDisabled = true;
+  }
 
   const wordCount = (currentChapter.content || "").split(/\s+/).filter(Boolean).length;
   const readMins = Math.max(2, Math.round(wordCount / 180));
+  
+  // Extract all headings for Table of Contents / Outline Drawer
   const headingMatches = [];
   (currentChapter.content || "").replace(/^(#{2,4})\s+(.+)$/gm, (_, hashes, title) => {
     const cleanT = title.replace(/[*_`]/g, "").trim();
@@ -1809,6 +1771,16 @@ function loadCurrentChapter() {
   let formattedNotes = formatMarkdown(currentChapter.content || "");
   let hdIdx = 0;
   formattedNotes = formattedNotes.replace(/<(h[2-4])>/g, (m, tag) => `<${tag} id="sec_hd_${hdIdx++}">`);
+
+  // Update Sticky Bar Metadata
+  const stickyTagEl = document.getElementById("stickyChapterTag");
+  const stickyTitleEl = document.getElementById("stickyChapterTitle");
+  if (stickyTagEl) stickyTagEl.textContent = paper.paperCode;
+  if (stickyTitleEl) stickyTitleEl.textContent = `${currentChapterIndex + 1}. ${currentChapter.title}`;
+
+  // Populate Outline Drawer & Sticky Jump Chips
+  populateChapterOutline(headingMatches);
+  populateStickyJumpChips(headingMatches);
 
   wholeContentEl.innerHTML = `
     <div class="chapter-content-box" id="wholeContentTop">
@@ -1825,11 +1797,13 @@ function loadCurrentChapter() {
           <button class="btn-ai-pill" style="background: linear-gradient(135deg, #2563eb, #38bdf8);" onclick="triggerAICrux()">💎 Crux</button>
           <button class="btn-save-pill" onclick="openTextEdition()">✍️ Text Edition</button>
           <button class="btn-small" onclick="playSpeech()">🔊 Listen</button>
+          <button class="btn-small" style="background:var(--primary); color:#fff; border-color:var(--primary);" onclick="toggleChapterOutline()">📑 Table of Contents</button>
         </div>
         ${headingMatches.length > 0 ? `
           <div class="toc-jump-bar">
             <span class="toc-label">🧭 Jump to:</span>
-            ${headingMatches.slice(0, 8).map(h => `<button class="toc-jump-pill" onclick="scrollToStudyAnchor('${h.slug}')">${h.title}</button>`).join("")}
+            ${headingMatches.slice(0, 6).map(h => `<button class="toc-jump-pill" onclick="scrollToStudyAnchor('${h.slug}')">${h.title.slice(0, 28)}</button>`).join("")}
+            <button class="toc-jump-pill" onclick="toggleChapterOutline()">📑 All Sections (${headingMatches.length}) →</button>
             <button class="toc-jump-pill toc-pdf-pill" onclick="scrollToStudyAnchor('chapterSourceMaterial')">📚 Official PDFs ↓</button>
           </div>
         ` : ""}
@@ -1852,8 +1826,8 @@ function loadCurrentChapter() {
       </div>
 
       <div class="chapter-bottom-nav">
-        <button class="btn-chapter-bottom" onclick="navigateChapter(-1)" ${!prevChapter && currentSectionIndex === 0 ? "disabled style='opacity:0.4;'" : ""}>
-          ◀ ${prevChapter ? prevChapter.title.slice(0, 32) + '...' : 'Previous Section'}
+        <button class="btn-chapter-bottom" onclick="navigateChapter(-1)" ${prevTargetDisabled ? "disabled style='opacity:0.4; cursor:not-allowed;'" : ""}>
+          ${prevTargetLabel}
         </button>
 
         <div class="chapter-completion-toggle">
@@ -1863,8 +1837,8 @@ function loadCurrentChapter() {
           </label>
         </div>
 
-        <button class="btn-chapter-bottom" onclick="navigateChapter(1)">
-          ${nextChapter ? nextChapter.title.slice(0, 32) + '...' : 'Next Section'} ▶
+        <button class="btn-chapter-bottom ${nextTargetDisabled ? '' : 'btn-chapter-next-glow'}" onclick="navigateChapter(1)" ${nextTargetDisabled ? "disabled style='opacity:0.4; cursor:not-allowed;'" : ""}>
+          ${nextTargetLabel}
         </button>
       </div>
     </div>
@@ -1882,21 +1856,10 @@ function loadCurrentChapter() {
   }
 
   loadSummaryForChapter(currentChapter);
-
-
-
   loadCruxForChapter(currentChapter);
-
-
-
   loadTextEditionForChapter(currentChapter);
-
-
-
   loadChapterQuiz();
-
 }
-
 // ============================================================
 // Full Official Source Material Loader & Renderer per Chapter
 // ============================================================
@@ -1910,9 +1873,121 @@ function escapeHtmlSource(str) {
     .replace(/"/g, "&quot;");
 }
 
+function scrollToReadingTop() {
+  const body = document.getElementById("mainContentBody") || document.querySelector(".content-body");
+  if (body) {
+    body.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 function scrollToStudyAnchor(id) {
   const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!el) return;
+  
+  // Close outline drawer if open on mobile/compact screens
+  if (window.innerWidth < 1024) {
+    toggleChapterOutline(false);
+  }
+  
+  const container = document.getElementById("mainContentBody") || document.querySelector(".content-body");
+  if (container) {
+    const elTop = el.getBoundingClientRect().top;
+    const containerTop = container.getBoundingClientRect().top;
+    const targetScroll = container.scrollTop + (elTop - containerTop) - 75;
+    container.scrollTo({ top: Math.max(0, targetScroll), behavior: "smooth" });
+  } else {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+// Global Outline Drawer toggle
+window.toggleChapterOutline = function(forceOpen) {
+  const drawer = document.getElementById("chapterOutlineDrawer");
+  const backdrop = document.getElementById("outlineBackdrop");
+  if (!drawer) return;
+  const isOpen = typeof forceOpen === "boolean" ? forceOpen : !drawer.classList.contains("open");
+  drawer.classList.toggle("open", isOpen);
+  if (backdrop) backdrop.classList.toggle("open", isOpen);
+};
+
+// Populate Table of Contents / Outline Drawer dynamically
+function populateChapterOutline(headingMatches) {
+  const listEl = document.getElementById("chapterOutlineList");
+  const badgeEl = document.getElementById("outlineCountBadge");
+  const stickyBadgeEl = document.getElementById("stickyOutlineBadge");
+  if (!listEl) return;
+  
+  listEl.innerHTML = "";
+  
+  const totalItems = (headingMatches ? headingMatches.length : 0) + 1; // +1 for Official PDFs
+  if (badgeEl) badgeEl.textContent = totalItems;
+  if (stickyBadgeEl) stickyBadgeEl.textContent = totalItems;
+  
+  // 1. Tiers and Sub-headings
+  if (headingMatches && headingMatches.length > 0) {
+    headingMatches.forEach((h, idx) => {
+      const item = document.createElement("div");
+      const lvlClass = h.level === 2 ? "outline-h2" : (h.level === 3 ? "outline-h3" : "outline-h4");
+      item.className = `outline-item ${lvlClass}`;
+      item.dataset.targetId = h.slug;
+      
+      let icon = "🔹";
+      if (h.title.includes("Tier 1")) icon = "⚖️";
+      else if (h.title.includes("Tier 2")) icon = "📊";
+      else if (h.title.includes("Tier 3")) icon = "📝";
+      else if (h.title.includes("Tier 4")) icon = "⚠️";
+      else if (h.title.includes("Tier 5")) icon = "🎯";
+      else if (h.title.includes("Codal Study Notes")) icon = "📖";
+      
+      item.innerHTML = `<span class="outline-bullet">${icon}</span> <span>${h.title}</span>`;
+      item.onclick = () => scrollToStudyAnchor(h.slug);
+      listEl.appendChild(item);
+    });
+  }
+  
+  // 2. Official PDF Source Material link at bottom of outline
+  const pdfItem = document.createElement("div");
+  pdfItem.className = "outline-item outline-h2";
+  pdfItem.dataset.targetId = "chapterSourceMaterial";
+  pdfItem.innerHTML = `<span class="outline-bullet">📚</span> <strong>Official Manual PDFs (Part 2)</strong>`;
+  pdfItem.onclick = () => scrollToStudyAnchor("chapterSourceMaterial");
+  listEl.appendChild(pdfItem);
+}
+
+// Populate Sticky Quick Jump Chips
+function populateStickyJumpChips(headingMatches) {
+  const container = document.getElementById("stickyJumpChips");
+  if (!container) return;
+  container.innerHTML = "";
+  
+  const tierChips = [
+    { title: "Tier 1: Authority", icon: "⚖️" },
+    { title: "Tier 2: Thresholds", icon: "📊" },
+    { title: "Tier 3: Procedures", icon: "📝" },
+    { title: "Tier 4: Exceptions", icon: "⚠️" },
+    { title: "Tier 5: Scenarios", icon: "🎯" }
+  ];
+  
+  // Map standard tiers to heading anchors
+  tierChips.forEach((tc, idx) => {
+    const match = (headingMatches || []).find(h => h.title.toLowerCase().includes(`tier ${idx+1}`));
+    if (match) {
+      const chip = document.createElement("button");
+      chip.className = "sticky-chip";
+      chip.innerHTML = `${tc.icon} Tier ${idx+1}`;
+      chip.title = match.title;
+      chip.onclick = () => scrollToStudyAnchor(match.slug);
+      container.appendChild(chip);
+    }
+  });
+  
+  // Official PDFs chip
+  const pdfChip = document.createElement("button");
+  pdfChip.className = "sticky-chip";
+  pdfChip.innerHTML = "📚 Official PDFs";
+  pdfChip.onclick = () => scrollToStudyAnchor("chapterSourceMaterial");
+  container.appendChild(pdfChip);
 }
 
 function formatSourceText(rawText, query) {
